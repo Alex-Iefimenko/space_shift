@@ -19,7 +19,14 @@ function Attack (isEnemy : boolean) {
 		shootCoolDown = shootingRate;
 		var shotTransform = Instantiate(misslePrefab) as Transform;
 		shotTransform.position = transform.position;	// Getting current object position for Instantiated missle
-	}
+		var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
+   		if (bullet != null) {
+     	//bullet.direction = this.transform.right; 			    // other possible realization which doesn't rotate object, just make it flew in neccessary direction
+       	bullet.transform.rotation = this.transform.rotation;	// towards in 2D space is the right of the sprite
+    }
+	
+
+   	}
 }
 
 function CanAttack () {									// Permission for attacked which depends on cooldown

@@ -7,12 +7,16 @@ public var speed = new Vector2(20, 20); 					// Global variable for speed adjusm
 public var gunLevel : int = 1;
 private var currentGunLevel : int = 1;
 
+public var playerGun : int = 1;
+private var currentPlayerGun : int = 1;
+
 private var movement : Vector2;								// Private variable for providing position changes
-private var shots : List.<Shooting>;						// Getting all attached Shooting component
+private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
 
 function Start () {
-	shots = GetComponentsInChildren.<Shooting>().OrderBy(function(a){return a.name;}).ToList();
-	GunEnabling(gunLevel);
+	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
+	GunEnabling(playerGun);
+
 }
 
 function Update () {
@@ -42,19 +46,15 @@ function Update () {
       Mathf.Clamp(transform.position.y, topBorder, bottomBorder),
       transform.position.z
     ); 
-    
-    // Detection changes in gun load levels.
-    if (currentGunLevel != gunLevel) {
-    	GunEnabling(gunLevel);
+    										// Detection changes in gun load levels.
+    if (currentPlayerGun != playerGun) {
+    	GunEnabling(playerGun);
     }
-    // Player shooting for initiating Shooting component
-    var fire : boolean = Input.GetButtonDown("Fire1");
-    if (fire){
-    	for (var shot : Shooting in shots) {						
-				if (shot != null && shot.enabled == true) {
-		    	shot.Attack(false);
-		    }
-        }
+    var fire : boolean = Input.GetButton("Fire1");
+    if (fire) {
+    	for (var gun : GunTypeComplect in guns) {
+    		if (gun != null && gun.enabled == true) { gun.Fire(false); }
+    	}
     }
 }
 
@@ -74,7 +74,7 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 	}
 	if (playerDamage) {
 		var playerHealth : Health = this.GetComponent.<Health>();
-		playerHealth.Damage(1);
+		playerHealth.Damage(enemyHealth.health);
 	}
 }
 
@@ -86,18 +86,12 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {		// Checking collision 
 	}
 }
 
-function GunEnabling (level : int) {
-	var gunNumberEnambleArray : List.<int> = new List.<int>(); 	// Creating Array with number of guns which will be enabled;
-	for (var j : int = 0; j < level; j++) {
-		gunNumberEnambleArray.Add(j);
-	}
-	for (var shot : Shooting in shots) {						// Disabling all current guns
-		shot.enabled = false;
-	}
-	for (var x : int in gunNumberEnambleArray) {				// Enabling neccessary guns
-		if (x < shots.Count) {
-			shots[x].enabled = true;
+function GunEnabling (type : int) {
+	if (type <= guns.Count && type > 0) {							// Enabling neccessary gun
+		for (var gun : GunTypeComplect in guns) {					// Disabling all current guns
+			gun.enabled = false;
 		}
+		guns[type - 1].enabled = true;
 	}
-	currentGunLevel = level;
+	currentPlayerGun = type;
 }

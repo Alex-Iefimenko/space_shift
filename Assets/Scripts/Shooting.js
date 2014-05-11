@@ -4,6 +4,11 @@ public var misslePrefab : Transform;					// Getting misle prefab
 public var shootingRate : float = 0.25;					// Setting shooting rate	
 private var shootCoolDown : float;						// Helper variable for checking shooting cooldwon
 
+public var isBurst : boolean;
+public var burstLength : int = 10;
+public var burstRate : float;
+private var burstCoolDown : float;	
+
 function Start () {
 	shootCoolDown = 0f;
 }

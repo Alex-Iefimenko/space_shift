@@ -13,10 +13,10 @@ private var currentPlayerGun : int = 1;
 private var movement : Vector2;								// Private variable for providing position changes
 private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
 
-function Start () {
+function Awake () {
 	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
-	GunEnabling(playerGun);
-
+	GunEnabling(currentPlayerGun);
+	GunLevelChange(currentGunLevel);
 }
 
 function Update () {
@@ -50,6 +50,11 @@ function Update () {
     if (currentPlayerGun != playerGun) {
     	GunEnabling(playerGun);
     }
+    
+    if (currentGunLevel != gunLevel) {
+    	GunLevelChange(gunLevel);
+    }
+    
     var fire : boolean = Input.GetButton("Fire1");
     if (fire) {
     	for (var gun : GunTypeComplect in guns) {
@@ -81,9 +86,21 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 function OnTriggerEnter2D (otherCollider : Collider2D) {		// Checking collision of Player and PowerUp
 	var powerUp : PowerUp = new otherCollider.gameObject.GetComponent.<PowerUp>();
 	if (powerUp != null) {
-		gunLevel += powerUp.powerUpLevel;
+		switch (powerUp.powerUpType) {
+			case 1: 												// Weapon change
+				playerGun = powerUp.powerUpValue;
+				break;
+			case 2:													// Weapon improve
+				gunLevel += powerUp.powerUpValue;
+				break;
+			case 3:													// Repair
+				break;
+			case 4:													// Shield
+				break;
+		}
 		Destroy(powerUp.gameObject);
 	}
+	
 }
 
 function GunEnabling (type : int) {
@@ -94,4 +111,22 @@ function GunEnabling (type : int) {
 		guns[type - 1].enabled = true;
 	}
 	currentPlayerGun = type;
+	if (gunLevel >= 3) {
+		gunLevel -= 2;
+	} else {
+		gunLevel = 1;
+	}
+}
+
+function GunLevelChange(level : int) {
+	if (level > 4) {
+		level = 4;
+		gunLevel = 4;
+	}
+	for (var gun : GunTypeComplect in guns) {
+	   	if (gun != null && gun.enabled == true) { 
+	   		gun.GunLevel(level); 
+	   	}
+	}
+	currentGunLevel = level;
 }

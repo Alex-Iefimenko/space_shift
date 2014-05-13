@@ -1,6 +1,6 @@
 ﻿#pragma strict
 import System.Collections.Generic;
-
+import System.Linq;
 public var damage : int = 1;							// Damage of shot
 public var isEnemyShot : boolean = false;				// Global parameter for enemy - player recognition
 public var speed = new Vector2(10, 10);					// Speed of shot
@@ -10,40 +10,59 @@ public var behaviourType : int = 0;						// Variable for selecting shot behaviou
 														// 1 - Moving to target
 														// 2 - Flack behaviour
 
-private var allTargets : GameObject[];
-private var visibleTargets : List.<GameObject>;
 private var activeTarget : GameObject;
-
+private var directionToTarget : Vector3;
+private var lookRotation : Quaternion;
 function Update () {
-
-	// Destroying Shot if it is outside the camera
+	
+	
 	switch (behaviourType) {
 		case 0:											// Flying forward
-			var movement = new Vector3(speed.x * direction.x, speed.y * direction.y, 0);
-			movement *= Time.deltaTime;
-			transform.Translate(movement);
+			Movement();
 			break;
 		case 1:
-			if (activeTarget != null) {
+			Movement();
+			if (activeTarget == null) {
 				TargetCapture();
+			} else {
+				directionToTarget = (activeTarget.transform.position.x - transform.position.x,
+				activeTarget.transform.position.y - transform.position.y,
+				0
+				).normalized;
+				lookRotation = Quaternion.LookRotation(directionToTarget);
+				transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 3);
 			}
-			//transform.position = Vector3.MoveTowards(transform.position, target, speed.x * Time.deltaTime);
+			
 			break;
 		case 2:
 			
 			break;
 	}
+	
+	
+	// Destroying Shot if it is outside the camera
 	if (RendererHelpers.IsVisibleFrom(transform.renderer, Camera.main) == false) {
 		Destroy(gameObject);
 	}
 }
 
 function TargetCapture () {
-	allTargets = GameObject.FindGameObjectsWithTag("Enemy");
+	var allTargets : List.<GameObject> = new List.<GameObject>();
+	var visibleTargets : List.<GameObject> = new List.<GameObject>();
+	allTargets.AddRange(GameObject.FindGameObjectsWithTag("Enemy"));
 	for (target in allTargets) {
-		if (RendererHelpers.IsVisibleFrom(target.transform.renderer, Camera.main) == false) {
-			visibleTargets.Add(target);
+		if (RendererHelpers.IsVisibleFrom(target.transform.renderer, Camera.main)) {
+			if (target != null) {
+				visibleTargets.Add(target);
+			}
 		}
 	}
 	activeTarget = visibleTargets[Mathf.RoundToInt(Random.Range(0, visibleTargets.Count))];
+	Debug.Log(Random.Range(0, visibleTargets.Count));
+}
+
+function Movement () {
+			var movement = new Vector3(speed.x * direction.x, speed.y * direction.y, 0);
+			movement *= Time.deltaTime;
+			transform.Translate(movement);
 }

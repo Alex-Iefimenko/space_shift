@@ -53,8 +53,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   isEnemyShot: 0
-  speed: {x: 20, y: 20}
+  speed: {x: 10, y: 10}
   direction: {x: 1, y: 0}
+  behaviourType: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,4 +1,5 @@
-﻿#pragma strict
+﻿
+#pragma strict
 
 public var misslePrefab : Transform;					// Getting misle prefab
 public var shootingRate : float = 0.25;					// Setting shooting rate	
@@ -40,11 +41,11 @@ function CanAttack (coolDown : float) {									// Permission for attacked which
 
 function SingleShot () {
 	var shotTransform = Instantiate(misslePrefab) as Transform;
-	shotTransform.position = transform.position;				// Getting current object position for Instantiated missle
+	shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
 	var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
     if (bullet != null) {
-    	//bullet.direction = this.transform.right; 			    // other possible realization which doesn't rotate object, just make it flew in neccessary direction
-    	bullet.transform.rotation = this.transform.rotation;	// towards in 2D space is the right of the sprite
+    	//bullet.direction = this.transform.right; 			    		// other possible realization which doesn't rotate object, just make it flew in neccessary direction
+    	bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
     }	
 }
 

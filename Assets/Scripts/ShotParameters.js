@@ -13,7 +13,6 @@ public var speed = new Vector2(10, 10);					// Speed of shot
 public var direction = new Vector2(1, 0);				// Direction of shot
 
 private var activeTarget : GameObject;
-private var directionToTarget : Vector3;
 private var lookRotation : Quaternion;
 function Update () {
 	
@@ -27,17 +26,10 @@ function Update () {
 			if (activeTarget == null) {
 				TargetCapture();
 			} else {
-				directionToTarget = (activeTarget.transform.position - transform.position);
-				directionToTarget.x = 0f;
-				directionToTarget.z = 0f;	
-				lookRotation = Quaternion.LookRotation(directionToTarget);
+				lookRotation = Quaternion.LookRotation(activeTarget.transform.position - transform.position, Vector3.up);
+				lookRotation.x = 0f;
+				lookRotation.y = 0f;	
 				transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
-				//transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * 10);
-				//Debug.Log(directionToTarget);
-				//Debug.Log(lookRotation);
-				
-				//Debug.Log(activeTarget.transform.position);
-				Debug.Log(transform.position);
 			}
 			
 			break;

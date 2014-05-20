@@ -2,6 +2,7 @@
 import System.Collections.Generic;
 import System.Linq;
 
+public var currentLevel : int = 1;
 private var shots : List.<Shooting>;						// Getting all attached Shooting component
 private var firing : PlayerScript;
 
@@ -43,8 +44,11 @@ function GunLevel (level : int) {
 		shot.enabled = false;
 	}
 	for (var x : int in gunNumberEnambleArray) {				// Enabling neccessary guns
-			if (shots[x] != null) {
-				shots[x].enabled = true;
+			if (shots.Count > x) {
+				if (shots[x] != null) {
+					shots[x].enabled = true;
+					shots[x].currentLevel = level;
+				}
 			}
 	}
 }

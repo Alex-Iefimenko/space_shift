@@ -125,8 +125,10 @@ function GunLevelChange(level : int) {
 	}
 	for (var gun : GunTypeComplect in guns) {
 	   	if (gun != null && gun.enabled == true) { 
-	   		gun.GunLevel(level); 
+	   		gun.GunLevel(level);
+	   		gun.currentLevel = level;
 	   	}
 	}
 	currentGunLevel = level;
+
 }

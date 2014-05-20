@@ -12,8 +12,13 @@ public var isEnemyShot : boolean = false;				// Global parameter for enemy - pla
 public var speed = new Vector2(10, 10);					// Speed of shot
 public var direction = new Vector2(1, 0);				// Direction of shot
 
+public var currentLevel : int = 1;
+
 private var activeTarget : GameObject;
 private var lookRotation : Quaternion;
+
+public var misslePrefab : Transform;					// Getting misle prefab
+
 function Update () {
 	
 	
@@ -31,13 +36,11 @@ function Update () {
 				lookRotation.y = 0f;	
 				transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
 			}
-			
 			break;
 		case 2:
+			Movement();
 			break;
 	}
-	
-	
 	// Destroying Shot if it is outside the camera
 	if (RendererHelpers.IsVisibleFrom(transform.renderer, Camera.main) == false) {
 		Destroy(gameObject);
@@ -64,4 +67,26 @@ function Movement () {
 			var movement = new Vector3(speed.x * direction.x, speed.y * direction.y, 0);
 			movement *= Time.deltaTime;
 			transform.Translate(movement);
+}
+
+function OnDestroy () {
+	switch (behaviourType) {
+		case 0:											
+			break;
+		case 1:
+			break;
+		case 2:
+			var number : float = 0;
+			while (number < 6.28) {
+				var shotTransform = Instantiate(misslePrefab) as Transform;
+				shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
+				var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
+    			if (bullet != null) {
+    				bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
+    				bullet.currentLevel = currentLevel;
+				}
+				number += (6.28 / (6 * currentLevel));
+			}	
+			break;
+	}
 }

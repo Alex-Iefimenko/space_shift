@@ -242,6 +242,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!4 &75977620
 Transform:
   m_ObjectHideFlags: 0
@@ -297,6 +299,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &92369690
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +545,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &188501018
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +591,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &193513884
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +637,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1001 &291247218
 Prefab:
   m_ObjectHideFlags: 0
@@ -693,50 +703,6 @@ Prefab:
   m_RootGameObject: {fileID: 967143831}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &339045212
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 339045213}
-  - 114: {fileID: 339045214}
-  m_Layer: 0
-  m_Name: gun4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &339045213
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 339045212}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999988, y: .400000006, z: 0}
-  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 1927689885}
---- !u!114 &339045214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 339045212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .25
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
 --- !u!1 &354006214
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +747,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1001 &380107541
 Prefab:
   m_ObjectHideFlags: 0
@@ -897,50 +865,6 @@ Prefab:
   m_RootGameObject: {fileID: 1204261534}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &435768827
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 435768828}
-  - 114: {fileID: 435768829}
-  m_Layer: 0
-  m_Name: gun2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &435768828
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435768827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999988, y: .400000006, z: 0}
-  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 1927689885}
---- !u!114 &435768829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400012, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435768827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .25
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
 --- !u!1 &454676624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,8 +1199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 20, y: 20}
-  gunLevel: 2
-  playerGun: 3
+  gunLevel: 1
+  playerGun: 5
 --- !u!60 &553299158
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1539,7 +1463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9f0ab93c3ea84e248b409d548b0da91c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f0ab93c3ea84e248b409d548b0da91c, type: 2}
@@ -1565,7 +1489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &599247167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2009,6 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
 --- !u!1 &945968104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2070,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!4 &960992403
 Transform:
   m_ObjectHideFlags: 0
@@ -2503,6 +2430,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1001 &1114957881
 Prefab:
   m_ObjectHideFlags: 0
@@ -2623,6 +2552,8 @@ MonoBehaviour:
   isBurst: 1
   burstLength: 20
   burstRate: .00999999978
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &1204261534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,50 +2760,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1306890777
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100032, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1306890778}
-  - 114: {fileID: 1306890779}
-  m_Layer: 0
-  m_Name: gun3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1306890778
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400032, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1306890777}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999988, y: .400000006, z: 0}
-  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 1927689885}
---- !u!114 &1306890779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400026, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1306890777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .25
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
 --- !u!1001 &1325698293
 Prefab:
   m_ObjectHideFlags: 0
@@ -2961,6 +2848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
 --- !u!1001 &1325994992
 Prefab:
   m_ObjectHideFlags: 0
@@ -3053,6 +2941,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &1436959495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3142,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &1555825162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,50 +3417,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1661538387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100042, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1661538388}
-  - 114: {fileID: 1661538389}
-  m_Layer: 0
-  m_Name: gun5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1661538388
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400042, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1661538387}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999809, y: .399999827, z: 0}
-  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 1927689885}
---- !u!114 &1661538389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400034, guid: a8b93e1c3c21a8d4bbbd86a4dce8e78b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1661538387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .25
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
 --- !u!1 &1662381137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,6 +3744,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &1842923598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,6 +3906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
 --- !u!1 &1915344248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,6 +3951,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &1927689884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,10 +3980,6 @@ Transform:
   m_LocalScale: {x: 2.10534787, y: 2.10534143, z: .666666687}
   m_Children:
   - {fileID: 1992681873}
-  - {fileID: 435768828}
-  - {fileID: 1306890778}
-  - {fileID: 339045213}
-  - {fileID: 1661538388}
   m_Father: {fileID: 553299161}
 --- !u!114 &1927689887
 MonoBehaviour:
@@ -4144,6 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 1
 --- !u!1 &1941459674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
 --- !u!1001 &1962621290
 Prefab:
   m_ObjectHideFlags: 0
@@ -4279,7 +4130,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1992681872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .699999988, y: .400000006, z: 0}
+  m_LocalPosition: {x: -.606796265, y: -.025102254, z: 0}
   m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1927689885}
@@ -4296,10 +4147,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .25
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
+  shootingRate: .800000012
+  isBurst: 1
+  burstLength: 3
+  burstRate: .5
+  currentLevel: 1
+  isRocket: 1
 --- !u!1 &2020438407
 GameObject:
   m_ObjectHideFlags: 0
@@ -4344,6 +4197,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &2095653602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,6 +4243,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: 0
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &2100567411
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,6 +4289,8 @@ MonoBehaviour:
   isBurst: 0
   burstLength: 10
   burstRate: .100000001
+  currentLevel: 0
+  isRocket: 0
 --- !u!1 &2114533173
 GameObject:
   m_ObjectHideFlags: 0

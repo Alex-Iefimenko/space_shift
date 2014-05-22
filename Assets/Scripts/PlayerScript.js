@@ -83,7 +83,7 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 	}
 }
 
-function OnTriggerEnter2D (otherCollider : Collider2D) {		// Checking collision of Player and PowerUp
+function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision of Player and PowerUp
 	var powerUp : PowerUp = new otherCollider.gameObject.GetComponent.<PowerUp>();
 	if (powerUp != null) {
 		switch (powerUp.powerUpType) {
@@ -99,8 +99,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {		// Checking collision 
 				break;
 		}
 		Destroy(powerUp.gameObject);
-	}
-	
+	}	
 }
 
 function GunEnabling (type : int) {
@@ -125,10 +124,12 @@ function GunLevelChange(level : int) {
 	}
 	for (var gun : GunTypeComplect in guns) {
 	   	if (gun != null && gun.enabled == true) { 
-	   		gun.GunLevel(level);
-	   		gun.currentLevel = level;
+	   		if (gun.isMultiBarrel) {
+	   			gun.GunLevel(level);
+	   	 	} else {
+	   	 		gun.LevelPass(level);
+	   	 	}
 	   	}
 	}
 	currentGunLevel = level;
-
 }

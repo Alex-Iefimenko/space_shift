@@ -2,12 +2,18 @@
 import System.Collections.Generic;
 import System.Linq;
 
-public var currentLevel : int = 1;
 private var shots : List.<Shooting>;						// Getting all attached Shooting component
 private var firing : PlayerScript;
 
+public var isMultiBarrel : boolean;							// Should be true for MachineGun and LaserGun
+
 function Awake () {
 	shots = GetComponentsInChildren.<Shooting>().OrderBy(function(a){return a.name;}).ToList();
+	if (shots.Count() > 1) {
+		isMultiBarrel = true;
+	} else {
+		isMultiBarrel = false;
+	}
 }
 
 function Fire (isEnemy : boolean) {
@@ -36,19 +42,21 @@ function GunLevel (level : int) {
 		case 4:
 			gunNumberEnambleArray = [0, 1, 3, 4];
 			break;
-		//default:
-		//	gunNumberEnambleArray = [0, 1, 3, 4];
-		//	break;
 	}
 	for (var shot : Shooting in shots) {						// Disabling all current guns
 		shot.enabled = false;
 	}
 	for (var x : int in gunNumberEnambleArray) {				// Enabling neccessary guns
-			if (shots.Count > x) {
-				if (shots[x] != null) {
-					shots[x].enabled = true;
-					shots[x].currentLevel = level;
-				}
+		if (shots.Count > x) {
+			if (shots[x] != null) {
+				shots[x].enabled = true;
 			}
+		}
+	}
+}
+
+function LevelPass(level : int) {
+	for (var shot : Shooting in shots) {
+		shot.currentLevel = level;
 	}
 }

@@ -57,6 +57,6 @@ function GunLevel (level : int) {
 
 function LevelPass(level : int) {
 	for (var shot : Shooting in shots) {
-		shot.currentLevel = level;
+		shot.LevelPass(level);
 	}
 }

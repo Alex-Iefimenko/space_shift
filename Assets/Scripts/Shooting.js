@@ -7,10 +7,11 @@ private var shootCoolDown : float;						// Helper variable for checking shooting
 
 public var isBurst : boolean;
 public var burstLength : int = 10;
-public var burstRate : float;
+public var burstRate : float = 0.1;
 
-public var currentLevel : int = 1;
+private var currentLevel : int;
 public var isRocket : boolean;
+
 function Start () {
 	shootCoolDown = 0f;
 }
@@ -26,10 +27,11 @@ function Attack (isEnemy : boolean) {
 		if (isBurst) {
 			if (isRocket) {
 				Burst(currentLevel);
+				shootCoolDown = shootingRate + currentLevel * burstRate;
 			} else {
 				Burst(burstLength);
+				shootCoolDown = shootingRate + burstLength * burstRate;
 			}
-			shootCoolDown = shootingRate;
 		} else if (isBurst == false) {
 			SingleShot ();
 			shootCoolDown = shootingRate;
@@ -58,8 +60,12 @@ function SingleShot () {
 function Burst (n : int) {
 	var times : int = 0;
 	while (times < n) {
-			SingleShot();
-			yield WaitForSeconds(burstRate);
-			times++;
+		SingleShot();
+		yield WaitForSeconds(burstRate);
+		times++;
 	}
+}
+
+function LevelPass(level : int) {
+	currentLevel = level;
 }

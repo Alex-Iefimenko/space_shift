@@ -51,11 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baceb0a172e5c2542800b87c109395fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behaviourType: 2
   damage: 1
   isEnemyShot: 0
   speed: {x: 10, y: 10}
   direction: {x: 1, y: 0}
-  behaviourType: 1
+  currentLevel: 1
+  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

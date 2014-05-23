@@ -77,16 +77,18 @@ function OnDestroy () {
 			break;
 		case 2:
 			var number : float = 0;
-			while (number < 6.28) {
+			//while (number < 6.28) {
 				var shotTransform = Instantiate(misslePrefab) as Transform;
+				Debug.Log(shotTransform.position);
 				shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
+				Debug.Log(shotTransform.position);
 				var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
-    			if (bullet != null) {
-    				bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
-    				bullet.currentLevel = currentLevel;
-				}
-				number += (6.28 / (6 * currentLevel));
-			}	
+    		//	if (bullet != null) {
+    		//		bullet.transform.rotation.z = number;			
+    		//		bullet.currentLevel = currentLevel;
+			//	}
+			//	number += (6.28 / (6 * currentLevel));
+			//}	
 			break;
 	}
 }

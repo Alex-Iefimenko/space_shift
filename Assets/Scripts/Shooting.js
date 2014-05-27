@@ -23,8 +23,6 @@ function Update () {
 	if (shootCoolDown > 0) {							// Reduction of shootCoolDown in each frame
 		shootCoolDown -= Time.deltaTime;
 	}
-	
-	//if () 
 }
 
 function Attack (isEnemy : boolean) {

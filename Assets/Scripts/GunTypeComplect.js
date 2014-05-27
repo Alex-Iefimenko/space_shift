@@ -28,7 +28,7 @@ function GunLevel (level : int) {
 	var gunNumberEnambleArray = new int[0]; 					// Creating Array with number of guns which will be enabled;
 	switch (level) {											// Setting array
 		case 0:
-			gunNumberEnambleArray = [];
+			gunNumberEnambleArray = [0];
 			break;
 		case 1: 
 			gunNumberEnambleArray = [0];

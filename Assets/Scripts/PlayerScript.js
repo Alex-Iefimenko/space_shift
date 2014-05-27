@@ -5,18 +5,18 @@ import System.Linq;
 public var speed = new Vector2(20, 20); 					// Global variable for speed adjusment
 
 public var gunLevel : int = 1;
-private var currentGunLevel : int = 1;
+private var currentGunLevel : int = 0;
 
 public var playerGun : int = 1;
-private var currentPlayerGun : int = 1;
+private var currentPlayerGun : int = 0;
 
 private var movement : Vector2;								// Private variable for providing position changes
 private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
 
-function Awake () {
+function Start () {
 	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
-	GunEnabling(currentPlayerGun);
-	GunLevelChange(currentGunLevel);
+	GunLevelChange(gunLevel);
+	GunEnabling(playerGun);
 }
 
 function Update () {
@@ -103,17 +103,17 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 }
 
 function GunEnabling (type : int) {
-	if (type <= guns.Count && type > 0) {							// Enabling neccessary gun
-		for (var gun : GunTypeComplect in guns) {					// Disabling all current guns
-			gun.enabled = false;
-		}
-		guns[type - 1].enabled = true;
-	}
 	currentPlayerGun = type;
 	if (gunLevel >= 3) {
 		gunLevel -= 2;
 	} else {
 		gunLevel = 1;
+	}
+	if (type <= guns.Count && type > 0) {							// Enabling neccessary gun
+		for (var gun : GunTypeComplect in guns) {					// Disabling all current guns
+			gun.enabled = false;
+		}
+		guns[type - 1].enabled = true;
 	}
 }
 

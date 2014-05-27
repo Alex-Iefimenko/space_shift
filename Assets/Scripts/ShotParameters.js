@@ -12,16 +12,22 @@ public var isEnemyShot : boolean = false;				// Global parameter for enemy - pla
 public var speed = new Vector2(10, 10);					// Speed of shot
 public var direction = new Vector2(1, 0);				// Direction of shot
 
-public var currentLevel : int = 1;
+private var currentLevel : int;
 
 private var activeTarget : GameObject;
 private var lookRotation : Quaternion;
 
 public var misslePrefab : Transform;					// Getting misle prefab
 
+private var destroyDist : float;
+
+function Awake() {
+	if (behaviourType == 2) {
+		destroyDist = GetNearCameraBorder();
+	}
+}
 function Update () {
-	
-	
+
 	switch (behaviourType) {
 		case 0:											// Flying forward
 			Movement();
@@ -39,6 +45,9 @@ function Update () {
 			break;
 		case 2:
 			Movement();
+			if (transform.position.x >= destroyDist) {
+				Destroy(gameObject);
+			}
 			break;
 	}
 	// Destroying Shot if it is outside the camera
@@ -77,18 +86,28 @@ function OnDestroy () {
 			break;
 		case 2:
 			var number : float = 0;
-			//while (number < 6.28) {
+			while (number < 360) {
 				var shotTransform = Instantiate(misslePrefab) as Transform;
-				Debug.Log(shotTransform.position);
 				shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
-				Debug.Log(shotTransform.position);
 				var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
-    		//	if (bullet != null) {
-    		//		bullet.transform.rotation.z = number;			
-    		//		bullet.currentLevel = currentLevel;
-			//	}
-			//	number += (6.28 / (6 * currentLevel));
-			//}	
+    			if (bullet != null) {
+    				bullet.transform.Rotate(0,0, number);			
+    				bullet.LevelPass(currentLevel);
+				}
+				number += (360 / (6 * currentLevel));
+			}	
 			break;
 	}
+}
+
+function LevelPass(level : int) {
+	currentLevel = level;
+}
+
+function GetNearCameraBorder() {
+	// Setting current camera right border position
+	var x : float = Random.Range(0.80, 0.95);
+	var dist : float = (transform.position - Camera.main.transform.position).z;
+	var rightBorder : float = Camera.main.ViewportToWorldPoint(Vector3(x,0,dist)).x;
+	return rightBorder;
 }

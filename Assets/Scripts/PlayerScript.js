@@ -12,6 +12,11 @@ private var currentPlayerGun : int = 0;
 
 private var movement : Vector2;								// Private variable for providing position changes
 private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
+private var animator : Animator;
+
+function Awake() {
+	animator = GetComponent.<Animator>();
+}
 
 function Start () {
 	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
@@ -117,6 +122,7 @@ function GunEnabling (type : int) {
 			gun.enabled = false;
 		}
 		guns[type - 1].enabled = true;
+		animator.SetInteger("Weapon", type);
 	}
 }
 

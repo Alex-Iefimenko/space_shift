@@ -80,6 +80,6 @@ function LevelPass(level : int) {
 function RailBehaviour() {
 	var target : Vector3 = GameObject.FindGameObjectWithTag("Player").transform.position;
 	for (var i : ShotParameters in bullets) {
-		if (i != null) {i.transform.position.y = target.y;}
+		if (i != null) {i.transform.position.y = (target.y -0.55);}
 	}
 }

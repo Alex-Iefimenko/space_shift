@@ -31,7 +31,7 @@ function GunLevel (level : int) {
 			gunNumberEnambleArray = [0];
 			break;
 		case 1: 
-			gunNumberEnambleArray = [0];
+			gunNumberEnambleArray = [2];
 			break;
 		case 2:	
 			gunNumberEnambleArray = [0, 1];

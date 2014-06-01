@@ -86,6 +86,7 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision of Player and PowerUp
 	var powerUp : PowerUp = new otherCollider.gameObject.GetComponent.<PowerUp>();
 	if (powerUp != null) {
+		var playerHealth : Health = this.GetComponent.<Health>();
 		switch (powerUp.powerUpType) {
 			case 1: 												// Weapon change
 				playerGun = powerUp.powerUpValue;
@@ -94,8 +95,10 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 				gunLevel += powerUp.powerUpValue;
 				break;
 			case 3:													// Repair
+				playerHealth.Repair(powerUp.powerUpValue);
 				break;
 			case 4:													// Shield
+			 	playerHealth.Freeze(powerUp.powerUpValue * 1.0);
 				break;
 		}
 		Destroy(powerUp.gameObject);

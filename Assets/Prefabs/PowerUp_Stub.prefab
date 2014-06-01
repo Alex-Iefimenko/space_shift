@@ -44,8 +44,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.17193604, y: -2.16725755, z: -5}
-  m_LocalScale: {x: .718423128, y: .718613386, z: 1}
+  m_LocalPosition: {x: -5.62831974, y: .321782947, z: -5}
+  m_LocalScale: {x: 1.16796827, y: 1.16827869, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpValue: 1
-  powerUpType: 0
+  powerUpType: 1
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -163,7 +163,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: .230000004
+      scalar: .430000007
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -290,7 +290,7 @@ ParticleSystem:
         rgba: 4294935040
       minMaxState: 0
     startSize:
-      scalar: .280000001
+      scalar: .469999999
       maxCurve:
         serializedVersion: 2
         m_Curve:

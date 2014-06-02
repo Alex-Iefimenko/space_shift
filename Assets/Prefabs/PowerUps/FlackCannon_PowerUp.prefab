@@ -14,7 +14,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: PowerUp_Stub
+  m_Name: FlackCannon_PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.62831974, y: .321782947, z: -5}
+  m_LocalPosition: {x: 5.24946213, y: -3.70356011, z: -5}
   m_LocalScale: {x: 1.16796827, y: 1.16827869, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f299edd78888d544b90abd62e4fa509, type: 2}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8558ccd1b52d2f74595547a687e65fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpValue: 1
-  powerUpType: 2
+  powerUpValue: 4
+  powerUpType: 1
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1209,7 +1209,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: bd03e9125e9ad7241839a3624ff0b70b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0190d2f6daa724f4bbe4a1b8f86ad347, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

@@ -91,10 +91,12 @@ function OnDestroy () {
 				shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
 				var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
     			if (bullet != null) {
-    				bullet.transform.Rotate(0,0, number);			
+    				bullet.transform.Rotate(0,0, number);	
+    				bullet.speed.x *= Random.Range(0.85, 1.15);
+    				bullet.speed.y *= Random.Range(0.85, 1.15);		
     				bullet.LevelPass(currentLevel);
 				}
-				number += (360 / (6 * currentLevel));
+				number += (Random.Range(0.85, 1.15) * (360 / (6 * currentLevel)));
 			}	
 			break;
 	}

@@ -40,6 +40,7 @@ function Update () {
 				lookRotation = Quaternion.LookRotation(activeTarget.transform.position - transform.position, Vector3.up);
 				lookRotation.x = 0f;
 				lookRotation.y = 0f;	
+				if (activeTarget.transform.position.x < transform.position.x) {	lookRotation.eulerAngles.z -= 180; }
 				transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
 			}
 			break;

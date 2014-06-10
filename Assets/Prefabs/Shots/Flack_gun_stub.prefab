@@ -19,24 +19,9 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &100002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400002}
-  m_Layer: 0
-  m_Name: Flame little
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &100006
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -59,34 +44,22 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.44349706, y: -2.64025974, z: -5}
+  m_LocalPosition: {x: 9.9934454, y: -3.85203576, z: -5}
   m_LocalScale: {x: .297737509, y: .29773736, z: 1}
   m_Children:
-  - {fileID: 400002}
-  m_Father: {fileID: 0}
---- !u!4 &400002
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: 3.58119202, y: .285854191, z: .030128479}
-  m_LocalScale: {x: 1.59530532, y: 1.59530115, z: 1.5}
-  m_Children:
   - {fileID: 400006}
-  m_Father: {fileID: 400000}
+  m_Father: {fileID: 0}
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.189510599, y: 1.99703789, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
+  m_LocalPosition: {x: .395313382, y: -.0164734013, z: .030128479}
+  m_LocalScale: {x: 1.59530532, y: 1.59530115, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 400002}
+  m_Father: {fileID: 400000}
 --- !u!12 &1200002
 ParticleAnimator:
   m_ObjectHideFlags: 1
@@ -96,25 +69,25 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 7284740
+    rgba: 16759956
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 1907521300
+    rgba: 1912580608
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 2360219907
+    rgba: 2365541120
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 2560966152
+    rgba: 2554074884
   colorAnimation[4]:
     serializedVersion: 2
-    rgba: 725531
+    rgba: 0
   worldRotationAxis: {x: 0, y: 0, z: 0}
   localRotationAxis: {x: 0, y: 0, z: 0}
-  sizeGrow: -.899999976
+  sizeGrow: -.600000024
   rndForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
-  damping: 1
+  damping: .300000012
   stopSimulation: 0
   autodestruct: 0
 --- !u!15 &1500002
@@ -126,15 +99,15 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .0500000007
-  maxSize: .280000001
-  minEnergy: .319999993
-  maxEnergy: .230000004
-  minEmission: 20000
-  maxEmission: 20000
+  minSize: .300000012
+  maxSize: .5
+  minEnergy: 1
+  maxEnergy: 1
+  minEmission: 40
+  maxEmission: 40
   worldVelocity: {x: 0, y: 0, z: 0}
-  localVelocity: {x: 0, y: 3, z: 0}
-  rndVelocity: {x: 0, y: 1, z: 0}
+  localVelocity: {x: 0, y: 1, z: 0}
+  rndVelocity: {x: 0, y: 0, z: 0}
   emitterVelocityScale: .0500000007
   tangentVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 65
@@ -156,7 +129,8 @@ ParticleRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 5c54115eb5a2a4c4fb1b11b8e6100bd8, type: 2}
+  - {fileID: 2100000, guid: f3d66f34459704a34b36657da3964ea1, type: 2}
+  - {fileID: 2100000, guid: f3d66f34459704a34b36657da3964ea1, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

@@ -65,7 +65,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &100008
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -86,10 +86,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.96000004, y: -.850000203, z: 0}
-  m_LocalScale: {x: -.0199999996, y: -.00999999978, z: .600000024}
-  m_Children:
-  - {fileID: 400008}
+  m_LocalPosition: {x: 5.96000004, y: -.860000014, z: 0}
+  m_LocalScale: {x: .119999997, y: .119999997, z: 0}
+  m_Children: []
   m_Father: {fileID: 400002}
 --- !u!4 &400002
 Transform:
@@ -101,6 +100,7 @@ Transform:
   m_LocalPosition: {x: -5.8868041, y: 1.78507018, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400008}
   - {fileID: 400000}
   - {fileID: 400004}
   - {fileID: 400006}
@@ -112,8 +112,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.36999989, y: -.850000024, z: 0}
-  m_LocalScale: {x: -.0399999991, y: -.0199999996, z: 1}
+  m_LocalPosition: {x: 6.38000011, y: -.850000024, z: 0}
+  m_LocalScale: {x: .109999999, y: .100000001, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
 --- !u!4 &400006
@@ -123,8 +123,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.82000017, y: -.850000024, z: 0}
-  m_LocalScale: {x: -.0799999982, y: -.0299999993, z: .5}
+  m_LocalPosition: {x: 6.82999992, y: -.850000024, z: 0}
+  m_LocalScale: {x: .0700000003, y: .109999999, z: 0}
   m_Children: []
   m_Father: {fileID: 400002}
 --- !u!4 &400008
@@ -134,10 +134,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: .649999976, z: 0}
-  m_LocalScale: {x: 6.38000011, y: 7.4000001, z: 1}
+  m_LocalPosition: {x: 5.94000006, y: -.866999984, z: 0}
+  m_LocalScale: {x: .0199999996, y: .0500000007, z: 0}
   m_Children: []
-  m_Father: {fileID: 400000}
+  m_Father: {fileID: 400002}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
@@ -149,10 +149,10 @@ GUITexture:
   m_Color: {r: .625, g: .625, b: .625, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
-    y: -29
-    width: 128
-    height: 58
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -168,10 +168,10 @@ GUITexture:
   m_Color: {r: .625, g: .625, b: .625, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
-    y: -29
-    width: 128
-    height: 58
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -187,10 +187,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
-    y: -29
-    width: 128
-    height: 58
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -206,10 +206,10 @@ GUITexture:
   m_Color: {r: .625, g: .625, b: .625, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
-    y: -29
-    width: 128
-    height: 58
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0

@@ -3,7 +3,6 @@ import System.Collections.Generic;
 import System.Linq;
 
 public var speed = new Vector2(20, 20); 					// Global variable for speed adjusment
-
 public var gunLevel : int = 1;
 private var currentGunLevel : int = 0;
 
@@ -14,6 +13,12 @@ private var movement : Vector2;								// Private variable for providing positio
 private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
 private var animator : Animator;
 
+// Contorls
+public var joystickCircle : JoystickCircle;
+public var buttons : GameObject;
+private var fireButton : ControllerGUIButton;
+private var bombButton : ControllerGUIButton;
+
 function Awake() {
 	animator = GetComponent.<Animator>();
 }
@@ -22,13 +27,24 @@ function Start () {
 	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
 	GunLevelChange(gunLevel);
 	GunEnabling(playerGun);
+	fireButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[1];
+	bombButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[0];
 }
 
 function Update () {
-	var inputX : float = Input.GetAxis("Horizontal"); 		// Getting input on 0X axis
-	var inputY : float = Input.GetAxis("Vertical");	  		// Getting input on 0Y axis
-	                                                  		// For floating effect (smooth stop/go of ship) needed adjusment 
-	                                                  		// gravity value to 0..3 (Project Settings -> Input -> Axis -> Gravity)
+	var inputX : float;
+	var inputY : float;
+	if (Input.GetAxis("Horizontal") || Input.GetAxis("Vertical")) {
+		inputX = Input.GetAxis("Horizontal"); 					// Getting input on 0X axis
+		inputY = Input.GetAxis("Vertical");	  					// Getting input on 0Y axis
+		                                                  		// For floating effect (smooth stop/go of ship) needed adjusment 
+		                                                  		// gravity value to 0..3 (Project Settings -> Input -> Axis -> Gravity)
+	                                                  		
+	} else {
+		inputX = joystickCircle.outputXY.x * joystickCircle.outputForce;
+		inputY = joystickCircle.outputXY.y * joystickCircle.outputForce;
+	}
+	                                                  		                                                  		
 	movement = new Vector2(inputX * speed.x, inputY * speed.y);
 	
 	// Adding restriction to leave outside the main camera
@@ -60,8 +76,8 @@ function Update () {
     	GunLevelChange(gunLevel);
     }
     
-    var fire : boolean = Input.GetButton("Fire1");
-    if (fire) {
+    var fire : boolean = Input.GetButton("Fire2");
+    if (fire || fireButton.hasTouchOnGui) {
     	for (var gun : GunTypeComplect in guns) {
     		if (gun != null && gun.enabled == true) { gun.Fire(false); }
     	}

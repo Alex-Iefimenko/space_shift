@@ -39,11 +39,13 @@
     if(isPaused)
     {
     Camera.main.GetComponent(Blur).enabled = isPaused; // Blur aplied
+    Camera.main.GetComponent(Vignetting).enabled = isPaused; // Vignetting aplied
     gui.SetActive(false);}//GUI hide
     
     if(isPaused == false)//Blur disabled
     { 
     Camera.main.GetComponent(Blur).enabled = false;
+    Camera.main.GetComponent(Vignetting).enabled = false; //Vignetting disabled
     gui.SetActive(true);} //GUI unhide
     
      if(isPaused)

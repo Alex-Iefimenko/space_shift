@@ -2675,6 +2675,7 @@ GameObject:
   - 124: {fileID: 92369692}
   - 81: {fileID: 92369691}
   - 114: {fileID: 92369696}
+  - 114: {fileID: 92369697}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2764,6 +2765,29 @@ MonoBehaviour:
   blurIterations: 2
   blurType: 0
   blurShader: {fileID: 4800000, guid: f9d5fa183cd6b45eeb1491f74863cd91, type: 3}
+--- !u!114 &92369697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 92369690}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 4.17999983
+  chromaticAberration: .200000003
+  axialAberration: .5
+  blur: 0
+  blurSpread: -.400000006
+  luminanceDependency: .25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!1 &111022471
 GameObject:
   m_ObjectHideFlags: 0
@@ -19074,6 +19098,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3f599af30824e7a498a571d6c181483a, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3f599af30824e7a498a571d6c181483a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f599af30824e7a498a571d6c181483a, type: 2}

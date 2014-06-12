@@ -3,6 +3,7 @@
     var isPaused : boolean = false;
     var camera:GameObject;
     var gui: GameObject;
+    var guipause: GameObject;
      
      
      
@@ -40,36 +41,18 @@
     {
     Camera.main.GetComponent(Blur).enabled = isPaused; // Blur aplied
     Camera.main.GetComponent(Vignetting).enabled = isPaused; // Vignetting aplied
-    gui.SetActive(false);}//GUI hide
+    gui.SetActive(false);//GUI hide
+    guipause.SetActive(true);}//GUI pause unhide
     
     if(isPaused == false)//Blur disabled
     { 
     Camera.main.GetComponent(Blur).enabled = false;
     Camera.main.GetComponent(Vignetting).enabled = false; //Vignetting disabled
-    gui.SetActive(true);} //GUI unhide
+    gui.SetActive(true); //GUI unhide
+    guipause.SetActive(false);} //GUI pause hide
     
-     if(isPaused)
-     {
-    // RenderSettings.fogDensity = 1;
-    if(GUI.Button (Rect((Screen.width)/2,260,80,20), "Quit", "button2"))
-    {
-    print("Quit!");
-    Application.Quit();
-    }
-    if(GUI.Button (Rect((Screen.width)/2,360,80,20), "Restart", "button2"))
-    {
-    print("Restart");
-    Application.LoadLevel("weapon_testing");
-    Time.timeScale = 1.0;
-    isPaused = false;
-    }
-    if(GUI.Button (Rect((Screen.width)/2,460,80,20), "Continue", "button2"))
-    {
-    print("Continue");
-    Time.timeScale = 1.0;
-    isPaused = false;
-    }
-    }
+     
+    
      
      
     }

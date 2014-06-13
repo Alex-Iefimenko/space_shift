@@ -2,8 +2,10 @@
 private var scriptControllerGUI : MonoBehaviour;
 
 private var imageNormal : Texture;
-var imageOver : Texture;
 
+var functionOnTouchDown : String = null;
+
+var imageOver : Texture;
 var isOverImage : boolean = false;
 
 private var lastFingerId : int = -1;
@@ -49,6 +51,10 @@ function TouchControl(){
 				if( isHitOnGui && touch.phase == TouchPhase.Began && ( lastFingerId == -1 ) ){ 	 
 					lastFingerId = touch.fingerId;
 					hasTouchOnGui = true;
+					
+					if(functionOnTouchDown != null){
+						gameObject.SendMessage(functionOnTouchDown);
+					}
 					
 					if(imageOver){ //over image
 						this.guiTexture.texture = imageOver; //over image

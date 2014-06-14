@@ -2,6 +2,9 @@
 
 public var health : int = 1; 								// Global parameter for health
 public var isEnemy : boolean = false;						// Global parameter for enemy - player recognition
+public var scoreValue : int;
+
+public var scoreGUI : GameObject;
 
 private var maxHealth : int;
 private var isFreezed : boolean = false;
@@ -19,6 +22,9 @@ function Damage (damage : int) {							// Reduction of health and destroying obj
 	if (freezeTime <= 0) { health -= damage; }
 	if (health <= 0) {
 		Destroy(gameObject);
+		if (isEnemy) {
+			scoreGUI.SendMessage("ScoreIncrease", scoreValue);
+		}
 	}
 }
 

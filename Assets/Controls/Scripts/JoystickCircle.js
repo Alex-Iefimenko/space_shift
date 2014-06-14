@@ -90,6 +90,7 @@ function Start()
 	if(!isThumbFingerAlwaysVisible){
 		guiThumbFinger.color.a = 0.0;
 	}
+	Reset();
 }
 
 

@@ -17,7 +17,6 @@ private var isHitOnGui : boolean;
 public var hasTouchOnGui: boolean;
 private var isResetPreviously : boolean = true; //initially, system has already reset.
 
-
 function Start(){
 	guiTextureCurrent = this.guiTexture;
 	imageNormal = guiTexture.texture;
@@ -52,14 +51,14 @@ function TouchControl(){
 					lastFingerId = touch.fingerId;
 					hasTouchOnGui = true;
 					
-					if(functionOnTouchDown != null){
-						gameObject.SendMessage(functionOnTouchDown);
-					}
-					
 					if(imageOver){ //over image
 						this.guiTexture.texture = imageOver; //over image
 						isOverImage = true;
 					}
+					if(functionOnTouchDown != ""){
+						gameObject.SendMessage(functionOnTouchDown);
+					}
+					
 				}
 				
 				//Touched Previously and still inside the button

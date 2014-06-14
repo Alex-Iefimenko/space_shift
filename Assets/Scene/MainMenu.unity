@@ -437,6 +437,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1557362856}
   - 131: {fileID: 1557362855}
+  - 114: {fileID: 1557362858}
+  - 114: {fileID: 1557362857}
   m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
@@ -475,6 +477,35 @@ Transform:
   m_LocalScale: {x: .300000012, y: .569999993, z: 1}
   m_Children: []
   m_Father: {fileID: 825988959}
+--- !u!114 &1557362857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557362854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAction: 3
+  pauseHendler: {fileID: 0}
+  levelToLoad: weapon_testing
+--- !u!114 &1557362858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1557362854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: LoadLevel
+  imageOver: {fileID: 2800000, guid: 49f6af8df467d4c4f893b6314b5d10c0, type: 3}
+  isOverImage: 0
+  hasTouchOnGui: 0
 --- !u!1 &1578247172
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ function Update () {
 	}
     if(currentState != isPaused) {
 	    Pause(isPaused);
+	    
 	}
 }
 
@@ -25,10 +26,6 @@ function ButtonClick () {
 	    Time.timeScale = 1.0;
 	    isPaused = false;
     }
-}
-
-function OnGUI () {
-
 }
 
 function Pause (isActive : boolean) {

@@ -1521,6 +1521,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 74385301}
   - 131: {fileID: 74385302}
+  - 114: {fileID: 74385303}
+  - 114: {fileID: 74385304}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -1559,6 +1561,35 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &74385303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74385300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: ToMainMenu
+  imageOver: {fileID: 2800000, guid: 22a25c3ee2fba4340979544681e463fd, type: 3}
+  isOverImage: 0
+  hasTouchOnGui: 0
+--- !u!114 &74385304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74385300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAction: 2
+  pauseHendler: {fileID: 0}
+  levelToLoad: 
 --- !u!1 &87753781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10004,7 +10035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6475221e5cec6124e97179a72710fe35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 20, y: 20}
+  speed: {x: 13, y: 13}
   gunLevel: 1
   playerGun: 2
   joystickCircle: {fileID: 308900194}
@@ -23395,6 +23426,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1105611845}
   - 131: {fileID: 1105611844}
+  - 114: {fileID: 1105611846}
+  - 114: {fileID: 1105611847}
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
@@ -23433,6 +23466,35 @@ Transform:
   m_LocalScale: {x: .400000006, y: .150000006, z: 1}
   m_Children: []
   m_Father: {fileID: 1817416084}
+--- !u!114 &1105611846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105611843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: LevelRestart
+  imageOver: {fileID: 2800000, guid: 4003ca86a30972243b174aa205f144cb, type: 3}
+  isOverImage: 0
+  hasTouchOnGui: 0
+--- !u!114 &1105611847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105611843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAction: 1
+  pauseHendler: {fileID: 0}
+  levelToLoad: 
 --- !u!1 &1106353000
 GameObject:
   m_ObjectHideFlags: 0
@@ -24854,6 +24916,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1170631597}
   - 131: {fileID: 1170631598}
+  - 114: {fileID: 1170631599}
+  - 114: {fileID: 1170631600}
   m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
@@ -24892,6 +24956,35 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &1170631599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170631596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: Continue
+  imageOver: {fileID: 2800000, guid: c84ef8f8d552bf943ab7b87f2500dddc, type: 3}
+  isOverImage: 0
+  hasTouchOnGui: 0
+--- !u!114 &1170631600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170631596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonAction: 0
+  pauseHendler: {fileID: 2144402246}
+  levelToLoad: 
 --- !u!1 &1181958916
 GameObject:
   m_ObjectHideFlags: 0

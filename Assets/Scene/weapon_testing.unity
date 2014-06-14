@@ -15849,6 +15849,7 @@ Prefab:
     - {fileID: 11400010, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
     - {fileID: 11400002, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
     - {fileID: 11400006, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
+    - {fileID: 11400008, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
   m_RootGameObject: {fileID: 1817416083}
   m_IsPrefabParent: 0
@@ -19855,7 +19856,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1170631597}
   - 131: {fileID: 1170631598}
-  - 114: {fileID: 1170631599}
   m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
@@ -19894,22 +19894,6 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
---- !u!114 &1170631599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 2dbe856fb02bbe040b9c25244aa7dbc0,
-    type: 2}
-  m_PrefabInternal: {fileID: 883096847}
-  m_GameObject: {fileID: 1170631596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  functionOnTouchDown: 
-  imageOver: {fileID: 0}
-  isOverImage: 0
-  hasTouchOnGui: 0
 --- !u!1 &1181958916
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.99066377, y: -3.66948628, z: -5}
+  m_LocalPosition: {x: 9.9953804, y: -2.3257091, z: -5}
   m_LocalScale: {x: -.350364119, y: .18170166, z: 1}
   m_Children:
   - {fileID: 400006}
@@ -101,9 +101,9 @@ EllipsoidParticleEmitter:
   minSize: .0900000036
   maxSize: .230000004
   minEnergy: 0
-  maxEnergy: 5
-  minEmission: 9
-  maxEmission: 20
+  maxEnergy: 2
+  minEmission: 54
+  maxEmission: 50
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 0, z: 0}
   rndVelocity: {x: 0, y: 0, z: 0}

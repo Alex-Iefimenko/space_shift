@@ -25,8 +25,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .930000007, y: .930000007, z: 0}
-  m_LocalScale: {x: .0700000003, y: .109999999, z: 0}
+  m_LocalPosition: {x: .911000013, y: .954999983, z: .0900000036}
+  m_LocalScale: {x: .0799999982, y: .109999999, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &11400000
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3e78e228a7a6c4d96aaf4df0bad0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 100000, guid: a1259324250e0774da57deafcb5ff046, type: 2}
-  gui: {fileID: 100012, guid: 6dfe36fc51b4a5740bc090f218a81fda, type: 2}
-  guipause: {fileID: 100006, guid: 2dbe856fb02bbe040b9c25244aa7dbc0, type: 2}
+  camera: {fileID: 0}
+  gui: {fileID: 0}
+  guipause: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,8 +65,8 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: bd972facd920b4646a5e01b80a0275af, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_Texture: {fileID: 2800000, guid: 37bc1f4e047387b4aa74a6dd0dd19478, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
     x: 0

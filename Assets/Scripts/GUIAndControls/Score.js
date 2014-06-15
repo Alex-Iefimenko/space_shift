@@ -1,12 +1,9 @@
 ﻿#pragma strict
 
 private var score : int = 0;
-private var scoreDisplay : String;
 
-public var scoreGuiStyle : GUIStyle;
-
-function OnGUI () {
-	scoreDisplay = GUI.TextField (Rect (Screen.width / 2 - 25, Screen.height / 10 - 30, 50, 30), score.ToString(), 50);
+function Update () {
+	guiText.text = "0" * (5 - score.ToString().length) + score.ToString();
 }
 
 function ScoreIncrease (newScore : int) {

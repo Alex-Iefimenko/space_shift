@@ -119,7 +119,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 			case 2:													// Weapon improve
 				gunLevel += powerUp.powerUpValue;
 				var place : Vector3 = Vector3(transform.position.x + renderer.bounds.size.x/2, transform.position.y, transform.position.z);
-				specialEffectsHendler.ApplyEffect("takingLevel", place);
+				specialEffectsHendler.ApplyEffect("takingLevel", place, this.gameObject);
 				break;
 			case 3:													// Repair
 				playerHealth.Repair(powerUp.powerUpValue);

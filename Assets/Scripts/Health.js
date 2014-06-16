@@ -34,7 +34,7 @@ function Damage (damage : int) {							// Reduction of health and destroying obj
 		Destroy(gameObject);
 		if (isEnemy) {
 			scoreGUI.SendMessage("ScoreIncrease", scoreValue);
-			specialEffectsHendler.ApplyEffect("enemyExplosion", transform.position);
+			specialEffectsHendler.ApplyEffect("enemyExplosion", transform.position, this.gameObject);
 		}
 	}
 }

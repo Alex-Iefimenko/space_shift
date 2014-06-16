@@ -31,7 +31,6 @@ GameObject:
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
   - 60: {fileID: 6000000}
-  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: Enemy_stub
   m_TagString: Enemy
@@ -57,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.772274, y: -3.10787296, z: -5}
+  m_LocalPosition: {x: -5.99373627, y: -3.7398324, z: -5}
   m_LocalScale: {x: -.363155574, y: .385036618, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -189,17 +188,6 @@ PolygonCollider2D:
       - {x: 2.3599999, y: .459999979}
       - {x: 2.36999989, y: .399999976}
       - {x: 2.33999991, y: .379999995}
---- !u!61 &6100000
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 5.99999952, y: 2.81999993}
-  m_Center: {x: 0, y: -4.76837158e-07}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -228,8 +216,8 @@ MonoBehaviour:
   health: 2
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 100006, guid: 6dfe36fc51b4a5740bc090f218a81fda, type: 2}
-  specialEffectsHelper: {fileID: 100000, guid: 34a05a484d5a86a4f9afeab4e8e47f85, type: 2}
+  scoreGUI: {fileID: 0}
+  specialEffectsHelper: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

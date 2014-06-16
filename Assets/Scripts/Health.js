@@ -10,6 +10,16 @@ private var maxHealth : int;
 private var isFreezed : boolean = false;
 private var freezeTime : float; 
 
+public var specialEffectsHelper : GameObject;
+private var specialEffectsHendler : SpecialEffects;
+
+function Awake() {
+	if (specialEffectsHelper != null) {
+		specialEffectsHendler = specialEffectsHelper.GetComponentInChildren.<SpecialEffects>();
+	}
+}
+
+
 function Start () {
 	maxHealth = health;
 }
@@ -24,6 +34,7 @@ function Damage (damage : int) {							// Reduction of health and destroying obj
 		Destroy(gameObject);
 		if (isEnemy) {
 			scoreGUI.SendMessage("ScoreIncrease", scoreValue);
+			specialEffectsHendler.ApplyEffect("enemyExplosion", transform.position);
 		}
 	}
 }

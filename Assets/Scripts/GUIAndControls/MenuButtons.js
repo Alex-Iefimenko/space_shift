@@ -23,6 +23,7 @@ function Continue () {
 
 function ToMainMenu () {
 	Application.LoadLevel("MainMenu");
+	Time.timeScale = 1.0;
 }
 
 function LoadLevel() {
@@ -32,8 +33,3 @@ function LoadLevel() {
 	}
 }
 
-function WaitAndPrint (waitTime : float) {
-		// suspend execution for waitTime seconds
-		yield WaitForSeconds (waitTime);
-		print ("WaitAndPrint "+ Time.time);
-	}

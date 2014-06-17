@@ -1,6 +1,9 @@
 ﻿#pragma strict
 
 public var enemyExplosion : GameObject;
+public var playerExplosion : GameObject;
+public var hit : GameObject;
+public var takingWeapon : GameObject;
 public var takingLevel : GameObject;
 
 private var targetObject : GameObject;
@@ -19,6 +22,15 @@ function ApplyEffect (effect : String, position : Vector3, target : GameObject) 
 	switch (effect) {
 		case "enemyExplosion":
 			currentEffect = enemyExplosion;
+			break;
+		case "playerExplosion":
+			currentEffect = playerExplosion;
+			break;
+		case "hit":
+			currentEffect = hit;
+			break;
+		case "takingWeapon":
+			currentEffect = takingWeapon;
 			break;
 		case "takingLevel":
 			currentEffect = takingLevel;

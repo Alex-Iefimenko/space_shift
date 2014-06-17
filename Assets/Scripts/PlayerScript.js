@@ -112,13 +112,14 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 	var powerUp : PowerUp = new otherCollider.gameObject.GetComponent.<PowerUp>();
 	if (powerUp != null) {
 		var playerHealth : Health = this.GetComponent.<Health>();
+		var place : Vector3 = Vector3(transform.position.x + renderer.bounds.size.x/2, transform.position.y, transform.position.z);
 		switch (powerUp.powerUpType) {
 			case 1: 												// Weapon change
 				playerGun = powerUp.powerUpValue;
+				specialEffectsHendler.ApplyEffect("takingWeapon", place, this.gameObject);
 				break;
 			case 2:													// Weapon improve
 				gunLevel += powerUp.powerUpValue;
-				var place : Vector3 = Vector3(transform.position.x + renderer.bounds.size.x/2, transform.position.y, transform.position.z);
 				specialEffectsHendler.ApplyEffect("takingLevel", place, this.gameObject);
 				break;
 			case 3:													// Repair

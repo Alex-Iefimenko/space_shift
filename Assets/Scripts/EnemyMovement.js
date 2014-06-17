@@ -32,7 +32,9 @@ private	var rotateSpeed :float;							// Private helper variable for rotation mo
 
 
 private var index : float;								// Helper variable for Math
-private var target : Vector3;							// Helper variable for setting target in moving-to-target patterns
+private var target : GameObject;						// Helper variable for setting target in moving-to-target patterns
+private var targetFirstPosition : Vector3;				// Helper variable for 7th pattern
+private var previousTargetPosition : Vector3;			// Helper variable for smooth mooving
 
 // Helper variables for Working with camera:
 private var dist : float;
@@ -44,7 +46,7 @@ function Start () {
 	if (movementPattern == 0) rotateDirection = (Random.Range(-1.0, 1.0) >= 0) ? 1 : -1;  	// Setting rnadom rotation for pattern 0
 	if (movementPattern == 0) rotateSpeed = Random.Range(5.0, 30.0);						// Setting rnadom rotation speed for pattern 0
 	if (movementPattern == 5 || movementPattern == 6) {index = -1.5f;}						// Setting base for function in pattern 5 and 6
-	if (movementPattern == 7) target = GameObject.FindGameObjectWithTag("Player").transform.position; 	// Set target as player for pattern 7
+	if (movementPattern == 7) { targetFirstPosition = GameObject.FindGameObjectWithTag("Player").transform.position;  } 										// Set target as player for pattern 7
 }
 
 function Update () {
@@ -85,11 +87,11 @@ function Update () {
 			yPosition = -(amplitude / (Mathf.Pow(index, 2) + 1))*Time.deltaTime;
 			break;
 		case 7:											//	7 - Movement in place, where player was in the moment of enemy activation
-			MoveToTarget ();
+			MoveToTarget (targetFirstPosition);
 			break;
 		case 8:											// 	8 - Foloving (moving to target) the player
-			target = GameObject.FindGameObjectWithTag("Player").transform.position;
-			MoveToTarget ();
+			GetTarget("Player");
+			MoveToTarget (target.transform.position);
 			break;
 		case 9:											//	9 - "Hanging" after appearing in camera
 			GetCameraBorder ();
@@ -98,9 +100,11 @@ function Update () {
 			break;
 		case 10:										// 	10 - "Hanging" after appearing in camera and following Player on 0Y axis
 			GetCameraBorder ();
-			target = GameObject.FindGameObjectWithTag("Player").transform.position;
-			hangingPoint = Vector3(rightBorder, target.y, transform.position.z);
-			transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.y * Time.deltaTime);
+			GetTarget("Player");
+			if (target != null) {
+				hangingPoint = Vector3(rightBorder, target.transform.position.y, transform.position.z);
+				transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.y * Time.deltaTime);
+			}
 			break;
 	}	 
 	transform.Translate(xPosition, yPosition, 0, Space.World); 		// Set movement to object
@@ -111,13 +115,25 @@ function Update () {
 	}
 }
 
-private function MoveToTarget () {
+private function MoveToTarget (currentTarget : Vector3) {
 	// Setting movement to target and disable it when object is behind it
-	if (transform.position.x > target.x) {
-		transform.position = Vector3.MoveTowards(transform.position, target, speed.x * Time.deltaTime);
-	}else{
-		transform.Translate(-speed.x*Time.deltaTime,0,0,Space.World);
+
+	if (transform.position.x > currentTarget.x && currentTarget != null) {
+		transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed.x * Time.deltaTime);
+		previousTargetPosition = currentTarget;
+		//previousTargetPosition.z = 0;
+	} else {
+			xPosition = -speed.x*Time.deltaTime;
+			yPosition = 0f;
+		//transform.position += Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
+		//var place : Vector3; 
+		//place.x = (previousTargetPosition - transform.position).x * speed.x * Time.deltaTime;
+		//place.y = (previousTargetPosition - transform.position).y * speed.y * Time.deltaTime;
+		//place.z = 0;
+		//transform.position += place;
+		//previousTargetPosition = transform.position;
 	}
+	
 }
 
 private function GetCameraBorder () {
@@ -141,4 +157,10 @@ private function IsForbidenLeaveCamera () {
       Mathf.Clamp(transform.position.y, topBorder, bottomBorder),
       transform.position.z
     ); 
+}
+
+private function GetTarget(tag : String) {
+	if (target== null) {
+		target = GameObject.FindGameObjectWithTag(tag);
+	}
 }

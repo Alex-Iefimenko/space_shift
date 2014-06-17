@@ -120,20 +120,19 @@ private function MoveToTarget (currentTarget : Vector3) {
 
 	if (transform.position.x > currentTarget.x && currentTarget != null) {
 		transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed.x * Time.deltaTime);
-		previousTargetPosition = currentTarget;
-		//previousTargetPosition.z = 0;
+		previousTargetPosition = currentTarget - transform.position;
 	} else {
-			xPosition = -speed.x*Time.deltaTime;
-			yPosition = 0f;
-		//transform.position += Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
-		//var place : Vector3; 
-		//place.x = (previousTargetPosition - transform.position).x * speed.x * Time.deltaTime;
-		//place.y = (previousTargetPosition - transform.position).y * speed.y * Time.deltaTime;
-		//place.z = 0;
-		//transform.position += place;
-		//previousTargetPosition = transform.position;
-	}
 	
+			transform.position = Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
+			previousTargetPosition += transform.position;
+			previousTargetPosition.z = 0;
+			// Working buggy
+			//transform.Translate((transform.position.x + previousTargetPosition.x) * Time.deltaTime, 
+			//					(transform.position.y + previousTargetPosition.y) * Time.deltaTime, 0, Space.World);
+			
+			//working not so well
+			//this.rigidbody2D.AddForce(Vector2(previousTargetPosition.x * 100, previousTargetPosition.y * 100));
+	}
 }
 
 private function GetCameraBorder () {

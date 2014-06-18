@@ -25,8 +25,8 @@ public var amplitude : float = 10;						// Global variable for COS and x *** 1/3
 
 public var isForbidenLeaveCamera : boolean = false; 	// To forbid to leave cemara on vertical axis.
 
-private var xPosition : float;							// Private variable for changing x position during movement
-private var yPosition : float;							// Private variable for changing y position during movement
+private var xPosition : float = 0;							// Private variable for changing x position during movement
+private var yPosition : float = 0;							// Private variable for changing y position during movement
 private	var rotateDirection : int;						// Private helper variable for rotation movement. Direction
 private	var rotateSpeed :float;							// Private helper variable for rotation movement. Speed
 
@@ -91,7 +91,11 @@ function Update () {
 			break;
 		case 8:											// 	8 - Foloving (moving to target) the player
 			GetTarget("Player");
-			MoveToTarget (target.transform.position);
+			if (target != null) {
+				MoveToTarget (target.transform.position);
+			} else {
+				movementPattern = 1;
+			}
 			break;
 		case 9:											//	9 - "Hanging" after appearing in camera
 			GetCameraBorder ();
@@ -104,6 +108,8 @@ function Update () {
 			if (target != null) {
 				hangingPoint = Vector3(rightBorder, target.transform.position.y, transform.position.z);
 				transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.y * Time.deltaTime);
+			} else {
+				movementPattern = 1;
 			}
 			break;
 	}	 
@@ -118,20 +124,35 @@ function Update () {
 private function MoveToTarget (currentTarget : Vector3) {
 	// Setting movement to target and disable it when object is behind it
 
-	if (transform.position.x > currentTarget.x && currentTarget != null) {
-		transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed.x * Time.deltaTime);
-		previousTargetPosition = currentTarget - transform.position;
+	if (transform.position.x > currentTarget.x + 1 && currentTarget != null) {
+		transform.position = Vector3.MoveTowards(transform.position, currentTarget, 0.75 * speed.x * Time.deltaTime);
+		xPosition = - 0.25 * speed.x * Time.deltaTime;
+		previousTargetPosition = transform.position - currentTarget;
+		previousTargetPosition.x = 0.25 * speed.x;
 	} else {
-	
-			transform.position = Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
-			previousTargetPosition += transform.position;
-			previousTargetPosition.z = 0;
-			// Working buggy
-			//transform.Translate((transform.position.x + previousTargetPosition.x) * Time.deltaTime, 
-			//					(transform.position.y + previousTargetPosition.y) * Time.deltaTime, 0, Space.World);
+		xPosition = - Mathf.Abs (previousTargetPosition.x * Time.deltaTime);
+		
+		if (previousTargetPosition.x < speed.x) { previousTargetPosition.x += speed.x * Time.deltaTime; }
+		
+		if (previousTargetPosition.y < 0) {
+			yPosition =  Mathf.Abs (previousTargetPosition.y * Time.deltaTime );
+			previousTargetPosition.y -= Time.deltaTime;
+		} else {
+			yPosition = - Mathf.Abs (previousTargetPosition.y * Time.deltaTime);
+			previousTargetPosition.y += Time.deltaTime;
+		}
+		
+		//transform.position = Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
+		//previousTargetPosition += transform.position;
+		//previousTargetPosition.y -= Time.deltaTime;
+		//previousTargetPosition.z = 0;
 			
-			//working not so well
-			//this.rigidbody2D.AddForce(Vector2(previousTargetPosition.x * 100, previousTargetPosition.y * 100));
+    	// Working buggy
+		//transform.Translate((transform.position.x - previousTargetPosition.x) * Time.deltaTime, 
+		//					(transform.position.y - previousTargetPosition.y) * Time.deltaTime, 0, Space.World);
+		
+		//working not so well
+		//this.rigidbody2D.AddForce(Vector2(previousTargetPosition.x * 100, previousTargetPosition.y * 100));
 	}
 }
 

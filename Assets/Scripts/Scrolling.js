@@ -43,7 +43,7 @@ function Update () {
 			var horizontalParalax : float = 0;
 			var verticalParalax : float = 0;
 			if (firstChild != null) {								// Setting distance from first to second child objects
-				var firstSecondDistance = secondChild.renderer.bounds.center.x - firstChild.renderer.bounds.center.x;
+				var firstSecondDistance = secondChild.position.x - firstChild.position.x;
 				
 				if (hasParallax) {									// Adding random paralax to objects if it is needed
 				    horizontalParalax = Random.Range(				// Random position between last and second objects 
@@ -56,17 +56,20 @@ function Update () {
 					);
 				}
 				// Moving object to new position if it is not visible from Camera
-				if (firstChild.transform.position.x < Camera.main.transform.position.x){
-					if (RendererHelpers.IsVisibleFrom(firstChild.renderer, Camera.main) == false)						
+				var verticalSeen : float  = Camera.main.orthographicSize * 2.0f;
+        		var horizontalSeen : float = verticalSeen * Screen.width / Screen.height;
+				
+				if (firstChild.renderer.bounds.max.x < (Camera.main.transform.position.x - horizontalSeen / 2)) {
+					if (RendererHelpers.IsVisibleFrom(firstChild.renderer, Camera.main) == false) {
+										
 						firstChild.position = new Vector3 (
 						lastChild.position.x + firstSecondDistance + horizontalParalax, 
 						firstChild.position.y + verticalParalax, 
 						firstChild.position.z
 						);
-						
-						
 						backgroundParts.Remove(firstChild);
 	            		backgroundParts.Add(firstChild);
+					}	
 				}
 			}
 		}

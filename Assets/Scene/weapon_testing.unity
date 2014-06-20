@@ -2898,6 +2898,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 111022472}
   - 131: {fileID: 111022473}
+  - 114: {fileID: 111022474}
   m_Layer: 0
   m_Name: thumbArea
   m_TagString: Untagged
@@ -2936,6 +2937,18 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &111022474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111022471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentOfScreenHeight: .5
 --- !u!1 &111648697
 GameObject:
   m_ObjectHideFlags: 0
@@ -16936,6 +16949,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 965570699}
   - 131: {fileID: 965570700}
+  - 114: {fileID: 965570701}
   m_Layer: 0
   m_Name: thumbFinger
   m_TagString: Untagged
@@ -16974,6 +16988,18 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &965570701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 965570698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentOfScreenHeight: .200000003
 --- !u!1001 &988899030
 Prefab:
   m_ObjectHideFlags: 0
@@ -30756,7 +30782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureRatio: {x: .5, y: .5}
+  percentOfScreenHeight: .150000006
 --- !u!114 &1509990757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36337,7 +36363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textureRatio: {x: .5, y: .5}
+  percentOfScreenHeight: .230000004
 --- !u!114 &1717159268
 MonoBehaviour:
   m_ObjectHideFlags: 0

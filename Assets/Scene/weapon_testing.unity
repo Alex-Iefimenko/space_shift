@@ -308,6 +308,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &24271429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4257,6 +4258,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &114602946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4863,8 +4865,9 @@ MonoBehaviour:
   health: 2
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
+  scoreGUI: {fileID: 240624773}
+  specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 2
 --- !u!114 &142686179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4952,6 +4955,18 @@ Prefab:
     - target: {fileID: 400002, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
       propertyPath: m_LocalScale.y
       value: .385037005
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 240624773}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: specialEffectsHelper
+      value: 
+      objectReference: {fileID: 284588642}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: enemyExplosionVersion
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
@@ -5939,7 +5954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
+  misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
   shootingRate: .75
   isBurst: 0
   burstLength: 10
@@ -6148,6 +6163,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &284542311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6221,7 +6237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570203484d12b514bad66c69a4399ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyExplosion: {fileID: 100006, guid: 0ebbdc9c85d571849be3ba67f9a59e81, type: 2}
+  enemyExplosion1: {fileID: 100006, guid: 0ebbdc9c85d571849be3ba67f9a59e81, type: 2}
+  enemyExplosion2: {fileID: 100006, guid: d4dbfe3d18d242f4d9b015a50b6066a7, type: 2}
   playerExplosion: {fileID: 100006, guid: 585aa2897a1dd0a44b3e0d78798db59a, type: 2}
   hit: {fileID: 100006, guid: cd630e5f1a594f24abc0b80451127156, type: 2}
   takingWeapon: {fileID: 100006, guid: 45f281eecbb92a14b94386cda43f1829, type: 2}
@@ -7967,6 +7984,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &363451624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8516,6 +8534,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &419769580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8911,10 +8930,10 @@ Transform:
   - {fileID: 929005420}
   - {fileID: 1741669947}
   - {fileID: 1203992363}
-  - {fileID: 1606668761}
   - {fileID: 142686175}
-  - {fileID: 697226740}
   - {fileID: 1697102552}
+  - {fileID: 697226740}
+  - {fileID: 1606668761}
   m_Father: {fileID: 0}
 --- !u!1001 &507382515
 Prefab:
@@ -9532,6 +9551,7 @@ MonoBehaviour:
   scoreValue: 0
   scoreGUI: {fileID: 0}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!1 &558114829
 GameObject:
   m_ObjectHideFlags: 0
@@ -9869,7 +9889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
+  misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
   shootingRate: .75
   isBurst: 0
   burstLength: 10
@@ -12919,8 +12939,9 @@ MonoBehaviour:
   health: 2
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
+  scoreGUI: {fileID: 240624773}
+  specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 2
 --- !u!114 &697226744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13333,6 +13354,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &771739304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13694,6 +13716,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &786088729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16471,7 +16494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
+  misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
   shootingRate: .75
   isBurst: 0
   burstLength: 10
@@ -16740,6 +16763,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &929005423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16995,6 +17019,18 @@ Prefab:
     - target: {fileID: 400002, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
       propertyPath: m_LocalScale.y
       value: .385037005
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 240624773}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: specialEffectsHelper
+      value: 
+      objectReference: {fileID: 284588642}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: enemyExplosionVersion
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
@@ -17490,6 +17526,18 @@ Prefab:
     - target: {fileID: 400002, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
       propertyPath: m_LocalScale.y
       value: .385037005
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 240624773}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: specialEffectsHelper
+      value: 
+      objectReference: {fileID: 284588642}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: enemyExplosionVersion
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
@@ -20411,6 +20459,18 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 240624773}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: specialEffectsHelper
+      value: 
+      objectReference: {fileID: 284588642}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: enemyExplosionVersion
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
   m_RootGameObject: {fileID: 1606668754}
@@ -20852,6 +20912,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1203992366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22932,6 +22993,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1302779013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25335,7 +25397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
+  misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
   shootingRate: .75
   isBurst: 0
   burstLength: 10
@@ -27020,6 +27082,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1387735568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27268,6 +27331,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1402085169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28781,6 +28845,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1442966091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30268,6 +30333,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1471411932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30583,6 +30649,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1484233260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33256,6 +33323,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 34a05a484d5a86a4f9afeab4e8e47f85, type: 2}
+      propertyPath: enemyExplosion1
+      value: 
+      objectReference: {fileID: 100006, guid: 0ebbdc9c85d571849be3ba67f9a59e81, type: 2}
+    - target: {fileID: 11400000, guid: 34a05a484d5a86a4f9afeab4e8e47f85, type: 2}
+      propertyPath: enemyExplosion2
+      value: 
+      objectReference: {fileID: 100006, guid: d4dbfe3d18d242f4d9b015a50b6066a7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34a05a484d5a86a4f9afeab4e8e47f85, type: 2}
   m_RootGameObject: {fileID: 284588642}
@@ -34583,8 +34658,9 @@ MonoBehaviour:
   health: 2
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
+  scoreGUI: {fileID: 240624773}
+  specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 2
 --- !u!114 &1606668758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36336,8 +36412,9 @@ MonoBehaviour:
   health: 2
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
+  scoreGUI: {fileID: 240624773}
+  specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 2
 --- !u!114 &1697102556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36586,6 +36663,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1712823625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36783,6 +36861,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1741669950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39665,6 +39744,7 @@ MonoBehaviour:
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
+  enemyExplosionVersion: 1
 --- !u!114 &1893376842
 MonoBehaviour:
   m_ObjectHideFlags: 0

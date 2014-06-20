@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
-public var enemyExplosion : GameObject;
+public var enemyExplosion1 : GameObject;
+public var enemyExplosion2 : GameObject;
 public var playerExplosion : GameObject;
 public var hit : GameObject;
 public var takingWeapon : GameObject;
@@ -9,33 +10,22 @@ public var takingLevel : GameObject;
 private var targetObject : GameObject;
 private var newEffect : GameObject;
 private var newEffectParticleSystem : ParticleSystem;
+private var speed : float = 4;
 
 function Update () {
 	if (targetObject != null && newEffect != null) {
-		newEffect.transform.position = targetObject.renderer.bounds.center;
-		newEffectParticleSystem.transform.position = targetObject.renderer.bounds.center;
+		//newEffect.transform.position = targetObject.renderer.bounds.center;
+		//newEffectParticleSystem.transform.position = targetObject.renderer.bounds.center;
+		
+		newEffect.transform.position = Vector3.MoveTowards(newEffect.transform.position, targetObject.renderer.bounds.center, speed * Time.deltaTime);
+		newEffectParticleSystem.transform.position = Vector3.MoveTowards(newEffectParticleSystem.transform.position, targetObject.renderer.bounds.center, speed * Time.deltaTime);
+		speed += Time.deltaTime;
 	}
 }
 
 function ApplyEffect (effect : String, position : Vector3, target : GameObject) {
 	var currentEffect : GameObject; 
-	switch (effect) {
-		case "enemyExplosion":
-			currentEffect = enemyExplosion;
-			break;
-		case "playerExplosion":
-			currentEffect = playerExplosion;
-			break;
-		case "hit":
-			currentEffect = hit;
-			break;
-		case "takingWeapon":
-			currentEffect = takingWeapon;
-			break;
-		case "takingLevel":
-			currentEffect = takingLevel;
-			break;
-	}
+	currentEffect = this.GetType().GetField(effect).GetValue(this) as GameObject;
 	targetObject = target;
 	StartEffect(currentEffect, position);
 }
@@ -43,5 +33,14 @@ function ApplyEffect (effect : String, position : Vector3, target : GameObject) 
 private function StartEffect(effect : GameObject, position : Vector3 ){
 	newEffect = Instantiate(effect, position, effect.transform.rotation) as GameObject;
 	newEffectParticleSystem = newEffect.GetComponentInChildren.<ParticleSystem>();
+	StartEffectPosition();
 	Destroy(newEffect, newEffectParticleSystem.startLifetime);
 }
+
+function StartEffectPosition() {
+	if (targetObject != null && newEffect != null) {
+		newEffect.transform.position = targetObject.renderer.bounds.center;
+		newEffectParticleSystem.transform.position = targetObject.renderer.bounds.center;
+	}
+}
+

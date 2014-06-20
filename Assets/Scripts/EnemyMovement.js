@@ -142,17 +142,6 @@ private function MoveToTarget (currentTarget : Vector3) {
 			previousTargetPosition.y += Time.deltaTime;
 		}
 		
-		//transform.position = Vector3.MoveTowards(transform.position, previousTargetPosition, speed.x * Time.deltaTime);
-		//previousTargetPosition += transform.position;
-		//previousTargetPosition.y -= Time.deltaTime;
-		//previousTargetPosition.z = 0;
-			
-    	// Working buggy
-		//transform.Translate((transform.position.x - previousTargetPosition.x) * Time.deltaTime, 
-		//					(transform.position.y - previousTargetPosition.y) * Time.deltaTime, 0, Space.World);
-		
-		//working not so well
-		//this.rigidbody2D.AddForce(Vector2(previousTargetPosition.x * 100, previousTargetPosition.y * 100));
 	}
 }
 

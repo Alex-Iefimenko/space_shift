@@ -96,15 +96,12 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 	var playerDamage : boolean = false;
 	var enemy : EnemyScript = collision.gameObject.GetComponent.<EnemyScript>();
 	if (enemy != null) {
+		var playerHealth : Health = this.GetComponent.<Health>();
 		var enemyHealth : Health = enemy.GetComponent.<Health>();
 		if (enemyHealth != null) {
+			playerHealth.Damage(enemyHealth.health);
 			enemyHealth.Damage(enemyHealth.health);
 		}
-		playerDamage = true;
-	}
-	if (playerDamage) {
-		var playerHealth : Health = this.GetComponent.<Health>();
-		playerHealth.Damage(enemyHealth.health);
 	}
 }
 

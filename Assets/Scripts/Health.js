@@ -66,3 +66,7 @@ function Repair(amount : int) {
 function Freeze(shieldLength : float) {
 	freezeTime = shieldLength;
 }
+
+function GetMaxHealth () {
+	return maxHealth;
+}

@@ -18,12 +18,9 @@ function Awake() {
 	if (specialEffectsHelper != null) {
 		specialEffectsHendler = specialEffectsHelper.GetComponentInChildren.<SpecialEffects>();
 	}
-}
-
-
-function Start () {
 	maxHealth = health;
 }
+
 
 function Update () {
 	if (freezeTime > 0) { freezeTime -= Time.deltaTime; }

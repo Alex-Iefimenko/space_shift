@@ -31,7 +31,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: Enemy_stub_2
+  m_Name: Enemy_stub_3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.06925774, y: 1.85815275, z: -5}
-  m_LocalScale: {x: -.363155991, y: .385037005, z: 1}
+  m_LocalPosition: {x: 1.93532205, y: -2.81270885, z: -5}
+  m_LocalScale: {x: -.420326114, y: .445652485, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
@@ -175,12 +175,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 7
   isEnemy: 0
   scoreValue: 100
   scoreGUI: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
-  enemyExplosionVersion: 2
+  enemyExplosionVersion: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
-  shootingRate: .400000006
+  shootingRate: .75
   isBurst: 0
   burstLength: 10
   burstRate: .100000001

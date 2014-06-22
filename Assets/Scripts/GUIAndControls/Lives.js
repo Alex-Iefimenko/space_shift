@@ -2,42 +2,56 @@
 import System.Collections.Generic;
 import System.Linq;
 
-private var healthBars : List.<GUITexture>;
+public var texturelLivesContainers : Texture;
+public var texturelLivesBars : Texture;
+
 private var playersHealth : Health;
 private var currentHealth : int;
-public var texture : Texture;
 private var displayBars : int;
+
+private var liveContainerX : float; 
+private var liveContainerY : float; 
+private var liveContainerW : float; 
+private var liveContainerH : float; 
 
 function Start () {
 	var player : GameObject = GameObject.FindGameObjectWithTag("Player");
 	playersHealth = player.GetComponent.<Health>();
 	currentHealth = player.GetComponent.<Health>().health;
-	
-	healthBars = GetComponentsInChildren.<GUITexture>().OrderBy(function(a){return a.name;}).ToList();
-	healthBars.Remove(this.guiTexture);
 	HealthUpdate ();
+	OnGUIStartsPosition ();
 }
 
 function Update () {
 	if (playersHealth.health != currentHealth) {
 		HealthUpdate ();
 	}
+	
 }
 
 function HealthUpdate () {
-	displayBars = playersHealth.health % (playersHealth.GetMaxHealth() + 1);
+	displayBars = Mathf.CeilToInt((playersHealth.health * 1.0) / (playersHealth.GetMaxHealth() * 1.0) * 10.0);
 }
 
 function OnGUI () {
-	var scale : float = this.transform.localScale.x / this.transform.localScale.y;
-	var livesFolder : Rect = this.guiTexture.GetScreenRect();
-
-	for (var i : int = 0; i < displayBars; i++) {
-		GUI.DrawTexture(Rect(livesFolder.xMin + Screen.height * transform.localScale.y * 0.5 + (Screen.height - livesFolder.center.y - livesFolder.height * 0.48) * i, 
-						Screen.height - livesFolder.center.y - livesFolder.height * 0.16, 
-						Screen.height * transform.localScale.y * 0.35 , 
-						Screen.height * transform.localScale.y * 0.45), 
-						texture) ;
-	}
+	GUI.DrawTexture(Rect(liveContainerX, 
+						liveContainerY, 
+						liveContainerW, 
+						liveContainerH), 
+						texturelLivesContainers);
 	
+	for (var i : int = 0; i < displayBars; i++) {
+		GUI.DrawTexture(Rect(liveContainerX + liveContainerW * 0.15 + (liveContainerH * 0.33) * 0.65 * i, 
+						liveContainerY + liveContainerH * 0.33, 
+						liveContainerH * 0.34, 
+						liveContainerH * 0.5), 
+						texturelLivesBars) ;
+	}
+}
+
+function OnGUIStartsPosition () {
+	liveContainerX = this.transform.position.x * Screen.width; 
+	liveContainerY = (1 - this.transform.position.y) * Screen.height; 
+	liveContainerW = Screen.width * 0.13; 
+	liveContainerH = Screen.width * 0.13 / (texturelLivesContainers.width / texturelLivesContainers.height);
 }

@@ -4812,7 +4812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  isEnemy: 0
+  isEnemy: 1
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
@@ -8225,13 +8225,13 @@ Transform:
   m_LocalPosition: {x: 80.1051788, y: .588352323, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 771739298}
+  - {fileID: 1387735562}
   - {fileID: 1302779007}
   - {fileID: 1402085163}
   - {fileID: 24271423}
-  - {fileID: 363451618}
-  - {fileID: 1387735562}
   - {fileID: 1442966085}
+  - {fileID: 363451618}
+  - {fileID: 771739298}
   m_Father: {fileID: 0}
 --- !u!1 &419769573
 GameObject:
@@ -8828,14 +8828,14 @@ Transform:
   m_LocalPosition: {x: 27.841362, y: .588352323, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 929005420}
   - {fileID: 1893376839}
+  - {fileID: 929005420}
   - {fileID: 1741669947}
   - {fileID: 1203992363}
-  - {fileID: 142686175}
-  - {fileID: 697226740}
   - {fileID: 1697102552}
+  - {fileID: 697226740}
   - {fileID: 1606668761}
+  - {fileID: 142686175}
   m_Father: {fileID: 0}
 --- !u!1001 &507382515
 Prefab:
@@ -12732,7 +12732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  isEnemy: 0
+  isEnemy: 1
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
@@ -17322,6 +17322,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
       propertyPath: enemyExplosionVersion
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
+      propertyPath: isEnemy
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 373fc429a81ff8d42a5754d7fc9841fa, type: 2}
@@ -25145,13 +25149,13 @@ Transform:
   m_LocalPosition: {x: 51.6664429, y: .588352323, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 284542305}
-  - {fileID: 1712823619}
-  - {fileID: 1484233254}
-  - {fileID: 1471411926}
   - {fileID: 419769574}
-  - {fileID: 786088723}
+  - {fileID: 1471411926}
+  - {fileID: 1712823619}
   - {fileID: 114602940}
+  - {fileID: 284542305}
+  - {fileID: 786088723}
+  - {fileID: 1484233254}
   m_Father: {fileID: 0}
 --- !u!1 &1344853275
 GameObject:
@@ -34410,7 +34414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  isEnemy: 0
+  isEnemy: 1
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
@@ -36164,7 +36168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  isEnemy: 0
+  isEnemy: 1
   scoreValue: 100
   scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}

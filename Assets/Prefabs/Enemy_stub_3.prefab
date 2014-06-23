@@ -71,8 +71,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.8938522, y: 1.95338893, z: -5}
-  m_LocalScale: {x: -.347632468, y: .368578374, z: 1}
+  m_LocalPosition: {x: 2.18177032, y: 1.09153628, z: -5}
+  m_LocalScale: {x: -.32998535, y: .349868178, z: 1}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400000}
@@ -228,10 +228,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 7
   isEnemy: 1
-  scoreValue: 100
+  scoreValue: 300
   scoreGUI: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
-  enemyExplosionVersion: 2
+  enemyExplosionVersion: 3
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

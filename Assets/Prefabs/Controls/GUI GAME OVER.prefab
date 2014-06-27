@@ -36,6 +36,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 131: {fileID: 13100004}
+  - 114: {fileID: 11400010}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: MainMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,7 +68,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -58,8 +76,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .479999989, z: 0}
-  m_LocalScale: {x: .779999971, y: .270000011, z: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 1.49000001}
+  m_LocalScale: {x: 1.22000003, y: 1.02999997, z: 1}
   m_Children: []
   m_Father: {fileID: 400006}
 --- !u!4 &400002
@@ -69,8 +87,19 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .280000001, z: 0}
-  m_LocalScale: {x: .409999996, y: .180000007, z: 1}
+  m_LocalPosition: {x: .589999974, y: .200000003, z: 1.85000002}
+  m_LocalScale: {x: .150000006, y: .170000002, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .379999995, y: .200000003, z: 3.05999994}
+  m_LocalScale: {x: .150000006, y: .170000002, z: 1}
   m_Children: []
   m_Father: {fileID: 400006}
 --- !u!4 &400006
@@ -85,6 +114,7 @@ Transform:
   m_Children:
   - {fileID: 400002}
   - {fileID: 400000}
+  - {fileID: 400004}
   m_Father: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -142,6 +172,34 @@ MonoBehaviour:
   imageOver: {fileID: 2800000, guid: f9bdfa328fbd1fc4c9832b41e5b271f3, type: 3}
   isOverImage: 0
   hasTouchOnGui: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseHendler: {fileID: 0}
+  levelToLoad: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: Continue
+  imageOver: {fileID: 2800000, guid: a5d10d51eea1b7a40993035c7aabb8ba, type: 3}
+  isOverImage: 0
+  hasTouchOnGui: 0
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
@@ -149,7 +207,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 566b4b4ce342eb941bc928290d6ef03c, type: 3}
+  m_Texture: {fileID: 2800000, guid: e6c1c0d2999c74c4c9fd2a55b9bfd9a8, type: 3}
   m_Color: {r: .470588207, g: .470588207, b: .470588207, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
@@ -169,6 +227,25 @@ GUITexture:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 58aab245596ab564aba70d6c9d462787, type: 3}
+  m_Color: {r: .470588207, g: .470588207, b: .470588207, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!131 &13100004
+GUITexture:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: e1427a3634233534395ad9dd808ee08c, type: 3}
   m_Color: {r: .470588207, g: .470588207, b: .470588207, a: .501960814}
   m_PixelInset:
     serializedVersion: 2

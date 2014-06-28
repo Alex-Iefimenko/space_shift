@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-var camera : GameObject;
 var gui : GameObject;
 var guipause : GameObject;
 

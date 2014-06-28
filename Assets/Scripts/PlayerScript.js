@@ -13,6 +13,8 @@ private var movement : Vector2;								// Private variable for providing positio
 private var guns : List.<GunTypeComplect>;					// Getting all attached GunTypeComplect components
 private var animator : Animator;
 
+private var slomocooldown : float;
+
 // Contorls
 public var joystickCircle : JoystickCircle;
 public var buttons : GameObject;
@@ -86,6 +88,13 @@ function Update () {
     		if (gun != null && gun.enabled == true) { gun.Fire(false); }
     	}
     }
+    
+    if (slomocooldown > 0f) {
+	    slomocooldown -= Time.deltaTime; 
+		Slomo(true);
+	} else if (slomocooldown <= 0f) {
+		Slomo(false);
+	}
 }
 
 function FixedUpdate () {
@@ -125,6 +134,10 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 			case 4:													// Shield
 			 	playerHealth.Freeze(powerUp.powerUpValue * 1.0);
 				break;
+			case 5:													// Slo-mo
+			 	slomocooldown = powerUp.powerUpValue * 1.0;
+				break;
+		
 		}
 		Destroy(powerUp.gameObject);
 	}	
@@ -161,4 +174,14 @@ function GunLevelChange(level : int) {
 	   	}
 	}
 	currentGunLevel = level;
+}
+
+function Slomo (isEnambled : boolean) {
+	if (Time.timeScale != 0.0) {
+		if (isEnambled) {
+			if (Time.timeScale != 0.5) Time.timeScale = 0.5;
+		} else if (!isEnambled) {
+			if (Time.timeScale != 1.0) Time.timeScale = 1.0;
+		}
+	}
 }

@@ -46,7 +46,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
-  - 95: {fileID: 9500002}
   m_Layer: 0
   m_Name: SLOMO_sign
   m_TagString: Untagged
@@ -61,11 +60,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3340559, y: -2.38637447, z: -5}
+  m_LocalPosition: {x: 5.01861, y: -2.49536085, z: -5}
   m_LocalScale: {x: .923360944, y: .923360944, z: 1}
   m_Children:
-  - {fileID: 400004}
   - {fileID: 400002}
+  - {fileID: 400004}
   m_Father: {fileID: 0}
 --- !u!4 &400002
 Transform:
@@ -74,8 +73,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: .149124295, y: -.0613477379, z: -.720572948}
-  m_LocalScale: {x: 1.32461858, y: 1, z: 1.3246206}
+  m_LocalPosition: {x: -.0473242402, y: -.114435941, z: -.720572948}
+  m_LocalScale: {x: 1.32461846, y: 1, z: 1.3246206}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400004
@@ -129,20 +128,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
---- !u!95 &9500002
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e22ba5cb8d8eb9341b99ecf1e04a441c, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,7 +158,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 1.95000005
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -330,7 +315,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4279703551
+        rgba: 4294954136
       minMaxState: 0
     startSize:
       scalar: .330000013
@@ -400,7 +385,7 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 46.2200012
-    maxNumParticles: 40
+    maxNumParticles: 20
   ShapeModule:
     serializedVersion: 2
     enabled: 1
@@ -418,7 +403,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 30
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -525,10 +510,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 3947696
+          rgba: 11557120
         key1:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 16774618
         key2:
           serializedVersion: 2
           rgba: 4278190080
@@ -547,7 +532,7 @@ ParticleSystem:
         key7:
           serializedVersion: 2
           rgba: 0
-        ctime0: 44718
+        ctime0: 0
         ctime1: 65535
         ctime2: 0
         ctime3: 0
@@ -1243,7 +1228,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: e4e4cff51dff43545953848c2258e62c, type: 2}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1253,7 +1238,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 8664a104086255a40bc0a7f97c6778b0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: .784313738}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1

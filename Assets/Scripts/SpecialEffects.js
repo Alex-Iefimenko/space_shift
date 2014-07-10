@@ -7,6 +7,9 @@ public var playerExplosion : GameObject;
 public var hit : GameObject;
 public var takingWeapon : GameObject;
 public var takingLevel : GameObject;
+public var takingRepair : GameObject;
+public var takingFreeze : GameObject;
+public var takingSlomo : GameObject;
 
 private var targetObject : GameObject;
 private var newEffect : GameObject;

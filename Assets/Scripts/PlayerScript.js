@@ -130,12 +130,15 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 				break;
 			case 3:													// Repair
 				playerHealth.Repair(powerUp.powerUpValue);
+				specialEffectsHendler.ApplyEffect("takingRepair", place, this.gameObject);
 				break;
 			case 4:													// Shield
 			 	playerHealth.Freeze(powerUp.powerUpValue * 1.0);
+			 	specialEffectsHendler.ApplyEffect("takingFreeze", place, this.gameObject);
 				break;
 			case 5:													// Slo-mo
 			 	slomocooldown = powerUp.powerUpValue * 1.0;
+			 	specialEffectsHendler.ApplyEffect("takingSlomo", place, this.gameObject);
 				break;
 		
 		}
@@ -180,8 +183,10 @@ function Slomo (isEnambled : boolean) {
 	if (Time.timeScale != 0.0) {
 		if (isEnambled) {
 			if (Time.timeScale != 0.5) Time.timeScale = 0.5;
+			Camera.main.GetComponent(Bloom).enabled = true;
 		} else if (!isEnambled) {
 			if (Time.timeScale != 1.0) Time.timeScale = 1.0;
+			Camera.main.GetComponent(Bloom).enabled = false;
 		}
 	}
 }

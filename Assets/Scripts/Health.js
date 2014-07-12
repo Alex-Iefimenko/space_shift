@@ -58,7 +58,8 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 	if (shot != null) {
 		if (isEnemy != shot.isEnemyShot) {
 			if (shiedlEnabled) {
-				shot.transform.rotation.z = Random.Range(-60, 60);
+				shot.transform.rotation.z = Random.Range(-120, 120);
+				shot.isEnemyShot = false;
 			} else {
 				Damage(shot.damage);
 				Destroy(shot.gameObject);

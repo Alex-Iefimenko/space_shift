@@ -108,7 +108,7 @@ function OnCollisionEnter2D(collision : Collision2D) {		// Damaging player and e
 		var playerHealth : Health = this.GetComponent.<Health>();
 		var enemyHealth : Health = enemy.GetComponent.<Health>();
 		if (enemyHealth != null) {
-			playerHealth.Damage(enemyHealth.health);
+			playerHealth.Damage(enemyHealth.health * 3);
 			enemyHealth.Damage(enemyHealth.health);
 		}
 	}

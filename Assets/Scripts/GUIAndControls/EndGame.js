@@ -20,7 +20,7 @@ function Update () {
 
 function GameEnd (isWin : boolean) {
 	yield WaitForSeconds (3.0);
-	Time.timeScale = 0.0;
+	Time.timeScale = 1.0;
 	Camera.main.GetComponent(Blur).enabled = true; // Blur aplied
 	Camera.main.GetComponent(Vignetting).enabled = true; // Vignetting aplied
 	ingameGui.SetActive(false);

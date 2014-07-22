@@ -183,10 +183,10 @@ function Slomo (isEnambled : boolean) {
 	if (Time.timeScale != 0.0) {
 		if (isEnambled) {
 			if (Time.timeScale != 0.5) Time.timeScale = 0.5;
-			Camera.main.GetComponent(Bloom).enabled = true;
+			Camera.main.GetComponent(FastBloom).enabled = true;
 		} else if (!isEnambled) {
 			if (Time.timeScale != 1.0) Time.timeScale = 1.0;
-			Camera.main.GetComponent(Bloom).enabled = false;
+			Camera.main.GetComponent(FastBloom).enabled = false;
 		}
 	}
 }

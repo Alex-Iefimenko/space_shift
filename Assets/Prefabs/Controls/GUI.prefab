@@ -953,7 +953,7 @@ Transform:
   m_GameObject: {fileID: 100054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .920000017, y: .330000013, z: 0}
-  m_LocalScale: {x: .109999999, y: .189999998, z: 1}
+  m_LocalScale: {x: .0900000036, y: .150000006, z: 1}
   m_Children: []
   m_Father: {fileID: 400058}
 --- !u!4 &400056
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentOfScreenHeight: .180000007
+  percentOfScreenHeight: .150000006
 --- !u!114 &11400046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   functionOnTouchDown: 
-  imageOver: {fileID: 2800000, guid: 537b8b446f9cd774b8cef7912656bda5, type: 3}
+  imageOver: {fileID: 2800000, guid: d0437f0ef085fca4b90ff4c720fdb768, type: 3}
   isOverImage: 0
   hasTouchOnGui: 0
 --- !u!114 &11400048
@@ -1933,7 +1933,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100054}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: f775e7db78ff7324289816decee35f8f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 37853751bfbbe7148938d661436a746c, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2

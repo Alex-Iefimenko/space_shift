@@ -7,6 +7,7 @@ var functionOnTouchDown : String = null;
 
 var imageOver : Texture;
 var isOverImage : boolean = false;
+var inactiveImage : Texture;
 
 private var lastFingerId : int = -1;
 private var guiTextureCurrent : GUITexture;
@@ -16,14 +17,15 @@ private var touchPositionFinger : Vector2;
 private var isHitOnGui : boolean;
 public var hasTouchOnGui: boolean;
 private var isResetPreviously : boolean = true; //initially, system has already reset.
+private var isActive : boolean = true;
 
-function Start(){
+function Awake (){
 	guiTextureCurrent = this.guiTexture;
 	imageNormal = guiTexture.texture;
 }
 
 function OnGUI () {
-	TouchControl();
+	if (isActive) { TouchControl(); }
 }
 
 function Reset()
@@ -102,4 +104,15 @@ function TouchControl(){
 	else{
 
 	}
+}
+
+function SetInactive (bol : boolean) {
+	isActive = bol;
+	if (isActive) { 
+		Reset(); 
+	} else {
+		guiTexture.texture = inactiveImage; 
+	}
+	//print (isActive);
+	//print (guiTexture.texture);
 }

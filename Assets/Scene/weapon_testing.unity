@@ -1551,6 +1551,7 @@ MonoBehaviour:
   functionOnTouchDown: ToMainMenu
   imageOver: {fileID: 2800000, guid: 22a25c3ee2fba4340979544681e463fd, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!114 &74385304
 MonoBehaviour:
@@ -3394,6 +3395,7 @@ MonoBehaviour:
   functionOnTouchDown: LevelRestart
   imageOver: {fileID: 2800000, guid: f9bdfa328fbd1fc4c9832b41e5b271f3, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &107662532
 GUITexture:
@@ -5924,6 +5926,7 @@ MonoBehaviour:
   functionOnTouchDown: LevelRestart
   imageOver: {fileID: 2800000, guid: f9bdfa328fbd1fc4c9832b41e5b271f3, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &212519087
 GUITexture:
@@ -8771,7 +8774,7 @@ Prefab:
       objectReference: {fileID: 1557057960}
     - target: {fileID: 100034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
       propertyPath: m_IsActive
@@ -8807,8 +8810,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13100028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400050, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: isOverImage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400050, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: hasTouchOnGui
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400046, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: inactiveImage
+      value: 
+      objectReference: {fileID: 2800000, guid: 144be1c85131a764ca085122527278a9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
   m_RootGameObject: {fileID: 1066616374}
@@ -12734,6 +12757,8 @@ MonoBehaviour:
   joystickCircle: {fileID: 308900194}
   buttons: {fileID: 1622603652}
   specialEffectsHelper: {fileID: 284588642}
+  bombPrefab: {fileID: 400000, guid: 02bbc2abfb7f8204484c377abab4e2e8, type: 2}
+  bombTreshhold: 500
 --- !u!60 &553299158
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12943,7 +12968,7 @@ MonoBehaviour:
   health: 100
   isEnemy: 0
   scoreValue: 0
-  scoreGUI: {fileID: 0}
+  scoreGUI: {fileID: 240624773}
   specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!58 &553299165
@@ -21810,6 +21835,7 @@ MonoBehaviour:
   functionOnTouchDown: ToMainMenu
   imageOver: {fileID: 2800000, guid: a5d10d51eea1b7a40993035c7aabb8ba, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &818423162
 GUITexture:
@@ -25727,7 +25753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &994396718
 Transform:
   m_ObjectHideFlags: 0
@@ -27552,6 +27578,7 @@ MonoBehaviour:
   functionOnTouchDown: LevelRestart
   imageOver: {fileID: 2800000, guid: 4003ca86a30972243b174aa205f144cb, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!114 &1105611847
 MonoBehaviour:
@@ -28810,6 +28837,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 400000, guid: 02bbc2abfb7f8204484c377abab4e2e8, type: 2}
+    - target: {fileID: 11400014, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
+      propertyPath: scoreGUI
+      value: 
+      objectReference: {fileID: 240624773}
     m_RemovedComponents:
     - {fileID: 6000002, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
@@ -28994,7 +29029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1122322710
 Transform:
   m_ObjectHideFlags: 0
@@ -29492,6 +29527,7 @@ MonoBehaviour:
   functionOnTouchDown: Continue
   imageOver: {fileID: 2800000, guid: c84ef8f8d552bf943ab7b87f2500dddc, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!114 &1170631600
 MonoBehaviour:
@@ -29761,6 +29797,7 @@ MonoBehaviour:
   functionOnTouchDown: ButtonClick
   imageOver: {fileID: 2800000, guid: dbf51b888883c3d4097884029b5397bc, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!114 &1184107661
 MonoBehaviour:
@@ -39767,6 +39804,7 @@ MonoBehaviour:
   functionOnTouchDown: ButtonClick
   imageOver: {fileID: 2800000, guid: dbf51b888883c3d4097884029b5397bc, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!114 &1427089783
 MonoBehaviour:
@@ -43067,6 +43105,7 @@ MonoBehaviour:
   functionOnTouchDown: 
   imageOver: {fileID: 2800000, guid: d0437f0ef085fca4b90ff4c720fdb768, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 2800000, guid: 144be1c85131a764ca085122527278a9, type: 3}
   hasTouchOnGui: 0
 --- !u!131 &1509990758
 GUITexture:
@@ -50505,6 +50544,7 @@ MonoBehaviour:
   functionOnTouchDown: 
   imageOver: {fileID: 2800000, guid: 537b8b446f9cd774b8cef7912656bda5, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1717159269
 GUITexture:
@@ -54418,6 +54458,7 @@ MonoBehaviour:
   functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 197296c7c409a9d41884b1e6e899069c, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1888350454
 GUITexture:
@@ -56890,6 +56931,7 @@ MonoBehaviour:
   functionOnTouchDown: ToMainMenu
   imageOver: {fileID: 2800000, guid: a5d10d51eea1b7a40993035c7aabb8ba, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &2018776840
 GUITexture:
@@ -60612,6 +60654,7 @@ MonoBehaviour:
   functionOnTouchDown: ButtonClick
   imageOver: {fileID: 2800000, guid: dbf51b888883c3d4097884029b5397bc, type: 3}
   isOverImage: 0
+  inactiveImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!1001 &2145561460
 Prefab:

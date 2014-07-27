@@ -20,9 +20,16 @@ public var joystickCircle : JoystickCircle;
 public var buttons : GameObject;
 private var fireButton : ControllerGUIButton;
 private var bombButton : ControllerGUIButton;
+private var bombButtonTexture : Texture;
 
 public var specialEffectsHelper : GameObject;
 private var specialEffectsHendler : SpecialEffects;
+
+//Bomb
+public var bombPrefab : Transform;
+public var bombTreshhold : int = 500;
+private var haveBomb : boolean = false;
+private var bombActiveThreshold : int = 500;
 
 function Awake() {
 	animator = GetComponent.<Animator>();
@@ -35,6 +42,7 @@ function Start () {
 	GunEnabling(playerGun);
 	fireButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[1];
 	bombButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[0];
+	bombButton.SetInactive(haveBomb);
 }
 
 function Update () {
@@ -89,12 +97,19 @@ function Update () {
     	}
     }
     
+    var bomb : boolean = Input.GetButtonDown("Bomb");
+    if (bomb || bombButton.hasTouchOnGui) {
+	   	if (haveBomb) { LaunchBomb(); }
+    }
+    
     if (slomocooldown > 0f) {
 	    slomocooldown -= Time.deltaTime; 
 		Slomo(true);
 	} else if (slomocooldown <= 0f) {
 		Slomo(false);
 	}
+	
+	BombDetection();
 }
 
 function FixedUpdate () {
@@ -188,5 +203,22 @@ function Slomo (isEnambled : boolean) {
 			if (Time.timeScale != 1.0) Time.timeScale = 1.0;
 			Camera.main.GetComponent(FastBloom).enabled = false;
 		}
+	}
+}
+
+function LaunchBomb () {
+	haveBomb = false;
+	var bombTransform = Instantiate(bombPrefab) as Transform;
+	var place : Vector3 = Vector3(transform.position.x + renderer.bounds.size.x, transform.position.y - renderer.bounds.size.y / 2, transform.position.z);
+	bombTransform.position = place;
+	bombButton.SetInactive(haveBomb);				
+}
+
+function BombDetection () {
+	var score : int = this.GetComponent.<Health>().scoreGUI.GetComponent.<Score>().GetScore();
+	if (score >= bombActiveThreshold) {
+		haveBomb = true;
+		bombActiveThreshold += bombTreshhold;
+		bombButton.SetInactive(haveBomb);
 	}
 }

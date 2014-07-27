@@ -26,7 +26,8 @@ function Update () {
 	}
 	if (scoreCounters != null && scoreCounters.Count > 0) {
 		for (i in scoreCounters) {
-			if (currentScore < gameScore.GetScore()) { currentScore += 10; }
+			if (currentScore + 20 < gameScore.GetScore()) { currentScore += 20; }
+			if (currentScore + 1 <= gameScore.GetScore()) { currentScore += 1; }
 			i.text = "0" * (5 - currentScore.ToString().length) + currentScore.ToString();;
 		}
 	}

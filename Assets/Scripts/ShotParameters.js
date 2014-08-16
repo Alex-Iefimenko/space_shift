@@ -21,13 +21,16 @@ public var misslePrefab : Transform;					// Getting misle prefab
 
 private var destroyDist : float;
 
-function Awake() {
+function Start() {
 	if (behaviourType == 2) {
 		destroyDist = GetNearCameraBorder();
+	} else if (behaviourType == 3) {
+		var dist : float = (this.transform.position - Camera.main.transform.position).z;
+		destroyDist = this.transform.position.x + (Camera.main.ViewportToWorldPoint(Vector3(1,0,dist)).x - this.transform.position.x) * 0.55;
 	}
 }
 function Update () {
-
+		
 	switch (behaviourType) {
 		case 0:											// Flying forward
 			Movement();
@@ -50,6 +53,12 @@ function Update () {
 				Destroy(gameObject);
 			}
 			break;
+		case 3:
+			Movement();
+			if (transform.position.x >= destroyDist) {
+				Destroy(gameObject);
+			}
+			break;
 	}
 	// Destroying Shot if it is outside the camera
 	if (RendererHelpers.IsVisibleFrom(transform.renderer, Camera.main) == false) {
@@ -64,7 +73,7 @@ function TargetCapture () {
 	for (target in allTargets) {
 		if (RendererHelpers.IsVisibleFrom(target.transform.renderer, Camera.main)) {
 			if (target != null) {
-				visibleTargets.Add(target);
+				visibleTargets.Add(target); 
 			}
 		}
 	}
@@ -99,6 +108,10 @@ function OnDestroy () {
 				}
 				number += (Random.Range(0.85, 1.15) * (360 / (6 * currentLevel)));
 			}	
+			break;
+		case 3:
+			shotTransform = Instantiate(misslePrefab) as Transform;
+			shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
 			break;
 	}
 }

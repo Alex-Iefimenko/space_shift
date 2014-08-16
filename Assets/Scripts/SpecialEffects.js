@@ -3,6 +3,7 @@
 public var enemyExplosion1 : GameObject;
 public var enemyExplosion2 : GameObject;
 public var enemyExplosion3 : GameObject;
+public var enemyExplosion4 : GameObject;
 public var playerExplosion : GameObject;
 public var hit : GameObject;
 public var takingWeapon : GameObject;

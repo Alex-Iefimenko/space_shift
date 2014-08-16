@@ -19,9 +19,20 @@ public var hasTouchOnGui: boolean;
 private var isResetPreviously : boolean = true; //initially, system has already reset.
 private var isActive : boolean = true;
 
+private var blinkTime : float = 0f;
+private var blink :float = 0f;
+
 function Awake (){
 	guiTextureCurrent = this.guiTexture;
 	imageNormal = guiTexture.texture;
+}
+
+function Update () {
+	if (blinkTime > 0) { 
+		blinkTime -= Time.deltaTime; 
+		Blink();
+	}
+	if (blink > 0) { blink -= Time.deltaTime; }
 }
 
 function OnGUI () {
@@ -109,10 +120,21 @@ function TouchControl(){
 function SetInactive (bol : boolean) {
 	isActive = bol;
 	if (isActive) { 
-		Reset(); 
+		if (guiTexture.texture == inactiveImage) {
+			blinkTime = 3.1;
+			blink = 0.5;
+		}
+		Reset();
 	} else {
 		guiTexture.texture = inactiveImage; 
 	}
-	//print (isActive);
-	//print (guiTexture.texture);
+}
+
+function Blink () {
+	
+	if (isActive && blinkTime > 0 && blink <= 0) {
+		if (guiTexture.texture == imageNormal) { guiTexture.texture = inactiveImage; }
+		else if (guiTexture.texture == inactiveImage) { guiTexture.texture = imageNormal; }
+		blink = 0.5;
+	}
 }

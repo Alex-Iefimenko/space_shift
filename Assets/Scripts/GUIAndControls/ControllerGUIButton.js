@@ -8,6 +8,7 @@ var functionOnTouchDown : String = null;
 var imageOver : Texture;
 var isOverImage : boolean = false;
 var inactiveImage : Texture;
+var blinkImage : Texture;
 
 private var lastFingerId : int = -1;
 private var guiTextureCurrent : GUITexture;
@@ -121,8 +122,7 @@ function SetInactive (bol : boolean) {
 	isActive = bol;
 	if (isActive) { 
 		if (guiTexture.texture == inactiveImage) {
-			blinkTime = 3.1;
-			blink = 0.5;
+			blinkTime = 3.0;
 		}
 		Reset();
 	} else {
@@ -133,8 +133,8 @@ function SetInactive (bol : boolean) {
 function Blink () {
 	
 	if (isActive && blinkTime > 0 && blink <= 0) {
-		if (guiTexture.texture == imageNormal) { guiTexture.texture = inactiveImage; }
-		else if (guiTexture.texture == inactiveImage) { guiTexture.texture = imageNormal; }
+		if (guiTexture.texture == imageNormal) { guiTexture.texture = blinkImage; }
+		else if (guiTexture.texture == blinkImage) { guiTexture.texture = imageNormal; }
 		blink = 0.5;
 	}
 }

@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.1468945, y: 2.35855341, z: -5}
+  m_LocalPosition: {x: 5.15724468, y: -.813892484, z: -5}
   m_LocalScale: {x: -.918424308, y: .973763049, z: 1}
   m_Children:
   - {fileID: 400008}
@@ -182,19 +182,19 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 10879094
+    rgba: 14133707
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 1828659369
+    rgba: 1828701160
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 2884637951
+    rgba: 2885263359
   colorAnimation[3]:
     serializedVersion: 2
     rgba: 866546842
   colorAnimation[4]:
     serializedVersion: 2
-    rgba: 725531
+    rgba: 1316635
   worldRotationAxis: {x: 0, y: 0, z: 0}
   localRotationAxis: {x: 0, y: 0, z: 0}
   sizeGrow: -.899999976
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
+  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
   shootingRate: .5
   isBurst: 0
   burstLength: 10
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
+  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
   shootingRate: .75
   isBurst: 0
   burstLength: 10
@@ -460,11 +460,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
-  shootingRate: .5
-  isBurst: 0
-  burstLength: 10
-  burstRate: .100000001
+  misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
+  shootingRate: 1.5
+  isBurst: 1
+  burstLength: 30
+  burstRate: .0299999993
   isRocket: 0
 --- !u!212 &21200000
 SpriteRenderer:

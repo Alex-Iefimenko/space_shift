@@ -71,8 +71,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.18177032, y: 1.09153628, z: -5}
-  m_LocalScale: {x: -.32998535, y: .349868178, z: 1}
+  m_LocalPosition: {x: 61.4654083, y: -.477347791, z: -5}
+  m_LocalScale: {x: -.329984993, y: .349868, z: 1}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400000}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 7
+  health: 15
   isEnemy: 1
   scoreValue: 300
   scoreGUI: {fileID: 0}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
-  shootingRate: .75
+  shootingRate: 1
   isBurst: 0
   burstLength: 10
   burstRate: .100000001

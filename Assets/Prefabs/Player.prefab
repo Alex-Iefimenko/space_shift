@@ -145,6 +145,7 @@ GameObject:
   - 114: {fileID: 11400014}
   - 95: {fileID: 9500000}
   - 212: {fileID: 21200000}
+  - 58: {fileID: 5800000}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -195,9 +196,9 @@ GameObject:
   - 4: {fileID: 400022}
   - 212: {fileID: 21200002}
   - 95: {fileID: 9500002}
-  - 60: {fileID: 6000002}
+  - 114: {fileID: 11400042}
   m_Layer: 0
-  m_Name: Shield
+  m_Name: ShieldPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,6 +964,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!58 &5800000
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 2.8599999
+  m_Center: {x: 2.23000002, y: -.150000006}
 --- !u!60 &6000000
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -1065,57 +1077,6 @@ PolygonCollider2D:
       - {x: 4.76999998, y: -.329999983}
       - {x: 4.76999998, y: -.229999989}
       - {x: 4.73000002, y: -.209999993}
---- !u!60 &6000002
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100022}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: 1.13999999, y: .25999999}
-      - {x: 1.01999998, y: .579999983}
-      - {x: .699999988, y: .899999976}
-      - {x: .560000002, y: 1}
-      - {x: .299999982, y: 1.12}
-      - {x: .199999988, y: 1.12}
-      - {x: -.239999995, y: 1.12}
-      - {x: -.539999962, y: 1.01999998}
-      - {x: -.879999995, y: .75999999}
-      - {x: -1.12, y: .299999982}
-      - {x: -1.12, y: -.280000001}
-      - {x: -1.10000002, y: -.379999995}
-      - {x: -.919999957, y: -.719999969}
-      - {x: -.579999983, y: -1.01999998}
-      - {x: -.299999982, y: -1.15999997}
-      - {x: .340000004, y: -1.15999997}
-      - {x: .659999967, y: -.979999959}
-      - {x: 1, y: -.680000007}
-      - {x: 1.13999999, y: -.280000001}
-    - - {x: -.0399999991, y: -.859999955}
-      - {x: -.340000004, y: -.859999955}
-      - {x: -.379999995, y: -.779999971}
-      - {x: -.659999967, y: -.560000002}
-      - {x: -.859999955, y: -.25999999}
-      - {x: -.879999995, y: -.099999994}
-      - {x: -.839999974, y: .25999999}
-      - {x: -.699999988, y: .5}
-      - {x: -.399999976, y: .779999971}
-      - {x: -.319999993, y: .799999952}
-      - {x: -.219999999, y: .859999955}
-      - {x: .159999996, y: .839999974}
-      - {x: .319999993, y: .74000001}
-      - {x: .519999981, y: .719999969}
-      - {x: .74000001, y: .379999995}
-      - {x: .799999952, y: .179999992}
-      - {x: .859999955, y: -.0599999987}
-      - {x: .839999974, y: -.219999999}
-      - {x: .539999962, y: -.719999969}
-      - {x: .319999993, y: -.799999952}
-      - {x: .219999999, y: -.879999995}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -1242,10 +1203,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 13, y: 13}
   gunLevel: 1
-  playerGun: 2
+  playerGun: 1
   joystickCircle: {fileID: 0}
   buttons: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
+  bombPrefab: {fileID: 400000, guid: 02bbc2abfb7f8204484c377abab4e2e8, type: 2}
+  bombTreshhold: 500
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1475,6 +1438,17 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfc35ca409dbb3458bc3b9c723e9ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -1208,7 +1208,7 @@ MonoBehaviour:
   buttons: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
   bombPrefab: {fileID: 400000, guid: 02bbc2abfb7f8204484c377abab4e2e8, type: 2}
-  bombTreshhold: 500
+  bombTreshhold: 3000
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 7f5c1fae21d7bce4fa9ad30dffcf9561, type: 2}
   shootingRate: 1
   isBurst: 1
-  burstLength: 20
+  burstLength: 30
   burstRate: .00999999978
   isRocket: 0
 --- !u!114 &11400022

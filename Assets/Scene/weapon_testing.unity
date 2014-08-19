@@ -3475,9 +3475,12 @@ Transform:
   - {fileID: 69433550}
   - {fileID: 277260409}
   - {fileID: 22273271}
+  - {fileID: 1666381920}
   - {fileID: 1575366079}
   - {fileID: 528625976}
+  - {fileID: 295490749}
   - {fileID: 1344802686}
+  - {fileID: 538159992}
   - {fileID: 1090477831}
   - {fileID: 571235413}
   - {fileID: 1943371763}
@@ -3491,12 +3494,10 @@ Transform:
   - {fileID: 971795014}
   - {fileID: 936879122}
   - {fileID: 402945148}
-  - {fileID: 538159992}
-  - {fileID: 1666381920}
-  - {fileID: 295490749}
   - {fileID: 457221620}
   - {fileID: 2075786884}
   - {fileID: 688758157}
+  - {fileID: 471287210}
   - {fileID: 1774175240}
   - {fileID: 1251043333}
   - {fileID: 1413161277}
@@ -3517,14 +3518,13 @@ Transform:
   - {fileID: 352345908}
   - {fileID: 1437079289}
   - {fileID: 617703662}
+  - {fileID: 658644659}
   - {fileID: 2141176845}
   - {fileID: 140812592}
   - {fileID: 1072726131}
   - {fileID: 1548647753}
   - {fileID: 1942448440}
   - {fileID: 1719450122}
-  - {fileID: 658644659}
-  - {fileID: 471287210}
   - {fileID: 935535208}
   m_Father: {fileID: 0}
 --- !u!1 &86128317
@@ -47406,7 +47406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   functionOnTouchDown: ButtonClick
-  imageOver: {fileID: 2800000, guid: dbf51b888883c3d4097884029b5397bc, type: 3}
+  imageOver: {fileID: 2800000, guid: 37bc1f4e047387b4aa74a6dd0dd19478, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
@@ -61156,8 +61156,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1427089781}
   - 131: {fileID: 1427089784}
-  - 114: {fileID: 1427089783}
-  - 114: {fileID: 1427089782}
   m_Layer: 0
   m_Name: Pause_word_shadow
   m_TagString: Untagged
@@ -61176,38 +61174,6 @@ Transform:
   m_LocalScale: {x: .0799999982, y: .109999999, z: 0}
   m_Children: []
   m_Father: {fileID: 1066616375}
---- !u!114 &1427089782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400040, guid: c846803ec821bc14e99587dfdfd88dc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427089780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  functionOnTouchDown: ButtonClick
-  imageOver: {fileID: 2800000, guid: dbf51b888883c3d4097884029b5397bc, type: 3}
-  isOverImage: 0
-  inactiveImage: {fileID: 0}
-  blinkImage: {fileID: 0}
-  hasTouchOnGui: 0
---- !u!114 &1427089783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400042, guid: c846803ec821bc14e99587dfdfd88dc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427089780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3e78e228a7a6c4d96aaf4df0bad0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gui: {fileID: 1432691764}
-  guipause: {fileID: 1817416083}
 --- !u!131 &1427089784
 GUITexture:
   m_ObjectHideFlags: 0

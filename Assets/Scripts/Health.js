@@ -73,7 +73,7 @@ function Repair(amount : int) {
 	if (health + amount <= maxHealth) {
 		health += amount;
 	} else {
-	 health = maxHealth;
+		health = maxHealth;
 	}
 }
 

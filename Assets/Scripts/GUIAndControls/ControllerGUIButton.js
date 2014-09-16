@@ -135,6 +135,6 @@ function Blink () {
 	if (isActive && blinkTime > 0 && blink <= 0) {
 		if (guiTexture.texture == imageNormal) { guiTexture.texture = blinkImage; }
 		else if (guiTexture.texture == blinkImage) { guiTexture.texture = imageNormal; }
-		blink = 1.5;
+		blink = 2.5;
 	}
 }

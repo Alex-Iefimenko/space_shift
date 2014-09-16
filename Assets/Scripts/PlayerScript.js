@@ -64,21 +64,21 @@ function Update () {
 	// Adding restriction to leave outside the main camera
 	var distance = (transform.position - Camera.main.transform.position).z;
 	var leftBorder = Camera.main.ViewportToWorldPoint(
-      new Vector3(0.03, 0.03, distance)
+      new Vector3(0.01, 0.03, distance)
     ).x;
     var rightBorder = Camera.main.ViewportToWorldPoint(
-      new Vector3(0.97, 0.03, distance)
+      new Vector3(0.90, 0.03, distance)
     ).x;
-    var topBorder = Camera.main.ViewportToWorldPoint(
-      new Vector3(0.03, 0.03, distance)
-    ).y;
     var bottomBorder = Camera.main.ViewportToWorldPoint(
-      new Vector3(0.03, 0.97, distance)
+      new Vector3(0.03, 0.055, distance)
+    ).y;
+    var topBorder = Camera.main.ViewportToWorldPoint(
+      new Vector3(0.03, 0.965, distance)
     ).y;
       
     transform.position = new Vector3(
       Mathf.Clamp(transform.position.x, leftBorder, rightBorder),
-      Mathf.Clamp(transform.position.y, topBorder, bottomBorder),
+      Mathf.Clamp(transform.position.y, bottomBorder, topBorder),
       transform.position.z
     ); 
     										// Detection changes in gun load levels.

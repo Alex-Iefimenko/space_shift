@@ -46,6 +46,8 @@ function OnGUI () {
 						liveContainerH * 0.34, 
 						liveContainerH * 0.5), 
 						texturelLivesBars) ;
+	
+	currentHealth = playersHealth.health;
 	}
 }
 

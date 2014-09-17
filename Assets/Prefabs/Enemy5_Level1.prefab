@@ -1,21 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400000}
-  - 114: {fileID: 11400002}
-  m_Layer: 0
-  m_Name: gun1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,18 +88,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36949825, y: -.0259992462, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400002}
-  m_RootOrder: 1
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -123,11 +95,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.94917965, y: 2.57697201, z: -5}
-  m_LocalScale: {x: -.480339289, y: .418812811, z: 1}
+  m_LocalPosition: {x: 127.491707, y: .538210511, z: -5}
+  m_LocalScale: {x: -.543179274, y: .473603487, z: 1}
   m_Children:
   - {fileID: 400004}
-  - {fileID: 400000}
   - {fileID: 400006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -138,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .985111117, y: 1.19810724, z: 0}
+  m_LocalPosition: {x: 1.32702029, y: -.142878935, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -156,7 +127,7 @@ Transform:
   - {fileID: 400008}
   - {fileID: 400010}
   m_Father: {fileID: 400002}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -514,27 +485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   isEnemy: 1
-  scoreValue: 300
+  scoreValue: 200
   scoreGUI: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
-  enemyExplosionVersion: 3
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
-  shootingRate: .5
-  isBurst: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
+  enemyExplosionVersion: 2
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -573,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
+  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
   burstLength: 10

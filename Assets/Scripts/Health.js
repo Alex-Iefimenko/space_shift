@@ -6,23 +6,23 @@ public var health : int = 1; 								// Global parameter for health
 public var isEnemy : boolean = false;						// Global parameter for enemy - player recognition
 public var scoreValue : int;
 
-public var scoreGUI : GameObject;
+private var scoreGUI : Score;
 
 private var maxHealth : int;
 private var isFreezed : boolean = false;
 private var freezeTime : float; 
 
-public var specialEffectsHelper : GameObject;
 public var enemyExplosionVersion : int = 1;
+
 private var specialEffectsHendler : SpecialEffects;
 private var shield : Shield;
 private var circleCollider : CircleCollider2D;
 private var shiedlEnabled : boolean = false;
 
 function Awake() {
-	if (specialEffectsHelper != null) {
-		specialEffectsHendler = specialEffectsHelper.GetComponentInChildren.<SpecialEffects>();
-	}
+	scoreGUI = GameObject.FindGameObjectWithTag("ScoreHendler").GetComponentInChildren.<Score>();
+	specialEffectsHendler = GameObject.FindGameObjectWithTag("HelperScripts").GetComponentInChildren.<SpecialEffects>();
+	
 	shield = GetComponentInChildren.<Shield>();
 	circleCollider = GetComponentInChildren.<CircleCollider2D>();
 	maxHealth = health;
@@ -91,4 +91,12 @@ function GetMaxHealth () {
 function ShieldDiasble() {
 	shiedlEnabled = false;
 	circleCollider.enabled = false;
+}
+
+function GetScore () {
+	return scoreGUI.GetScore();
+}
+
+function GetScriptHelper () {
+	return specialEffectsHendler;
 }

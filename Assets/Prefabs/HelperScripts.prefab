@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Scripts
-  m_TagString: Untagged
+  m_Name: HelperScripts
+  m_TagString: HelperScripts
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,6 +27,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -38,11 +39,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570203484d12b514bad66c69a4399ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyExplosion: {fileID: 100006, guid: 0ebbdc9c85d571849be3ba67f9a59e81, type: 2}
+  enemyExplosion1: {fileID: 100006, guid: 0ebbdc9c85d571849be3ba67f9a59e81, type: 2}
+  enemyExplosion2: {fileID: 100006, guid: d4dbfe3d18d242f4d9b015a50b6066a7, type: 2}
+  enemyExplosion3: {fileID: 100006, guid: fb94beb167cac04419a9cf1c110cd3cd, type: 2}
+  enemyExplosion4: {fileID: 100006, guid: 585aa2897a1dd0a44b3e0d78798db59a, type: 2}
   playerExplosion: {fileID: 100006, guid: 585aa2897a1dd0a44b3e0d78798db59a, type: 2}
   hit: {fileID: 100006, guid: cd630e5f1a594f24abc0b80451127156, type: 2}
   takingWeapon: {fileID: 100006, guid: 45f281eecbb92a14b94386cda43f1829, type: 2}
   takingLevel: {fileID: 100006, guid: d0fc9a15c888ed3479c33d4bab4c8e39, type: 2}
+  takingRepair: {fileID: 100006, guid: 85798579603503245a3d10007565d7b1, type: 2}
+  takingFreeze: {fileID: 100006, guid: 47bda37b1106eb24fb9231a8452a9d02, type: 2}
+  takingSlomo: {fileID: 100006, guid: c1ccd226d3ea6c44f933ea38d83686e5, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

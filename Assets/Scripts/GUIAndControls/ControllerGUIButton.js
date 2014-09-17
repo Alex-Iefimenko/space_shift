@@ -122,7 +122,7 @@ function SetInactive (bol : boolean) {
 	isActive = bol;
 	if (isActive) { 
 		if (guiTexture.texture == inactiveImage) {
-			blinkTime = 3.0;
+			blinkTime = 5.0;
 		}
 		Reset();
 	} else {

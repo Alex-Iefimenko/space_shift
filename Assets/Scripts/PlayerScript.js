@@ -16,13 +16,12 @@ private var animator : Animator;
 private var slomocooldown : float;
 
 // Contorls
-public var joystickCircle : JoystickCircle;
-public var buttons : GameObject;
+private var joystickCircle : JoystickCircle;
+private var buttons : GameObject;
 private var fireButton : ControllerGUIButton;
 private var bombButton : ControllerGUIButton;
 private var bombButtonTexture : Texture;
 
-public var specialEffectsHelper : GameObject;
 private var specialEffectsHendler : SpecialEffects;
 
 //Bomb
@@ -32,8 +31,11 @@ private var haveBomb : boolean = false;
 private var bombActiveThreshold : int = 500;
 
 function Awake() {
+	joystickCircle = GameObject.FindGameObjectWithTag("GameControllerJoystick").GetComponentInChildren.<JoystickCircle>();
+	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
+	
 	animator = GetComponent.<Animator>();
-	specialEffectsHendler = specialEffectsHelper.GetComponentInChildren.<SpecialEffects>();
+	specialEffectsHendler = this.GetComponent.<Health>().GetScriptHelper();
 }
 
 function Start () {
@@ -215,7 +217,7 @@ function LaunchBomb () {
 }
 
 function BombDetection () {
-	var score : int = this.GetComponent.<Health>().scoreGUI.GetComponent.<Score>().GetScore();
+	var score : int = this.GetComponent.<Health>().GetScore();
 	if (score >= bombActiveThreshold) {
 		haveBomb = true;
 		bombActiveThreshold += bombTreshhold;

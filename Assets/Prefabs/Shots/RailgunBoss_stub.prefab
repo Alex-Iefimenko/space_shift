@@ -61,12 +61,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.0334949, y: .623138189, z: -5}
+  m_LocalPosition: {x: 5.25673103, y: -1.81984878, z: -5}
   m_LocalScale: {x: -.124995269, y: -.124995269, z: 1}
   m_Children:
   - {fileID: 400008}
   - {fileID: 400010}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -78,6 +79,7 @@ Transform:
   m_LocalScale: {x: 4.90079498, y: 7.64981604, z: 2.32151747}
   m_Children: []
   m_Father: {fileID: 400000}
+  m_RootOrder: 0
 --- !u!4 &400010
 Transform:
   m_ObjectHideFlags: 1
@@ -89,6 +91,7 @@ Transform:
   m_LocalScale: {x: 6.66666651, y: 6.66666651, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
+  m_RootOrder: 1
 --- !u!12 &1200002
 ParticleAnimator:
   m_ObjectHideFlags: 1
@@ -221,9 +224,8 @@ ParticleRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
   m_StretchParticles: 0
@@ -252,9 +254,8 @@ ParticleRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
   m_StretchParticles: 0
@@ -274,7 +275,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .349999994, y: .140000001}
+  m_Size: {x: 7.90999985, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -311,9 +312,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f24c36f494c1b2043abd4502b48207e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

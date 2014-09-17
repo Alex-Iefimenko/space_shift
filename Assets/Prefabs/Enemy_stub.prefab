@@ -49,6 +49,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
+  m_RootOrder: 0
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -56,11 +57,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11276627, y: 2.95381641, z: -5}
-  m_LocalScale: {x: -.363155574, y: .385036618, z: 1}
+  m_LocalPosition: {x: -8.24045753, y: -.0248958468, z: -5}
+  m_LocalScale: {x: -.363155991, y: .385037005, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -190,7 +192,7 @@ PolygonCollider2D:
       - {x: 2.33999991, y: .379999995}
 --- !u!95 &9500000
 Animator:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -199,8 +201,8 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 02c2a5a98c418284aaf41f3b2e8af81b, type: 2}
   m_CullingMode: 0
+  m_UpdateMode: 0
   m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -281,9 +283,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6cba03e64b877914197d71e651780879, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

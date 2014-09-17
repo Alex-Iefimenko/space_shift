@@ -48,6 +48,7 @@ Transform:
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -59,6 +60,7 @@ Transform:
   m_LocalScale: {x: 30.9285507, y: 31.1309204, z: 5}
   m_Children: []
   m_Father: {fileID: 400000}
+  m_RootOrder: 0
 --- !u!12 &1200002
 ParticleAnimator:
   m_ObjectHideFlags: 1
@@ -137,9 +139,8 @@ ParticleRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 0
   m_StretchParticles: 0
@@ -159,7 +160,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1, y: .100000001}
+  m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -196,9 +197,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 585bbc9743452af4b9368afc3c105187, type: 3}
   m_Color: {r: .639705896, g: .940365076, b: 1, a: 1}
 --- !u!1001 &100100000

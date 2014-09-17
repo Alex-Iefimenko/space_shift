@@ -28,8 +28,9 @@ function ToMainMenu () {
 
 function LoadLevel() {
 	if (levelToLoad != null) {
-		Application.LoadLevel(levelToLoad);
 		Time.timeScale = 1.0;
+		Application.LoadLevel(levelToLoad);
+		
 	}
 }
 

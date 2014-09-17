@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.94917965, y: 2.57697201, z: -5}
+  m_LocalPosition: {x: 29.8611927, y: -1.39812028, z: -3.95000005}
   m_LocalScale: {x: -.480339289, y: .418812811, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -449,10 +449,6 @@ PolygonCollider2D:
       - {x: -.0900000036, y: -.920000017}
       - {x: .0700000003, y: -.970000029}
       - {x: .0799999982, y: -1.14999998}
-      - {x: .140000001, y: -1.24000001}
-      - {x: .209999993, y: -1.26999998}
-      - {x: .430000007, y: -1.26999998}
-      - {x: .569999993, y: -1.19000006}
       - {x: .600000024, y: -.959999979}
       - {x: .860000014, y: -.860000014}
     - - {x: 1.74000001, y: -.239999995}
@@ -491,7 +487,7 @@ MonoBehaviour:
   scoreValue: 300
   scoreGUI: {fileID: 0}
   specialEffectsHelper: {fileID: 0}
-  enemyExplosionVersion: 3
+  enemyExplosionVersion: 2
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

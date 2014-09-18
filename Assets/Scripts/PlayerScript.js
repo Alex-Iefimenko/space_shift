@@ -35,7 +35,8 @@ function Awake() {
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
 	
 	animator = GetComponent.<Animator>();
-
+	
+	bombActiveThreshold = bombTreshhold;
 }
 
 function Start () {

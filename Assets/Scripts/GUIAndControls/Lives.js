@@ -31,6 +31,7 @@ function Update () {
 
 function HealthUpdate () {
 	displayBars = Mathf.CeilToInt((playersHealth.health * 1.0) / (playersHealth.GetMaxHealth() * 1.0) * 10.0);
+	currentHealth = playersHealth.health;
 }
 
 function OnGUI () {
@@ -45,9 +46,7 @@ function OnGUI () {
 						liveContainerY + liveContainerH * 0.33, 
 						liveContainerH * 0.34, 
 						liveContainerH * 0.5), 
-						texturelLivesBars) ;
-	
-	currentHealth = playersHealth.health;
+						texturelLivesBars) ;	
 	}
 }
 

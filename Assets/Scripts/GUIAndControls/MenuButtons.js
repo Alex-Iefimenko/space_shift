@@ -8,6 +8,15 @@ public var pauseHendler : GameObject;
 public var levelToLoad : String;
 private var i : float = 0.0;
 
+private var tutorialGUI : GameObject;
+private var gui : GameObject; 
+
+function Update () {
+	if (tutorialGUI && Input.GetKeyDown("escape")) {
+		Proceed();
+	}
+}
+
 function LevelRestart () {
 	Application.LoadLevel(Application.loadedLevelName);
 	Time.timeScale = 1.0;
@@ -34,3 +43,16 @@ function LoadLevel() {
 	}
 }
 
+function Proceed () {
+	Time.timeScale = 1.0;
+	yield WaitForSeconds (0.1);
+	Camera.main.GetComponent(Blur).enabled = false;
+	Camera.main.GetComponent(Vignetting).enabled = false;
+	gui.SetActive(true); 
+	tutorialGUI.SetActive(false);
+}
+
+function SetTutorialVars (tutorial : GameObject, fullGUI : GameObject) {
+	tutorialGUI = tutorial;
+	gui = fullGUI;
+}

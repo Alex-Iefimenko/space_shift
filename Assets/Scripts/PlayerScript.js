@@ -35,16 +35,18 @@ function Awake() {
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
 	
 	animator = GetComponent.<Animator>();
-	specialEffectsHendler = this.GetComponent.<Health>().GetScriptHelper();
+
 }
 
 function Start () {
+	specialEffectsHendler = this.GetComponent.<Health>().GetScriptHelper();
 	guns = GetComponentsInChildren.<GunTypeComplect>().OrderBy(function(a){return a.name;}).ToList();
 	GunLevelChange(gunLevel);
 	GunEnabling(playerGun);
 	fireButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[1];
 	bombButton = buttons.GetComponentsInChildren.<ControllerGUIButton>().OrderBy(function(a){return a.name;}).ToList()[0];
 	bombButton.SetInactive(haveBomb);
+	joystickCircle.Reset();
 }
 
 function Update () {

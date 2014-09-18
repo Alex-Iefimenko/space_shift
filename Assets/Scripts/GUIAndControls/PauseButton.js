@@ -6,14 +6,14 @@ var guipause : GameObject;
 
 private var isPaused : boolean = false;
 private var currentState : boolean = false;
+private var isGameActive : boolean = true;
 
 function Update () {
 	if (Input.GetKeyDown("escape")) {
     	ButtonClick();
 	}
-    if(currentState != isPaused) {
+    if (currentState != isPaused) {
 	    Pause(isPaused);
-	    
 	}
 }
 
@@ -33,4 +33,8 @@ function Pause (isActive : boolean) {
 	Camera.main.GetComponent(Vignetting).enabled = isActive; // Vignetting aplied
 	gui.SetActive(!isActive); //GUI hide
 	guipause.SetActive(isActive); //GUI pause unhide
+}
+
+function OnApplicationFocus(focusStatus: boolean) {
+	if (focusStatus && !isPaused) ButtonClick();
 }

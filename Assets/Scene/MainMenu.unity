@@ -362,6 +362,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &616696935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,6 +471,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: af8098ecbaa0c4042878bd7d51775921, type: 2}
+      propertyPath: levelToLoad
+      value: Level_1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af8098ecbaa0c4042878bd7d51775921, type: 2}
   m_RootGameObject: {fileID: 825988958}
@@ -507,6 +512,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1191272126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -645,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: Level1
+  levelToLoad: Level_1
 --- !u!114 &1557362858
 MonoBehaviour:
   m_ObjectHideFlags: 0

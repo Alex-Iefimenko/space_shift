@@ -365,7 +365,7 @@ Transform:
   m_Children:
   - {fileID: 947790325}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 10
+  m_RootOrder: 83
 --- !u!60 &22273272
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -494,8 +494,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &22273275
 MonoBehaviour:
@@ -567,12 +565,12 @@ Transform:
   m_LocalPosition: {x: 0, y: -.221240163, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 461528158}
-  - {fileID: 164135186}
-  - {fileID: 412015992}
   - {fileID: 1071443205}
   - {fileID: 874970741}
   - {fileID: 1902085676}
+  - {fileID: 461528158}
+  - {fileID: 164135186}
+  - {fileID: 412015992}
   m_Father: {fileID: 0}
   m_RootOrder: 30
 --- !u!1001 &24668329
@@ -647,10 +645,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 25499285}
-  - 198: {fileID: 25499287}
-  - 199: {fileID: 25499286}
+  - 212: {fileID: 619591516}
+  - 95: {fileID: 619591515}
+  - 114: {fileID: 816431240}
   m_Layer: 0
-  m_Name: part_jet_flare
+  m_Name: ShieldPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,25 +662,25 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 25499284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0832557678, y: -.0219988599, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.14108396, y: -.178298205, z: -.196313858}
+  m_LocalScale: {x: 2.24368525, y: 2.0778625, z: 1}
   m_Children: []
-  m_Father: {fileID: 1189118181}
-  m_RootOrder: 1
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 6
 --- !u!199 &25499286
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 19900002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 25499284}
+  m_GameObject: {fileID: 1330131306}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a7b030cffa2dc44478c14e49a22771c2, type: 2}
+  - {fileID: 2100000, guid: c58c9afddbd36d14d837fa218d772996, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -707,7 +706,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 19800002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 25499284}
+  m_GameObject: {fileID: 1330131306}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -719,12 +718,12 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .810000002
+      scalar: .25999999
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .864197493
+          value: .384615391
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -863,13 +862,13 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4278819064
+        rgba: 4278232319
       maxColor:
         serializedVersion: 2
-        rgba: 4279850145
+        rgba: 4292603647
       minMaxState: 2
     startSize:
-      scalar: 1
+      scalar: 1.29999995
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -884,7 +883,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .5
+          value: .384615391
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -1033,7 +1032,7 @@ ParticleSystem:
   RotationModule:
     enabled: 0
     curve:
-      scalar: .785398126
+      scalar: 9.03556919
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1267,14 +1266,14 @@ ParticleSystem:
         m_Curve:
         - time: 0
           value: 0
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 10
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
         - time: 1
           value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 10
+          inSlope: .0290039238
+          outSlope: .0290039238
+          tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
       minCurve:
@@ -1576,7 +1575,7 @@ ParticleSystem:
   RotationBySpeedModule:
     enabled: 0
     curve:
-      scalar: .785398185
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3058,7 +3057,7 @@ Transform:
   m_Children:
   - {fileID: 86128318}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 8
+  m_RootOrder: 81
 --- !u!60 &69433551
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3187,8 +3186,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &69433554
 MonoBehaviour:
@@ -3439,36 +3436,6 @@ Transform:
   m_LocalPosition: {x: 15.097784, y: -.272114813, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 765086459}
-  - {fileID: 1242167316}
-  - {fileID: 472543108}
-  - {fileID: 1883462424}
-  - {fileID: 2100271619}
-  - {fileID: 594271227}
-  - {fileID: 1880175835}
-  - {fileID: 129652879}
-  - {fileID: 69433550}
-  - {fileID: 277260409}
-  - {fileID: 22273271}
-  - {fileID: 1666381920}
-  - {fileID: 1575366079}
-  - {fileID: 528625976}
-  - {fileID: 295490749}
-  - {fileID: 1344802686}
-  - {fileID: 538159992}
-  - {fileID: 1090477831}
-  - {fileID: 571235413}
-  - {fileID: 1943371763}
-  - {fileID: 1895304527}
-  - {fileID: 519322630}
-  - {fileID: 838228965}
-  - {fileID: 1407047920}
-  - {fileID: 1413545979}
-  - {fileID: 1706014317}
-  - {fileID: 1112374329}
-  - {fileID: 971795014}
-  - {fileID: 936879122}
-  - {fileID: 402945148}
   - {fileID: 457221620}
   - {fileID: 2075786884}
   - {fileID: 688758157}
@@ -3542,6 +3509,36 @@ Transform:
   - {fileID: 1995341065}
   - {fileID: 1862132006}
   - {fileID: 1972630352}
+  - {fileID: 765086459}
+  - {fileID: 1242167316}
+  - {fileID: 472543108}
+  - {fileID: 1883462424}
+  - {fileID: 2100271619}
+  - {fileID: 594271227}
+  - {fileID: 1880175835}
+  - {fileID: 129652879}
+  - {fileID: 69433550}
+  - {fileID: 277260409}
+  - {fileID: 22273271}
+  - {fileID: 1666381920}
+  - {fileID: 1575366079}
+  - {fileID: 528625976}
+  - {fileID: 295490749}
+  - {fileID: 1344802686}
+  - {fileID: 538159992}
+  - {fileID: 1090477831}
+  - {fileID: 571235413}
+  - {fileID: 1943371763}
+  - {fileID: 1895304527}
+  - {fileID: 519322630}
+  - {fileID: 838228965}
+  - {fileID: 1407047920}
+  - {fileID: 1413545979}
+  - {fileID: 1706014317}
+  - {fileID: 1112374329}
+  - {fileID: 971795014}
+  - {fileID: 936879122}
+  - {fileID: 402945148}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &86128317
@@ -3598,9 +3595,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 91352951}
-  - 114: {fileID: 91352952}
+  - 198: {fileID: 1693536436}
+  - 199: {fileID: 1693536435}
   m_Layer: 0
-  m_Name: gun1
+  m_Name: part_jet_flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3613,18 +3611,18 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 91352950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .200000003, z: 0}
+  m_LocalPosition: {x: -.0832557678, y: -.0219988599, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1941459675}
-  m_RootOrder: 0
+  m_Father: {fileID: 1195219550}
+  m_RootOrder: 1
 --- !u!114 &91352952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 91352950}
+  m_GameObject: {fileID: 1693536433}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
@@ -3990,7 +3988,7 @@ Transform:
   m_Children:
   - {fileID: 884521364}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 75
+  m_RootOrder: 45
 --- !u!60 &101127789
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4157,8 +4155,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &101127793
 MonoBehaviour:
@@ -4321,7 +4317,7 @@ Transform:
   m_Children:
   - {fileID: 1923552541}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 68
+  m_RootOrder: 38
 --- !u!60 &110551282
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4488,8 +4484,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &110551286
 MonoBehaviour:
@@ -4678,7 +4672,7 @@ Transform:
   - {fileID: 1875247989}
   - {fileID: 2062330097}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 42
+  m_RootOrder: 12
 --- !u!60 &125399822
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4830,8 +4824,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &125399825
 MonoBehaviour:
@@ -4911,7 +4903,7 @@ Transform:
   m_Children:
   - {fileID: 995367535}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 7
+  m_RootOrder: 80
 --- !u!60 &129652880
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5040,8 +5032,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &129652883
 MonoBehaviour:
@@ -5331,7 +5321,7 @@ Transform:
   - {fileID: 1041289594}
   - {fileID: 1900254275}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 56
+  m_RootOrder: 26
 --- !u!60 &140812593
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5483,8 +5473,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &140812596
 MonoBehaviour:
@@ -5557,7 +5545,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1941459675}
+  m_Father: {fileID: 1927689885}
   m_RootOrder: 1
 --- !u!114 &141512079
 MonoBehaviour:
@@ -5611,7 +5599,7 @@ Transform:
   m_Children:
   - {fileID: 2036873735}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 69
+  m_RootOrder: 39
 --- !u!60 &143455007
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5778,8 +5766,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &143455011
 MonoBehaviour:
@@ -7083,7 +7069,7 @@ Transform:
   m_Children:
   - {fileID: 1352918337}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 97
+  m_RootOrder: 67
 --- !u!60 &145908764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7250,8 +7236,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &145908768
 MonoBehaviour:
@@ -9656,7 +9640,7 @@ Transform:
   - {fileID: 567748134}
   - {fileID: 598572417}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 47
+  m_RootOrder: 17
 --- !u!60 &161268727
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9808,8 +9792,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &161268730
 MonoBehaviour:
@@ -10029,7 +10011,7 @@ Transform:
   - {fileID: 1853704701}
   - {fileID: 1955985461}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!1 &166522461
 GameObject:
   m_ObjectHideFlags: 0
@@ -10064,7 +10046,7 @@ Transform:
   m_Children:
   - {fileID: 518338107}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 81
+  m_RootOrder: 51
 --- !u!60 &166522463
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10231,8 +10213,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &166522467
 MonoBehaviour:
@@ -10465,7 +10445,7 @@ Transform:
   m_LocalPosition: {x: 0, y: .100000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1941459675}
+  m_Father: {fileID: 1927689885}
   m_RootOrder: 3
 --- !u!114 &188501020
 MonoBehaviour:
@@ -10718,7 +10698,7 @@ Transform:
   m_LocalPosition: {x: .0599999987, y: .100000001, z: 0}
   m_LocalScale: {x: .949961782, y: .949964702, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 816431238}
+  m_Father: {fileID: 619591517}
   m_RootOrder: 0
 --- !u!114 &193513886
 MonoBehaviour:
@@ -11006,7 +10986,7 @@ Transform:
   - {fileID: 1203072548}
   - {fileID: 1022497550}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 39
+  m_RootOrder: 9
 --- !u!60 &219533499
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11158,8 +11138,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &219533502
 MonoBehaviour:
@@ -11956,7 +11934,7 @@ Transform:
   m_Children:
   - {fileID: 967039513}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 9
+  m_RootOrder: 82
 --- !u!60 &277260410
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12085,8 +12063,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &277260413
 MonoBehaviour:
@@ -12218,7 +12194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
 --- !u!1001 &286235072
 Prefab:
   m_ObjectHideFlags: 0
@@ -12312,7 +12288,7 @@ Transform:
   m_Children:
   - {fileID: 1243313768}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 14
+  m_RootOrder: 87
 --- !u!60 &295490750
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12441,8 +12417,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &295490753
 MonoBehaviour:
@@ -12918,7 +12892,7 @@ Transform:
   m_Children:
   - {fileID: 110837922}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 64
+  m_RootOrder: 34
 --- !u!60 &331087351
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13085,8 +13059,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &331087355
 MonoBehaviour:
@@ -13436,7 +13408,7 @@ Transform:
   m_Children:
   - {fileID: 993822097}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 66
+  m_RootOrder: 36
 --- !u!60 &346093108
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13603,8 +13575,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &346093112
 MonoBehaviour:
@@ -13731,7 +13701,7 @@ Transform:
   - {fileID: 2134590910}
   - {fileID: 339763598}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 51
+  m_RootOrder: 21
 --- !u!60 &352345909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13883,8 +13853,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &352345912
 MonoBehaviour:
@@ -14003,7 +13971,7 @@ Transform:
   m_LocalPosition: {x: .0599999987, y: .0586015545, z: 0}
   m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 816431238}
+  m_Father: {fileID: 619591517}
   m_RootOrder: 4
 --- !u!114 &354006216
 MonoBehaviour:
@@ -14855,7 +14823,7 @@ Transform:
   m_Children:
   - {fileID: 465214756}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 65
+  m_RootOrder: 35
 --- !u!60 &397120927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15022,8 +14990,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &397120931
 MonoBehaviour:
@@ -15103,7 +15069,7 @@ Transform:
   m_Children:
   - {fileID: 1930861840}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 29
+  m_RootOrder: 102
 --- !u!60 &402945149
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15232,8 +15198,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &402945152
 MonoBehaviour:
@@ -15480,7 +15444,7 @@ Transform:
   m_Children:
   - {fileID: 377332610}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 93
+  m_RootOrder: 63
 --- !u!60 &409130649
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15647,8 +15611,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &409130653
 MonoBehaviour:
@@ -15728,7 +15690,7 @@ Transform:
   - {fileID: 1241392050}
   - {fileID: 1513043306}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!95 &412015993
 Animator:
   serializedVersion: 3
@@ -17980,7 +17942,7 @@ Transform:
   - {fileID: 1557772790}
   - {fileID: 360095991}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 30
+  m_RootOrder: 0
 --- !u!60 &457221621
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18132,8 +18094,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &457221624
 MonoBehaviour:
@@ -18214,7 +18174,7 @@ Transform:
   m_Children:
   - {fileID: 259150227}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 96
+  m_RootOrder: 66
 --- !u!60 &459806287
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18381,8 +18341,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &459806291
 MonoBehaviour:
@@ -18462,7 +18420,7 @@ Transform:
   - {fileID: 145742020}
   - {fileID: 1106353003}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!95 &461528159
 Animator:
   serializedVersion: 3
@@ -18987,7 +18945,7 @@ Transform:
   - {fileID: 51728129}
   - {fileID: 12783012}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 33
+  m_RootOrder: 3
 --- !u!60 &471287211
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19139,8 +19097,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &471287214
 MonoBehaviour:
@@ -19220,7 +19176,7 @@ Transform:
   m_Children:
   - {fileID: 688402441}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 2
+  m_RootOrder: 75
 --- !u!60 &472543109
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19348,8 +19304,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &472543112
 MonoBehaviour:
@@ -19482,6 +19436,35 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+--- !u!1 &480282948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
+  m_PrefabInternal: {fileID: 861547254}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 480282949}
+  - 114: {fileID: 1330131308}
+  m_Layer: 0
+  m_Name: 5_reilgun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &480282949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
+  m_PrefabInternal: {fileID: 861547254}
+  m_GameObject: {fileID: 480282948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.4000001, y: -1.04999995, z: -.0100001469}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1325849537}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 4
 --- !u!1 &490265748
 GameObject:
   m_ObjectHideFlags: 0
@@ -21136,7 +21119,7 @@ Transform:
   m_Children:
   - {fileID: 1662996018}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 21
+  m_RootOrder: 94
 --- !u!60 &519322631
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21265,8 +21248,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &519322634
 MonoBehaviour:
@@ -21321,11 +21302,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 523126650}
-  - 15: {fileID: 523126653}
-  - 12: {fileID: 523126652}
-  - 26: {fileID: 523126651}
+  - 114: {fileID: 1765244756}
   m_Layer: 0
-  m_Name: InnerCore
+  m_Name: gun3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21337,19 +21316,19 @@ Transform:
   m_PrefabParentObject: {fileID: 400034, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 523126649}
-  m_LocalRotation: {x: -.00617099926, y: .00617099926, z: .707079887, w: .707079887}
-  m_LocalPosition: {x: .25893876, y: -.0166071448, z: -.109160833}
-  m_LocalScale: {x: .274344742, y: .253970742, z: .499805957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .100000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1189118181}
-  m_RootOrder: 0
+  m_Father: {fileID: 1927689885}
+  m_RootOrder: 2
 --- !u!26 &523126651
 ParticleRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2600000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 523126649}
+  m_GameObject: {fileID: 683265910}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -21382,7 +21361,7 @@ ParticleAnimator:
   m_PrefabParentObject: {fileID: 1200000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 523126649}
+  m_GameObject: {fileID: 683265910}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -21413,7 +21392,7 @@ EllipsoidParticleEmitter:
   m_PrefabParentObject: {fileID: 1500000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 523126649}
+  m_GameObject: {fileID: 683265910}
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
@@ -21468,7 +21447,7 @@ Transform:
   m_Children:
   - {fileID: 2121301099}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 13
+  m_RootOrder: 86
 --- !u!60 &528625977
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21597,8 +21576,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &528625980
 MonoBehaviour:
@@ -21773,7 +21750,7 @@ Transform:
   m_Children:
   - {fileID: 1401717253}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 16
+  m_RootOrder: 89
 --- !u!60 &538159993
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21902,8 +21879,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &538159996
 MonoBehaviour:
@@ -21958,17 +21933,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 553299161}
-  - 50: {fileID: 553299159}
-  - 60: {fileID: 553299158}
-  - 114: {fileID: 553299157}
-  - 114: {fileID: 553299162}
-  - 114: {fileID: 553299164}
-  - 95: {fileID: 553299163}
-  - 212: {fileID: 553299160}
-  - 58: {fileID: 553299165}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
+  m_Name: smallengine_player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21979,7 +21946,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400010, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6475221e5cec6124e97179a72710fe35, type: 3}
@@ -21988,9 +21955,6 @@ MonoBehaviour:
   speed: {x: 13, y: 13}
   gunLevel: 1
   playerGun: 1
-  joystickCircle: {fileID: 308900194}
-  buttons: {fileID: 1622603652}
-  specialEffectsHelper: {fileID: 284588642}
   bombPrefab: {fileID: 400000, guid: 02bbc2abfb7f8204484c377abab4e2e8, type: 2}
   bombTreshhold: 3000
 --- !u!60 &553299158
@@ -21999,7 +21963,7 @@ PolygonCollider2D:
   m_PrefabParentObject: {fileID: 6000000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -22102,7 +22066,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 5000000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
@@ -22118,7 +22082,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 21200000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -22143,25 +22107,19 @@ Transform:
   m_GameObject: {fileID: 553299156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.1242561, y: .333905935, z: -5.003932}
-  m_LocalScale: {x: .507941484, y: .548476636, z: 1}
+  m_LocalScale: {x: 1.96873069, y: 1.82318687, z: 1.00036371}
   m_Children:
   - {fileID: 816431238}
-  - {fileID: 1941459675}
-  - {fileID: 1927689885}
-  - {fileID: 1858698116}
-  - {fileID: 1325849537}
-  - {fileID: 1189118181}
-  - {fileID: 619591517}
-  - {fileID: 595034093}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  - {fileID: 1323798425}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 7
 --- !u!114 &553299162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400012, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5da6752ef465d546a0fd5d637edd796, type: 3}
@@ -22179,7 +22137,7 @@ Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 91dd963993043ee48ba957914edadc2c, type: 2}
@@ -22193,7 +22151,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400014, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
@@ -22202,8 +22160,6 @@ MonoBehaviour:
   health: 100
   isEnemy: 0
   scoreValue: 0
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!58 &553299165
 CircleCollider2D:
@@ -22211,7 +22167,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 5800000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 553299156}
+  m_GameObject: {fileID: 595034092}
   m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -22476,7 +22432,7 @@ Transform:
   m_Children:
   - {fileID: 1513120989}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 18
+  m_RootOrder: 91
 --- !u!60 &571235414
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22605,8 +22561,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &571235417
 MonoBehaviour:
@@ -22937,7 +22891,7 @@ Transform:
   m_Children:
   - {fileID: 1014893885}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 5
+  m_RootOrder: 78
 --- !u!60 &594271228
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23066,8 +23020,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &594271231
 MonoBehaviour:
@@ -23122,9 +23074,17 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 595034093}
+  - 50: {fileID: 553299159}
+  - 60: {fileID: 553299158}
+  - 114: {fileID: 553299157}
+  - 114: {fileID: 553299162}
+  - 114: {fileID: 553299164}
+  - 95: {fileID: 553299163}
+  - 212: {fileID: 553299160}
+  - 58: {fileID: 553299165}
   m_Layer: 0
-  m_Name: smallengine_player
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23135,14 +23095,20 @@ Transform:
   m_PrefabParentObject: {fileID: 400014, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 595034092}
-  m_LocalRotation: {x: .00872653536, y: 0, z: 0, w: .999961913}
-  m_LocalPosition: {x: .250614315, y: -.806342065, z: .109394111}
-  m_LocalScale: {x: 1.96873069, y: 1.82318687, z: 1.00036371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.1242561, y: .333905935, z: -5.003932}
+  m_LocalScale: {x: .507941484, y: .548476636, z: 1}
   m_Children:
-  - {fileID: 683265911}
-  - {fileID: 1693536434}
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 7
+  - {fileID: 619591517}
+  - {fileID: 1927689885}
+  - {fileID: 1915344249}
+  - {fileID: 1189118181}
+  - {fileID: 480282949}
+  - {fileID: 1195219550}
+  - {fileID: 25499285}
+  - {fileID: 553299161}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
 --- !u!1 &595733133
 GameObject:
   m_ObjectHideFlags: 0
@@ -24554,7 +24520,7 @@ Transform:
   - {fileID: 1264030656}
   - {fileID: 1365314808}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 53
+  m_RootOrder: 23
 --- !u!60 &617703663
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24706,8 +24672,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &617703666
 MonoBehaviour:
@@ -24806,11 +24770,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 619591517}
-  - 212: {fileID: 619591516}
-  - 95: {fileID: 619591515}
-  - 114: {fileID: 619591519}
+  - 114: {fileID: 1048621898}
   m_Layer: 0
-  m_Name: ShieldPlayer
+  m_Name: 1_machinegun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24823,7 +24785,7 @@ Animator:
   m_PrefabParentObject: {fileID: 9500002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 619591514}
+  m_GameObject: {fileID: 25499284}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 65d286b25c9a6c747ab68ae7ce9e274c, type: 2}
@@ -24837,7 +24799,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 21200002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 619591514}
+  m_GameObject: {fileID: 25499284}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -24861,23 +24823,34 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 619591514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.14108396, y: -.178298205, z: -.196313858}
-  m_LocalScale: {x: 2.24368525, y: 2.0778625, z: 1}
-  m_Children: []
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 6
+  m_LocalPosition: {x: 2.83802414, y: -.309271932, z: -.0100000175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 193513885}
+  - {fileID: 2020438408}
+  - {fileID: 1048621897}
+  - {fileID: 1858698116}
+  - {fileID: 354006215}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 0
 --- !u!114 &619591519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400042, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 619591514}
+  m_GameObject: {fileID: 2020438407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbfc35ca409dbb3458bc3b9c723e9ca0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
+  shootingRate: .100000001
+  isBurst: 0
+  burstLength: 10
+  burstRate: 0
+  isRocket: 0
 --- !u!1001 &621800113
 Prefab:
   m_ObjectHideFlags: 0
@@ -26356,7 +26329,7 @@ Transform:
   m_Children:
   - {fileID: 1471522730}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 72
+  m_RootOrder: 42
 --- !u!60 &639966040
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26523,8 +26496,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &639966044
 MonoBehaviour:
@@ -26852,7 +26823,7 @@ Transform:
   - {fileID: 1748896583}
   - {fileID: 1729239516}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 54
+  m_RootOrder: 24
 --- !u!60 &658644660
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27004,8 +26975,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &658644663
 MonoBehaviour:
@@ -27321,9 +27290,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 683265911}
-  - 15: {fileID: 683265914}
-  - 12: {fileID: 683265913}
-  - 26: {fileID: 683265912}
+  - 15: {fileID: 523126653}
+  - 12: {fileID: 523126652}
+  - 26: {fileID: 523126651}
   m_Layer: 0
   m_Name: InnerCore
   m_TagString: Untagged
@@ -27338,10 +27307,10 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 683265910}
   m_LocalRotation: {x: -.00617099926, y: .00617099926, z: .707079887, w: .707079887}
-  m_LocalPosition: {x: -.0664663464, y: -.0166071448, z: -.109160833}
+  m_LocalPosition: {x: .25893876, y: -.0166071448, z: -.109160833}
   m_LocalScale: {x: .274344742, y: .253970742, z: .499805957}
   m_Children: []
-  m_Father: {fileID: 595034093}
+  m_Father: {fileID: 1195219550}
   m_RootOrder: 0
 --- !u!26 &683265912
 ParticleRenderer:
@@ -27349,7 +27318,7 @@ ParticleRenderer:
   m_PrefabParentObject: {fileID: 2600002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 683265910}
+  m_GameObject: {fileID: 816431237}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -27382,7 +27351,7 @@ ParticleAnimator:
   m_PrefabParentObject: {fileID: 1200002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 683265910}
+  m_GameObject: {fileID: 816431237}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -27413,7 +27382,7 @@ EllipsoidParticleEmitter:
   m_PrefabParentObject: {fileID: 1500002, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 683265910}
+  m_GameObject: {fileID: 816431237}
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
@@ -27627,7 +27596,7 @@ Transform:
   - {fileID: 1788806072}
   - {fileID: 1401769098}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 32
+  m_RootOrder: 2
 --- !u!60 &688758158
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27779,8 +27748,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &688758161
 MonoBehaviour:
@@ -27921,7 +27888,7 @@ Transform:
   m_Children:
   - {fileID: 1114041041}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 90
+  m_RootOrder: 60
 --- !u!60 &691806267
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28088,8 +28055,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &691806271
 MonoBehaviour:
@@ -28536,7 +28501,7 @@ Transform:
   m_Children:
   - {fileID: 869324888}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 0
+  m_RootOrder: 73
 --- !u!60 &765086460
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28665,8 +28630,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &765086463
 MonoBehaviour:
@@ -30136,7 +30099,7 @@ Transform:
   m_Children:
   - {fileID: 204585389}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 95
+  m_RootOrder: 65
 --- !u!60 &796490960
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30303,8 +30266,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &796490964
 MonoBehaviour:
@@ -30567,9 +30528,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 816431238}
-  - 114: {fileID: 816431240}
+  - 15: {fileID: 683265914}
+  - 12: {fileID: 683265913}
+  - 26: {fileID: 683265912}
   m_Layer: 0
-  m_Name: 1_machinegun
+  m_Name: InnerCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30581,15 +30544,10 @@ Transform:
   m_PrefabParentObject: {fileID: 400020, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 816431237}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.83802414, y: -.309271932, z: -.0100000175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 193513885}
-  - {fileID: 2095653603}
-  - {fileID: 1048621897}
-  - {fileID: 1915344249}
-  - {fileID: 354006215}
+  m_LocalRotation: {x: -.00617099926, y: .00617099926, z: .707079887, w: .707079887}
+  m_LocalPosition: {x: -.0664663464, y: -.0166071448, z: -.109160833}
+  m_LocalScale: {x: .274344742, y: .253970742, z: .499805957}
+  m_Children: []
   m_Father: {fileID: 553299161}
   m_RootOrder: 0
 --- !u!114 &816431240
@@ -30598,13 +30556,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400016, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 816431237}
+  m_GameObject: {fileID: 25499284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfc35ca409dbb3458bc3b9c723e9ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMultiBarrel: 0
 --- !u!1 &818423158
 GameObject:
   m_ObjectHideFlags: 0
@@ -30908,7 +30865,7 @@ Transform:
   m_Children:
   - {fileID: 430370622}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 22
+  m_RootOrder: 95
 --- !u!60 &838228966
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31037,8 +30994,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &838228969
 MonoBehaviour:
@@ -31119,7 +31074,7 @@ Transform:
   - {fileID: 1624817680}
   - {fileID: 1763970337}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 50
+  m_RootOrder: 20
 --- !u!60 &841330521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31271,8 +31226,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &841330524
 MonoBehaviour:
@@ -31472,8 +31425,6 @@ MonoBehaviour:
   health: 200
   isEnemy: 1
   scoreValue: 2000
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 4
 --- !u!114 &851172695
 MonoBehaviour:
@@ -31676,7 +31627,7 @@ Transform:
   - {fileID: 555629412}
   - {fileID: 611035345}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 46
+  m_RootOrder: 16
 --- !u!60 &857949129
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31828,8 +31779,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &857949132
 MonoBehaviour:
@@ -31933,7 +31882,7 @@ Prefab:
       objectReference: {fileID: 284588642}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
-  m_RootGameObject: {fileID: 553299156}
+  m_RootGameObject: {fileID: 595034092}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &863025163
@@ -33264,7 +33213,7 @@ Transform:
   - {fileID: 912340365}
   - {fileID: 901214420}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!1001 &883814781
 Prefab:
   m_ObjectHideFlags: 0
@@ -34562,7 +34511,7 @@ Transform:
   - {fileID: 676122691}
   - {fileID: 821426523}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 40
+  m_RootOrder: 10
 --- !u!60 &893753936
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34714,8 +34663,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &893753939
 MonoBehaviour:
@@ -37574,7 +37521,7 @@ Transform:
   - {fileID: 403196397}
   - {fileID: 1314269047}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 61
+  m_RootOrder: 31
 --- !u!60 &935535209
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37726,8 +37673,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &935535212
 MonoBehaviour:
@@ -37807,7 +37752,7 @@ Transform:
   m_Children:
   - {fileID: 1584316693}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 28
+  m_RootOrder: 101
 --- !u!60 &936879123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37936,8 +37881,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &936879126
 MonoBehaviour:
@@ -40555,7 +40498,7 @@ Transform:
   m_Children:
   - {fileID: 476978715}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 27
+  m_RootOrder: 100
 --- !u!60 &971795015
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40684,8 +40627,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &971795018
 MonoBehaviour:
@@ -40877,7 +40818,7 @@ Transform:
   m_Children:
   - {fileID: 806544384}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 79
+  m_RootOrder: 49
 --- !u!60 &979066310
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -41044,8 +40985,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &979066314
 MonoBehaviour:
@@ -42591,7 +42530,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1048621897}
-  - 114: {fileID: 1048621898}
+  - 114: {fileID: 1195219551}
   m_Layer: 0
   m_Name: gun3
   m_TagString: Untagged
@@ -42609,7 +42548,7 @@ Transform:
   m_LocalPosition: {x: .0599999987, y: .0153188119, z: 0}
   m_LocalScale: {x: .949961782, y: .949964702, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 816431238}
+  m_Father: {fileID: 619591517}
   m_RootOrder: 2
 --- !u!114 &1048621898
 MonoBehaviour:
@@ -42617,18 +42556,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400018, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1048621896}
+  m_GameObject: {fileID: 619591514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .100000001
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
-  isRocket: 0
+  isMultiBarrel: 0
 --- !u!1 &1050543094
 GameObject:
   m_ObjectHideFlags: 0
@@ -42709,7 +42643,7 @@ Transform:
   - {fileID: 175101793}
   - {fileID: 348533002}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 37
+  m_RootOrder: 7
 --- !u!60 &1053931348
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -42861,8 +42795,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1053931351
 MonoBehaviour:
@@ -43143,7 +43075,7 @@ Transform:
   - {fileID: 2073402563}
   - {fileID: 1532573919}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 44
+  m_RootOrder: 14
 --- !u!60 &1065399310
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43295,8 +43227,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1065399313
 MonoBehaviour:
@@ -43473,7 +43403,7 @@ Transform:
   - {fileID: 2031545328}
   - {fileID: 1536705678}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!95 &1071443206
 Animator:
   serializedVersion: 3
@@ -43588,7 +43518,7 @@ Transform:
   - {fileID: 2130210669}
   - {fileID: 1957131180}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 57
+  m_RootOrder: 27
 --- !u!60 &1072726132
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43740,8 +43670,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1072726135
 MonoBehaviour:
@@ -44137,7 +44065,7 @@ Transform:
   m_Children:
   - {fileID: 2011820366}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 17
+  m_RootOrder: 90
 --- !u!60 &1090477832
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44266,8 +44194,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1090477835
 MonoBehaviour:
@@ -45802,7 +45728,7 @@ Transform:
   m_Children:
   - {fileID: 300834936}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 26
+  m_RootOrder: 99
 --- !u!60 &1112374330
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -45931,8 +45857,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1112374333
 MonoBehaviour:
@@ -46201,7 +46125,7 @@ Transform:
   m_Children:
   - {fileID: 1684933088}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 83
+  m_RootOrder: 53
 --- !u!60 &1124141790
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -46368,8 +46292,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1124141794
 MonoBehaviour:
@@ -47165,7 +47087,7 @@ Transform:
   m_Children:
   - {fileID: 1061675998}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 89
+  m_RootOrder: 59
 --- !u!60 &1172439412
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -47332,8 +47254,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1172439416
 MonoBehaviour:
@@ -47464,7 +47384,7 @@ Transform:
   - {fileID: 1879963300}
   - {fileID: 1705499453}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!95 &1180580004
 Animator:
   serializedVersion: 3
@@ -47683,8 +47603,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1189118181}
+  - 114: {fileID: 1915344250}
   m_Layer: 0
-  m_Name: engines_player
+  m_Name: 4_flack_cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47696,15 +47617,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400040, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1189118180}
-  m_LocalRotation: {x: .00872653536, y: 0, z: 0, w: .999961913}
-  m_LocalPosition: {x: -.448257893, y: -.305590808, z: .11418815}
-  m_LocalScale: {x: 1.96873069, y: 1.82298088, z: 1.0002507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: -.74000001, z: -.0100000734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 523126650}
-  - {fileID: 25499285}
-  - {fileID: 1323798425}
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 5
+  - {fileID: 1992681873}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 3
 --- !u!1 &1189382642
 GameObject:
   m_ObjectHideFlags: 0
@@ -47824,9 +47743,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1195219550}
-  - 114: {fileID: 1195219551}
   m_Layer: 0
-  m_Name: gun1
+  m_Name: engines_player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47838,29 +47756,32 @@ Transform:
   m_PrefabParentObject: {fileID: 400026, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1195219549}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1325849537}
-  m_RootOrder: 0
+  m_LocalRotation: {x: .00872653536, y: 0, z: 0, w: .999961913}
+  m_LocalPosition: {x: -.448257893, y: -.305590808, z: .11418815}
+  m_LocalScale: {x: 1.96873069, y: 1.82298088, z: 1.0002507}
+  m_Children:
+  - {fileID: 683265911}
+  - {fileID: 91352951}
+  - {fileID: 1330131307}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 5
 --- !u!114 &1195219551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400020, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1195219549}
+  m_GameObject: {fileID: 1048621896}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 7f5c1fae21d7bce4fa9ad30dffcf9561, type: 2}
-  shootingRate: 1
-  isBurst: 1
-  burstLength: 30
-  burstRate: .00999999978
+  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
+  shootingRate: .100000001
+  isBurst: 0
+  burstLength: 10
+  burstRate: 0
   isRocket: 0
 --- !u!1 &1196015275
 GameObject:
@@ -49367,7 +49288,7 @@ Transform:
   m_Children:
   - {fileID: 224696825}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 67
+  m_RootOrder: 37
 --- !u!60 &1218734079
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -49534,8 +49455,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1218734083
 MonoBehaviour:
@@ -51938,7 +51857,7 @@ Transform:
   m_Children:
   - {fileID: 1486111050}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 1
+  m_RootOrder: 74
 --- !u!60 &1242167317
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -52067,8 +51986,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1242167320
 MonoBehaviour:
@@ -52281,7 +52198,7 @@ Transform:
   - {fileID: 138290030}
   - {fileID: 1289023041}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 35
+  m_RootOrder: 5
 --- !u!60 &1251043334
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -52433,8 +52350,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1251043337
 MonoBehaviour:
@@ -52571,7 +52486,7 @@ Transform:
   m_Children:
   - {fileID: 1031057368}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 86
+  m_RootOrder: 56
 --- !u!60 &1263514387
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -52738,8 +52653,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1263514391
 MonoBehaviour:
@@ -55721,11 +55634,11 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1323798424}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -.191923141, y: -.0130321318, z: 0}
+  m_LocalPosition: {x: -.238409996, y: -.013032129, z: -1.93904668e-07}
   m_LocalScale: {x: 3.37500048, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1189118181}
-  m_RootOrder: 2
+  m_Father: {fileID: 553299161}
+  m_RootOrder: 1
 --- !u!199 &1323798426
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -55927,7 +55840,7 @@ ParticleSystem:
         rgba: 4292603647
       minMaxState: 2
     startSize:
-      scalar: 1.29999995
+      scalar: .569999993
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -55942,7 +55855,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .384615391
+          value: .877192914
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -56802,7 +56715,7 @@ GameObject:
   - 4: {fileID: 1325849537}
   - 114: {fileID: 1325849539}
   m_Layer: 0
-  m_Name: 5_reilgun
+  m_Name: gun1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56815,12 +56728,11 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1325849536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.4000001, y: -1.04999995, z: -.0100001469}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1195219550}
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 4
+  m_Children: []
+  m_Father: {fileID: 480282949}
+  m_RootOrder: 0
 --- !u!114 &1325849539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56830,10 +56742,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1325849536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMultiBarrel: 0
+  misslePrefab: {fileID: 400000, guid: 7f5c1fae21d7bce4fa9ad30dffcf9561, type: 2}
+  shootingRate: 1
+  isBurst: 1
+  burstLength: 30
+  burstRate: .00999999978
+  isRocket: 0
 --- !u!1 &1330131306
 GameObject:
   m_ObjectHideFlags: 0
@@ -56842,9 +56759,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1330131307}
-  - 114: {fileID: 1330131308}
+  - 198: {fileID: 25499287}
+  - 199: {fileID: 25499286}
   m_Layer: 0
-  m_Name: gun3
+  m_Name: part_jet_core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56856,11 +56774,11 @@ Transform:
   m_PrefabParentObject: {fileID: 400030, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1330131306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .100000001, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -.191923141, y: -.0130321318, z: 0}
+  m_LocalScale: {x: 3.37500048, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1941459675}
+  m_Father: {fileID: 1195219550}
   m_RootOrder: 2
 --- !u!114 &1330131308
 MonoBehaviour:
@@ -56868,18 +56786,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400024, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1330131306}
+  m_GameObject: {fileID: 480282948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
-  shootingRate: .300000012
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
-  isRocket: 0
+  isMultiBarrel: 0
 --- !u!1 &1331469503
 GameObject:
   m_ObjectHideFlags: 0
@@ -57025,7 +56938,7 @@ Transform:
   m_Children:
   - {fileID: 7846446}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 92
+  m_RootOrder: 62
 --- !u!60 &1340827000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57192,8 +57105,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1340827004
 MonoBehaviour:
@@ -57273,7 +57184,7 @@ Transform:
   m_Children:
   - {fileID: 899539495}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 15
+  m_RootOrder: 88
 --- !u!60 &1344802687
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57401,8 +57312,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1344802690
 MonoBehaviour:
@@ -57817,7 +57726,7 @@ Transform:
   - {fileID: 985667760}
   - {fileID: 1163084207}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 45
+  m_RootOrder: 15
 --- !u!60 &1355982495
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57969,8 +57878,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1355982498
 MonoBehaviour:
@@ -60127,7 +60034,7 @@ Transform:
   m_Children:
   - {fileID: 2028835}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 23
+  m_RootOrder: 96
 --- !u!60 &1407047921
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60256,8 +60163,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1407047924
 MonoBehaviour:
@@ -60338,7 +60243,7 @@ Transform:
   - {fileID: 2106982271}
   - {fileID: 513905525}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 36
+  m_RootOrder: 6
 --- !u!60 &1413161278
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60490,8 +60395,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1413161281
 MonoBehaviour:
@@ -60638,7 +60541,7 @@ Transform:
   m_Children:
   - {fileID: 192743378}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 24
+  m_RootOrder: 97
 --- !u!60 &1413545980
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -60767,8 +60670,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1413545983
 MonoBehaviour:
@@ -60957,7 +60858,7 @@ Transform:
   m_Children:
   - {fileID: 654909757}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 99
+  m_RootOrder: 69
 --- !u!60 &1423375396
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61124,8 +61025,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1423375400
 MonoBehaviour:
@@ -61206,7 +61105,7 @@ Transform:
   m_Children:
   - {fileID: 791727041}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 98
+  m_RootOrder: 68
 --- !u!60 &1425513640
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61373,8 +61272,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1425513644
 MonoBehaviour:
@@ -61598,7 +61495,7 @@ Transform:
   - {fileID: 343409141}
   - {fileID: 230302337}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 52
+  m_RootOrder: 22
 --- !u!60 &1437079290
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61750,8 +61647,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1437079293
 MonoBehaviour:
@@ -63155,7 +63050,7 @@ Transform:
   m_Children:
   - {fileID: 1059274883}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 91
+  m_RootOrder: 61
 --- !u!60 &1458591086
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -63322,8 +63217,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1458591090
 MonoBehaviour:
@@ -65748,7 +65641,7 @@ Transform:
   m_Children:
   - {fileID: 1050543095}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 70
+  m_RootOrder: 40
 --- !u!60 &1469992988
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -65915,8 +65808,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1469992992
 MonoBehaviour:
@@ -68463,7 +68354,7 @@ Transform:
   m_Children:
   - {fileID: 9248926}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 62
+  m_RootOrder: 32
 --- !u!60 &1497784670
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68630,8 +68521,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1497784674
 MonoBehaviour:
@@ -70221,7 +70110,7 @@ Transform:
   - {fileID: 51633974}
   - {fileID: 1855885281}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 58
+  m_RootOrder: 28
 --- !u!60 &1548647754
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -70373,8 +70262,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1548647757
 MonoBehaviour:
@@ -71912,7 +71799,7 @@ Transform:
   m_Children:
   - {fileID: 1189382643}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 12
+  m_RootOrder: 85
 --- !u!60 &1575366080
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72041,8 +71928,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1575366083
 MonoBehaviour:
@@ -72333,7 +72218,7 @@ Transform:
   m_Children:
   - {fileID: 380148776}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 82
+  m_RootOrder: 52
 --- !u!60 &1592802278
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72500,8 +72385,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1592802282
 MonoBehaviour:
@@ -72582,7 +72465,7 @@ Transform:
   m_Children:
   - {fileID: 368549936}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 78
+  m_RootOrder: 48
 --- !u!60 &1594026189
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72749,8 +72632,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1594026193
 MonoBehaviour:
@@ -72831,7 +72712,7 @@ Transform:
   m_Children:
   - {fileID: 1248456520}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 84
+  m_RootOrder: 54
 --- !u!60 &1595410273
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -72998,8 +72879,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1595410277
 MonoBehaviour:
@@ -75511,7 +75390,7 @@ Transform:
   - {fileID: 1037964097}
   - {fileID: 1483195350}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 49
+  m_RootOrder: 19
 --- !u!60 &1622697269
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -75663,8 +75542,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1622697272
 MonoBehaviour:
@@ -75895,7 +75772,7 @@ Transform:
   m_Children:
   - {fileID: 352872896}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 74
+  m_RootOrder: 44
 --- !u!60 &1631884253
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -76062,8 +75939,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1631884257
 MonoBehaviour:
@@ -76367,7 +76242,7 @@ Transform:
   m_Children:
   - {fileID: 988199051}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 71
+  m_RootOrder: 41
 --- !u!60 &1652835622
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -76534,8 +76409,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1652835626
 MonoBehaviour:
@@ -76737,7 +76610,7 @@ Transform:
   - {fileID: 1314232314}
   - {fileID: 138553637}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!95 &1656457022
 Animator:
   serializedVersion: 3
@@ -76897,7 +76770,7 @@ Transform:
   m_Children:
   - {fileID: 2030912558}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 11
+  m_RootOrder: 84
 --- !u!60 &1666381921
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77026,8 +76899,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1666381924
 MonoBehaviour:
@@ -77175,7 +77046,7 @@ Transform:
   m_Children:
   - {fileID: 1999761037}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 73
+  m_RootOrder: 43
 --- !u!60 &1676011349
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77342,8 +77213,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1676011353
 MonoBehaviour:
@@ -77424,7 +77293,7 @@ Transform:
   m_Children:
   - {fileID: 502530316}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 88
+  m_RootOrder: 58
 --- !u!60 &1677201604
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77591,8 +77460,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1677201608
 MonoBehaviour:
@@ -77900,10 +77767,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1693536434}
-  - 198: {fileID: 1693536436}
-  - 199: {fileID: 1693536435}
+  - 114: {fileID: 91352952}
   m_Layer: 0
-  m_Name: part_jet_core
+  m_Name: gun1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77915,26 +77781,26 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1693536433}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -.238409996, y: -.013032129, z: -1.93904668e-07}
-  m_LocalScale: {x: 3.37500048, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .200000003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 595034093}
-  m_RootOrder: 1
+  m_Father: {fileID: 1927689885}
+  m_RootOrder: 0
 --- !u!199 &1693536435
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 19900000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1693536433}
+  m_GameObject: {fileID: 91352950}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c58c9afddbd36d14d837fa218d772996, type: 2}
+  - {fileID: 2100000, guid: a7b030cffa2dc44478c14e49a22771c2, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -77960,7 +77826,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 19800000, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1693536433}
+  m_GameObject: {fileID: 91352950}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -77972,12 +77838,12 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .25999999
+      scalar: .810000002
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .384615391
+          value: .864197493
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -78116,13 +77982,13 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4278232319
+        rgba: 4278819064
       maxColor:
         serializedVersion: 2
-        rgba: 4292603647
+        rgba: 4279850145
       minMaxState: 2
     startSize:
-      scalar: .569999993
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -78137,7 +78003,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .877192914
+          value: .5
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -78286,7 +78152,7 @@ ParticleSystem:
   RotationModule:
     enabled: 0
     curve:
-      scalar: 9.03556919
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -78520,14 +78386,14 @@ ParticleSystem:
         m_Curve:
         - time: 0
           value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 10
         - time: 1
           value: 1
-          inSlope: .0290039238
-          outSlope: .0290039238
-          tangentMode: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 10
         m_PreInfinity: 2
         m_PostInfinity: 2
       minCurve:
@@ -78829,7 +78695,7 @@ ParticleSystem:
   RotationBySpeedModule:
     enabled: 0
     curve:
-      scalar: .785398126
+      scalar: .785398185
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -79122,7 +78988,7 @@ Transform:
   m_Children:
   - {fileID: 508861559}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 25
+  m_RootOrder: 98
 --- !u!60 &1706014318
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79251,8 +79117,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1706014321
 MonoBehaviour:
@@ -80607,7 +80471,7 @@ Transform:
   - {fileID: 2023145323}
   - {fileID: 1681923197}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 60
+  m_RootOrder: 30
 --- !u!60 &1719450123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -80759,8 +80623,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1719450126
 MonoBehaviour:
@@ -82103,7 +81965,7 @@ Transform:
   - {fileID: 1438097767}
   - {fileID: 10466587}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 41
+  m_RootOrder: 11
 --- !u!60 &1746533268
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -82255,8 +82117,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1746533271
 MonoBehaviour:
@@ -83508,7 +83368,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1765244755}
-  - 114: {fileID: 1765244756}
+  - 114: {fileID: 1858698118}
   m_Layer: 0
   m_Name: gun5
   m_TagString: Untagged
@@ -83526,7 +83386,7 @@ Transform:
   m_LocalPosition: {x: 0, y: .100000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1941459675}
+  m_Father: {fileID: 1927689885}
   m_RootOrder: 4
 --- !u!114 &1765244756
 MonoBehaviour:
@@ -83534,7 +83394,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400026, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1765244754}
+  m_GameObject: {fileID: 523126649}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
@@ -83767,7 +83627,7 @@ Transform:
   - {fileID: 819617173}
   - {fileID: 1634872270}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 34
+  m_RootOrder: 4
 --- !u!60 &1774175241
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -83919,8 +83779,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1774175244
 MonoBehaviour:
@@ -84087,7 +83945,7 @@ Transform:
   m_Children:
   - {fileID: 1206420758}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 85
+  m_RootOrder: 55
 --- !u!60 &1805556026
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -84254,8 +84112,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1805556030
 MonoBehaviour:
@@ -84481,7 +84337,7 @@ Transform:
   m_Children:
   - {fileID: 628045147}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 77
+  m_RootOrder: 47
 --- !u!60 &1819013972
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -84648,8 +84504,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1819013976
 MonoBehaviour:
@@ -86150,9 +86004,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1858698116}
-  - 114: {fileID: 1858698118}
+  - 114: {fileID: 1927689887}
   m_Layer: 0
-  m_Name: 4_flack_cannon
+  m_Name: gun4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86164,12 +86018,11 @@ Transform:
   m_PrefabParentObject: {fileID: 400042, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1858698115}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -.74000001, z: -.0100000734}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2020438408}
-  m_Father: {fileID: 553299161}
+  m_LocalRotation: {x: 0, y: 0, z: -.087155737, w: .99619472}
+  m_LocalPosition: {x: .0599999987, y: -.033203762, z: 0}
+  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 619591517}
   m_RootOrder: 3
 --- !u!114 &1858698118
 MonoBehaviour:
@@ -86177,13 +86030,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400028, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1858698115}
+  m_GameObject: {fileID: 1765244754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMultiBarrel: 0
+  misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
+  shootingRate: .300000012
+  isBurst: 0
+  burstLength: 10
+  burstRate: 0
+  isRocket: 0
 --- !u!1 &1860478984
 GameObject:
   m_ObjectHideFlags: 0
@@ -86331,7 +86189,7 @@ Transform:
   m_Children:
   - {fileID: 1931273609}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 101
+  m_RootOrder: 71
 --- !u!60 &1862132007
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -86498,8 +86356,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1862132011
 MonoBehaviour:
@@ -87840,7 +87696,7 @@ Transform:
   m_Children:
   - {fileID: 1544266084}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 6
+  m_RootOrder: 79
 --- !u!60 &1880175836
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -87969,8 +87825,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1880175839
 MonoBehaviour:
@@ -89155,7 +89009,7 @@ Transform:
   m_Children:
   - {fileID: 61078164}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 3
+  m_RootOrder: 76
 --- !u!60 &1883462425
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89283,8 +89137,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1883462428
 MonoBehaviour:
@@ -89495,7 +89347,7 @@ Transform:
   m_Children:
   - {fileID: 1077203617}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 80
+  m_RootOrder: 50
 --- !u!60 &1895163469
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89662,8 +89514,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1895163473
 MonoBehaviour:
@@ -89744,7 +89594,7 @@ Transform:
   m_Children:
   - {fileID: 1235669436}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 94
+  m_RootOrder: 64
 --- !u!60 &1895166236
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89911,8 +89761,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1895166240
 MonoBehaviour:
@@ -89992,7 +89840,7 @@ Transform:
   m_Children:
   - {fileID: 2024288377}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 20
+  m_RootOrder: 93
 --- !u!60 &1895304528
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -90121,8 +89969,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1895304531
 MonoBehaviour:
@@ -90248,7 +90094,7 @@ Transform:
   - {fileID: 1413424401}
   - {fileID: 1711631825}
   m_Father: {fileID: 23626599}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!95 &1902085677
 Animator:
   serializedVersion: 3
@@ -90385,9 +90231,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1915344249}
-  - 114: {fileID: 1915344250}
+  - 114: {fileID: 1941459677}
   m_Layer: 0
-  m_Name: gun4
+  m_Name: 3_rocket_launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90399,30 +90245,26 @@ Transform:
   m_PrefabParentObject: {fileID: 400044, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1915344248}
-  m_LocalRotation: {x: 0, y: 0, z: -.087155737, w: .99619472}
-  m_LocalPosition: {x: .0599999987, y: -.033203762, z: 0}
-  m_LocalScale: {x: .94996202, y: .949965, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 816431238}
-  m_RootOrder: 3
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .826909065, y: -.36815396, z: -.00999990199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1941459675}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 2
 --- !u!114 &1915344250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400030, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1915344248}
+  m_GameObject: {fileID: 1189118180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .100000001
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
-  isRocket: 0
+  isMultiBarrel: 0
 --- !u!1 &1923552540
 GameObject:
   m_ObjectHideFlags: 0
@@ -90525,9 +90367,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1927689885}
-  - 114: {fileID: 1927689887}
+  - 114: {fileID: 1992681874}
   m_Layer: 0
-  m_Name: 3_rocket_launcher
+  m_Name: 2_laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90540,25 +90382,34 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1927689884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .826909065, y: -.36815396, z: -.00999990199}
+  m_LocalPosition: {x: 3.79999995, y: .300000012, z: -.0100003993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1992681873}
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 2
+  - {fileID: 1693536434}
+  - {fileID: 141512078}
+  - {fileID: 523126650}
+  - {fileID: 188501019}
+  - {fileID: 1765244755}
+  m_Father: {fileID: 595034093}
+  m_RootOrder: 1
 --- !u!114 &1927689887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400032, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1927689884}
+  m_GameObject: {fileID: 1858698115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMultiBarrel: 0
+  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
+  shootingRate: .100000001
+  isBurst: 0
+  burstLength: 10
+  burstRate: 0
+  isRocket: 0
 --- !u!1 &1930861839
 GameObject:
   m_ObjectHideFlags: 0
@@ -90786,9 +90637,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1941459675}
-  - 114: {fileID: 1941459677}
+  - 114: {fileID: 2020438409}
   m_Layer: 0
-  m_Name: 2_laser
+  m_Name: gun1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90801,23 +90652,18 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 1941459674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.79999995, y: .300000012, z: -.0100003993}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 91352951}
-  - {fileID: 141512078}
-  - {fileID: 1330131307}
-  - {fileID: 188501019}
-  - {fileID: 1765244755}
-  m_Father: {fileID: 553299161}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 1915344249}
+  m_RootOrder: 0
 --- !u!114 &1941459677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400034, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1941459674}
+  m_GameObject: {fileID: 1915344248}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
@@ -90858,7 +90704,7 @@ Transform:
   - {fileID: 452868829}
   - {fileID: 1198819978}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 59
+  m_RootOrder: 29
 --- !u!60 &1942448441
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91010,8 +90856,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1942448444
 MonoBehaviour:
@@ -91091,7 +90935,7 @@ Transform:
   m_Children:
   - {fileID: 778483262}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 19
+  m_RootOrder: 92
 --- !u!60 &1943371764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91220,8 +91064,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &1943371767
 MonoBehaviour:
@@ -91302,7 +91144,7 @@ Transform:
   m_Children:
   - {fileID: 2089928360}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 87
+  m_RootOrder: 57
 --- !u!60 &1948411900
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91469,8 +91311,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1948411904
 MonoBehaviour:
@@ -91779,7 +91619,7 @@ Transform:
   m_Children:
   - {fileID: 503333508}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 102
+  m_RootOrder: 72
 --- !u!60 &1972630353
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91946,8 +91786,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1972630357
 MonoBehaviour:
@@ -92076,7 +91914,7 @@ Transform:
   - {fileID: 194262331}
   - {fileID: 97829140}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 43
+  m_RootOrder: 13
 --- !u!60 &1975861343
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -92228,8 +92066,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &1975861346
 MonoBehaviour:
@@ -92374,7 +92210,7 @@ Transform:
   m_Children:
   - {fileID: 1865428174}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 63
+  m_RootOrder: 33
 --- !u!60 &1981771855
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -92541,8 +92377,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1981771859
 MonoBehaviour:
@@ -92645,7 +92479,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1992681873}
-  - 114: {fileID: 1992681874}
+  - 114: {fileID: 2095653604}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -92663,7 +92497,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1927689885}
+  m_Father: {fileID: 1189118181}
   m_RootOrder: 0
 --- !u!114 &1992681874
 MonoBehaviour:
@@ -92671,18 +92505,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400036, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 1992681872}
+  m_GameObject: {fileID: 1927689884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Script: {fileID: 11500000, guid: c9d1af57e95c0ca47a3660d85e3af5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .800000012
-  isBurst: 1
-  burstLength: 3
-  burstRate: .5
-  isRocket: 1
+  isMultiBarrel: 0
 --- !u!1 &1995341064
 GameObject:
   m_ObjectHideFlags: 0
@@ -92717,7 +92546,7 @@ Transform:
   m_Children:
   - {fileID: 1551033424}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 100
+  m_RootOrder: 70
 --- !u!60 &1995341066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -92884,8 +92713,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &1995341070
 MonoBehaviour:
@@ -94237,7 +94064,7 @@ Transform:
   - {fileID: 653392096}
   - {fileID: 854141993}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 38
+  m_RootOrder: 8
 --- !u!60 &2006664780
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -94389,8 +94216,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &2006664783
 MonoBehaviour:
@@ -95742,9 +95567,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2020438408}
-  - 114: {fileID: 2020438409}
+  - 114: {fileID: 619591519}
   m_Layer: 0
-  m_Name: gun1
+  m_Name: gun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95757,29 +95582,29 @@ Transform:
   m_PrefabInternal: {fileID: 861547254}
   m_GameObject: {fileID: 2020438407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0599999987, y: -.0500000007, z: 0}
+  m_LocalScale: {x: .949961782, y: .949964702, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 1858698116}
-  m_RootOrder: 0
+  m_Father: {fileID: 619591517}
+  m_RootOrder: 1
 --- !u!114 &2020438409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400038, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 2020438407}
+  m_GameObject: {fileID: 1941459674}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 1ba4e9d7a399126469eb9d4ebafbc7f0, type: 2}
-  shootingRate: 1
-  isBurst: 0
-  burstLength: 10
-  burstRate: 0
-  isRocket: 0
+  misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
+  shootingRate: .800000012
+  isBurst: 1
+  burstLength: 3
+  burstRate: .5
+  isRocket: 1
 --- !u!1 &2023145322
 GameObject:
   m_ObjectHideFlags: 0
@@ -96123,7 +95948,7 @@ Transform:
   - {fileID: 1314191146}
   - {fileID: 914124471}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 48
+  m_RootOrder: 18
 --- !u!60 &2034829862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96275,8 +96100,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &2034829865
 MonoBehaviour:
@@ -96592,7 +96415,7 @@ Transform:
   - {fileID: 581562344}
   - {fileID: 2046635783}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 31
+  m_RootOrder: 1
 --- !u!60 &2075786885
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96744,8 +96567,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &2075786888
 MonoBehaviour:
@@ -96980,7 +96801,7 @@ Transform:
   m_Children:
   - {fileID: 1045620822}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 76
+  m_RootOrder: 46
 --- !u!60 &2091477706
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -97147,8 +96968,6 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 1
 --- !u!114 &2091477710
 MonoBehaviour:
@@ -97195,48 +97014,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!1 &2095653602
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100054, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
-  m_PrefabInternal: {fileID: 861547254}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2095653603}
-  - 114: {fileID: 2095653604}
-  m_Layer: 0
-  m_Name: gun2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2095653603
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400054, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
-  m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 2095653602}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0599999987, y: -.0500000007, z: 0}
-  m_LocalScale: {x: .949961782, y: .949964702, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 816431238}
-  m_RootOrder: 1
 --- !u!114 &2095653604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400040, guid: 0a81d991619f93e4c89eb8465625bc58,
     type: 2}
   m_PrefabInternal: {fileID: 861547254}
-  m_GameObject: {fileID: 2095653602}
+  m_GameObject: {fileID: 1992681872}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .100000001
+  misslePrefab: {fileID: 400000, guid: 1ba4e9d7a399126469eb9d4ebafbc7f0, type: 2}
+  shootingRate: 1
   isBurst: 0
   burstLength: 10
   burstRate: 0
@@ -97322,7 +97113,7 @@ Transform:
   m_Children:
   - {fileID: 463323711}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 4
+  m_RootOrder: 77
 --- !u!60 &2100271620
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -97451,8 +97242,6 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 2
 --- !u!114 &2100271623
 MonoBehaviour:
@@ -99255,7 +99044,7 @@ Transform:
   - {fileID: 1135070111}
   - {fileID: 448781777}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 55
+  m_RootOrder: 25
 --- !u!60 &2141176846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -99407,8 +99196,6 @@ MonoBehaviour:
   health: 15
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 240624773}
-  specialEffectsHelper: {fileID: 284588642}
   enemyExplosionVersion: 3
 --- !u!114 &2141176849
 MonoBehaviour:

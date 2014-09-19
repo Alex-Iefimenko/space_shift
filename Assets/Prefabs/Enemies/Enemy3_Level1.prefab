@@ -111,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36949825, y: -.0259992462, z: 0}
+  m_LocalPosition: {x: 1.70839822, y: -.0622696504, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -123,8 +123,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.0430336, y: 1.43478346, z: -5}
-  m_LocalScale: {x: -.920857072, y: .621653497, z: 1}
+  m_LocalPosition: {x: 151.322601, y: -.595720589, z: -5}
+  m_LocalScale: {x: -1.22153509, y: .824634492, z: 1}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400000}
@@ -138,7 +138,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .985111117, y: 1.19810724, z: 0}
+  m_LocalPosition: {x: .985116124, y: .527100086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -458,11 +458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 70
   isEnemy: 1
   scoreValue: 300
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
   enemyExplosionVersion: 1
 --- !u!114 &11400002
 MonoBehaviour:
@@ -475,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
+  misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
   burstLength: 10
@@ -503,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPattern: 8
+  movementPattern: 9
   speed: {x: 5, y: 5}
   frequency: 5
   amplitude: 3
@@ -519,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
+  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
   burstLength: 10

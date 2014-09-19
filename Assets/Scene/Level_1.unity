@@ -12855,6 +12855,10 @@ Prefab:
       propertyPath: m_TagString
       value: GUI
       objectReference: {fileID: 0}
+    - target: {fileID: 11400048, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: levelToLoad
+      value: Level_2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
   m_RootGameObject: {fileID: 1066616374}
@@ -31335,7 +31339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 2144402246}
-  levelToLoad: MainMenu
+  levelToLoad: Level_2
 --- !u!114 &1888350453
 MonoBehaviour:
   m_ObjectHideFlags: 0

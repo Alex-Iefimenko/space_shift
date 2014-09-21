@@ -68,6 +68,11 @@ function SaveProgress () {
 	else if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.9) { numberOfStars = 3; }
 	else { numberOfStars = 1; }
 	
+	if (int.Parse(Application.loadedLevelName[-1:]) == 9) {
+		var nextZoneOpen : String = "Zone_" + (parseInt(Application.loadedLevelName[-2:][0])- 48 + 1).ToString();
+		PlayerPrefs.SetInt(nextZoneOpen, 1);
+	}
+	
 	PlayerPrefs.SetInt(nextLevelName, 1);
 	PlayerPrefs.SetInt("Score" + nextLevelName, gameScore.GetScore());
 	PlayerPrefs.SetInt("Stars" + nextLevelName, numberOfStars);

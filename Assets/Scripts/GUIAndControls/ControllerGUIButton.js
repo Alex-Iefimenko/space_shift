@@ -138,3 +138,8 @@ function Blink () {
 		blink = 2.0;
 	}
 }
+
+function SetImageNormal (newImageNormal : Texture, newImageOver : Texture) {
+	imageNormal = newImageNormal;
+	imageOver = newImageOver;
+}

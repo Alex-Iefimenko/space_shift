@@ -17,6 +17,10 @@ private var newEffect : GameObject;
 private var newEffectParticleSystem : ParticleSystem;
 private var speed : float = 4;
 
+function Awake () {
+	Options.ApplyOptions();
+}
+
 function Update () {
 	if (targetObject != null && newEffect != null) {
 		//newEffect.transform.position = targetObject.renderer.bounds.center;

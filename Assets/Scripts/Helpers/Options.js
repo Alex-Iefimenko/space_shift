@@ -15,8 +15,24 @@ static function SoundOn (bol : boolean) {
 
 static function GraphicsLevel (level : int) {
 	graphics = level;
+	QualitySettings.SetQualityLevel(level, false);
 }
 
 static function SaveOptions () {
+	PlayerPrefs.SetInt("Graphics", graphics);
+	PlayerPrefs.SetString("Music", music.ToString());
+	PlayerPrefs.SetString("Sound", sound.ToString());
+	PlayerPrefs.Save();
+}
 
+static function LoadOptions () {
+	music = boolean.Parse(PlayerPrefs.GetString("Music"));
+	sound = boolean.Parse(PlayerPrefs.GetString("Sound"));
+	graphics = PlayerPrefs.GetInt("Graphics");
+}
+
+static function ApplyOptions () {
+	MusicOn(music);
+	SoundOn(sound);
+	GraphicsLevel(graphics);
 }

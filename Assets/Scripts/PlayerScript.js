@@ -33,9 +33,7 @@ private var bombActiveThreshold : int = 500;
 function Awake() {
 	joystickCircle = GameObject.FindGameObjectWithTag("GameControllerJoystick").GetComponentInChildren.<JoystickCircle>();
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
-	
 	animator = GetComponent.<Animator>();
-	
 	bombActiveThreshold = bombTreshhold;
 }
 

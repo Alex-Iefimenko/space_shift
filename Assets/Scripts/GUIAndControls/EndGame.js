@@ -44,6 +44,7 @@ function GameEnd (isWin : boolean) {
 	if (isWin) {
 		gameWinGui.SetActive(true);
 		StarActivation();
+		SaveProgress();
 	} else {
 		gameOverGui.SetActive(true);
 	}
@@ -54,4 +55,21 @@ function StarActivation () {
 	var stars : List.<Animator> = gameObject.GetComponentsInChildren.<Animator>().OrderBy(function(a){return a.name;}).ToList();
 	if ( gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.7 && stars[1]) { stars[1].gameObject.SetActive(false); }
 	if ( gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.9 && stars[2]) { stars[2].gameObject.SetActive(false); }
+}
+
+
+// Adding information about overall progress
+function SaveProgress () {
+	var nextLevel : int = int.Parse(Application.loadedLevelName[-2:]) + 1;
+	var nextLevelName : String = "Level_" + nextLevel.ToString();
+	var numberOfStars : int;
+	
+	if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.7) { numberOfStars = 2; }
+	else if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.9) { numberOfStars = 3; }
+	else { numberOfStars = 1; }
+	
+	PlayerPrefs.SetInt(nextLevelName, 1);
+	PlayerPrefs.SetInt("Score" + nextLevelName, gameScore.GetScore());
+	PlayerPrefs.SetInt("Stars" + nextLevelName, numberOfStars);
+	PlayerPrefs.Save();
 }

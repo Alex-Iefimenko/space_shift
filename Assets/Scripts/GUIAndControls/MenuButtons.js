@@ -56,3 +56,15 @@ function SetTutorialVars (tutorial : GameObject, fullGUI : GameObject) {
 	tutorialGUI = tutorial;
 	gui = fullGUI;
 }
+
+function LoadNextLevel () {
+	var nextLevel : int = int.Parse(Application.loadedLevelName[-2:]) + 1;
+	var nextLevelName : String = "Level_" + nextLevel.ToString();
+	Application.LoadLevel(nextLevelName);
+}
+
+function DisplayGuiSet () {
+	yield WaitForSeconds (0.1);
+	pauseHendler.SetActive(true); 
+	this.transform.parent.gameObject.SetActive(false);
+}

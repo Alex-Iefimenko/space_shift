@@ -25,3 +25,8 @@ function GetScore () {
 function GetTotalScore () {
 	return totalScore;
 }
+
+function IncreaseTotalScore (increaseValue : int) {
+	totalScore += increaseValue;
+	return totalScore;
+}

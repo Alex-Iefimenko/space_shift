@@ -225,3 +225,8 @@ function BombDetection () {
 		bombButton.SetInactive(haveBomb);
 	}
 }
+
+function OnDestroy () {
+	buttons.gameObject.SetActive(false);
+	joystickCircle.gameObject.SetActive(false);
+}

@@ -36,7 +36,11 @@ function Update () {
 
 function GameEnd (isWin : boolean) {
 	gameEnd = true;
-	yield WaitForSeconds (3.0);
+	if (isWin) { 
+		yield WaitForSeconds (3.0); 
+	} else { 
+		yield WaitForSeconds (1.5); 
+	}
 	Time.timeScale = 1.0;
 	Camera.main.GetComponent(Blur).enabled = true; // Blur aplied
 	Camera.main.GetComponent(Vignetting).enabled = true; // Vignetting aplied

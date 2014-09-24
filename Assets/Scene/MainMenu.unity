@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 60030287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.245, y: .959999979, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 3
@@ -253,7 +253,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &60030291
@@ -264,7 +264,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 60030287}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -398,7 +398,7 @@ Transform:
   m_GameObject: {fileID: 70157610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.33000004, y: .879999995, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 2
@@ -431,7 +431,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &70157614
@@ -442,7 +442,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 70157610}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -875,8 +875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddfb7096d3ad3245b7f28125e9a3353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newImageNormal: {fileID: 0}
-  newImageOver: {fileID: 0}
+  newImageNormal: {fileID: 2800000, guid: d973bf382a548ce40af71ad8ce2d20af, type: 3}
+  newImageOver: {fileID: 2800000, guid: 17f6d38efbae4a04585f32a553f45d48, type: 3}
 --- !u!1 &237610164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1505,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6e941758c9ff8ba4b97dfa73e559a4e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 646d66eb2f0f35341baaffeec650e5db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &412342749
 Transform:
@@ -1545,7 +1545,7 @@ Transform:
   m_GameObject: {fileID: 445509120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.41499996, y: .800000012, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 1
@@ -1578,7 +1578,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &445509124
@@ -1589,7 +1589,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445509120}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: e7d4d478e2e9e6a499a51dc28d13f2e1, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -3035,7 +3035,7 @@ Transform:
   m_GameObject: {fileID: 1110566967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.819999993, y: 1.36000001, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 8
@@ -3068,7 +3068,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1110566971
@@ -3079,7 +3079,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110566967}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -3281,7 +3281,7 @@ Transform:
   m_GameObject: {fileID: 1169791489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.904999971, y: 1.27999997, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 7
@@ -3314,7 +3314,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1169791493
@@ -3325,7 +3325,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169791489}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -3479,8 +3479,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204696967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.750000298, y: .699281693, z: .0563964844}
-  m_LocalScale: {x: .150000006, y: .200000003, z: 1}
+  m_LocalPosition: {x: -.689999998, y: .680000007, z: .0563964844}
+  m_LocalScale: {x: .119999997, y: .140000001, z: 1}
   m_Children: []
   m_Father: {fileID: 949175233}
   m_RootOrder: 1
@@ -3808,7 +3808,7 @@ Transform:
   m_GameObject: {fileID: 1292509512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.735000014, y: 1.44000006, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 9
@@ -3841,7 +3841,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1292509516
@@ -3852,7 +3852,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1292509512}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -3890,7 +3890,7 @@ Transform:
   m_GameObject: {fileID: 1311687917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.99000001, y: 1.20000005, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 6
@@ -3923,7 +3923,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1311687921
@@ -3934,7 +3934,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311687917}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -5045,7 +5045,7 @@ Transform:
   m_GameObject: {fileID: 1767796693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.15999997, y: 1.03999996, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 4
@@ -5078,7 +5078,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1767796697
@@ -5089,7 +5089,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1767796693}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -5670,7 +5670,7 @@ Transform:
   m_GameObject: {fileID: 1975225768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.07500005, y: 1.12, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 5
@@ -5703,7 +5703,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &1975225772
@@ -5714,7 +5714,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975225768}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -6126,7 +6126,7 @@ Transform:
   m_GameObject: {fileID: 2068730793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.5, y: .720000029, z: .0563964844}
-  m_LocalScale: {x: .100000001, y: .150000006, z: 1}
+  m_LocalScale: {x: .150000006, y: .0799999982, z: 1}
   m_Children: []
   m_Father: {fileID: 926544800}
   m_RootOrder: 0
@@ -6159,7 +6159,7 @@ MonoBehaviour:
   functionOnTouchDown: ' LoadLevel'
   imageOver: {fileID: 2800000, guid: 1d785a8c685e0fa418f5c1e954f48788, type: 3}
   isOverImage: 0
-  inactiveImage: {fileID: 2800000, guid: e5c4927b0b130af4f9569fc1edbdf269, type: 3}
+  inactiveImage: {fileID: 2800000, guid: fc989733bb7dffc4991e688e37a4f4de, type: 3}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
 --- !u!131 &2068730797
@@ -6170,7 +6170,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068730793}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 93eb510d15a87034083a6c7d030486e0, type: 3}
+  m_Texture: {fileID: 2800000, guid: 63dc5b3a3a5fd724bb8cc4543b90b37a, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2

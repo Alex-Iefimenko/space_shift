@@ -78,7 +78,7 @@ function SaveProgress () {
 	}
 	
 	PlayerPrefs.SetInt(nextLevelName, 1);
-	PlayerPrefs.SetInt("Score" + nextLevelName, gameScore.GetScore());
-	PlayerPrefs.SetInt("Stars" + nextLevelName, numberOfStars);
+	PlayerPrefs.SetInt("Score" + Application.loadedLevelName, gameScore.GetScore());
+	PlayerPrefs.SetInt("Stars" + Application.loadedLevelName, numberOfStars);
 	PlayerPrefs.Save();
 }

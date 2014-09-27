@@ -8,8 +8,6 @@ function Awake () {
 		Options.SaveOptions();
 	}
 	Options.ApplyOptions();
-	print (Options.graphics);
-	print (QualitySettings.GetQualityLevel());
 	// Detect current game progress
 	if (PlayerPrefs.HasKey("Level_10") == false) {
 		PlayerPrefs.SetInt("Level_10", 1);
@@ -18,16 +16,19 @@ function Awake () {
 }
 
 function Update () {
-    /*
-    var bomb : boolean = Input.GetButtonDown("Bomb");
-    if (bomb) { 
-    	//Application.LoadLevel("Level_10"); 
-    	//Options.MusicOn(false);
-    	Application.LoadLevel("Level_10");
-    }
-    */
+    if (Input.GetKeyDown("escape")) {
+    	Return();
+	}
 }
 
 function OnDestroy () {
 	Options.SaveOptions();
+}
+
+function Return () {
+	var buttons : Component[];
+	buttons = GetComponentsInChildren.<MenuButtons>();
+	for (var button : MenuButtons in buttons) {
+		if (button.gameObject.name == "Return") button.DisplayGuiSet();
+	}
 }

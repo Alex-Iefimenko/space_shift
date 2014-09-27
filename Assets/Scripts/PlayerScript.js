@@ -227,6 +227,6 @@ function BombDetection () {
 }
 
 function OnDestroy () {
-	buttons.gameObject.SetActive(false);
-	joystickCircle.gameObject.SetActive(false);
+	if (buttons) buttons.gameObject.SetActive(false);
+	if (joystickCircle) joystickCircle.gameObject.SetActive(false);
 }

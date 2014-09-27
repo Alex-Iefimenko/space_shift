@@ -5,7 +5,23 @@ public var newImageOver : Texture;
 private var basicImageNormal : Texture;
 private var basicImageOver : Texture;
 
-private var graphicsNames : String[] = ["Low", "Medium", "High"];
+// Graphics Settings
+public var graphicsHigh : Texture;
+public var graphicsHighActive : Texture;
+
+public var graphicsMed : Texture;
+public var graphicsMedActive : Texture;
+
+public var graphicsLow : Texture;
+public var graphicsLowActive : Texture;
+
+private var graphicsLevels : Texture[];
+private var graphicsLevelsActive : Texture[];
+
+function Awake () {
+	graphicsLevels = [graphicsLow, graphicsMed, graphicsHigh];
+	graphicsLevelsActive = [graphicsLowActive, graphicsMedActive, graphicsHighActive];
+}
 
 function Start () {
 	basicImageNormal = this.GetComponent(GUITexture).texture;
@@ -13,7 +29,9 @@ function Start () {
 	
 	switch (this.transform.name) {
 		case "Graphics":
-			this.GetComponentInChildren.<GUIText>().text = "Graphic Quality : " + graphicsNames[Options.graphics];
+			this.GetComponent.<ControllerGUIButton>().SetImageNormal(graphicsLevels[Options.graphics], graphicsLevelsActive[Options.graphics]);
+			this.GetComponent(GUITexture).texture = graphicsLevels[Options.graphics];
+
 			break;
 		case "Music":
 			if (Options.music == false) {
@@ -46,19 +64,16 @@ function GraphicsLevel () {
 	yield WaitForSeconds (0.1);
 	var currentGraphicsLevel : int = Options.graphics;
 	Options.GraphicsLevel((currentGraphicsLevel + 1) % 3);
-	this.GetComponentInChildren.<GUIText>().text = "Graphic Quality : " + graphicsNames[Options.graphics];
+	this.GetComponent.<ControllerGUIButton>().SetImageNormal(graphicsLevels[Options.graphics], graphicsLevelsActive[Options.graphics]);
+	this.GetComponent(GUITexture).texture = graphicsLevels[Options.graphics];
 }
 
-function About () {
-	
-}
-
-function Reset () {
+function ResetProgress () {
 	yield WaitForSeconds (0.1);
 	PlayerPrefs.DeleteAll();
 	PlayerPrefs.SetInt("Level_10", 1);
 	PlayerPrefs.SetInt("Zone_1", 1);
-	PlayerPrefs.Save();
+	Options.SaveOptions();
 }
 
 private function ChangeGuiTexture () {

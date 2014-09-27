@@ -143,3 +143,7 @@ function SetImageNormal (newImageNormal : Texture, newImageOver : Texture) {
 	imageNormal = newImageNormal;
 	imageOver = newImageOver;
 }
+
+function GetState () {
+	return isActive;
+}

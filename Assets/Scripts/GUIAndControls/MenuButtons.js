@@ -65,6 +65,10 @@ function LoadNextLevel () {
 
 function DisplayGuiSet () {
 	yield WaitForSeconds (0.1);
+	var curentGUI : GameObject = this.gameObject;
+	while (curentGUI.name != "GUIMainMenu") {
+		curentGUI = curentGUI.transform.parent.gameObject;
+	}
+	curentGUI.GetComponentsInChildren.<Transform>()[1].gameObject.SetActive(false);
 	pauseHendler.SetActive(true); 
-	this.transform.parent.gameObject.SetActive(false);
 }

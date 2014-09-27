@@ -15,7 +15,7 @@ static function SoundOn (bol : boolean) {
 
 static function GraphicsLevel (level : int) {
 	graphics = level;
-	QualitySettings.SetQualityLevel(level, false);
+	QualitySettings.SetQualityLevel(level, true);
 }
 
 static function SaveOptions () {
@@ -35,4 +35,15 @@ static function ApplyOptions () {
 	MusicOn(music);
 	SoundOn(sound);
 	GraphicsLevel(graphics);
+}
+
+static function NumberOfStarsInZone(zone : String) {
+	var totalStarNumber : int = 0;
+	for (var i = 0; i < 10; i++) {
+		var scoreLevelName : String = "StarsLevel_" + zone + i.ToString();
+		if (PlayerPrefs.HasKey("Level_" + zone + i.ToString())) {
+			totalStarNumber += PlayerPrefs.GetInt(scoreLevelName);
+		}
+	}
+	return totalStarNumber;
 }

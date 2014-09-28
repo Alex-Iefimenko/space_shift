@@ -68,9 +68,13 @@ function SaveProgress () {
 	var nextLevelName : String = "Level_" + nextLevel.ToString();
 	var numberOfStars : int;
 	
-	if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.7) { numberOfStars = 2; }
-	else if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.9) { numberOfStars = 3; }
-	else { numberOfStars = 1; }
+	if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 >= 0.9) { 
+		numberOfStars = 3; 
+	} else if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 >= 0.7) { 
+		numberOfStars = 2; 
+	} else { 
+		numberOfStars = 1; 
+	}
 	
 	if (int.Parse(Application.loadedLevelName[-1:]) == 9) {
 		var nextZoneOpen : String = "Zone_" + (parseInt(Application.loadedLevelName[-2:][0])- 48 + 1).ToString();
@@ -80,5 +84,7 @@ function SaveProgress () {
 	PlayerPrefs.SetInt(nextLevelName, 1);
 	PlayerPrefs.SetInt("Score" + Application.loadedLevelName, gameScore.GetScore());
 	PlayerPrefs.SetInt("Stars" + Application.loadedLevelName, numberOfStars);
+	print (Application.loadedLevelName);
+	print (numberOfStars);
 	PlayerPrefs.Save();
 }

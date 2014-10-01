@@ -63,6 +63,11 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 				shot.damage = Mathf.Floor(shot.damage / 4);
 			} else {
 				Damage(shot.damage);
+				switch (shot.behaviourType) {
+					case 4:
+						TeleportToRandomPosition();
+					break;
+				}
 				Destroy(shot.gameObject);
 			}
 		}
@@ -99,4 +104,21 @@ function GetScore () {
 
 function GetScriptHelper () {
 	return specialEffectsHendler;
+}
+
+function TeleportToRandomPosition () {
+	var distance = (transform.position - Camera.main.transform.position).z;
+	var leftBorder = Camera.main.ViewportToWorldPoint(
+      new Vector3(0.01, 0.03, distance)
+    ).x;
+    var rightBorder = Camera.main.ViewportToWorldPoint(
+      new Vector3(0.90, 0.03, distance)
+    ).x;
+    var bottomBorder = Camera.main.ViewportToWorldPoint(
+      new Vector3(0.03, 0.055, distance)
+    ).y;
+    var topBorder = Camera.main.ViewportToWorldPoint(
+      new Vector3(0.03, 0.965, distance)
+    ).y;
+    this.transform.position = Vector2(Random.Range(leftBorder, rightBorder), Random.Range(bottomBorder, topBorder));
 }

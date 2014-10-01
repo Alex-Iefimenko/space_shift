@@ -6,6 +6,8 @@ public var behaviourType : int = 0;						// Variable for selecting shot behaviou
 														// 0 - basic behaviour(fly forward)
 														// 1 - Moving to target
 														// 2 - Flack behaviour
+														// 3 - Bomb
+														// 4 - Teleport object to random place
 														
 public var damage : int = 1;							// Damage of shot
 public var isEnemyShot : boolean = false;				// Global parameter for enemy - player recognition
@@ -32,9 +34,7 @@ function Start() {
 function Update () {
 		
 	switch (behaviourType) {
-		case 0:											// Flying forward
-			Movement();
-			break;
+
 		case 1:
 			Movement();
 			if (activeTarget == null) {
@@ -58,6 +58,9 @@ function Update () {
 			if (transform.position.x >= destroyDist) {
 				Destroy(gameObject);
 			}
+			break;
+		default:											// Flying forward
+			Movement();
 			break;
 	}
 	// Destroying Shot if it is outside the camera

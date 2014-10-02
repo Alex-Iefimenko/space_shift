@@ -70,6 +70,15 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 					case 4:
 						TeleportToRandomPosition();
 					break;
+					case 6:
+						ReduceMovementSpeed (shot.reduceCapabiliteisSec, 6);
+					break;
+					case 7:
+						ReduceMovementSpeed (shot.reduceCapabiliteisSec, 7);					
+					break;
+					case 8:
+						ReduceMovementSpeed (shot.reduceCapabiliteisSec, 8);
+					break;
 				}
 				Destroy(shot.gameObject);
 			}
@@ -124,4 +133,19 @@ function TeleportToRandomPosition () {
       new Vector3(0.03, 0.965, distance)
     ).y;
     this.transform.position = Vector2(Random.Range(leftBorder, rightBorder), Random.Range(bottomBorder, topBorder));
+}
+
+function ReduceMovementSpeed (time : float, type : int) {
+	if (this.gameObject.tag == "Player") {
+		var player : PlayerScript = this.gameObject.GetComponent.<PlayerScript>();
+		player.StartCapabilityLimit (time, type);
+	} else if (this.gameObject.tag == "Enemy") {
+		if (type == 6) { 
+			var enemyMove : EnemyMovement = this.gameObject.GetComponent.<EnemyMovement>(); 
+			enemyMove.StartMovementLimit(time);
+		} else if (type == 7) { var enemy : EnemyScript = this.gameObject.GetComponent.<EnemyScript>(); 
+			enemy.StartFiringLimit(time);
+		}
+		
+	}
 }

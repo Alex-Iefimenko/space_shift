@@ -30,7 +30,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Teleport_shot_test
+  m_Name: SlowdownShotTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0535007082, y: -3.43749881, z: -5}
+  m_LocalPosition: {x: -9.02812958, y: -6.63185883, z: -5}
   m_LocalScale: {x: -.350364119, y: .282553345, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -170,12 +170,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baceb0a172e5c2542800b87c109395fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourType: 4
+  behaviourType: 6
   damage: 0
   isEnemyShot: 1
   speed: {x: 20, y: 20}
   direction: {x: -1, y: 0}
   misslePrefab: {fileID: 0}
+  reduceCapabiliteisSec: 5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

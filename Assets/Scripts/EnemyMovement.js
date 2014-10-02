@@ -40,7 +40,7 @@ private var previousTargetPosition : Vector3;			// Helper variable for smooth mo
 private var dist : float;
 private var rightBorder : float;
 private var hangingPoint : Vector3;
-
+private var limitMovementTimer : float;
 	
 function Start () {
 	if (movementPattern == 0) rotateDirection = (Random.Range(-1.0, 1.0) >= 0) ? 1 : -1;  	// Setting rnadom rotation for pattern 0
@@ -113,6 +113,11 @@ function Update () {
 			}
 			break;
 	}	 
+	if (limitMovementTimer > 0f) {
+		xPosition *= 0.7;
+		yPosition *= 0.7;
+		limitMovementTimer -= Time.deltaTime;
+	}
 	transform.Translate(xPosition, yPosition, 0, Space.World); 		// Set movement to object
 	
 	// Set Object not to leave camera on upside and downside
@@ -172,4 +177,8 @@ private function GetTarget(tag : String) {
 	if (target== null) {
 		target = GameObject.FindGameObjectWithTag(tag);
 	}
+}
+
+function StartMovementLimit (time : float) {
+	limitMovementTimer = time;
 }

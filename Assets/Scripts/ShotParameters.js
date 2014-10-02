@@ -9,6 +9,9 @@ public var behaviourType : int = 0;						// Variable for selecting shot behaviou
 														// 3 - Bomb
 														// 4 - Teleport object to random place
 														// 5 - Movement as sin
+														// 6 - Limit Target movement
+														// 7 - Limit Target firing
+														// 8 - Invert Player movement
 														
 public var damage : int = 1;							// Damage of shot
 public var isEnemyShot : boolean = false;				// Global parameter for enemy - player recognition
@@ -27,6 +30,7 @@ private var destroyDist : float;
 private var frequency : float;						
 private var amplitude : float;
 private var index : float;
+public var reduceCapabiliteisSec : float;
 
 function Start() {
 	if (behaviourType == 2) {

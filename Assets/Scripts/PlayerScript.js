@@ -30,6 +30,11 @@ public var bombTreshhold : int = 500;
 private var haveBomb : boolean = false;
 private var bombActiveThreshold : int = 500;
 
+// Capability limitations
+private var limitMovementTimer : float;
+private var limitFiringTimer : float;
+private var invertMovementTimer : float;
+
 function Awake() {
 	joystickCircle = GameObject.FindGameObjectWithTag("GameControllerJoystick").GetComponentInChildren.<JoystickCircle>();
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
@@ -61,8 +66,10 @@ function Update () {
 		inputX = joystickCircle.outputXY.x * joystickCircle.outputForce;
 		inputY = joystickCircle.outputXY.y * joystickCircle.outputForce;
 	}
-	                                                  		                                                  		
+	
 	movement = new Vector2(inputX * speed.x, inputY * speed.y);
+	if (limitMovementTimer > 0f) movement = movement * 0.3;
+	if (invertMovementTimer > 0f) movement = movement * -1.0;
 	
 	// Adding restriction to leave outside the main camera
 	var distance = (transform.position - Camera.main.transform.position).z;
@@ -96,7 +103,7 @@ function Update () {
     var fire : boolean = Input.GetButton("Fire2");
     if (fire || fireButton.hasTouchOnGui) {
     	for (var gun : GunTypeComplect in guns) {
-    		if (gun != null && gun.enabled == true) { gun.Fire(false); }
+    		if (gun != null && gun.enabled == true && limitFiringTimer <= 0f) { gun.Fire(false); }
     	}
     }
     
@@ -113,6 +120,11 @@ function Update () {
 	}
 	
 	BombDetection();
+	
+	// Capability limitations timers
+	if (limitMovementTimer > 0f) limitMovementTimer -= Time.deltaTime;
+	if (limitFiringTimer > 0f) limitFiringTimer -= Time.deltaTime;
+	if (invertMovementTimer > 0f) invertMovementTimer -= Time.deltaTime;
 }
 
 function FixedUpdate () {
@@ -234,3 +246,18 @@ function OnDestroy () {
 	if (buttons) buttons.gameObject.SetActive(false);
 	if (joystickCircle) joystickCircle.gameObject.SetActive(false);
 }
+
+function StartCapabilityLimit (time : float, type : int) {
+	switch (type) {
+		case 6:
+			limitMovementTimer = time;
+		break;
+		case 7:
+			limitFiringTimer = time;
+		break;
+		case 8:
+    		invertMovementTimer = time;
+    	break;
+    }
+}
+

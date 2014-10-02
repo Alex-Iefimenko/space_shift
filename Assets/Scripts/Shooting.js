@@ -15,14 +15,19 @@ public var isRocket : boolean;
 
 private var bullets : List.<ShotParameters> = new List.<ShotParameters>();
 
+public var isAutoAim : boolean = false;
+private var target : GameObject;
+
 function Start () {
 	shootCoolDown = 0f;
+	if (isAutoAim) GetTarget();
 }
 
 function Update () {
 	if (shootCoolDown > 0) {							// Reduction of shootCoolDown in each frame
 		shootCoolDown -= Time.deltaTime;
 	}
+	if (isAutoAim) AutoAim();
 }
 
 function Attack (isEnemy : boolean) {
@@ -77,8 +82,47 @@ function LevelPass(level : int) {
 	currentLevel = level;
 }
 
-function RailBehaviour() {
+function RailBehaviour () {
 	for (var i : ShotParameters in bullets) {
-		if (i != null) {i.transform.position.y = transform.position.y;}
+		if (i != null) { i.transform.position.y = transform.position.y; }
+	}
+}
+
+function AutoAim () {
+	if (target != null) {
+		var targetTag : String = target.gameObject.tag;
+		var lookRotation : Quaternion = Quaternion.LookRotation(target.transform.position - transform.position, Vector3.up);
+		lookRotation.x = 0f;
+		lookRotation.y = 0f;	
+		if (targetTag == "Player" && target.transform.position.x > transform.position.x) {	
+			lookRotation.eulerAngles.z -= 180;
+		} else if (targetTag == "Enemy" && target.transform.position.x < transform.position.x) {	
+			lookRotation.eulerAngles.z -= 180; 
+		}
+		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
+	} else {
+		transform.rotation = Quaternion.identity;
+		GetTarget ();
+	}
+}
+
+function GetTarget () {
+	var isEnemy = this.gameObject.GetComponentInParent.<Health>().isEnemy;
+	if (isEnemy) {
+		target = GameObject.FindGameObjectWithTag("Player");
+	} else if (!isEnemy) {
+		var allTargets : List.<GameObject> = new List.<GameObject>();
+		var visibleTargets : List.<GameObject> = new List.<GameObject>();
+		allTargets.AddRange(GameObject.FindGameObjectsWithTag("Enemy"));
+		for (target in allTargets) {
+			if (RendererHelpers.IsVisibleFrom(target.transform.renderer, Camera.main)) {
+				if (target != null) {
+					visibleTargets.Add(target); 
+				}
+			}
+		}
+		if (visibleTargets.Count > 0) {
+			target = visibleTargets[Mathf.RoundToInt(Random.Range(0, visibleTargets.Count))];
+		}
 	}
 }

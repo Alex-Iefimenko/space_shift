@@ -8,6 +8,7 @@ public var behaviourType : int = 0;						// Variable for selecting shot behaviou
 														// 2 - Flack behaviour
 														// 3 - Bomb
 														// 4 - Teleport object to random place
+														// 5 - Movement as sin
 														
 public var damage : int = 1;							// Damage of shot
 public var isEnemyShot : boolean = false;				// Global parameter for enemy - player recognition
@@ -23,12 +24,19 @@ public var misslePrefab : Transform;					// Getting misle prefab
 
 private var destroyDist : float;
 
+private var frequency : float;						
+private var amplitude : float;
+private var index : float;
+
 function Start() {
 	if (behaviourType == 2) {
 		destroyDist = GetNearCameraBorder();
 	} else if (behaviourType == 3) {
 		var dist : float = (this.transform.position - Camera.main.transform.position).z;
 		destroyDist = this.transform.position.x + (Camera.main.ViewportToWorldPoint(Vector3(1,0,dist)).x - this.transform.position.x) * 0.55;
+	} else if (behaviourType == 5) {
+		frequency = Random.Range(13f, 15f);						
+		amplitude = Random.Range(4.5f, 5.5f);
 	}
 }
 function Update () {
@@ -86,9 +94,17 @@ function TargetCapture () {
 }
 
 function Movement () {
-			var movement = new Vector3(speed.x * direction.x, speed.y * direction.y, 0);
-			movement *= Time.deltaTime;
-			transform.Translate(movement);
+	var movement : Vector3;
+	if (behaviourType == 5) {
+		index += Time.deltaTime;
+		var xPosition : float = -speed.x*Time.deltaTime;
+		var yPosition : float = amplitude*(Mathf.Cos(frequency * index))*Time.deltaTime;
+		movement = new Vector3(xPosition, yPosition, 0f);
+	} else {
+		movement = new Vector3(speed.x * direction.x, speed.y * direction.y, 0);
+		movement *= Time.deltaTime;
+	}
+	transform.Translate(movement);
 }
 
 function OnDestroy () {

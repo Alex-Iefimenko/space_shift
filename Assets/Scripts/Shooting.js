@@ -57,11 +57,11 @@ function CanAttack (coolDown : float) {									// Permission for attacked which
 
 function SingleShot () {
 	var shotTransform = Instantiate(misslePrefab) as Transform;
-	shotTransform.position = transform.position;						// Getting current object position for Instantiated missle
 	var bullet : ShotParameters = new shotTransform.gameObject.GetComponent.<ShotParameters>();
-	bullet.LevelPass(currentLevel);
-	bullets.Add(bullet);
+	shotTransform.position = transform.position; 
     if (bullet != null) {
+    	bullet.LevelPass(currentLevel);
+		bullets.Add(bullet);
     	bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
     	bullet.LevelPass(currentLevel);
     }

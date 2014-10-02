@@ -19,6 +19,9 @@ private var shield : Shield;
 private var circleCollider : CircleCollider2D;
 private var shiedlEnabled : boolean = false;
 
+public var isKamikadze : boolean = false;
+public var kamikadzeDamage : int = 0;
+
 function Awake() {
 	scoreGUI = GameObject.FindGameObjectWithTag("ScoreHendler").GetComponentInChildren.<Score>();
 	specialEffectsHendler = GameObject.FindGameObjectWithTag("HelperScripts").GetComponentInChildren.<SpecialEffects>();

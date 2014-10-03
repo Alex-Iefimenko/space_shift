@@ -59,8 +59,6 @@ function Update () {
 	if (Input.GetAxis("Horizontal") || Input.GetAxis("Vertical")) {
 		inputX = Input.GetAxis("Horizontal"); 					// Getting input on 0X axis
 		inputY = Input.GetAxis("Vertical");	  					// Getting input on 0Y axis
-		                                                  		// For floating effect (smooth stop/go of ship) needed adjusment 
-		                                                  		// gravity value to 0..3 (Project Settings -> Input -> Axis -> Gravity)
 	                                                  		
 	} else {
 		inputX = joystickCircle.outputXY.x * joystickCircle.outputForce;

@@ -18,7 +18,8 @@ private var specialEffectsHendler : SpecialEffects;
 private var shield : Shield;
 private var circleCollider : CircleCollider2D;
 private var shiedlEnabled : boolean = false;
-
+private var rollBackTime : float;
+private var rollBackVector : Vector2 = Vector2(0,0);
 public var isKamikadze : boolean = false;
 public var kamikadzeDamage : int = 0;
 
@@ -35,6 +36,14 @@ function Awake() {
 function Update () {
 	if (freezeTime > 0) { freezeTime -= Time.deltaTime; }
 	if (shiedlEnabled == true && freezeTime <= 0) { ShieldDiasble(); };
+}
+
+function FixedUpdate () {
+	if (rollBackTime > 0) {
+		transform.position += rollBackVector * Time.deltaTime;
+		
+		rollBackTime -= Time.deltaTime;
+	}
 }
 
 function Damage (damage : int) {							// Reduction of health and destroying object if it below zero
@@ -65,7 +74,6 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 				shot.transform.rotation.eulerAngles.z = Random.Range(-160.0, 160.0);
 				shot.damage = Mathf.Floor(shot.damage / 4);
 			} else {
-				Damage(shot.damage);
 				switch (shot.behaviourType) {
 					case 4:
 						TeleportToRandomPosition();
@@ -80,10 +88,28 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 						ReduceMovementSpeed (shot.reduceCapabiliteisSec, 8);
 					break;
 				}
+				Damage(shot.damage);
 				Destroy(shot.gameObject);
 			}
 		}
 	}
+	// Shield pullback
+	var attackField : AttackField = new otherCollider.gameObject.GetComponent.<AttackField>();
+	if (attackField != null && shiedlEnabled) {
+		if (otherCollider.bounds.center.x > this.collider2D.bounds.center.x) {
+			rollBackVector.x = -14.0;
+		} else {
+			rollBackVector.x = 7.0;
+		}
+		if (otherCollider.bounds.center.y > this.collider2D.bounds.center.y) {
+			rollBackVector.y = -1.0;
+		} else {
+			rollBackVector.y = 1.0;
+		}
+		
+		rollBackTime = 1.0;
+	}
+
 }
 
 function Repair(amount : int) {

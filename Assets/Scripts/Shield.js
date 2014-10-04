@@ -34,3 +34,13 @@ function Shield (shieldLength : float) {
 function StartShield (isEnabled : boolean) {
 	renderer.enabled = isEnabled;
 }
+
+function OnTriggerEnter2D (otherCollider : Collider2D) {
+	var attackField : AttackField = new otherCollider.gameObject.GetComponent.<AttackField>();
+	print ("dddd");
+	if (attackField != null) {
+		var player : GameObject = this.gameObject.GetComponentInParent.<PlayerScript>().gameObject;
+		var direction : Vector2 = Vector2(-1, 0);
+		player.rigidbody2D.AddForce(direction, ForceMode2D.Impulse);
+	}
+}

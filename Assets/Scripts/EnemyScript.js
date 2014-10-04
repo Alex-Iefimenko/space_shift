@@ -6,6 +6,7 @@ private var health : Health;										// Getting attached Health component
 
 private var isActive : boolean;										// Helper variable for enabling / disabling enemy
 private var limitFiringTimer : float;
+private var attackAlowed : boolean = true;
 
 function Awake () {
 	enemyMovement = GetComponent.<EnemyMovement>();					
@@ -30,7 +31,7 @@ function Update () {
 		}
 	}else{
 		for (var shot : Shooting in shots) {						// Autofire for enemy
-				if (shot != null && shot.CanAttack && limitFiringTimer <= 0f) {
+				if (shot != null && shot.CanAttack && limitFiringTimer <= 0f && attackAlowed) {
 		    	shot.Attack(true);
 		    }
 		}
@@ -54,4 +55,8 @@ function IsActive () {
 
 function StartFiringLimit(time : float) {
 	limitFiringTimer = time;
+}
+
+function AllowAttack (allow : boolean) {
+	attackAlowed = allow;
 }

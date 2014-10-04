@@ -82,9 +82,12 @@ function SaveProgress () {
 	}
 	
 	PlayerPrefs.SetInt(nextLevelName, 1);
-	PlayerPrefs.SetInt("Score" + Application.loadedLevelName, gameScore.GetScore());
-	PlayerPrefs.SetInt("Stars" + Application.loadedLevelName, numberOfStars);
-	print (Application.loadedLevelName);
-	print (numberOfStars);
+	var currentLevel : String = Application.loadedLevelName;
+	if (!PlayerPrefs.HasKey("Score" + currentLevel) || PlayerPrefs.GetInt("Score" + currentLevel) < gameScore.GetScore()) { 
+		PlayerPrefs.SetInt("Score" + currentLevel, gameScore.GetScore()); 
+	}
+	if (!PlayerPrefs.HasKey("Stars" + currentLevel) || PlayerPrefs.GetInt("Stars" + currentLevel) < numberOfStars) { 
+			PlayerPrefs.SetInt("Stars" + currentLevel, numberOfStars);
+	}
 	PlayerPrefs.Save();
 }

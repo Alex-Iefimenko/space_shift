@@ -2,11 +2,13 @@
 
 public var damage : int;
 public var attackRate : float;
+public var forceIsEnemy : boolean;
 private var atackCooldown : float;
 private var isEnemy : boolean;
 
 function Start () {
-	isEnemy = this.gameObject.GetComponentInParent.<Health>().isEnemy;
+	if (!forceIsEnemy) isEnemy = this.gameObject.GetComponentInParent.<Health>().isEnemy;
+	if (forceIsEnemy) isEnemy = true;
 }
 
 function Update () {

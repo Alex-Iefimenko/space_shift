@@ -175,7 +175,8 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 		
 		}
 		Destroy(powerUp.gameObject);
-	}	
+	}
+	
 }
 
 function GunEnabling (type : int) {

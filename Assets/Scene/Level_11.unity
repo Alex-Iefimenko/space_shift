@@ -157,7 +157,7 @@ Transform:
   - {fileID: 1285651286}
   - {fileID: 923755676}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 88
+  m_RootOrder: 82
 --- !u!60 &5899669
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -334,6 +334,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &5899672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +415,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &8107798
 Transform:
   m_ObjectHideFlags: 0
@@ -2782,7 +2785,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &44061543
 Prefab:
@@ -3203,7 +3206,7 @@ Transform:
   - {fileID: 360412039}
   - {fileID: 541268271}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 45
+  m_RootOrder: 39
 --- !u!60 &47422123
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3338,6 +3341,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &47422126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3417,7 +3422,7 @@ Transform:
   - {fileID: 1929967939}
   - {fileID: 1605698910}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 31
+  m_RootOrder: 25
 --- !u!60 &47479114
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3552,6 +3557,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &47479117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3744,6 +3751,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &50052097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3800,7 +3809,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 90
+  m_RootOrder: 84
 --- !u!1 &58009256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,7 +3959,7 @@ Transform:
   - {fileID: 1631591747}
   - {fileID: 1355935679}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 47
+  m_RootOrder: 41
 --- !u!60 &59929075
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4081,6 +4090,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &59929078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4353,7 +4364,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &68381323
 GameObject:
@@ -4389,7 +4400,7 @@ Transform:
   - {fileID: 112645587}
   - {fileID: 1931158795}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 64
+  m_RootOrder: 58
 --- !u!60 &68381325
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4557,6 +4568,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &68381328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4648,6 +4661,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &74385300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4776,6 +4790,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &75495056
 Prefab:
   m_ObjectHideFlags: 0
@@ -4926,12 +4941,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 873663719}
-  - {fileID: 1291173937}
-  - {fileID: 1626343369}
-  - {fileID: 1272330603}
-  - {fileID: 1761190426}
-  - {fileID: 1733424031}
   - {fileID: 1095763896}
   - {fileID: 1354712084}
   - {fileID: 1420071529}
@@ -5031,6 +5040,12 @@ Transform:
   - {fileID: 147872831}
   - {fileID: 119030340}
   - {fileID: 1238780919}
+  - {fileID: 873663719}
+  - {fileID: 1291173937}
+  - {fileID: 1626343369}
+  - {fileID: 1272330603}
+  - {fileID: 1761190426}
+  - {fileID: 1733424031}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &85775068
@@ -5067,7 +5082,7 @@ Transform:
   - {fileID: 1989019901}
   - {fileID: 332893051}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 65
+  m_RootOrder: 59
 --- !u!60 &85775070
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5235,6 +5250,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &85775073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5326,6 +5343,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &89550242
 Prefab:
   m_ObjectHideFlags: 0
@@ -5420,6 +5438,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &91735890
 Prefab:
   m_ObjectHideFlags: 0
@@ -5610,7 +5629,7 @@ AudioSource:
   m_GameObject: {fileID: 92369690}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: cc252b418a3f6cc4285453f4f884bfdc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 312afbe6faa245f4ba827968a44aafcd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .150000006
   m_Pitch: 1
@@ -5714,7 +5733,7 @@ Transform:
   - {fileID: 967321184}
   - {fileID: 58811046}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 68
+  m_RootOrder: 62
 --- !u!60 &94184173
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5845,6 +5864,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &94184176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6020,6 +6041,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &98080767
 Transform:
   m_ObjectHideFlags: 0
@@ -6155,6 +6177,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &106717511
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,7 +6538,7 @@ Transform:
   - {fileID: 449011255}
   - {fileID: 1785326732}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 29
+  m_RootOrder: 23
 --- !u!60 &108346723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6650,6 +6673,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &108346726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6791,7 +6816,7 @@ Transform:
   - {fileID: 1436144531}
   - {fileID: 675217079}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 37
+  m_RootOrder: 31
 --- !u!60 &111718603
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6959,6 +6984,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &111718606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7050,6 +7077,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &114979415
 Prefab:
   m_ObjectHideFlags: 0
@@ -7184,7 +7212,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &118727789
 GameObject:
@@ -8411,6 +8439,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &119030337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8467,7 +8497,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 103
+  m_RootOrder: 97
 --- !u!1 &119214688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9199,6 +9229,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &139587968
 GameObject:
   m_ObjectHideFlags: 0
@@ -9322,6 +9353,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &143495347
 Prefab:
   m_ObjectHideFlags: 0
@@ -9558,6 +9590,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &143516490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9616,7 +9650,7 @@ Transform:
   - {fileID: 761021305}
   - {fileID: 939998625}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 24
+  m_RootOrder: 18
 --- !u!1 &145586408
 GameObject:
   m_ObjectHideFlags: 0
@@ -9774,7 +9808,7 @@ Transform:
   - {fileID: 573635582}
   - {fileID: 1338169999}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 102
+  m_RootOrder: 96
 --- !u!60 &147872832
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9951,6 +9985,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &147872835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10042,6 +10078,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &152088994
 GameObject:
   m_ObjectHideFlags: 0
@@ -10088,6 +10125,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &155284214
 GameObject:
   m_ObjectHideFlags: 0
@@ -10122,7 +10160,7 @@ Transform:
   - {fileID: 1004273507}
   - {fileID: 324655342}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 35
+  m_RootOrder: 29
 --- !u!60 &155284216
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10257,6 +10295,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &155284219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10365,6 +10405,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &163725166
 Transform:
   m_ObjectHideFlags: 0
@@ -10941,6 +10982,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &191785768
 GameObject:
   m_ObjectHideFlags: 0
@@ -10990,7 +11032,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &193513884
 GameObject:
@@ -11038,6 +11080,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &196416694
 GameObject:
   m_ObjectHideFlags: 0
@@ -11353,7 +11396,7 @@ Transform:
   - {fileID: 8107798}
   - {fileID: 1214762377}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 13
+  m_RootOrder: 7
 --- !u!60 &217427838
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11488,6 +11531,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &217427841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11579,6 +11624,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &220367121
 GameObject:
   m_ObjectHideFlags: 0
@@ -11782,7 +11828,7 @@ Transform:
   - {fileID: 476662686}
   - {fileID: 1352208842}
   m_Father: {fileID: 1603227809}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!95 &228804519
 Animator:
   serializedVersion: 3
@@ -11798,7 +11844,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &228804520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12097,6 +12142,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &243751901
 GameObject:
   m_ObjectHideFlags: 0
@@ -12464,6 +12510,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &264831375
 GameObject:
   m_ObjectHideFlags: 0
@@ -12632,6 +12679,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &268711211
 GameObject:
   m_ObjectHideFlags: 0
@@ -12707,6 +12755,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &274678419
 GameObject:
   m_ObjectHideFlags: 0
@@ -13134,7 +13183,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &297463559
 GameObject:
@@ -13213,7 +13262,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &297463564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13249,7 +13297,7 @@ Transform:
   m_Children:
   - {fileID: 1678838131}
   m_Father: {fileID: 1715893220}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &302066655
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,7 +13375,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &302066660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13363,7 +13410,7 @@ Transform:
   m_Children:
   - {fileID: 1641716613}
   m_Father: {fileID: 1715893220}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &308182779
 GameObject:
   m_ObjectHideFlags: 0
@@ -14143,6 +14190,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &330923807
 Prefab:
   m_ObjectHideFlags: 0
@@ -14645,6 +14693,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &348803290
 GameObject:
   m_ObjectHideFlags: 0
@@ -14720,6 +14769,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &354006214
 GameObject:
   m_ObjectHideFlags: 0
@@ -14766,6 +14816,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &358003905
 Prefab:
   m_ObjectHideFlags: 0
@@ -14858,7 +14909,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &358307045
 GUITexture:
   m_ObjectHideFlags: 0
@@ -14925,6 +14975,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &363256187
 GameObject:
   m_ObjectHideFlags: 0
@@ -14959,7 +15010,7 @@ Transform:
   - {fileID: 1484662247}
   - {fileID: 446663741}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 34
+  m_RootOrder: 28
 --- !u!60 &363256189
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15094,6 +15145,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &363256192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15429,6 +15482,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &373204738
 Prefab:
   m_ObjectHideFlags: 0
@@ -16750,6 +16804,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &390800486
 GameObject:
   m_ObjectHideFlags: 0
@@ -16828,7 +16883,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &392013679
 GameObject:
@@ -16864,7 +16919,7 @@ Transform:
   - {fileID: 821741623}
   - {fileID: 8983106}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 43
+  m_RootOrder: 37
 --- !u!60 &392013681
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16999,6 +17054,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &392013684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17244,7 +17301,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &410616323
 GameObject:
@@ -17402,7 +17459,7 @@ Transform:
   - {fileID: 604068615}
   - {fileID: 1558708443}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 33
+  m_RootOrder: 27
 --- !u!60 &412115274
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17537,6 +17594,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &412115277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17616,7 +17675,7 @@ Transform:
   - {fileID: 261059967}
   - {fileID: 864381795}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 25
+  m_RootOrder: 19
 --- !u!60 &413984077
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17784,6 +17843,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &413984080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18045,6 +18106,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &432261283
 GameObject:
   m_ObjectHideFlags: 0
@@ -18094,7 +18156,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &433930170
 GameObject:
@@ -18264,6 +18326,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &435869206
 GameObject:
   m_ObjectHideFlags: 0
@@ -18480,6 +18543,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &443503644
 GameObject:
   m_ObjectHideFlags: 0
@@ -18694,6 +18758,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &449011255
 Transform:
   m_ObjectHideFlags: 0
@@ -18740,7 +18805,7 @@ Transform:
   - {fileID: 1146769867}
   - {fileID: 1358046616}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 38
+  m_RootOrder: 32
 --- !u!60 &451551138
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18908,6 +18973,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &451551141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19260,6 +19327,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &463511619
 Prefab:
   m_ObjectHideFlags: 0
@@ -19357,7 +19425,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &470053286
 GameObject:
@@ -19637,6 +19705,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &475530127
 Transform:
   m_ObjectHideFlags: 0
@@ -20958,7 +21027,7 @@ Transform:
   - {fileID: 371411775}
   - {fileID: 716442833}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 100
+  m_RootOrder: 94
 --- !u!60 &480506023
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21093,6 +21162,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &480506026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21766,6 +21837,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &502371080
 Transform:
   m_ObjectHideFlags: 0
@@ -21875,7 +21947,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &506202798
 GameObject:
@@ -21911,6 +21983,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &506202800
 Transform:
   m_ObjectHideFlags: 0
@@ -22079,7 +22152,7 @@ Transform:
   - {fileID: 506202800}
   - {fileID: 102425611}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 16
+  m_RootOrder: 10
 --- !u!60 &508754726
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22214,6 +22287,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &508754729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22427,6 +22502,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &518873000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22483,7 +22560,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 74
+  m_RootOrder: 68
 --- !u!1 &523126649
 GameObject:
   m_ObjectHideFlags: 0
@@ -22652,12 +22729,12 @@ Prefab:
     - target: {fileID: 21200002, guid: ec1f2051051fe8b40a226e768a2ce726, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 31fd2fb3947e4a54eab71590dd5425b8,
+      objectReference: {fileID: 21300000, guid: eeb40b754f2146c4d8042fed9f7bfce7,
         type: 3}
     - target: {fileID: 21200000, guid: ec1f2051051fe8b40a226e768a2ce726, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 31fd2fb3947e4a54eab71590dd5425b8,
+      objectReference: {fileID: 21300000, guid: eeb40b754f2146c4d8042fed9f7bfce7,
         type: 3}
     - target: {fileID: 400002, guid: ec1f2051051fe8b40a226e768a2ce726, type: 2}
       propertyPath: m_LocalPosition.y
@@ -22746,7 +22823,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &542042894
 GameObject:
@@ -22794,6 +22871,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &547155125
 GameObject:
   m_ObjectHideFlags: 0
@@ -22840,6 +22918,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &553299156
 GameObject:
   m_ObjectHideFlags: 0
@@ -23074,7 +23153,6 @@ Animator:
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &553299164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23091,6 +23169,8 @@ MonoBehaviour:
   isEnemy: 0
   scoreValue: 0
   enemyExplosionVersion: 1
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!58 &553299165
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23346,6 +23426,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &556549872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23402,7 +23484,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 95
+  m_RootOrder: 89
 --- !u!1001 &560229898
 Prefab:
   m_ObjectHideFlags: 0
@@ -23497,6 +23579,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &577008665
 GameObject:
   m_ObjectHideFlags: 0
@@ -23599,6 +23682,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &582744240
 GameObject:
   m_ObjectHideFlags: 0
@@ -24463,6 +24547,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &594034551
 GameObject:
   m_ObjectHideFlags: 0
@@ -24526,7 +24611,7 @@ Transform:
   - {fileID: 713718799}
   - {fileID: 1095309127}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 60
+  m_RootOrder: 54
 --- !u!60 &594262066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24661,6 +24746,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &594262069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24798,7 +24885,7 @@ Transform:
   - {fileID: 1331455501}
   - {fileID: 739370228}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 20
+  m_RootOrder: 14
 --- !u!60 &595439961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24933,6 +25020,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &595439964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25053,6 +25142,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &604765585
 GameObject:
   m_ObjectHideFlags: 0
@@ -25744,7 +25834,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &619591516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26196,6 +26285,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &637999120
 GameObject:
   m_ObjectHideFlags: 0
@@ -26364,6 +26454,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &646967098
 GameObject:
   m_ObjectHideFlags: 0
@@ -26398,7 +26489,7 @@ Transform:
   - {fileID: 1937699734}
   - {fileID: 140993423}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 57
+  m_RootOrder: 51
 --- !u!60 &646967100
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26533,6 +26624,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &646967103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26612,7 +26705,7 @@ Transform:
   - {fileID: 1817349218}
   - {fileID: 959106774}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 101
+  m_RootOrder: 95
 --- !u!60 &648272372
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26747,6 +26840,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &648272375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26951,6 +27046,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &662549402
 GameObject:
   m_ObjectHideFlags: 0
@@ -26997,6 +27093,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &662903300
 GameObject:
   m_ObjectHideFlags: 0
@@ -27043,6 +27140,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &664854043
 GameObject:
   m_ObjectHideFlags: 0
@@ -27078,7 +27176,7 @@ Transform:
   - {fileID: 1890951056}
   - {fileID: 1679788754}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 96
+  m_RootOrder: 90
 --- !u!60 &664854045
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27255,6 +27353,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &664854048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27417,6 +27517,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &667198786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27473,7 +27575,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 22
+  m_RootOrder: 16
 --- !u!1001 &667353895
 Prefab:
   m_ObjectHideFlags: 0
@@ -27710,7 +27812,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31fd2fb3947e4a54eab71590dd5425b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eeb40b754f2146c4d8042fed9f7bfce7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &673300046
 Transform:
@@ -27770,6 +27872,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &673607782
 GameObject:
   m_ObjectHideFlags: 0
@@ -27816,6 +27919,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &675217078
 GameObject:
   m_ObjectHideFlags: 0
@@ -28153,7 +28257,7 @@ Transform:
   - {fileID: 1402752585}
   - {fileID: 1210227191}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 82
+  m_RootOrder: 76
 --- !u!60 &684082397
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28330,6 +28434,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &684082400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28787,6 +28893,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &714538993
 GameObject:
   m_ObjectHideFlags: 0
@@ -28836,7 +28943,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &716362793
 GameObject:
@@ -28887,7 +28994,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &716442832
 GameObject:
@@ -29295,6 +29402,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &729555880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29351,7 +29460,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 23
+  m_RootOrder: 17
 --- !u!1 &731142860
 GameObject:
   m_ObjectHideFlags: 0
@@ -29386,7 +29495,7 @@ Transform:
   - {fileID: 897112664}
   - {fileID: 1134324578}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 39
+  m_RootOrder: 33
 --- !u!60 &731142862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29554,6 +29663,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &731142865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29767,6 +29878,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &734018102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29823,7 +29936,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 69
+  m_RootOrder: 63
 --- !u!1001 &738707235
 Prefab:
   m_ObjectHideFlags: 0
@@ -30297,6 +30410,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &762720380
 Prefab:
   m_ObjectHideFlags: 0
@@ -30394,7 +30508,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &773804787
 GameObject:
@@ -30550,7 +30664,7 @@ Transform:
   m_Children:
   - {fileID: 970645775}
   m_Father: {fileID: 1715893220}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &776364709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30608,7 +30722,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &776364713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30676,7 +30789,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &778911826
 GUITexture:
   m_ObjectHideFlags: 0
@@ -31098,7 +31210,7 @@ Transform:
   - {fileID: 1161440093}
   - {fileID: 2117105125}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 84
+  m_RootOrder: 78
 --- !u!60 &795961928
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31275,6 +31387,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &795961931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31413,7 +31527,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &800832694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31492,7 +31605,7 @@ Transform:
   - {fileID: 1613761708}
   - {fileID: 1309289353}
   m_Father: {fileID: 1603227809}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!1001 &804345811
 Prefab:
   m_ObjectHideFlags: 0
@@ -31575,7 +31688,7 @@ Transform:
   - {fileID: 1655300033}
   - {fileID: 44653241}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 59
+  m_RootOrder: 53
 --- !u!60 &806144240
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31710,6 +31823,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &806144243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31789,7 +31904,7 @@ Transform:
   - {fileID: 1550533995}
   - {fileID: 1320764321}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 11
+  m_RootOrder: 5
 --- !u!60 &808187361
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31924,6 +32039,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &808187364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32015,6 +32132,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &814048450
 GameObject:
   m_ObjectHideFlags: 0
@@ -32311,6 +32429,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &839646501
 GameObject:
   m_ObjectHideFlags: 0
@@ -32784,7 +32903,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &869522784
 Prefab:
@@ -32931,7 +33050,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &873663712
 GameObject:
@@ -33053,6 +33172,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &873663716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33109,7 +33230,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 0
+  m_RootOrder: 99
 --- !u!1 &873700577
 GameObject:
   m_ObjectHideFlags: 0
@@ -33144,7 +33265,7 @@ Transform:
   - {fileID: 1687551455}
   - {fileID: 1968561603}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 55
+  m_RootOrder: 49
 --- !u!60 &873700579
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33279,6 +33400,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &873700582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33848,6 +33971,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &902840370
 GameObject:
   m_ObjectHideFlags: 0
@@ -33883,7 +34007,7 @@ Transform:
   - {fileID: 1279452987}
   - {fileID: 1066355335}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 50
+  m_RootOrder: 44
 --- !u!60 &902840372
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34014,6 +34138,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &902840375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34263,7 +34389,7 @@ Transform:
   - {fileID: 270649178}
   - {fileID: 726684946}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 12
+  m_RootOrder: 6
 --- !u!60 &912225194
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34398,6 +34524,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &912225197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34549,6 +34677,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &923755675
 GameObject:
   m_ObjectHideFlags: 0
@@ -34763,7 +34892,7 @@ Transform:
   - {fileID: 1736872512}
   - {fileID: 555836622}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 44
+  m_RootOrder: 38
 --- !u!60 &931574240
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34898,6 +35027,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &931574243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35224,7 +35355,7 @@ Transform:
   - {fileID: 673607783}
   - {fileID: 839646502}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 52
+  m_RootOrder: 46
 --- !u!60 &945449327
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -35359,6 +35490,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &945449330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35711,6 +35844,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &968916067
 GameObject:
   m_ObjectHideFlags: 0
@@ -37338,7 +37472,7 @@ Transform:
   - {fileID: 673544346}
   - {fileID: 680135434}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 9
+  m_RootOrder: 3
 --- !u!60 &982728045
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37473,6 +37607,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &982728048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37608,6 +37744,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &985472578
 GameObject:
   m_ObjectHideFlags: 0
@@ -37840,7 +37977,7 @@ Transform:
   - {fileID: 1785231045}
   - {fileID: 348803291}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 27
+  m_RootOrder: 21
 --- !u!60 &989190661
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38008,6 +38145,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &989190664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38087,7 +38226,7 @@ Transform:
   - {fileID: 1713967952}
   - {fileID: 1306584081}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 15
+  m_RootOrder: 9
 --- !u!60 &993303918
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38255,6 +38394,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &993303921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38394,6 +38535,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1001644900
 Prefab:
   m_ObjectHideFlags: 0
@@ -38610,6 +38752,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1008461628
 GameObject:
   m_ObjectHideFlags: 0
@@ -39094,6 +39237,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1019034457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39150,7 +39295,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 75
+  m_RootOrder: 69
 --- !u!1 &1024754654
 GameObject:
   m_ObjectHideFlags: 0
@@ -39444,6 +39589,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1051197592
 GameObject:
   m_ObjectHideFlags: 0
@@ -39601,7 +39747,7 @@ Transform:
   - {fileID: 1616681266}
   - {fileID: 753295232}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 78
+  m_RootOrder: 72
 --- !u!60 &1056805924
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39778,6 +39924,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1056805927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39858,7 +40006,7 @@ Transform:
   - {fileID: 347243252}
   - {fileID: 48914450}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 76
+  m_RootOrder: 70
 --- !u!60 &1062121256
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40035,6 +40183,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1062121259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40191,7 +40341,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1078920602
 Prefab:
@@ -40359,6 +40509,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1088657610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40415,7 +40567,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 92
+  m_RootOrder: 86
 --- !u!1 &1088837719
 GameObject:
   m_ObjectHideFlags: 0
@@ -40803,6 +40955,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1095763893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40861,7 +41015,7 @@ Transform:
   - {fileID: 660269242}
   - {fileID: 669184958}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 6
+  m_RootOrder: 0
 --- !u!1 &1101999429
 GameObject:
   m_ObjectHideFlags: 0
@@ -41546,7 +41700,7 @@ Transform:
   - {fileID: 1716186065}
   - {fileID: 631360045}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 86
+  m_RootOrder: 80
 --- !u!60 &1127865597
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -41723,6 +41877,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1127865600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41923,7 +42079,7 @@ Transform:
   - {fileID: 2139534203}
   - {fileID: 1599094485}
   m_Father: {fileID: 1603227809}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!95 &1130893671
 Animator:
   serializedVersion: 3
@@ -41939,7 +42095,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1130893672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42039,6 +42194,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1131526278
 Transform:
   m_ObjectHideFlags: 0
@@ -42115,7 +42271,7 @@ Transform:
   - {fileID: 71574828}
   - {fileID: 725935046}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 51
+  m_RootOrder: 45
 --- !u!60 &1140139731
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -42246,6 +42402,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1140139734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42340,7 +42498,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1146412276
 GameObject:
@@ -42388,6 +42546,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1146539948
 GameObject:
   m_ObjectHideFlags: 0
@@ -42463,6 +42622,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1149789534
 GameObject:
   m_ObjectHideFlags: 0
@@ -42512,7 +42672,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1157052185
 GameObject:
@@ -42669,7 +42829,7 @@ Transform:
   - {fileID: 1331737310}
   - {fileID: 2048589642}
   m_Father: {fileID: 1603227809}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!95 &1157929627
 Animator:
   serializedVersion: 3
@@ -42685,7 +42845,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1157929628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42797,6 +42956,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1166309711
 GameObject:
   m_ObjectHideFlags: 0
@@ -42942,7 +43102,7 @@ Transform:
   - {fileID: 502371080}
   - {fileID: 2115571063}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 99
+  m_RootOrder: 93
 --- !u!60 &1172238923
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43078,6 +43238,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1172238926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43217,6 +43379,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1179486579
 GameObject:
   m_ObjectHideFlags: 0
@@ -43467,6 +43630,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1188000684
 GameObject:
   m_ObjectHideFlags: 0
@@ -43635,6 +43799,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1188951986
 GameObject:
   m_ObjectHideFlags: 0
@@ -43748,7 +43913,7 @@ Transform:
   - {fileID: 1276535130}
   - {fileID: 268711212}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 49
+  m_RootOrder: 43
 --- !u!60 &1189443426
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43879,6 +44044,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1189443429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44021,7 +44188,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1191388843
 GameObject:
@@ -44256,6 +44423,7 @@ MonoBehaviour:
   burstLength: 30
   burstRate: .00999999978
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1196015275
 GameObject:
   m_ObjectHideFlags: 0
@@ -44499,7 +44667,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &1206936225
 GUITexture:
   m_ObjectHideFlags: 0
@@ -44885,6 +45052,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1231149547
 Transform:
   m_ObjectHideFlags: 0
@@ -45017,6 +45185,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1238780916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45073,7 +45243,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 104
+  m_RootOrder: 98
 --- !u!1 &1242549040
 GameObject:
   m_ObjectHideFlags: 0
@@ -45245,7 +45415,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1246118240
 GameObject:
@@ -45415,6 +45585,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1266277642
 GameObject:
   m_ObjectHideFlags: 0
@@ -45655,6 +45826,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1266821140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45711,7 +45884,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 93
+  m_RootOrder: 87
 --- !u!1 &1268426398
 GameObject:
   m_ObjectHideFlags: 0
@@ -45830,6 +46003,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1268426402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45886,7 +46061,7 @@ Transform:
   m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 70
+  m_RootOrder: 64
 --- !u!1 &1268946121
 GameObject:
   m_ObjectHideFlags: 0
@@ -45933,6 +46108,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1272330602
 GameObject:
   m_ObjectHideFlags: 0
@@ -45967,7 +46143,7 @@ Transform:
   - {fileID: 163725166}
   - {fileID: 1920716138}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 3
+  m_RootOrder: 102
 --- !u!60 &1272330604
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -46102,6 +46278,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1272330607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46193,6 +46371,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1277795925
 Prefab:
   m_ObjectHideFlags: 0
@@ -46287,6 +46466,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1284890301
 GameObject:
   m_ObjectHideFlags: 0
@@ -46455,6 +46635,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1288142823
 GameObject:
   m_ObjectHideFlags: 0
@@ -46501,6 +46682,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1291173930
 GameObject:
   m_ObjectHideFlags: 0
@@ -46621,6 +46803,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1291173934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46677,7 +46861,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 1
+  m_RootOrder: 100
 --- !u!1 &1292005022
 GameObject:
   m_ObjectHideFlags: 0
@@ -47169,7 +47353,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1303322990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -47205,7 +47388,7 @@ Transform:
   m_Children:
   - {fileID: 118727790}
   m_Father: {fileID: 1715893220}
-  m_RootOrder: 4
+  m_RootOrder: 0
 --- !u!1 &1305201383
 GameObject:
   m_ObjectHideFlags: 0
@@ -47403,6 +47586,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1309289352
 GameObject:
   m_ObjectHideFlags: 0
@@ -48666,6 +48850,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1331455500
 GameObject:
   m_ObjectHideFlags: 0
@@ -48712,6 +48897,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1331737307
 GameObject:
   m_ObjectHideFlags: 0
@@ -49866,7 +50052,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1338169998
 GameObject:
@@ -50152,7 +50338,7 @@ Transform:
   - {fileID: 2141057002}
   - {fileID: 1146539949}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 7
+  m_RootOrder: 1
 --- !u!60 &1354712085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50287,6 +50473,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1354712088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50688,6 +50876,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1365847879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50744,7 +50934,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 98
+  m_RootOrder: 92
 --- !u!1 &1370418698
 GameObject:
   m_ObjectHideFlags: 0
@@ -51072,7 +51262,7 @@ Transform:
   - {fileID: 1247861293}
   - {fileID: 2039649546}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 91
+  m_RootOrder: 85
 --- !u!60 &1387366581
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -51249,6 +51439,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1387366584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51340,6 +51532,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1393289767
 Prefab:
   m_ObjectHideFlags: 0
@@ -51463,6 +51656,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1401258062
 GameObject:
   m_ObjectHideFlags: 0
@@ -51631,6 +51825,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1415485080
 GameObject:
   m_ObjectHideFlags: 0
@@ -51839,7 +52034,7 @@ Transform:
   - {fileID: 2078283832}
   - {fileID: 797180672}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 8
+  m_RootOrder: 2
 --- !u!60 &1420071530
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -51974,6 +52169,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1420071533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52709,6 +52906,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1444614016
 GameObject:
   m_ObjectHideFlags: 0
@@ -52894,6 +53092,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1449678765
 Transform:
   m_ObjectHideFlags: 0
@@ -53366,6 +53565,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1478361733
 GameObject:
   m_ObjectHideFlags: 0
@@ -53766,6 +53966,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1480933861
 Transform:
   m_ObjectHideFlags: 0
@@ -53896,6 +54097,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1481248875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53952,7 +54155,7 @@ Transform:
   m_LocalScale: {x: -.851258576, y: .902549088, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 83
+  m_RootOrder: 77
 --- !u!1 &1484662246
 GameObject:
   m_ObjectHideFlags: 0
@@ -53999,6 +54202,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1495274573
 GameObject:
   m_ObjectHideFlags: 0
@@ -54133,6 +54337,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 1
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1495274577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54192,7 +54398,7 @@ Transform:
   - {fileID: 2049633617}
   - {fileID: 594611237}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 71
+  m_RootOrder: 65
 --- !u!1 &1500810729
 GameObject:
   m_ObjectHideFlags: 0
@@ -54311,6 +54517,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1500810733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54367,7 +54575,7 @@ Transform:
   m_LocalScale: {x: -.851258576, y: .902549088, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 79
+  m_RootOrder: 73
 --- !u!1 &1503216126
 GameObject:
   m_ObjectHideFlags: 0
@@ -55362,7 +55570,7 @@ Transform:
   - {fileID: 1449678765}
   - {fileID: 1447086933}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 10
+  m_RootOrder: 4
 --- !u!60 &1532704102
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -55497,6 +55705,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1532704105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55806,6 +56016,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1550533993
 GameObject:
   m_ObjectHideFlags: 0
@@ -55840,6 +56051,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1550533995
 Transform:
   m_ObjectHideFlags: 0
@@ -56008,7 +56220,7 @@ Transform:
   - {fileID: 662903301}
   - {fileID: 594034552}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 42
+  m_RootOrder: 36
 --- !u!60 &1552908686
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -56144,6 +56356,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1552908689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56752,6 +56966,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1558245634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56811,7 +57027,7 @@ Transform:
   - {fileID: 1870147732}
   - {fileID: 1166309712}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 97
+  m_RootOrder: 91
 --- !u!1 &1558708442
 GameObject:
   m_ObjectHideFlags: 0
@@ -56875,7 +57091,7 @@ Transform:
   - {fileID: 1390488336}
   - {fileID: 484731254}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 67
+  m_RootOrder: 61
 --- !u!60 &1561874501
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57043,6 +57259,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1561874504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57163,6 +57381,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1578247172
 GameObject:
   m_ObjectHideFlags: 0
@@ -57200,7 +57419,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31fd2fb3947e4a54eab71590dd5425b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eeb40b754f2146c4d8042fed9f7bfce7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1578247174
 Transform:
@@ -57418,7 +57637,7 @@ Transform:
   - {fileID: 637358118}
   - {fileID: 652318071}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 53
+  m_RootOrder: 47
 --- !u!60 &1595771623
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57553,6 +57772,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1595771626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57727,10 +57948,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 800832698}
   - {fileID: 1157929626}
   - {fileID: 228804518}
   - {fileID: 1130893670}
-  - {fileID: 800832698}
   m_Father: {fileID: 726947848}
   m_RootOrder: 1
 --- !u!1 &1605698909
@@ -59035,6 +59256,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1618223623
 GameObject:
   m_ObjectHideFlags: 0
@@ -59354,6 +59576,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1626343368
 GameObject:
   m_ObjectHideFlags: 0
@@ -59388,7 +59611,7 @@ Transform:
   - {fileID: 1397267955}
   - {fileID: 163399369}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 2
+  m_RootOrder: 101
 --- !u!60 &1626343370
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -59523,6 +59746,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1626343373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59614,6 +59839,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1631731874
 Prefab:
   m_ObjectHideFlags: 0
@@ -59704,7 +59930,7 @@ Transform:
   - {fileID: 1547689950}
   - {fileID: 1520859222}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 48
+  m_RootOrder: 42
 --- !u!60 &1632527695
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -59872,6 +60098,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1632527698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61095,6 +61323,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1661322924
 GameObject:
   m_ObjectHideFlags: 0
@@ -61170,6 +61399,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1666957389
 GameObject:
   m_ObjectHideFlags: 0
@@ -61205,7 +61435,7 @@ Transform:
   - {fileID: 811215175}
   - {fileID: 1202207938}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 19
+  m_RootOrder: 13
 --- !u!60 &1666957391
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61336,6 +61566,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1666957394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63150,7 +63382,7 @@ Transform:
   - {fileID: 219179223}
   - {fileID: 76954973}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 85
+  m_RootOrder: 79
 --- !u!60 &1680975928
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -63327,6 +63559,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1680975931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63830,6 +64064,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1690136251
 GameObject:
   m_ObjectHideFlags: 0
@@ -63864,7 +64099,7 @@ Transform:
   - {fileID: 1693900820}
   - {fileID: 1563032163}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 14
+  m_RootOrder: 8
 --- !u!60 &1690136253
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -64032,6 +64267,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1690136256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65218,6 +65455,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1694442115
 Prefab:
   m_ObjectHideFlags: 0
@@ -65296,7 +65534,7 @@ Transform:
   - {fileID: 1178748946}
   - {fileID: 392137442}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 26
+  m_RootOrder: 20
 --- !u!60 &1703276421
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -65464,6 +65702,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1703276424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65591,7 +65831,7 @@ Transform:
   - {fileID: 265427410}
   - {fileID: 1777266683}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 41
+  m_RootOrder: 35
 --- !u!60 &1703728915
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -65726,6 +65966,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1703728918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65939,6 +66181,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1715893219
 GameObject:
   m_ObjectHideFlags: 0
@@ -65964,11 +66207,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1303322991}
   - {fileID: 776364708}
   - {fileID: 302066661}
   - {fileID: 297463565}
   - {fileID: 1887706091}
-  - {fileID: 1303322991}
   m_Father: {fileID: 726947848}
   m_RootOrder: 4
 --- !u!1 &1716186063
@@ -66005,6 +66248,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1716186065
 Transform:
   m_ObjectHideFlags: 0
@@ -66181,7 +66425,7 @@ Transform:
   - {fileID: 984610081}
   - {fileID: 58009257}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 94
+  m_RootOrder: 88
 --- !u!60 &1721273161
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -66358,6 +66602,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1721273164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67037,7 +67283,7 @@ Transform:
   - {fileID: 1188574993}
   - {fileID: 596800787}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 5
+  m_RootOrder: 104
 --- !u!60 &1733424032
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -67205,6 +67451,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1733424035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67418,6 +67666,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1736892055
 GameObject:
   m_ObjectHideFlags: 0
@@ -67584,7 +67833,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1738729029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67642,7 +67890,7 @@ Transform:
   - {fileID: 152088995}
   - {fileID: 626245510}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 63
+  m_RootOrder: 57
 --- !u!60 &1744747779
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -67777,6 +68025,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1744747782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68134,6 +68384,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1758119974
 GameObject:
   m_ObjectHideFlags: 0
@@ -68376,6 +68627,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1761190423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68432,7 +68685,7 @@ Transform:
   m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 4
+  m_RootOrder: 103
 --- !u!1 &1764341834
 GameObject:
   m_ObjectHideFlags: 0
@@ -68601,6 +68854,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1770375698
 Prefab:
   m_ObjectHideFlags: 0
@@ -68703,6 +68957,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1777229951
 GameObject:
   m_ObjectHideFlags: 0
@@ -68972,6 +69227,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1779808837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69028,7 +69285,7 @@ Transform:
   m_LocalScale: {x: -.851258576, y: .902549088, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 81
+  m_RootOrder: 75
 --- !u!1 &1785231044
 GameObject:
   m_ObjectHideFlags: 0
@@ -69075,6 +69332,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1785326731
 GameObject:
   m_ObjectHideFlags: 0
@@ -69139,7 +69397,7 @@ Transform:
   - {fileID: 997868785}
   - {fileID: 116237036}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 80
+  m_RootOrder: 74
 --- !u!60 &1789877219
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -69316,6 +69574,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1789877222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69651,6 +69911,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1817416083
 GameObject:
   m_ObjectHideFlags: 0
@@ -69715,7 +69976,7 @@ Transform:
   - {fileID: 1471711067}
   - {fileID: 390800487}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 66
+  m_RootOrder: 60
 --- !u!60 &1819958110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -69883,6 +70144,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1819958113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70145,6 +70408,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1838488749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70203,7 +70468,7 @@ Transform:
   - {fileID: 385503179}
   - {fileID: 339084164}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 40
+  m_RootOrder: 34
 --- !u!1 &1840475616
 GameObject:
   m_ObjectHideFlags: 0
@@ -70250,6 +70515,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1848796964
 GameObject:
   m_ObjectHideFlags: 0
@@ -70611,7 +70877,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1864763246
 GameObject:
@@ -70787,6 +71053,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 50
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1865887626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70843,7 +71111,7 @@ Transform:
   m_LocalScale: {x: -.851258576, y: .902549088, z: 1}
   m_Children: []
   m_Father: {fileID: 82176352}
-  m_RootOrder: 72
+  m_RootOrder: 66
 --- !u!1 &1867179352
 GameObject:
   m_ObjectHideFlags: 0
@@ -70893,7 +71161,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1870147731
 GameObject:
@@ -70941,6 +71209,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &1873157331
 Prefab:
   m_ObjectHideFlags: 0
@@ -71023,7 +71292,7 @@ Transform:
   - {fileID: 350817357}
   - {fileID: 1024754655}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 17
+  m_RootOrder: 11
 --- !u!60 &1873244157
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -71158,6 +71427,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1873244160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72385,7 +72656,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1887706090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72421,7 +72691,7 @@ Transform:
   m_Children:
   - {fileID: 1885035346}
   m_Father: {fileID: 1715893220}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1888350450
 GameObject:
   m_ObjectHideFlags: 0
@@ -72794,6 +73064,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1892614103
 GameObject:
   m_ObjectHideFlags: 0
@@ -72828,6 +73099,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!4 &1892614105
 Transform:
   m_ObjectHideFlags: 0
@@ -73092,7 +73364,7 @@ Transform:
   - {fileID: 1975102142}
   - {fileID: 927497463}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 30
+  m_RootOrder: 24
 --- !u!60 &1900318503
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73227,6 +73499,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1900318506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73429,7 +73703,7 @@ Transform:
   - {fileID: 151125333}
   - {fileID: 1420190460}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 73
+  m_RootOrder: 67
 --- !u!60 &1907603579
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73606,6 +73880,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1907603582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73686,7 +73962,7 @@ Transform:
   - {fileID: 1231149547}
   - {fileID: 1215349014}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 89
+  m_RootOrder: 83
 --- !u!60 &1907899563
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73863,6 +74139,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1907899566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74063,6 +74341,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1907916229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74121,7 +74401,7 @@ Transform:
   - {fileID: 330760354}
   - {fileID: 2013531073}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 28
+  m_RootOrder: 22
 --- !u!1 &1909939800
 GameObject:
   m_ObjectHideFlags: 0
@@ -74197,6 +74477,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1920716137
 GameObject:
   m_ObjectHideFlags: 0
@@ -74260,7 +74541,7 @@ Transform:
   - {fileID: 136256301}
   - {fileID: 1909939801}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 58
+  m_RootOrder: 52
 --- !u!60 &1920960227
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74395,6 +74676,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1920960230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74474,7 +74757,7 @@ Transform:
   - {fileID: 662549403}
   - {fileID: 739671190}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 62
+  m_RootOrder: 56
 --- !u!60 &1927078536
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74609,6 +74892,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1927078539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74742,6 +75027,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1931158794
 GameObject:
   m_ObjectHideFlags: 0
@@ -74817,6 +75103,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1938894437
 GameObject:
   m_ObjectHideFlags: 0
@@ -74851,7 +75138,7 @@ Transform:
   - {fileID: 1757930525}
   - {fileID: 1661322925}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 54
+  m_RootOrder: 48
 --- !u!60 &1938894439
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74986,6 +75273,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1938894442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75112,7 +75401,7 @@ Transform:
   - {fileID: 86019568}
   - {fileID: 119214689}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 77
+  m_RootOrder: 71
 --- !u!60 &1944477144
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -75289,6 +75578,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1944477147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75763,7 +76054,7 @@ Transform:
   - {fileID: 1288142824}
   - {fileID: 799985298}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 56
+  m_RootOrder: 50
 --- !u!60 &1971191383
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -75898,6 +76189,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &1971191386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75989,6 +76282,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1980572799
 GameObject:
   m_ObjectHideFlags: 0
@@ -76253,6 +76547,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1992681872
 GameObject:
   m_ObjectHideFlags: 0
@@ -76299,6 +76594,7 @@ MonoBehaviour:
   burstLength: 3
   burstRate: .5
   isRocket: 1
+  isAutoAim: 0
 --- !u!1 &1993695908
 GameObject:
   m_ObjectHideFlags: 0
@@ -76345,6 +76641,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1994368189
 GameObject:
   m_ObjectHideFlags: 0
@@ -76554,7 +76851,7 @@ Transform:
   - {fileID: 547155126}
   - {fileID: 196416695}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 61
+  m_RootOrder: 55
 --- !u!60 &2001931384
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -76689,6 +76986,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2001931387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76780,6 +77079,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2011311231
 GameObject:
   m_ObjectHideFlags: 0
@@ -76829,7 +77129,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2013467548
 GameObject:
@@ -77110,6 +77410,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2021987215
 GameObject:
   m_ObjectHideFlags: 0
@@ -77388,7 +77689,7 @@ Transform:
   - {fileID: 103796817}
   - {fileID: 249948338}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 32
+  m_RootOrder: 26
 --- !u!60 &2034305434
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77523,6 +77824,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2034305437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77924,7 +78227,7 @@ Transform:
   - {fileID: 1131526278}
   - {fileID: 443503645}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 87
+  m_RootOrder: 81
 --- !u!60 &2045640571
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78101,6 +78404,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2045640574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78365,6 +78670,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1001 &2053949955
 Prefab:
   m_ObjectHideFlags: 0
@@ -78637,6 +78943,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2080759667
 GameObject:
   m_ObjectHideFlags: 0
@@ -78671,7 +78978,7 @@ Transform:
   - {fileID: 1146412277}
   - {fileID: 493666362}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 18
+  m_RootOrder: 12
 --- !u!60 &2080759669
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78806,6 +79113,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2080759672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79007,7 +79316,7 @@ Transform:
   - {fileID: 240928465}
   - {fileID: 1824646976}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 46
+  m_RootOrder: 40
 --- !u!60 &2091349213
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79142,6 +79451,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2091349216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79236,7 +79547,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &2095478461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79348,6 +79658,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: 0
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2097742324
 GameObject:
   m_ObjectHideFlags: 0
@@ -79394,6 +79705,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2099302428
 GameObject:
   m_ObjectHideFlags: 0
@@ -79443,7 +79755,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 51726307aea91a348bd832364ccace2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 178edca8be3ea5e48bb0ccde057b8420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &2100252212
 Prefab:
@@ -79575,7 +79887,7 @@ Transform:
   - {fileID: 1993695909}
   - {fileID: 1864763247}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 21
+  m_RootOrder: 15
 --- !u!60 &2114034028
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79710,6 +80022,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2114034031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81285,6 +81599,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2144000700
 GameObject:
   m_ObjectHideFlags: 0
@@ -81319,7 +81634,7 @@ Transform:
   - {fileID: 1624533210}
   - {fileID: 1397182651}
   m_Father: {fileID: 82176352}
-  m_RootOrder: 36
+  m_RootOrder: 30
 --- !u!60 &2144000702
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -81487,6 +81802,8 @@ MonoBehaviour:
   isEnemy: 1
   scoreValue: 200
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &2144000705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81660,6 +81977,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!1 &2147010834
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ function Awake() {
 
 function Update () {
 	if (freezeTime > 0) { freezeTime -= Time.deltaTime; }
-	if (shiedlEnabled == true && freezeTime <= 0) { ShieldDiasble(); };
+	if (shiedlEnabled == true && freezeTime <= 0) { ShieldDiasble(); }
 }
 
 function FixedUpdate () {

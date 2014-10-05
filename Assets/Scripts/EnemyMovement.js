@@ -41,7 +41,10 @@ private var dist : float;
 private var rightBorder : float;
 private var hangingPoint : Vector3;
 private var limitMovementTimer : float;
-	
+
+// ShutDown
+private var timer : float = 0f;
+
 function Start () {
 	if (movementPattern == 0) rotateDirection = (Random.Range(-1.0, 1.0) >= 0) ? 1 : -1;  	// Setting rnadom rotation for pattern 0
 	if (movementPattern == 0) rotateSpeed = Random.Range(5.0, 30.0);						// Setting rnadom rotation speed for pattern 0
@@ -87,12 +90,12 @@ function Update () {
 			yPosition = -(amplitude / (Mathf.Pow(index, 2) + 1))*Time.deltaTime;
 			break;
 		case 7:											//	7 - Movement in place, where player was in the moment of enemy activation
-			MoveToTarget (targetFirstPosition);
+			if (timer <= 0) MoveToTarget (targetFirstPosition);
 			break;
 		case 8:											// 	8 - Foloving (moving to target) the player
 			GetTarget("Player");
 			if (target != null) {
-				MoveToTarget (target.transform.position);
+				if (timer <= 0) MoveToTarget (target.transform.position);
 			} else {
 				movementPattern = 1;
 			}
@@ -100,25 +103,30 @@ function Update () {
 		case 9:											//	9 - "Hanging" after appearing in camera
 			GetCameraBorder ();
 			hangingPoint = Vector3(rightBorder, transform.position.y, transform.position.z);
-			transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.x * Time.deltaTime);
+			if (timer <= 0) transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.x * Time.deltaTime);
 			break;
 		case 10:										// 	10 - "Hanging" after appearing in camera and following Player on 0Y axis
 			GetCameraBorder ();
 			GetTarget("Player");
 			if (target != null) {
 				hangingPoint = Vector3(rightBorder, target.transform.position.y, transform.position.z);
-				transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.y * Time.deltaTime);
+				if (timer <= 0) transform.position = Vector3.MoveTowards(transform.position, hangingPoint , speed.y * Time.deltaTime);
 			} else {
 				movementPattern = 1;
 			}
 			break;
 	}	 
 	if (limitMovementTimer > 0f) {
-		xPosition *= 0.7;
-		yPosition *= 0.7;
+		xPosition *= 0.5;
+		yPosition *= 0.5;
 		limitMovementTimer -= Time.deltaTime;
 	}
-	transform.Translate(xPosition, yPosition, 0, Space.World); 		// Set movement to object
+	
+	if (timer <= 0) { 
+		transform.Translate(xPosition, yPosition, 0, Space.World);
+		if (this.rigidbody2D.velocity != Vector2(0, 0)) ResetVelosity();
+	}
+	else timer -= Time.deltaTime;
 	
 	// Set Object not to leave camera on upside and downside
 	if (isForbidenLeaveCamera) {
@@ -181,4 +189,17 @@ private function GetTarget(tag : String) {
 
 function StartMovementLimit (time : float) {
 	limitMovementTimer = time;
+}
+
+function Push (direction : Vector2) {
+	this.rigidbody2D.AddForce(direction, ForceMode2D.Force);
+}
+
+function ShutDown (time : float) {
+	timer = time;
+}
+
+function ResetVelosity () {
+	this.rigidbody2D.velocity = Vector2(0, 0);
+	isForbidenLeaveCamera = false;
 }

@@ -7,7 +7,7 @@ private var health : Health;										// Getting attached Health component
 private var isActive : boolean;										// Helper variable for enabling / disabling enemy
 private var limitFiringTimer : float;
 private var attackAlowed : boolean = true;
-public var activateOnHit : boolean = true;
+public var activateOnHit : boolean = false;
 private var engines : ParticleRenderer[];
 
 // bifurcation behaviour

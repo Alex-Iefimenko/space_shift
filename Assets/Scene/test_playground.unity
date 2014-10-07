@@ -2631,6 +2631,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &193311144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3246,6 +3247,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &299062647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3735,6 +3737,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &358307045
 GUITexture:
   m_ObjectHideFlags: 0
@@ -4581,8 +4584,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 501374944}
-  - 60: {fileID: 501374945}
   - 114: {fileID: 501374946}
+  - 60: {fileID: 501374945}
   m_Layer: 0
   m_Name: Chain
   m_TagString: Untagged
@@ -4605,100 +4608,19 @@ Transform:
 --- !u!60 &501374945
 PolygonCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6000000, guid: 723481556e250a94f920e5d5106325f9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1006115042}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501374943}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: 2.48000002, y: -2.79500008}
-      - {x: 2.24000001, y: -2.55500007}
-      - {x: 2.24000001, y: -2.54500008}
-      - {x: 1.99000001, y: -2.29500008}
-      - {x: 1.99000001, y: -2.28500009}
-      - {x: 1.75, y: -2.04500008}
-      - {x: 1.75, y: -2.03500009}
-      - {x: 1.5, y: -1.78499997}
-      - {x: 1.5, y: -1.77499998}
-      - {x: 1.25999999, y: -1.53499997}
-      - {x: 1.25999999, y: -1.52499998}
-      - {x: 1.01999998, y: -1.28499997}
-      - {x: 1.01999998, y: -1.27499998}
-      - {x: .769999981, y: -1.02499998}
-      - {x: .769999981, y: -1.01499999}
-      - {x: .529999971, y: -.774999976}
-      - {x: .529999971, y: -.764999986}
-      - {x: .280000001, y: -.514999986}
-      - {x: .280000001, y: -.504999995}
-      - {x: .0399999991, y: -.264999986}
-      - {x: .0399999991, y: -.254999995}
-      - {x: -.140000001, y: -.0250000004}
-      - {x: .850000024, y: .224999994}
-      - {x: .529999971, y: .474999994}
-      - {x: .460000008, y: .535000026}
-      - {x: .340000004, y: .63499999}
-      - {x: .270000011, y: .694999993}
-      - {x: .0900000036, y: .845000029}
-      - {x: .0199999996, y: .904999971}
-      - {x: -.100000001, y: 1.005}
-      - {x: -.219999999, y: 1.11500001}
-      - {x: -.340000004, y: 1.21500003}
-      - {x: -.790000021, y: 1.58500004}
-      - {x: -.860000014, y: 1.64499998}
-      - {x: -.910000026, y: 1.69500005}
-      - {x: -1.02999997, y: 1.79499996}
-      - {x: -1.11000001, y: 1.85500002}
-      - {x: -1.23000002, y: 1.95500004}
-      - {x: -1.29999995, y: 2.0150001}
-      - {x: -1.48000002, y: 2.16499996}
-      - {x: -1.54999995, y: 2.2249999}
-      - {x: -1.66999996, y: 2.32500005}
-      - {x: -1.78999996, y: 2.43499994}
-      - {x: -1.90999997, y: 2.53500009}
-      - {x: -2.1099999, y: 2.69499993}
-      - {x: -2.23000002, y: 2.80500007}
-      - {x: -2.3499999, y: 2.90499997}
-      - {x: -2.42000008, y: 2.96499991}
-      - {x: -2.45000005, y: 2.9749999}
-      - {x: -2.47000003, y: 2.9749999}
-      - {x: -2.54999995, y: 2.90499997}
-      - {x: -2.54999995, y: 2.875}
-      - {x: -2.53999996, y: 2.84500003}
-      - {x: -2.48000002, y: 2.7650001}
-      - {x: -2.3499999, y: 2.60500002}
-      - {x: -2.08999991, y: 2.2650001}
-      - {x: -1.63, y: 1.66499996}
-      - {x: -.779999971, y: .555000007}
-      - {x: -.75999999, y: .495000005}
-      - {x: -.889999986, y: .465000004}
-      - {x: -1.03999996, y: .395000011}
-      - {x: -1.75999999, y: .125}
-      - {x: -1.85000002, y: .0850000009}
-      - {x: -1.85000002, y: .0549999997}
-      - {x: -1.79999995, y: .0149999997}
-      - {x: -1.27999997, y: -.344999999}
-      - {x: -1.25999999, y: -.36500001}
-      - {x: -1.12, y: -.465000004}
-      - {x: -.709999979, y: -.754999995}
-      - {x: -.370000005, y: -.995000005}
-      - {x: -.0500000007, y: -1.21500003}
-      - {x: .119999997, y: -1.33500004}
-      - {x: .280000001, y: -1.45500004}
-      - {x: .360000014, y: -1.505}
-      - {x: .699999988, y: -1.745}
-      - {x: .860000014, y: -1.86500001}
-      - {x: .939999998, y: -1.91499996}
-      - {x: 1.27999997, y: -2.15499997}
-      - {x: 1.51999998, y: -2.32500005}
-      - {x: 1.69000006, y: -2.44499993}
-      - {x: 1.92999995, y: -2.61500001}
-      - {x: 2.44000006, y: -2.9749999}
-      - {x: 2.48000002, y: -2.9749999}
-      - {x: 2.54999995, y: -2.89499998}
-      - {x: 2.54999995, y: -2.875}
+    - - {x: 0, y: 1}
+      - {x: .95105654, y: .309016973}
+      - {x: .587785184, y: -.809017062}
+      - {x: -.587785363, y: -.809016943}
+      - {x: -.95105648, y: .309017122}
 --- !u!114 &501374946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5433,6 +5355,7 @@ Animator:
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &553299164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6048,6 +5971,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &619591516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7228,6 +7152,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &778911826
 GUITexture:
   m_ObjectHideFlags: 0
@@ -11358,11 +11283,11 @@ Prefab:
         type: 3}
     - target: {fileID: 400024, guid: 723481556e250a94f920e5d5106325f9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.332511902
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: 723481556e250a94f920e5d5106325f9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.28018022
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: 723481556e250a94f920e5d5106325f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -11372,7 +11297,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .667485833
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6000000, guid: 723481556e250a94f920e5d5106325f9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 723481556e250a94f920e5d5106325f9, type: 2}
   m_RootGameObject: {fileID: 1610380584}
   m_IsPrefabParent: 0
@@ -12581,6 +12507,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &1206936225
 GUITexture:
   m_ObjectHideFlags: 0
@@ -16951,6 +16878,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1647143502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20884,7 +20812,7 @@ Transform:
   m_PrefabInternal: {fileID: 1006115042}
   m_GameObject: {fileID: 2052098305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.332511902, y: -1.28018022, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .667485535, y: .667485833, z: 1}
   m_Children: []
   m_Father: {fileID: 1610380585}
@@ -20926,6 +20854,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2061431335
 GameObject:
   m_ObjectHideFlags: 0

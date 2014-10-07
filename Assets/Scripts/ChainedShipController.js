@@ -78,19 +78,12 @@ function UpdateChainPosition () {
 								 	(ships[0].transform.localPosition.y + ships[1].transform.localPosition.y) / 2.0);
 	chainSprite.localPosition = middle;
 	var currentSize : Vector2 = Vector2(chainSprite.renderer.bounds.size.x, chainSprite.renderer.bounds.size.y);
-	var lengthXMin : float;
-	var lengthXMax : float;
-	if (ships[0].transform.localPosition.x < ships[1].transform.localPosition.x) { 
-		lengthXMin = ships[0].renderer.bounds.min.x;
-		lengthXMax = ships[1].renderer.bounds.max.x;
-	} else { 
-		lengthXMin = ships[1].renderer.bounds.min.x;
-		lengthXMax = ships[0].renderer.bounds.max.x;
-	}
-	var newSize : Vector2 = Vector2(Mathf.Abs(lengthXMax - lengthXMin),
-									Mathf.Abs(ships[0].transform.localPosition.y - ships[1].transform.localPosition.y));
-	chainSprite.localScale.x = chainSprite.localScale.x * (newSize.x / currentSize.x);
-	chainSprite.localScale.y = chainSprite.localScale.y * (newSize.y / currentSize.y);
+	var neccessarySizeY : float = Vector2.Distance(ships[0].renderer.bounds.center, ships[1].renderer.bounds.center);
+	chainSprite.localScale = chainSprite.localScale * (neccessarySizeY / currentSize.y);	
+	
+	var direction : Vector3 = middle - ships[0].transform.localPosition;
+	var angle : float = Vector3.Angle(direction, transform.up);
+	chainSprite.transform.rotation.eulerAngles.z = angle;
 }
 
 function MoveShips () {

@@ -15,7 +15,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: KamikadzeTest
+  m_Name: Enemy_bomb
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,8 +79,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.84833002, y: .553952038, z: -6.07838297}
-  m_LocalScale: {x: -.68466872, y: .647667766, z: 1}
+  m_LocalPosition: {x: -2.39450288, y: .50048697, z: -6.07838297}
+  m_LocalScale: {x: -.5322842, y: .532284141, z: 1}
   m_Children:
   - {fileID: 400006}
   m_Father: {fileID: 0}
@@ -91,24 +91,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: -.00625491049, y: -.00608454878, z: -.695512593, w: .718461037}
-  m_LocalPosition: {x: -.491618276, y: -.0415093563, z: -.108532302}
-  m_LocalScale: {x: .274353445, y: .253970981, z: .499822378}
+  m_LocalRotation: {x: -.00625525182, y: -.00608480675, z: -.695512712, w: .718460798}
+  m_LocalPosition: {x: -.95935452, y: .163137585, z: -.115631066}
+  m_LocalScale: {x: .274344742, y: .253970742, z: .499805957}
   m_Children: []
   m_Father: {fileID: 400006}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: -.00625525182, y: -.00608480675, z: -.695512712, w: .718460798}
-  m_LocalPosition: {x: -.491618752, y: -.0415090024, z: -.108532786}
-  m_LocalScale: {x: .274344742, y: .253970742, z: .499805957}
+  m_LocalRotation: {x: -.00625559501, y: -.00608487241, z: -.695512593, w: .718460917}
+  m_LocalPosition: {x: -.959354997, y: -.194853812, z: -.103175797}
+  m_LocalScale: {x: .274387062, y: .253971964, z: .499881625}
   m_Children: []
   m_Father: {fileID: 400006}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -119,8 +119,8 @@ Transform:
   m_LocalPosition: {x: -2.63883686, y: -.0133395372, z: .110256195}
   m_LocalScale: {x: -2.11408567, y: 1.99396658, z: 1.00045717}
   m_Children:
-  - {fileID: 400004}
   - {fileID: 400002}
+  - {fileID: 400004}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
 --- !u!12 &1200000
@@ -132,16 +132,16 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 6712742
+    rgba: 16777215
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 1814091263
+    rgba: 1828709799
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 2870264319
+    rgba: 2885680633
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 855647142
+    rgba: 872411884
   colorAnimation[4]:
     serializedVersion: 2
     rgba: 725531
@@ -162,16 +162,16 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 4262
+    rgba: 16777215
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 1814091263
+    rgba: 1828709799
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 2870264319
+    rgba: 2885680633
   colorAnimation[3]:
     serializedVersion: 2
-    rgba: 855647142
+    rgba: 872411884
   colorAnimation[4]:
     serializedVersion: 2
     rgba: 725531
@@ -192,12 +192,12 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .109999999
-  maxSize: .649999976
+  minSize: .0599999987
+  maxSize: .300000012
   minEnergy: .0299999993
   maxEnergy: .239999995
   minEmission: 50
-  maxEmission: 200
+  maxEmission: 100
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 3, z: 0}
   rndVelocity: {x: 0, y: 1, z: 0}
@@ -219,12 +219,12 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .109999999
-  maxSize: .600000024
+  minSize: .0700000003
+  maxSize: .300000012
   minEnergy: .0299999993
   maxEnergy: .239999995
   minEmission: 50
-  maxEmission: 200
+  maxEmission: 100
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 3, z: 0}
   rndVelocity: {x: 0, y: 1, z: 0}
@@ -249,9 +249,9 @@ ParticleRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -281,9 +281,9 @@ ParticleRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
-  - {fileID: 2100000, guid: 642367443312c224bb40c297365867ac, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
+  - {fileID: 2100000, guid: 0fac2744f0ff30b4a96bcce54f15b2da, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -327,47 +327,52 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: 1.25, y: -.379999995}
-      - {x: 1.25, y: -.0399999991}
-      - {x: 1.21000004, y: .119999997}
-      - {x: 1.12, y: .270000011}
-      - {x: .930000007, y: .419999987}
-      - {x: .689999998, y: .529999971}
-      - {x: .579999983, y: .550000012}
-      - {x: .230000004, y: .620000005}
-      - {x: .0700000003, y: .610000014}
-      - {x: -.100000001, y: .670000017}
-      - {x: -.300000012, y: .670000017}
-      - {x: -.479999989, y: .629999995}
-      - {x: -.629999995, y: .649999976}
-      - {x: -.959999979, y: .50999999}
-      - {x: -1.05999994, y: .49000001}
-      - {x: -1.20000005, y: .389999986}
-      - {x: -1.25, y: .340000004}
-      - {x: -1.25, y: .310000002}
-      - {x: -1.25, y: .300000012}
-      - {x: -1.17999995, y: .270000011}
-      - {x: -1.24000001, y: .150000006}
-      - {x: -1.25, y: .119999997}
-      - {x: -1.25, y: .0900000036}
-      - {x: -1.10000002, y: .0500000007}
-      - {x: -.839999974, y: .0599999987}
-      - {x: -.219999999, y: .00999999978}
-      - {x: -.140000001, y: -.0500000007}
-      - {x: -.25999999, y: -.0199999996}
-      - {x: -.340000004, y: -.0399999991}
-      - {x: -.50999999, y: -.159999996}
-      - {x: -.550000012, y: -.189999998}
-      - {x: -.560000002, y: -.370000005}
-      - {x: -.319999993, y: -.50999999}
-      - {x: -.200000033, y: -.504044294}
-      - {x: -.140000001, y: -.479999989}
-      - {x: .140000001, y: -.519999981}
-      - {x: .360000014, y: -.670000017}
-      - {x: .910000026, y: -.670000017}
-      - {x: .99000001, y: -.639999986}
-      - {x: 1.10000002, y: -.589999974}
-      - {x: 1.21000004, y: -.469999999}
+    - - {x: .0399999991, y: -.504999995}
+      - {x: .0900000036, y: -.455000013}
+      - {x: .200000003, y: -.38499999}
+      - {x: .189999998, y: -.465000004}
+      - {x: .289999992, y: -.504999995}
+      - {x: .400000006, y: -.504999995}
+      - {x: .449999988, y: -.455000013}
+      - {x: .50999999, y: -.344999999}
+      - {x: .589999974, y: -.344999999}
+      - {x: .699999988, y: -.254999995}
+      - {x: .75, y: -.165000007}
+      - {x: .75, y: .144999996}
+      - {x: .680000007, y: .275000006}
+      - {x: .589999974, y: .354999989}
+      - {x: .460000008, y: .375}
+      - {x: .449999988, y: .444999993}
+      - {x: .370000005, y: .504999995}
+      - {x: .360000014, y: .504999995}
+      - {x: .230000004, y: .485000014}
+      - {x: .140000001, y: .344999999}
+      - {x: .0500000007, y: .504999995}
+      - {x: -.00999999978, y: .504999995}
+      - {x: -.430000007, y: .504999995}
+      - {x: -.460000008, y: .495000005}
+      - {x: -.529999971, y: .504999995}
+      - {x: -.649999976, y: .504999995}
+      - {x: -.699999988, y: .474999994}
+      - {x: -.75, y: .425000012}
+      - {x: -.75, y: .275000006}
+      - {x: -.629999995, y: .174999997}
+      - {x: -.519999981, y: .174999997}
+      - {x: -.439999998, y: .204999998}
+      - {x: -.469999999, y: .0450000018}
+      - {x: -.469999999, y: -.0549999997}
+      - {x: -.560000002, y: -.125}
+      - {x: -.75, y: -.254999995}
+      - {x: -.75, y: -.264999986}
+      - {x: -.75, y: -.444999993}
+      - {x: -.689999998, y: -.504999995}
+      - {x: -.689999998, y: -.504999995}
+      - {x: -.569999993, y: -.504999995}
+      - {x: -.560000002, y: -.495000005}
+      - {x: -.460000008, y: -.504999995}
+      - {x: -.150000006, y: -.504999995}
+      - {x: -.140000001, y: -.504999995}
+      - {x: -.119999997, y: -.504999995}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -435,7 +440,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67e510516b776e848afe9e17bd1d2247, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eeed472fc82b6b143a2d3995b7f3e00f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

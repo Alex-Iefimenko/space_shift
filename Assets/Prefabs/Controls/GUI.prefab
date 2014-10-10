@@ -246,7 +246,7 @@ GameObject:
   - 4: {fileID: 400028}
   m_Layer: 0
   m_Name: GUI
-  m_TagString: Untagged
+  m_TagString: GUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1111,7 +1111,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -1126,7 +1125,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500004
 Animator:
   serializedVersion: 3
@@ -1141,7 +1139,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1341,7 +1338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77928aaa2c76eb04f849290563790ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 100014, guid: 0a81d991619f93e4c89eb8465625bc58, type: 2}
+  player: {fileID: 0}
   lastEnemy: {fileID: 0}
   gameOverGui: {fileID: 100034}
   gameWinGui: {fileID: 100012}
@@ -1521,7 +1518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 100072}
-  levelToLoad: 
+  levelToLoad: Level_3
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1

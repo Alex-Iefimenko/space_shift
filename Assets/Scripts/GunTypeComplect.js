@@ -13,7 +13,7 @@ function Awake () {
 		isMultiBarrel = true;
 	} else {
 		isMultiBarrel = false;
-	}
+	} 
 }
 
 function Fire (isEnemy : boolean) {

@@ -15,7 +15,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.6823463, y: -.273143888, z: -5}
-  m_LocalScale: {x: -.609486878, y: .646209538, z: 1}
+  m_LocalPosition: {x: 52.0294914, y: 1.69105899, z: -5}
+  m_LocalScale: {x: -1.33823049, y: .708058894, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -60,43 +60,41 @@ PolygonCollider2D:
   m_Poly:
     m_Paths:
     - - {x: .25999999, y: -.600000024}
-      - {x: .400000006, y: -.529999971}
-      - {x: .360000014, y: -.430000007}
-      - {x: .560000002, y: -.389999986}
-      - {x: .529999971, y: -.310000002}
-      - {x: .469999999, y: -.270000011}
-      - {x: .319999993, y: -.200000003}
-      - {x: .50999999, y: -.150000006}
-      - {x: .540000021, y: -.119999997}
-      - {x: .699999988, y: -.0900000036}
-      - {x: .75999999, y: -.00999999978}
-      - {x: .75999999, y: .25999999}
-      - {x: .720000029, y: .460000008}
-      - {x: .689999998, y: .519999981}
-      - {x: .550000012, y: .560000002}
-      - {x: .340000004, y: .560000002}
+      - {x: .349999994, y: -.540000021}
+      - {x: .379999995, y: -.519999981}
+      - {x: .49000001, y: -.449999988}
+      - {x: .689999998, y: -.430000007}
+      - {x: .75999999, y: -.349999994}
+      - {x: .75999999, y: -.0900000036}
+      - {x: .680000007, y: -.0399999991}
+      - {x: .340000004, y: -.0199999996}
+      - {x: .519999981, y: .0399999991}
+      - {x: .560000002, y: .140000001}
+      - {x: .340000004, y: .25}
+      - {x: .50999999, y: .280000001}
+      - {x: .550000012, y: .469999999}
+      - {x: .49000001, y: .479999989}
+      - {x: .310000002, y: .50999999}
+      - {x: .25999999, y: .689999998}
       - {x: .159999996, y: .860000014}
       - {x: .109999999, y: .870000005}
       - {x: -.109999999, y: .870000005}
       - {x: -.140000001, y: .850000024}
       - {x: -.25, y: .689999998}
-      - {x: -.360000014, y: .540000021}
-      - {x: -.49000001, y: .340000004}
-      - {x: -.5, y: .319999993}
-      - {x: -.409999996, y: .280000001}
-      - {x: -.699999988, y: .280000001}
-      - {x: -.75999999, y: .230000004}
-      - {x: -.75999999, y: -.0299999993}
-      - {x: -.730000019, y: -.0799999982}
-      - {x: -.540000021, y: -.159999996}
-      - {x: -.319999993, y: -.170000002}
-      - {x: -.400000006, y: -.25}
-      - {x: -.529999971, y: -.310000002}
-      - {x: -.529999971, y: -.360000014}
-      - {x: -.469999999, y: -.400000006}
-      - {x: -.310000002, y: -.439999998}
-      - {x: -.360000014, y: -.479999989}
-      - {x: -.370000005, y: -.519999981}
+      - {x: -.340000004, y: .379999995}
+      - {x: -.50999999, y: .360000014}
+      - {x: -.50999999, y: .310000002}
+      - {x: -.370000005, y: .270000011}
+      - {x: -.340000004, y: .189999998}
+      - {x: -.49000001, y: .209999993}
+      - {x: -.589999974, y: .0599999987}
+      - {x: -.470000446, y: .00878397003}
+      - {x: -.699999988, y: -.0399999991}
+      - {x: -.75999999, y: -.0799999982}
+      - {x: -.75999999, y: -.360000014}
+      - {x: -.720000029, y: -.419999987}
+      - {x: -.360000014, y: -.460000008}
+      - {x: -.389999986, y: -.529999971}
       - {x: -.300000012, y: -.569999993}
       - {x: -.25999999, y: -.699999988}
       - {x: -.0799999982, y: -.779999971}
@@ -118,12 +116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  health: 15
   isEnemy: 1
   scoreValue: 50
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,6 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca81e46c3a904ad4d9fe691ec7baa0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateOnHit: 0
+  isBifurcation: 0
+  newShips: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPattern: 1
-  speed: {x: 2, y: 2}
-  frequency: 5
-  amplitude: 3
+  movementPattern: 2
+  speed: {x: 1, y: 1}
+  frequency: 4
+  amplitude: 7
   isForbidenLeaveCamera: 0
 --- !u!212 &21200000
 SpriteRenderer:
@@ -171,7 +172,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94cd6d471e5fb244893b3335f13fde5b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b164e569eccc3d41b0b120612c9cb43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

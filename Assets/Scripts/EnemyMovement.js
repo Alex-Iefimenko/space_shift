@@ -217,15 +217,16 @@ function ResetVelosity () {
 function MoveTowardsYPoint (pointX : float, pointY : float) {
 	var distance = (transform.position - Camera.main.transform.position).z;
 	var targetPoint = Camera.main.ViewportToWorldPoint(Vector3(pointX, pointY, distance));
+	targetPoint.z = transform.position.z;
 	if (transform.position.x > targetPoint.x) {
-		transform.position = Vector2.MoveTowards(transform.position, targetPoint, speed.x * Time.deltaTime);
+		transform.position = Vector3.MoveTowards(transform.position, targetPoint, speed.x * Time.deltaTime);
 	} else {
 		if (initPosition.y > targetPoint.y) {
-			targetPoint += Vector3(-1f, -0.6f, 0f);
+			targetPoint += Vector3(-1f, -0.6f, transform.position.z);
 		} else {
-			targetPoint += Vector3(-1f, 0.6f, 0f);
+			targetPoint += Vector3(-1f, 0.6f, transform.position.z);
 		}
-		transform.position = Vector2.MoveTowards(transform.position, targetPoint, speed.x * Time.deltaTime);
+		transform.position = Vector3.MoveTowards(transform.position, targetPoint, speed.x * Time.deltaTime);
 	}
 }
 

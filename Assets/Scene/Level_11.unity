@@ -137,7 +137,7 @@ GameObject:
   - 212: {fileID: 5899670}
   - 60: {fileID: 5899669}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3152,7 +3152,7 @@ GameObject:
   - 212: {fileID: 47422124}
   - 60: {fileID: 47422123}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3371,7 +3371,7 @@ GameObject:
   - 212: {fileID: 47479115}
   - 60: {fileID: 47479114}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3619,7 +3619,7 @@ GameObject:
   - 212: {fileID: 50052095}
   - 60: {fileID: 50052094}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3913,7 +3913,7 @@ GameObject:
   - 212: {fileID: 59929076}
   - 60: {fileID: 59929075}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4358,7 +4358,7 @@ GameObject:
   - 212: {fileID: 68381326}
   - 60: {fileID: 68381325}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5043,7 +5043,7 @@ GameObject:
   - 212: {fileID: 85775071}
   - 60: {fileID: 85775070}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5696,7 +5696,7 @@ GameObject:
   - 212: {fileID: 94184174}
   - 60: {fileID: 94184173}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6505,7 +6505,7 @@ GameObject:
   - 212: {fileID: 108346724}
   - 60: {fileID: 108346723}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6786,7 +6786,7 @@ GameObject:
   - 212: {fileID: 111718604}
   - 60: {fileID: 111718603}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8326,7 +8326,7 @@ GameObject:
   - 212: {fileID: 119030335}
   - 60: {fileID: 119030334}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9412,7 +9412,7 @@ GameObject:
   - 212: {fileID: 143516488}
   - 60: {fileID: 143516487}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9786,7 +9786,7 @@ GameObject:
   - 212: {fileID: 147872833}
   - 60: {fileID: 147872832}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10104,7 +10104,7 @@ GameObject:
   - 212: {fileID: 155284217}
   - 60: {fileID: 155284216}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11343,7 +11343,7 @@ GameObject:
   - 212: {fileID: 217427839}
   - 60: {fileID: 217427838}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11813,6 +11813,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &228804520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12880,6 +12881,8 @@ Transform:
   - {fileID: 818423159}
   - {fileID: 212519084}
   - {fileID: 1888350451}
+  - {fileID: 1299759169}
+  - {fileID: 1007808831}
   m_Father: {fileID: 994396718}
   m_RootOrder: 1
 --- !u!1 &279567858
@@ -13231,6 +13234,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &297463564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13344,6 +13348,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &302066660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14878,6 +14883,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &358307045
 GUITexture:
   m_ObjectHideFlags: 0
@@ -14960,7 +14966,7 @@ GameObject:
   - 212: {fileID: 363256190}
   - 60: {fileID: 363256189}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16872,7 +16878,7 @@ GameObject:
   - 212: {fileID: 392013682}
   - 60: {fileID: 392013681}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17415,7 +17421,7 @@ GameObject:
   - 212: {fileID: 412115275}
   - 60: {fileID: 412115274}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17634,7 +17640,7 @@ GameObject:
   - 212: {fileID: 413984078}
   - 60: {fileID: 413984077}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18767,7 +18773,7 @@ GameObject:
   - 212: {fileID: 451551139}
   - 60: {fileID: 451551138}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20992,7 +20998,7 @@ GameObject:
   - 212: {fileID: 480506024}
   - 60: {fileID: 480506023}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22120,7 +22126,7 @@ GameObject:
   - 212: {fileID: 508754727}
   - 60: {fileID: 508754726}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22387,7 +22393,7 @@ GameObject:
   - 212: {fileID: 518872998}
   - 60: {fileID: 518872997}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23146,6 +23152,7 @@ Animator:
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &553299164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23316,7 +23323,7 @@ GameObject:
   - 212: {fileID: 556549870}
   - 60: {fileID: 556549869}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24588,7 +24595,7 @@ GameObject:
   - 212: {fileID: 594262067}
   - 60: {fileID: 594262066}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24865,7 +24872,7 @@ GameObject:
   - 212: {fileID: 595439962}
   - 60: {fileID: 595439961}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25836,6 +25843,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &619591516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26472,7 +26480,7 @@ GameObject:
   - 212: {fileID: 646967101}
   - 60: {fileID: 646967100}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26691,7 +26699,7 @@ GameObject:
   - 212: {fileID: 648272373}
   - 60: {fileID: 648272372}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27164,7 +27172,7 @@ GameObject:
   - 212: {fileID: 664854046}
   - 60: {fileID: 664854045}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27388,7 +27396,7 @@ GameObject:
   - 212: {fileID: 667198784}
   - 60: {fileID: 667198783}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28213,7 +28221,7 @@ GameObject:
   - 212: {fileID: 684082398}
   - 60: {fileID: 684082397}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29241,7 +29249,7 @@ GameObject:
   - 212: {fileID: 729555878}
   - 60: {fileID: 729555877}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29420,7 +29428,7 @@ GameObject:
   - 212: {fileID: 731142863}
   - 60: {fileID: 731142862}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29720,7 +29728,7 @@ GameObject:
   - 212: {fileID: 734018100}
   - 60: {fileID: 734018099}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30672,6 +30680,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &776364713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30739,6 +30748,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &778911826
 GUITexture:
   m_ObjectHideFlags: 0
@@ -31140,7 +31150,7 @@ GameObject:
   - 212: {fileID: 795961929}
   - 60: {fileID: 795961928}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31442,6 +31452,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &800832694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31584,7 +31595,7 @@ GameObject:
   - 212: {fileID: 806144241}
   - 60: {fileID: 806144240}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31803,7 +31814,7 @@ GameObject:
   - 212: {fileID: 808187362}
   - 60: {fileID: 808187361}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32988,7 +32999,7 @@ GameObject:
   - 212: {fileID: 873663714}
   - 60: {fileID: 873663713}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33170,7 +33181,7 @@ GameObject:
   - 212: {fileID: 873700580}
   - 60: {fileID: 873700579}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33914,7 +33925,7 @@ GameObject:
   - 212: {fileID: 902840373}
   - 60: {fileID: 902840372}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34300,7 +34311,7 @@ GameObject:
   - 212: {fileID: 912225195}
   - 60: {fileID: 912225194}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34806,7 +34817,7 @@ GameObject:
   - 212: {fileID: 931574241}
   - 60: {fileID: 931574240}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35272,7 +35283,7 @@ GameObject:
   - 212: {fileID: 945449328}
   - 60: {fileID: 945449327}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37392,7 +37403,7 @@ GameObject:
   - 212: {fileID: 982728046}
   - 60: {fileID: 982728045}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37900,7 +37911,7 @@ GameObject:
   - 212: {fileID: 989190662}
   - 60: {fileID: 989190661}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38152,7 +38163,7 @@ GameObject:
   - 212: {fileID: 993303919}
   - 60: {fileID: 993303918}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38701,6 +38712,102 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!1 &1007808830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1007808831}
+  - 131: {fileID: 1007808835}
+  - 114: {fileID: 1007808834}
+  - 114: {fileID: 1007808833}
+  - 114: {fileID: 1007808832}
+  m_Layer: 0
+  m_Name: ShareFB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1007808831
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1007808830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .942312002, y: .889178991, z: 2}
+  m_LocalScale: {x: .0500000007, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278719826}
+  m_RootOrder: 9
+--- !u!114 &1007808832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400060, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1007808830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentOfScreenHeight: .100000001
+--- !u!114 &1007808833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400064, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1007808830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseHendler: {fileID: 0}
+  levelToLoad: 
+--- !u!114 &1007808834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400062, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1007808830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: ShareFBScore
+  imageOver: {fileID: 2800000, guid: 49f6af8df467d4c4f893b6314b5d10c0, type: 3}
+  isOverImage: 0
+  inactiveImage: {fileID: 0}
+  blinkImage: {fileID: 0}
+  hasTouchOnGui: 0
+--- !u!131 &1007808835
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100048, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1007808830}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 6ce7cdd1c172da04f8bd872eff497b4d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1008461628
 GameObject:
   m_ObjectHideFlags: 0
@@ -39130,7 +39237,7 @@ GameObject:
   - 212: {fileID: 1019034455}
   - 60: {fileID: 1019034454}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39726,7 +39833,7 @@ GameObject:
   - 212: {fileID: 1056805925}
   - 60: {fileID: 1056805924}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39950,7 +40057,7 @@ GameObject:
   - 212: {fileID: 1062121257}
   - 60: {fileID: 1062121256}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40335,7 +40442,7 @@ GameObject:
   - 212: {fileID: 1088657608}
   - 60: {fileID: 1088657607}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40666,7 +40773,7 @@ GameObject:
   - 212: {fileID: 1095763891}
   - 60: {fileID: 1095763890}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41567,7 +41674,7 @@ GameObject:
   - 212: {fileID: 1127865598}
   - 60: {fileID: 1127865597}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41947,6 +42054,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1130893672
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42103,7 +42211,7 @@ GameObject:
   - 212: {fileID: 1140139732}
   - 60: {fileID: 1140139731}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42700,6 +42808,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1157929628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42938,7 +43047,7 @@ GameObject:
   - 212: {fileID: 1172238924}
   - 60: {fileID: 1172238923}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43751,7 +43860,7 @@ GameObject:
   - 212: {fileID: 1189443427}
   - 60: {fileID: 1189443426}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44528,6 +44637,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &1206936225
 GUITexture:
   m_ObjectHideFlags: 0
@@ -44941,7 +45051,7 @@ GameObject:
   - 212: {fileID: 1238780914}
   - 60: {fileID: 1238780913}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45587,7 +45697,7 @@ GameObject:
   - 212: {fileID: 1266821138}
   - 60: {fileID: 1266821137}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45767,7 +45877,7 @@ GameObject:
   - 212: {fileID: 1268426400}
   - 60: {fileID: 1268426399}
   m_Layer: 0
-  m_Name: EnemySatelite3_Level1
+  m_Name: EnemySatelite3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45994,7 +46104,7 @@ GameObject:
   - 212: {fileID: 1272330605}
   - 60: {fileID: 1272330604}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46571,7 +46681,7 @@ GameObject:
   - 212: {fileID: 1291173932}
   - 60: {fileID: 1291173931}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47030,6 +47140,102 @@ Prefab:
   m_RootGameObject: {fileID: 594262064}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1299759168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1299759169}
+  - 131: {fileID: 1299759173}
+  - 114: {fileID: 1299759172}
+  - 114: {fileID: 1299759171}
+  - 114: {fileID: 1299759170}
+  m_Layer: 0
+  m_Name: ShareTwitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299759169
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1299759168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .942312002, y: .739179015, z: 2}
+  m_LocalScale: {x: .0700000003, y: .159999996, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278719826}
+  m_RootOrder: 8
+--- !u!114 &1299759170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400066, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1299759168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentOfScreenHeight: .100000001
+--- !u!114 &1299759171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400070, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1299759168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseHendler: {fileID: 0}
+  levelToLoad: 
+--- !u!114 &1299759172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400068, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1299759168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionOnTouchDown: ShareTwitterScore
+  imageOver: {fileID: 2800000, guid: 49f6af8df467d4c4f893b6314b5d10c0, type: 3}
+  isOverImage: 0
+  inactiveImage: {fileID: 0}
+  blinkImage: {fileID: 0}
+  hasTouchOnGui: 0
+--- !u!131 &1299759173
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100050, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 651861886}
+  m_GameObject: {fileID: 1299759168}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 09bb7a93959bd0149aa4d9bd725dee34, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1301107951
 GameObject:
   m_ObjectHideFlags: 0
@@ -47229,6 +47435,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1303322990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50195,7 +50402,7 @@ GameObject:
   - 212: {fileID: 1354712086}
   - 60: {fileID: 1354712085}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50650,7 +50857,7 @@ GameObject:
   - 212: {fileID: 1365847877}
   - 60: {fileID: 1365847876}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51124,7 +51331,7 @@ GameObject:
   - 212: {fileID: 1387366582}
   - 60: {fileID: 1387366581}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51862,7 +52069,7 @@ GameObject:
   - 212: {fileID: 1420071531}
   - 60: {fileID: 1420071530}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53844,7 +54051,7 @@ GameObject:
   - 212: {fileID: 1481248873}
   - 60: {fileID: 1481248872}
   m_Layer: 0
-  m_Name: EnemySatelite2_Level1
+  m_Name: EnemySatelite2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54071,7 +54278,7 @@ GameObject:
   - 212: {fileID: 1495274575}
   - 60: {fileID: 1495274574}
   m_Layer: 0
-  m_Name: Enemy3_Level1
+  m_Name: Enemy3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54186,7 +54393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 60
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 1
@@ -54248,7 +54455,7 @@ Transform:
   m_GameObject: {fileID: 1495274573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 151.322601, y: -.595720589, z: -5}
-  m_LocalScale: {x: -1.22153509, y: .824634492, z: 1}
+  m_LocalScale: {x: -1.03921103, y: .787589014, z: 1}
   m_Children:
   - {fileID: 542042895}
   - {fileID: 2049633617}
@@ -54270,7 +54477,7 @@ GameObject:
   - 212: {fileID: 1500810731}
   - 60: {fileID: 1500810730}
   m_Layer: 0
-  m_Name: EnemySatelite2_Level1
+  m_Name: EnemySatelite2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55410,7 +55617,7 @@ GameObject:
   - 212: {fileID: 1532704103}
   - 60: {fileID: 1532704102}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56063,7 +56270,7 @@ GameObject:
   - 212: {fileID: 1552908687}
   - 60: {fileID: 1552908686}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56649,7 +56856,7 @@ GameObject:
   - 212: {fileID: 1558245632}
   - 60: {fileID: 1558245631}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56902,7 +57109,7 @@ GameObject:
   - 212: {fileID: 1561874502}
   - 60: {fileID: 1561874501}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57451,7 +57658,7 @@ GameObject:
   - 212: {fileID: 1595771624}
   - 60: {fileID: 1595771623}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59428,7 +59635,7 @@ GameObject:
   - 212: {fileID: 1626343371}
   - 60: {fileID: 1626343370}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59750,7 +59957,7 @@ GameObject:
   - 212: {fileID: 1632527696}
   - 60: {fileID: 1632527695}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61257,7 +61464,7 @@ GameObject:
   - 212: {fileID: 1666957392}
   - 60: {fileID: 1666957391}
   m_Layer: 0
-  m_Name: Enemy2_Level1
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63207,7 +63414,7 @@ GameObject:
   - 212: {fileID: 1680975929}
   - 60: {fileID: 1680975928}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63890,7 +64097,7 @@ GameObject:
   - 212: {fileID: 1690136254}
   - 60: {fileID: 1690136253}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65328,7 +65535,7 @@ GameObject:
   - 212: {fileID: 1703276422}
   - 60: {fileID: 1703276421}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65628,7 +65835,7 @@ GameObject:
   - 212: {fileID: 1703728916}
   - 60: {fileID: 1703728915}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66224,7 +66431,7 @@ GameObject:
   - 212: {fileID: 1721273162}
   - 60: {fileID: 1721273161}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67048,7 +67255,7 @@ GameObject:
   - 212: {fileID: 1733424033}
   - 60: {fileID: 1733424032}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67620,6 +67827,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1738729029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67658,7 +67866,7 @@ GameObject:
   - 212: {fileID: 1744747780}
   - 60: {fileID: 1744747779}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68312,7 +68520,7 @@ GameObject:
   - 212: {fileID: 1761190421}
   - 60: {fileID: 1761190420}
   m_Layer: 0
-  m_Name: EnemySatelite1_Level1
+  m_Name: EnemySatelite1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68917,7 +69125,7 @@ GameObject:
   - 212: {fileID: 1779808835}
   - 60: {fileID: 1779808834}
   m_Layer: 0
-  m_Name: EnemySatelite2_Level1
+  m_Name: EnemySatelite2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69173,7 +69381,7 @@ GameObject:
   - 212: {fileID: 1789877220}
   - 60: {fileID: 1789877219}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69718,7 +69926,7 @@ GameObject:
   - 212: {fileID: 1819958111}
   - 60: {fileID: 1819958110}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69999,7 +70207,7 @@ GameObject:
   - 212: {fileID: 1838488747}
   - 60: {fileID: 1838488746}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70717,7 +70925,7 @@ GameObject:
   - 212: {fileID: 1865887624}
   - 60: {fileID: 1865887623}
   m_Layer: 0
-  m_Name: EnemySatelite2_Level1
+  m_Name: EnemySatelite2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71043,7 +71251,7 @@ GameObject:
   - 212: {fileID: 1873244158}
   - 60: {fileID: 1873244157}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72429,6 +72637,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1887706090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73118,7 +73327,7 @@ GameObject:
   - 212: {fileID: 1900318504}
   - 60: {fileID: 1900318503}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73459,7 +73668,7 @@ GameObject:
   - 212: {fileID: 1907603580}
   - 60: {fileID: 1907603579}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73683,7 +73892,7 @@ GameObject:
   - 212: {fileID: 1907899564}
   - 60: {fileID: 1907899563}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73907,7 +74116,7 @@ GameObject:
   - 212: {fileID: 1907916227}
   - 60: {fileID: 1907916226}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74231,7 +74440,7 @@ GameObject:
   - 212: {fileID: 1920960228}
   - 60: {fileID: 1920960227}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74450,7 +74659,7 @@ GameObject:
   - 212: {fileID: 1927078537}
   - 60: {fileID: 1927078536}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74834,7 +75043,7 @@ GameObject:
   - 212: {fileID: 1938894440}
   - 60: {fileID: 1938894439}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75099,7 +75308,7 @@ GameObject:
   - 212: {fileID: 1944477145}
   - 60: {fileID: 1944477144}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75718,7 +75927,7 @@ GameObject:
   - 212: {fileID: 1971191384}
   - 60: {fileID: 1971191383}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76518,7 +76727,7 @@ GameObject:
   - 212: {fileID: 2001931385}
   - 60: {fileID: 2001931384}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77359,7 +77568,7 @@ GameObject:
   - 212: {fileID: 2034305435}
   - 60: {fileID: 2034305434}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77899,7 +78108,7 @@ GameObject:
   - 212: {fileID: 2045640572}
   - 60: {fileID: 2045640571}
   m_Layer: 0
-  m_Name: Enemy1_Level1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78616,7 +78825,7 @@ GameObject:
   - 212: {fileID: 2080759670}
   - 60: {fileID: 2080759669}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78957,7 +79166,7 @@ GameObject:
   - 212: {fileID: 2091349214}
   - 60: {fileID: 2091349213}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79210,6 +79419,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &2095478461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -79531,7 +79741,7 @@ GameObject:
   - 212: {fileID: 2114034029}
   - 60: {fileID: 2114034028}
   m_Layer: 0
-  m_Name: Enemy4_Level1
+  m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81281,7 +81491,7 @@ GameObject:
   - 212: {fileID: 2144000703}
   - 60: {fileID: 2144000702}
   m_Layer: 0
-  m_Name: Enemy5_Level1
+  m_Name: Enemy5
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

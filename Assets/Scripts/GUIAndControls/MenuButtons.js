@@ -15,6 +15,9 @@ function Update () {
 	if (tutorialGUI && Input.GetKeyDown("escape")) {
 		Proceed();
 	}
+	if (Input.GetKeyDown("space")) {
+		ShareTwitterScore();
+	}
 }
 
 function LevelRestart () {
@@ -71,4 +74,37 @@ function DisplayGuiSet () {
 	}
 	curentGUI.GetComponentsInChildren.<Transform>()[1].gameObject.SetActive(false);
 	pauseHendler.SetActive(true); 
+}
+
+function ShareFBMain () {
+	yield WaitForSeconds (0.1);
+	var caption : String = "They are came for easy target! Not on my watch!";
+	var description : String = "Hurricane shooter! 101% awesome experience! Hundreds of other praise shouts!";
+	SocialShare.ShareFacebook(caption, description);
+}
+
+function ShareTwitterMain () {
+	yield WaitForSeconds (0.1);
+	var text : String = "Space Shift\n" + "They are came for easy target! Not on my watch!" + "\n" + "101% awesome experience!";
+	var relatedAcc : String = "@SpaceShift";
+	SocialShare.ShareTwitter(text, relatedAcc);
+}
+
+function ShareFBScore () {
+	var score : int = this.gameObject.GetComponentInParent.<EndGame>().gameScore.GetScore();
+	var level : String = (int.Parse(Application.loadedLevelName[-1:]) + 1).ToString();
+	var zone : char = Application.loadedLevelName[-2:][0];
+	var caption : String = "Who is your daddy?!";
+	var description : String = "I've just finished Level " + level + " of Zone " + zone + " with score " + score.ToString() + ". Dare to challenge me?!";
+	SocialShare.ShareFacebook(caption, description);
+}
+
+function ShareTwitterScore () {
+	var score : int = this.gameObject.GetComponentInParent.<EndGame>().gameScore.GetScore();
+	var level : String = (int.Parse(Application.loadedLevelName[-1:]) + 1).ToString();
+	var zone : char = Application.loadedLevelName[-2:][0];
+	var description : String = "I've just finished Level " + level + " of Zone " + zone + " with score " + score.ToString() + ". Dare to challenge me?!";
+	var text : String = "Who is your daddy?!" + "\n" + description;
+	var relatedAcc : String = "@SpaceShift";
+	SocialShare.ShareTwitter(text, relatedAcc);
 }

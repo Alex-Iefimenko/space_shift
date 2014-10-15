@@ -19,6 +19,7 @@ private var speed : float = 4;
 
 function Awake () {
 	Options.ApplyOptions();
+	Time.timeScale = 1.0;
 }
 
 function Update () {

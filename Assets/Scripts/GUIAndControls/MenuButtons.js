@@ -15,9 +15,6 @@ function Update () {
 	if (tutorialGUI && Input.GetKeyDown("escape")) {
 		Proceed();
 	}
-	if (Input.GetKeyDown("space")) {
-		ShareTwitterScore();
-	}
 }
 
 function LevelRestart () {

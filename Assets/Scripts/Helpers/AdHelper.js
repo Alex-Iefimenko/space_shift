@@ -1,16 +1,22 @@
 ﻿#pragma strict
 
 private var adMobPlugin : AdMobPlugin;
+private var button : GUITexture;
+private var timer : float;
 
 function Start () {
-	adMobPlugin = this.gameObject.GetComponent.<AdMobPlugin>();
+	adMobPlugin = this.gameObject.GetComponentInChildren.<AdMobPlugin>();
+	button = this.gameObject.GetComponentInChildren.<GUITexture>();
+	SetButtonScale();
+	SetButtonPosition();
 }
 
-function OnGUI () {
-	GetAdSize ();
+function Update () {
+	if (timer > 0f) timer -= Time.deltaTime;
+	if (timer <= 0f && !adMobPlugin.IsVisible()) Show();
 }
 
-function GetAdSize () {
+function GetAdSize() {
 	var x : float = 0f;
 	var y : float = 0f;
 	var width : float = 0f;
@@ -67,4 +73,29 @@ function GetAdSize () {
 			break;
 	}
 	var backgroundRect : Rect = Rect(x, y, width, height);
+	return backgroundRect;
+}
+
+function Hide () {
+	timer = 3f;
+	adMobPlugin.Hide();
+	button.enabled = false;
+}
+
+function Show () {
+	adMobPlugin.Show();
+	button.enabled = true;
+}
+
+function SetButtonPosition () {
+	var adSize : Rect = GetAdSize();
+	guiTexture.pixelInset.x = adSize.x + adSize.width + guiTexture.texture.width * transform.localScale.x;
+	guiTexture.pixelInset.y = adSize.y - guiTexture.texture.height * transform.localScale.y;	
+}
+
+function SetButtonScale () {
+	var adSize : Rect = GetAdSize();
+	var sizeControl : SizeControlls = this.gameObject.GetComponent.<SizeControlls>();
+	sizeControl.percentOfScreenHeight = (adSize.height * 0.4) / (Screen.height * 1.0);;
+	sizeControl.SetScale();
 }

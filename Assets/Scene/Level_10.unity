@@ -12899,38 +12899,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 553299156}
-    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: lastEnemy
-      value: 
-      objectReference: {fileID: 1454628855}
-    - target: {fileID: 400012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 100034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400040, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400056, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 400070, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
   m_RootGameObject: {fileID: 1066616374}
@@ -17812,8 +17780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77928aaa2c76eb04f849290563790ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 553299156}
-  lastEnemy: {fileID: 1454628855}
+  player: {fileID: 0}
+  lastEnemy: {fileID: 0}
   gameOverGui: {fileID: 1122322709}
   gameWinGui: {fileID: 278719825}
   ingameGui: {fileID: 1432691764}
@@ -18045,90 +18013,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!1001 &999766181
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1122322710}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -3.79231191
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.467137665
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: loadOnStart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: publisherId
-      value: ca-app-pub-7858006992053690/8717755766
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: loadOnReconfigure
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: verticalPosition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: isTesting
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: refreshInterval
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_RootGameObject: {fileID: 2019794977}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1039392885
 GameObject:
   m_ObjectHideFlags: 0
@@ -19525,7 +19409,6 @@ Transform:
   m_Children:
   - {fileID: 107662529}
   - {fileID: 1188951990}
-  - {fileID: 2019794978}
   - {fileID: 2018776837}
   - {fileID: 1596506180}
   m_Father: {fileID: 994396718}
@@ -26752,7 +26635,7 @@ Transform:
   m_Children:
   - {fileID: 1418383173}
   m_Father: {fileID: 1122322710}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!132 &1596506181
 GUIText:
   m_ObjectHideFlags: 0
@@ -34200,7 +34083,7 @@ Transform:
   m_LocalScale: {x: .150000006, y: .170000002, z: 1}
   m_Children: []
   m_Father: {fileID: 1122322710}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &2018776838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34253,199 +34136,6 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
---- !u!1 &2019794977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_PrefabInternal: {fileID: 999766181}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2019794978}
-  - 114: {fileID: 2019794981}
-  - 114: {fileID: 2019794980}
-  - 114: {fileID: 2019794979}
-  m_Layer: 0
-  m_Name: AdMobPlugin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2019794978
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_PrefabInternal: {fileID: 999766181}
-  m_GameObject: {fileID: 2019794977}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.79231191, y: -.467137665, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1122322710}
-  m_RootOrder: 2
---- !u!114 &2019794979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 999766181}
-  m_GameObject: {fileID: 2019794977}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcdadf56b0d1e54e906ae9deec40c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  executeInEditMode: 1
-  style: 0
-  texts:
-  - Bugs that go away by themselves come back by themselves.
-  - When in doubt, use brute force.
-  - Deleted code is debugged code.
-  - Premature optimization is the root of all evil.
-  - Simplicity is the ultimate sophistication.
-  - With diligence it is possible to make anything run slowly.
-  - Simplicity carried to the extreme becomes elegance.
-  - The best is the enemy of the good.
-  - A data structure is just a stupid programming language.
-  - Software gets slower faster than hardware gets faster.
-  - If it doesn't work, it doesn't matter how fast it doesn't work.
-  - If it works, it's obsolete.
-  - The common language of programmers is Profanity.
-  - There is no place like 127.0.0.1.
-  - The code is 100% complete, it just doesn't work yet.
-  - Programming is hard, let's go shopping.
-  icons:
-  - {fileID: 2800000, guid: 42f0fee300d07b347874caf6491a8e1e, type: 3}
-  - {fileID: 2800000, guid: a0eff840123186b4a97e58764a06116a, type: 3}
-  - {fileID: 2800000, guid: 13ac363ff191c2648b2b4adae2553a7e, type: 3}
-  - {fileID: 2800000, guid: fbf551ccd05c60540877234ccbe0f135, type: 3}
-  - {fileID: 2800000, guid: ca76f053bcdffaf4bad67609b6b8c854, type: 3}
-  - {fileID: 2800000, guid: 8e5ce85e4d1b6404d9840eebe6224f77, type: 3}
-  - {fileID: 2800000, guid: 91db7cb3febcec4419d4ab042f0f2f5d, type: 3}
-  - {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
-  - {fileID: 2800000, guid: 9af03d6d762bd4f4a8e8d9c435989f81, type: 3}
-  - {fileID: 2800000, guid: aa33e0a9e023cdf4b8adabbb7bd8bd23, type: 3}
-  actions:
-  - {fileID: 2800000, guid: 87cb40c70b3249c4896cb0ef2bff4e61, type: 3}
-  - {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
-  - {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
-  darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
-  lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
---- !u!114 &2019794980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 999766181}
-  m_GameObject: {fileID: 2019794977}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36da46230c88f0e44ba41ec202f52749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rectangles:
-    loadButton:
-      serializedVersion: 2
-      x: 32
-      y: 32
-      width: 64
-      height: 48
-    exitButton:
-      serializedVersion: 2
-      x: 104
-      y: 32
-      width: 64
-      height: 48
-    showButton:
-      serializedVersion: 2
-      x: 32
-      y: 88
-      width: 64
-      height: 48
-    hideButton:
-      serializedVersion: 2
-      x: 104
-      y: 88
-      width: 64
-      height: 48
-    horizontalPositionButton:
-      serializedVersion: 2
-      x: 176
-      y: 32
-      width: 240
-      height: 48
-    verticalPositionButton:
-      serializedVersion: 2
-      x: 176
-      y: 88
-      width: 240
-      height: 48
-    orientationButton:
-      serializedVersion: 2
-      x: 176
-      y: 144
-      width: 240
-      height: 48
-    genderButton:
-      serializedVersion: 2
-      x: 32
-      y: 144
-      width: 136
-      height: 48
-    sizeButton:
-      serializedVersion: 2
-      x: 176
-      y: 200
-      width: 240
-      height: 50
-    lastErrorRectButton:
-      serializedVersion: 2
-      x: 32
-      y: 256
-      width: 384
-      height: 50
-    receivedLabel:
-      serializedVersion: 2
-      x: 32
-      y: 256
-      width: 384
-      height: 50
---- !u!114 &2019794981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 999766181}
-  m_GameObject: {fileID: 2019794977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bdf14effc102404ab6a46bc6a50a821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  publisherId: ca-app-pub-7858006992053690/8717755766
-  isTesting: 0
-  testDeviceIds:
-  - TEST_DEVICE_ID
-  guessSelfDeviceId: 1
-  size: 4
-  orientation: 0
-  horizontalPosition: 0
-  verticalPosition: 0
-  refreshInterval: 7
-  loadOnStart: 1
-  setTargetOnStart: 0
-  loadOnReconfigure: 1
-  target:
-    gender: 0
-    birthday:
-      year: 0
-      month: 0
-      day: 0
-    keywords: []
-    location:
-      latitude: NaN
-      longitude: NaN
-      altitude: NaN
 --- !u!1 &2020438407
 GameObject:
   m_ObjectHideFlags: 0

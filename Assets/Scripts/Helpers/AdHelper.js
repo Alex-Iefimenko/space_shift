@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+/*
 private var adMobPlugin : AdMobPlugin;
 private var button : GUITexture;
 private var timer : float;
@@ -99,3 +99,4 @@ function SetButtonScale () {
 	sizeControl.percentOfScreenHeight = (adSize.height * 0.4) / (Screen.height * 1.0);;
 	sizeControl.SetScale();
 }
+*/

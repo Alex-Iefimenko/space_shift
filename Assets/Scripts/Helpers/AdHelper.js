@@ -1,4 +1,21 @@
 ﻿#pragma strict
+
+import GoogleMobileAds.Api;
+
+function Start () {
+	// Create a 320x50 banner at the top of the screen.
+	var bannerView : BannerView  = new BannerView(
+        "ca-app-pub-7858006992053690/7241022566D", AdSize.Banner, AdPosition.Top);
+	// Create an empty ad request.
+	var request : AdRequest = new AdRequest.Builder()
+    .AddTestDevice(AdRequest.TestDeviceSimulator)       // Simulator.
+    .AddTestDevice("0123456789ABCDEF0123456789ABCDEF")  // Test Device 1.
+    .Build();
+	// Load the banner with the request.
+	bannerView.LoadAd(request);
+}
+
+
 /*
 private var adMobPlugin : AdMobPlugin;
 private var button : GUITexture;

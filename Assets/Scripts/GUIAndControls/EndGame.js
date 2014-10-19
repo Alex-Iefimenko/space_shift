@@ -2,7 +2,7 @@
 import System.Collections.Generic;
 import System.Linq;
 
-public var player : GameObject;
+private var player : GameObject;
 public var lastEnemy : GameObject;
 public var gameOverGui : GameObject;
 public var gameWinGui : GameObject;
@@ -14,6 +14,7 @@ private var currentScore : int = 0;
 private var gameEnd : boolean = false;
 
 function Start () {
+	player = GameObject.FindGameObjectWithTag("Player");
 }
 
 function Update () {

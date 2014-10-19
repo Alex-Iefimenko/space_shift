@@ -655,6 +655,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100078
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400078}
+  - 114: {fileID: 11400072}
+  m_Layer: 0
+  m_Name: Advertisment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -678,7 +694,7 @@ Transform:
   m_LocalScale: {x: .150000006, y: .170000002, z: 1}
   m_Children: []
   m_Father: {fileID: 400034}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -891,6 +907,7 @@ Transform:
   m_LocalPosition: {x: 3.79231191, y: .467137665, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400078}
   - {fileID: 400002}
   - {fileID: 400040}
   - {fileID: 400070}
@@ -932,7 +949,7 @@ Transform:
   m_LocalScale: {x: 1.22000003, y: 1.02999997, z: 1}
   m_Children: []
   m_Father: {fileID: 400034}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &400042
 Transform:
   m_ObjectHideFlags: 1
@@ -1034,7 +1051,7 @@ Transform:
   m_Children:
   - {fileID: 400048}
   m_Father: {fileID: 400034}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &400058
 Transform:
   m_ObjectHideFlags: 1
@@ -1124,7 +1141,7 @@ Transform:
   m_LocalScale: {x: .150000006, y: .170000002, z: 1}
   m_Children: []
   m_Father: {fileID: 400034}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &400072
 Transform:
   m_ObjectHideFlags: 1
@@ -1161,6 +1178,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400012}
   m_RootOrder: 8
+--- !u!4 &400078
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.77379298, y: -1.04073322, z: -6.07836914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400034}
+  m_RootOrder: 0
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -1747,6 +1776,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
   levelToLoad: 
+--- !u!114 &11400072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7584500a132f55a40a40a9af87313aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitIDIntersatial: ca-app-pub-7858006992053690/8717755766
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

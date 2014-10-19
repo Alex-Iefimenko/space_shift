@@ -18,6 +18,7 @@ function Awake () {
 function Update () {
 	if (interstitial != null && interstitial.IsLoaded() && isShown && Options.InterstatialShow()) {
 		interstitial.Show(); 
+		Options.InterstatialUpdate();
 		isShown = false;
 	}
 }

@@ -52,8 +52,11 @@ static function NumberOfStarsInZone(zone : String) {
 }
 
 static function InterstatialShow () {
-	interstatialIndx = (interstatialIndx + 1) % 2;
 	var result : boolean;
 	if (interstatialIndx == 1) result = true;
 	return result;
+}
+
+static function InterstatialUpdate () {
+	interstatialIndx = (interstatialIndx + 1) % 2;
 }

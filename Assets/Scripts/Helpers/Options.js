@@ -3,6 +3,7 @@
 static public var music : boolean = true;
 static public var sound : boolean = true;
 static public var graphics : int = 1;
+static public var interstatialIndx : int = 0;
 
 static function MusicOn (bol : boolean) {
 	music = bol;
@@ -22,6 +23,7 @@ static function SaveOptions () {
 	PlayerPrefs.SetInt("Graphics", graphics);
 	PlayerPrefs.SetString("Music", music.ToString());
 	PlayerPrefs.SetString("Sound", sound.ToString());
+	PlayerPrefs.SetInt("Interstatial", interstatialIndx);
 	PlayerPrefs.Save();
 }
 
@@ -29,6 +31,7 @@ static function LoadOptions () {
 	music = boolean.Parse(PlayerPrefs.GetString("Music"));
 	sound = boolean.Parse(PlayerPrefs.GetString("Sound"));
 	graphics = PlayerPrefs.GetInt("Graphics");
+	interstatialIndx = PlayerPrefs.GetInt("Interstatial");
 }
 
 static function ApplyOptions () {
@@ -46,4 +49,14 @@ static function NumberOfStarsInZone(zone : String) {
 		}
 	}
 	return totalStarNumber;
+}
+
+static function InterstatialShow () {
+	var result : boolean;
+	if (interstatialIndx == 1) result = true;
+	return result;
+}
+
+static function InterstatialUpdate () {
+	interstatialIndx = (interstatialIndx + 1) % 2;
 }

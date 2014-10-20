@@ -32,7 +32,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: Enemy_stub
+  m_Name: Enemy_
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -219,9 +218,9 @@ MonoBehaviour:
   health: 3
   isEnemy: 1
   scoreValue: 100
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
   enemyExplosionVersion: 1
+  isKamikadze: 0
+  kamikadzeDamage: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +238,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca81e46c3a904ad4d9fe691ec7baa0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateOnHit: 0
+  isBifurcation: 0
+  newShips: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -23,6 +23,9 @@ private var rollBackVector : Vector2 = Vector2(0,0);
 public var isKamikadze : boolean = false;
 public var kamikadzeDamage : int = 0;
 
+// Enemy shield
+public var shieldHealth : int = 0;
+
 function Awake() {
 	scoreGUI = GameObject.FindGameObjectWithTag("ScoreHendler").GetComponentInChildren.<Score>();
 	specialEffectsHendler = GameObject.FindGameObjectWithTag("HelperScripts").GetComponentInChildren.<SpecialEffects>();
@@ -32,6 +35,9 @@ function Awake() {
 	maxHealth = health;
 }
 
+function Start () {
+	if (shieldHealth > 0) Freeze(120f);
+}
 
 function Update () {
 	if (freezeTime > 0) { freezeTime -= Time.deltaTime; }
@@ -70,9 +76,15 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 	if (shot != null) {
 		if (isEnemy != shot.isEnemyShot) {
 			if (shiedlEnabled) {
-				shot.isEnemyShot = false;
+				shot.isEnemyShot = !shot.isEnemyShot;
 				shot.transform.rotation.eulerAngles.z = Random.Range(-160.0, 160.0);
+				if (this.gameObject.tag == "Enemy") { 
+					shot.transform.rotation.eulerAngles.z -= 180;
+					shieldHealth -= shot.damage;
+					if (shieldHealth <= 0) ShieldDiasble();
+				}
 				shot.damage = Mathf.Floor(shot.damage / 4);
+
 			} else {
 				switch (shot.behaviourType) {
 					case 4:
@@ -134,6 +146,8 @@ function GetMaxHealth () {
 function ShieldDiasble() {
 	shiedlEnabled = false;
 	circleCollider.enabled = false;
+	freezeTime = 0f;
+	if (this.gameObject.tag == "Enemy") shield.StartShieldEnd();
 }
 
 function GetScore () {

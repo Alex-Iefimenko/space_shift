@@ -298,6 +298,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &5899672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3308,6 +3309,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &47422126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3527,6 +3529,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &47479117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3724,6 +3727,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &50052097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4066,6 +4070,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &59929078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4547,6 +4552,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &68381328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4646,7 +4652,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 74385301}
@@ -4664,7 +4670,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 74385300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .289999992, z: 0}
@@ -4677,7 +4683,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100000, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 74385300}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 19760ff36943a3f4691d71c6ee7a6941, type: 3}
@@ -4697,7 +4703,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 74385300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4715,7 +4721,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 74385300}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5232,6 +5238,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &85775073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5849,6 +5856,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &94184176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6290,7 +6298,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 107662529}
@@ -6308,7 +6316,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 107662528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .589999974, y: .200000003, z: 1.85000002}
@@ -6321,7 +6329,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 107662528}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6335,7 +6343,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400006, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 107662528}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6353,7 +6361,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100002, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 107662528}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 58aab245596ab564aba70d6c9d462787, type: 3}
@@ -6661,6 +6669,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &108346726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6713,7 +6722,7 @@ Rigidbody2D:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 111022472}
@@ -6730,7 +6739,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400004, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 111022471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .174999997, y: .25999999, z: 0}
@@ -6743,7 +6752,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100004, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 111022471}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 5dc0eb9239c8e4748a9fabc01accccd3, type: 3}
@@ -6763,7 +6772,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400008, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 111022471}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6975,6 +6984,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &111718606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8433,6 +8443,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &119030337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9000,6 +9011,47 @@ Prefab:
   m_RootGameObject: {fileID: 931574238}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &126533928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 1133147867}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 126533929}
+  - 114: {fileID: 126533930}
+  m_Layer: 0
+  m_Name: GameEndAd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126533929
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_PrefabInternal: {fileID: 1133147867}
+  m_GameObject: {fileID: 126533928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1122322710}
+  m_RootOrder: 4
+--- !u!114 &126533930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400072, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1133147867}
+  m_GameObject: {fileID: 126533928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7584500a132f55a40a40a9af87313aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adUnitIDIntersatial: ca-app-pub-7858006992053690/8717755766
 --- !u!1001 &131410751
 Prefab:
   m_ObjectHideFlags: 0
@@ -9229,7 +9281,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100006, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 139587969}
@@ -9245,7 +9297,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 139587968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.0399999991, z: -.180000007}
@@ -9258,7 +9310,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100006, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 139587968}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 7bf2c3643ce1bba4f8f84eaf74faa3dc, type: 3}
@@ -9587,6 +9639,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &143516490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9947,6 +10000,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &147872835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10260,6 +10314,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &155284219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11080,7 +11135,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100008, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 212519084}
@@ -11098,7 +11153,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400008, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 212519083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .479999989, y: .119999997, z: 1.85000002}
@@ -11111,7 +11166,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400010, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 212519083}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -11125,7 +11180,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400012, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 212519083}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -11143,7 +11198,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100008, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 212519083}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 58aab245596ab564aba70d6c9d462787, type: 3}
@@ -11499,6 +11554,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &217427841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12005,7 +12061,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 240624774}
@@ -12022,7 +12078,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 240624773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .299999714, y: -.379999995, z: -.589999974}
@@ -12035,7 +12091,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200000, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 240624773}
   m_Enabled: 1
   serializedVersion: 3
@@ -12059,7 +12115,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400014, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 240624773}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12852,7 +12908,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 278719826}
@@ -12867,7 +12923,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 278719825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.79231191, y: .467137665, z: 6.9000001}
@@ -13633,7 +13689,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100014, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 308900195}
@@ -13650,7 +13706,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400016, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 308900193}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13683,7 +13739,7 @@ MonoBehaviour:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400014, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 308900193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.0450000018, y: -.0450000018, z: 0}
@@ -14246,7 +14302,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100016, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 332991222}
@@ -14262,7 +14318,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400016, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 332991221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .495000005, y: .949999988, z: 0}
@@ -14277,7 +14333,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100010, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 332991221}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 7bf2c3643ce1bba4f8f84eaf74faa3dc, type: 3}
@@ -14843,7 +14899,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100018, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 358307041}
@@ -14860,7 +14916,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400018, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 358307040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .610000014, z: 1.85000002}
@@ -14874,7 +14930,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500000, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 358307040}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
@@ -14889,7 +14945,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100012, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 358307040}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 723e8115ca3723846b500b49c2493c67, type: 3}
@@ -15122,6 +15178,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &363256192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17034,6 +17091,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &392013684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17577,6 +17635,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &412115277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17829,6 +17888,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &413984080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18962,6 +19022,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &451551141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21154,6 +21215,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &480506026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22282,6 +22344,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &508754729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22500,6 +22563,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &518873000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23171,6 +23235,7 @@ MonoBehaviour:
   enemyExplosionVersion: 1
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!58 &553299165
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23428,6 +23493,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &556549872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24751,6 +24817,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &594262069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25028,6 +25095,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &595439964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26636,6 +26704,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &646967103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26855,6 +26924,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &648272375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26903,90 +26973,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!1001 &651861886
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 553299156}
-    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: lastEnemy
-      value: 
-      objectReference: {fileID: 1495274573}
-    - target: {fileID: 100034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100040, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100052, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100062, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: m_TagString
-      value: GUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400048, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-      propertyPath: levelToLoad
-      value: MainMenu
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_RootGameObject: {fileID: 1066616374}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &652318070
 GameObject:
   m_ObjectHideFlags: 0
@@ -27333,6 +27319,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &664854048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27500,6 +27487,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &667198786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28382,6 +28370,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &684082400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29353,6 +29342,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &729555880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29617,6 +29607,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &731142865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29835,6 +29826,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &734018102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30708,7 +30700,7 @@ SpriteRenderer:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100020, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 778911822}
@@ -30725,7 +30717,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400020, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 778911821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .330000013, y: .589999974, z: 1.85000002}
@@ -30739,7 +30731,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500002, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 778911821}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
@@ -30754,7 +30746,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100014, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 778911821}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 723e8115ca3723846b500b49c2493c67, type: 3}
@@ -31311,6 +31303,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &795961931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31751,6 +31744,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &806144243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31970,6 +31964,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &808187364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32237,7 +32232,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100022, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 818423159}
@@ -32255,7 +32250,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400022, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 818423158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .289999992, y: .119999997, z: 3.05999994}
@@ -32268,7 +32263,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400018, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 818423158}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -32282,7 +32277,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400020, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 818423158}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -32300,7 +32295,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100016, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 818423158}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: e1427a3634233534395ad9dd808ee08c, type: 3}
@@ -33106,6 +33101,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &873663716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33337,6 +33333,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &873700582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34078,6 +34075,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &902840375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34467,6 +34465,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &912225197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34973,6 +34972,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &931574243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35439,6 +35439,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &945449330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35690,7 +35691,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 965570699}
@@ -35707,7 +35708,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 965570698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .150000006, y: .219999999, z: 1}
@@ -35720,7 +35721,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100018, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 965570698}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 24ddb9bfae294f2449bc8f2914e78d4d, type: 3}
@@ -35740,7 +35741,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400022, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 965570698}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -37559,6 +37560,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &982728048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38100,6 +38102,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &989190664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38352,6 +38355,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &993303921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38404,7 +38408,7 @@ Rigidbody2D:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100026, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 994396718}
@@ -38420,7 +38424,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400026, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 994396717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.79231191, y: -.467137665, z: -5}
@@ -38435,7 +38439,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 994396717}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -38716,7 +38720,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100074, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1007808831}
@@ -38735,7 +38739,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400074, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1007808830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .942312002, y: .889178991, z: 2}
@@ -38748,7 +38752,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400060, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1007808830}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -38761,7 +38765,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400064, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1007808830}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -38775,7 +38779,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400062, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1007808830}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -38793,7 +38797,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100048, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1007808830}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 6ce7cdd1c172da04f8bd872eff497b4d, type: 3}
@@ -39342,6 +39346,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1019034457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39994,6 +39999,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1056805927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40218,6 +40224,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1062121259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40299,7 +40306,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1066616375}
@@ -40314,7 +40321,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1066616374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -40547,6 +40554,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1088657610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40948,6 +40956,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1095763893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41136,7 +41145,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100030, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1105611845}
@@ -41155,7 +41164,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100020, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1105611843}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: d7af77fbc39fb7542aee1e001e703c89, type: 3}
@@ -41174,7 +41183,7 @@ GUITexture:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400030, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1105611843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .709999979, z: 0}
@@ -41187,7 +41196,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400026, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1105611843}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -41205,7 +41214,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400028, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1105611843}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -41218,7 +41227,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100032, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1106383502}
@@ -41234,7 +41243,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400032, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1106383501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0199999996, y: -.0399999991, z: -.189999998}
@@ -41247,7 +41256,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100022, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1106383501}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: ee4b4e5e072e01648bc564f48365c8fa, type: 3}
@@ -41510,7 +41519,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1122322710}
@@ -41525,7 +41534,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1122322709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.79231191, y: .467137665, z: 5}
@@ -41535,6 +41544,7 @@ Transform:
   - {fileID: 1188951990}
   - {fileID: 2018776837}
   - {fileID: 1596506180}
+  - {fileID: 126533929}
   m_Father: {fileID: 994396718}
   m_RootOrder: 0
 --- !u!1 &1123607057
@@ -41835,6 +41845,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1127865600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42167,6 +42178,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2045640570}
   m_RootOrder: 1
+--- !u!1001 &1133147867
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400028, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 553299156}
+    - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: lastEnemy
+      value: 
+      objectReference: {fileID: 1495274573}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+  m_RootGameObject: {fileID: 1066616374}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1134324577
 GameObject:
   m_ObjectHideFlags: 0
@@ -42364,6 +42427,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1140139734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42954,7 +43018,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100036, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1170631597}
@@ -42972,7 +43036,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400036, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1170631596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: 0}
@@ -42985,7 +43049,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100024, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1170631596}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: edd43c980cd05ad47a275b40d48451ac, type: 3}
@@ -43005,7 +43069,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400030, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1170631596}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43023,7 +43087,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400032, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1170631596}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43204,6 +43268,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1172238926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43473,7 +43538,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100038, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1184107659}
@@ -43491,7 +43556,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400038, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1184107658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .910000026, y: .959999979, z: .0900000036}
@@ -43504,7 +43569,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400034, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1184107658}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43522,7 +43587,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400036, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1184107658}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43536,7 +43601,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100026, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1184107658}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 37bc1f4e047387b4aa74a6dd0dd19478, type: 3}
@@ -43771,7 +43836,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100040, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1188951990}
@@ -43788,7 +43853,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100028, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1188951986}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: e6c1c0d2999c74c4c9fd2a55b9bfd9a8, type: 3}
@@ -43807,7 +43872,7 @@ GUITexture:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400040, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1188951986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: 1.49000001}
@@ -44013,6 +44078,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1189443429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44164,7 +44230,7 @@ SpriteRenderer:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100042, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1191388844}
@@ -44181,7 +44247,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400042, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1191388843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0399999991, y: .964999974, z: .189999998}
@@ -44195,7 +44261,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100030, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1191388843}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: ee4b4e5e072e01648bc564f48365c8fa, type: 3}
@@ -44215,7 +44281,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400038, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1191388843}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -44398,7 +44464,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100044, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1196015276}
@@ -44414,7 +44480,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400044, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1196015275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: .5, z: 1.57000005}
@@ -44427,7 +44493,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100032, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1196015275}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 8511a6946f2810042aa6d3cf56b1e8b5, type: 3}
@@ -44597,7 +44663,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100046, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1206936221}
@@ -44614,7 +44680,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400046, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1206936220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .670000017, y: .589999974, z: 1.85000002}
@@ -44628,7 +44694,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500004, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1206936220}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
@@ -44643,7 +44709,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100034, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1206936220}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 723e8115ca3723846b500b49c2493c67, type: 3}
@@ -45158,6 +45224,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1238780916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45802,6 +45869,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1266821140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45982,6 +46050,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1268426402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46260,6 +46329,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1272330607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46788,6 +46858,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1291173934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47144,7 +47215,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100076, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1299759169}
@@ -47163,7 +47234,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400076, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1299759168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .942312002, y: .739179015, z: 2}
@@ -47176,7 +47247,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400066, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1299759168}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -47189,7 +47260,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400070, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1299759168}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -47203,7 +47274,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400068, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1299759168}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -47221,7 +47292,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100050, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1299759168}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 09bb7a93959bd0149aa4d9bd725dee34, type: 3}
@@ -50558,6 +50629,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1354712088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50964,6 +51036,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1365847879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51492,6 +51565,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1387366584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52006,7 +52080,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100048, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1418383173}
@@ -52022,7 +52096,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400048, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1418383172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .00600000005, y: -.00600000005, z: 1.58000004}
@@ -52035,7 +52109,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200002, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1418383172}
   m_Enabled: 1
   serializedVersion: 3
@@ -52225,6 +52299,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1420071533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52476,7 +52551,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100050, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1427089781}
@@ -52492,7 +52567,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400050, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1427089780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .911000013, y: .954999983, z: -.209999993}
@@ -52505,7 +52580,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100036, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1427089780}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 37bc1f4e047387b4aa74a6dd0dd19478, type: 3}
@@ -52890,7 +52965,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100052, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1432691765}
@@ -52905,7 +52980,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400052, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1432691764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -54156,6 +54231,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1481248875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54399,6 +54475,7 @@ MonoBehaviour:
   enemyExplosionVersion: 1
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1495274577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54582,6 +54659,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1500810733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54768,7 +54846,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100054, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1509990759}
@@ -54787,7 +54865,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400040, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1509990755}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -54800,7 +54878,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400042, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1509990755}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -54818,7 +54896,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100038, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1509990755}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 37853751bfbbe7148938d661436a746c, type: 3}
@@ -54837,7 +54915,7 @@ GUITexture:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400054, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1509990755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .920000017, y: .330000013, z: 0}
@@ -55773,6 +55851,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1532704105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56427,6 +56506,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1552908689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57002,6 +57082,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1558245634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57298,6 +57379,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1561874504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57814,6 +57896,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1595771626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57866,7 +57949,7 @@ Rigidbody2D:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100056, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1596506180}
@@ -57882,7 +57965,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400056, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1596506179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .649999976, y: .379999995, z: 3.53999996}
@@ -57896,7 +57979,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200004, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1596506179}
   m_Enabled: 1
   serializedVersion: 3
@@ -59426,7 +59509,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100058, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1622603653}
@@ -59441,7 +59524,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400058, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1622603652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0299999993, y: -.100000001, z: 0}
@@ -59791,6 +59874,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1626343373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60146,6 +60230,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1632527698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61617,6 +61702,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1666957394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63575,6 +63661,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1680975931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64286,6 +64373,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1690136256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65724,6 +65812,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1703276424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65991,6 +66080,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1703728918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66291,7 +66381,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100060, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1717159266}
@@ -66309,7 +66399,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400060, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1717159265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .834999979, y: .180000007, z: 0}
@@ -66322,7 +66412,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400044, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1717159265}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -66335,7 +66425,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400046, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1717159265}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -66353,7 +66443,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100040, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1717159265}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: f775e7db78ff7324289816decee35f8f, type: 3}
@@ -66592,6 +66682,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1721273164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67444,6 +67535,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1733424035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68022,6 +68114,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1744747782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68627,6 +68720,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1761190423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69230,6 +69324,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1779808837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69542,6 +69637,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1789877222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69885,7 +69981,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100062, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1817416084}
@@ -69900,7 +69996,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400062, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1817416083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -70115,6 +70211,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1819958113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70382,6 +70479,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1838488749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70495,7 +70593,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100064, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1848796965}
@@ -70511,7 +70609,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400064, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1848796964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .00600000005, y: -.00600000005, z: 1.58000004}
@@ -70524,7 +70622,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200006, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1848796964}
   m_Enabled: 1
   serializedVersion: 3
@@ -71030,6 +71128,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1865887626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71407,6 +71506,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1873244160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72678,7 +72778,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100066, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1888350451}
@@ -72696,7 +72796,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400066, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1888350450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .670000017, y: .119999997, z: 3.05999994}
@@ -72709,7 +72809,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400048, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1888350450}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -72723,7 +72823,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400050, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1888350450}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -72741,7 +72841,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100042, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 1888350450}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 2c2eabc77b5f2904a8e4b79e22b76229, type: 3}
@@ -73483,6 +73583,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1900318506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73829,6 +73930,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1907603582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74053,6 +74155,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1907899566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74258,6 +74361,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1907916229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74596,6 +74700,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1920960230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74815,6 +74920,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1927078539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75199,6 +75305,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1938894442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75469,6 +75576,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1944477147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76083,6 +76191,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &1971191386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76663,7 +76772,7 @@ EllipsoidParticleEmitter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100068, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2000527522}
@@ -76679,7 +76788,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400068, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2000527521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .680000007, y: .330000013, z: 1.63999999}
@@ -76693,7 +76802,7 @@ GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13200008, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2000527521}
   m_Enabled: 1
   serializedVersion: 3
@@ -76883,6 +76992,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2001931387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77184,7 +77294,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100070, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2018776837}
@@ -77202,7 +77312,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400070, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2018776836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .379999995, y: .200000003, z: 3.05999994}
@@ -77215,7 +77325,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400052, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2018776836}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -77229,7 +77339,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400054, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2018776836}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -77247,7 +77357,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100044, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2018776836}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: e1427a3634233534395ad9dd808ee08c, type: 3}
@@ -77724,6 +77834,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2034305437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78269,6 +78380,7 @@ MonoBehaviour:
   enemyExplosionVersion: 3
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2045640574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78981,6 +79093,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2080759672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79322,6 +79435,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2091349216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79897,6 +80011,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2114034031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81680,6 +81795,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &2144000705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81732,7 +81848,7 @@ Rigidbody2D:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100072, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2144402247}
@@ -81750,7 +81866,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400072, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2144402246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .930000007, y: .930000007, z: 0}
@@ -81763,7 +81879,7 @@ GUITexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13100046, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2144402246}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: bd972facd920b4646a5e01b80a0275af, type: 3}
@@ -81783,7 +81899,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400056, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2144402246}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -81797,7 +81913,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400058, guid: c846803ec821bc14e99587dfdfd88dc7,
     type: 2}
-  m_PrefabInternal: {fileID: 651861886}
+  m_PrefabInternal: {fileID: 1133147867}
   m_GameObject: {fileID: 2144402246}
   m_Enabled: 1
   m_EditorHideFlags: 0

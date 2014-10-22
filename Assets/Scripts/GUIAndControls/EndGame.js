@@ -58,7 +58,7 @@ function GameEnd (isWin : boolean) {
 function StarActivation () {
 	var stars : List.<Animator> = gameObject.GetComponentsInChildren.<Animator>().OrderBy(function(a){return a.name;}).ToList();
 	if ( gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.7 && stars[1]) { stars[1].gameObject.SetActive(false); }
-	if ( gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.9 && stars[2]) { stars[2].gameObject.SetActive(false); }
+	if ( gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 <= 0.85 && stars[2]) { stars[2].gameObject.SetActive(false); }
 }
 
 
@@ -68,7 +68,7 @@ function SaveProgress () {
 	var nextLevelName : String = "Level_" + nextLevel.ToString();
 	var numberOfStars : int;
 	
-	if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 >= 0.9) { 
+	if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 >= 0.85) { 
 		numberOfStars = 3; 
 	} else if (gameScore.GetScore() * 1.0 / gameScore.GetTotalScore() * 1.0 >= 0.7) { 
 		numberOfStars = 2; 

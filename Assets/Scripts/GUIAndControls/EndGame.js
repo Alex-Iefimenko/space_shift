@@ -2,8 +2,8 @@
 import System.Collections.Generic;
 import System.Linq;
 
-public var player : GameObject;
-public var lastEnemy : GameObject;
+private var player : GameObject;
+private var lastEnemy : GameObject;
 public var gameOverGui : GameObject;
 public var gameWinGui : GameObject;
 public var ingameGui : GameObject;
@@ -14,6 +14,9 @@ private var currentScore : int = 0;
 private var gameEnd : boolean = false;
 
 function Start () {
+	player = GameObject.FindGameObjectWithTag("Player");
+	var allEnemies : List.<GameObject> = GameObject.FindGameObjectsWithTag("Enemy").OrderBy(function(a){return a.transform.position.x;}).ToList();
+	lastEnemy = allEnemies[allEnemies.Count() - 1];
 }
 
 function Update () {

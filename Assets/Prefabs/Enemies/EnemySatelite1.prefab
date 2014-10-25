@@ -124,6 +124,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 1
-  speed: {x: 2, y: 2}
+  speed: {x: 1, y: 2}
   frequency: 5
   amplitude: 3
   isForbidenLeaveCamera: 0

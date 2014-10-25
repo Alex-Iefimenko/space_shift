@@ -476,6 +476,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 0
   kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,7 +524,7 @@ MonoBehaviour:
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
-  isAutoAim: 0
+  isAutoAim: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

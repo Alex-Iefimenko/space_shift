@@ -66,7 +66,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: Kamikadze
+  m_Name: Enemy16
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,6 +385,7 @@ MonoBehaviour:
   enemyExplosionVersion: 2
   isKamikadze: 1
   kamikadzeDamage: 101
+  shieldHealth: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

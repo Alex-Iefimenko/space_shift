@@ -105,3 +105,11 @@ function ShareTwitterScore () {
 	var relatedAcc : String = "@SpaceShift";
 	SocialShare.ShareTwitter(text, relatedAcc);
 }
+
+function SlideForwardStub () {
+	SendMessageUpwards("SlideForward");
+}
+
+function SlideBackwardStub () {
+	SendMessageUpwards("SlideBackward");
+}

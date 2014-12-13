@@ -4178,7 +4178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_42
 --- !u!114 &368807592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4191,7 +4191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -4398,7 +4398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_22
 --- !u!114 &396138219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4411,7 +4411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -5281,7 +5281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_41
 --- !u!114 &471457751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5294,7 +5294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -6048,6 +6048,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &523067105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6133,7 +6134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_11
 --- !u!114 &524626174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6146,7 +6147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: LoadVideo
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -7377,6 +7378,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &616696935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10756,7 +10758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_21
 --- !u!114 &1023445154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10769,7 +10771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -10958,7 +10960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_31
 --- !u!114 &1032899810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10971,7 +10973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -11823,6 +11825,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1073425534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12165,7 +12168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_32
 --- !u!114 &1112798211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12178,7 +12181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -13405,6 +13408,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1191272126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17053,7 +17057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Video_12
 --- !u!114 &1565019276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17066,7 +17070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ' LoadLevel'
+  functionOnTouchDown: LoadLevel
   imageOver: {fileID: 2800000, guid: 949a23f3690828d4198d8092380a8565, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 2800000, guid: 31bfe991f31afc34d8519193022bc683, type: 3}
@@ -17690,6 +17694,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1617316655
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -187,11 +187,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourType: 2
-  damage: 10
+  damage: 16
   isEnemyShot: 0
   speed: {x: 15, y: 15}
   direction: {x: 1, y: 0}
   misslePrefab: {fileID: 400000, guid: e75e02b9783eab04288cdf539d943090, type: 2}
+  reduceCapabiliteisSec: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

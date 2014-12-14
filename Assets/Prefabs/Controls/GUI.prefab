@@ -1161,8 +1161,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .942312002, y: .889178991, z: 2}
-  m_LocalScale: {x: .0500000007, y: .100000001, z: 1}
+  m_LocalPosition: {x: .920000017, y: .889999986, z: 2}
+  m_LocalScale: {x: .109999999, y: .129999995, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
   m_RootOrder: 9
@@ -1173,8 +1173,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .942312002, y: .739179015, z: 2}
-  m_LocalScale: {x: .0700000003, y: .159999996, z: 1}
+  m_LocalPosition: {x: .920000017, y: .709999979, z: 2}
+  m_LocalScale: {x: .109999999, y: .129999995, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
   m_RootOrder: 8
@@ -1204,7 +1204,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -1219,7 +1218,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500004
 Animator:
   serializedVersion: 3
@@ -1234,7 +1232,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1701,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentOfScreenHeight: .100000001
+  percentOfScreenHeight: .129999995
 --- !u!114 &11400062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1714,7 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   functionOnTouchDown: ShareFBScore
-  imageOver: {fileID: 2800000, guid: 49f6af8df467d4c4f893b6314b5d10c0, type: 3}
+  imageOver: {fileID: 2800000, guid: 84382d21320695443b64e2b2c9d9bc7a, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
@@ -1743,7 +1740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e4443245a3474685d8b8fdca222cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentOfScreenHeight: .100000001
+  percentOfScreenHeight: .129999995
 --- !u!114 &11400068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1756,7 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   functionOnTouchDown: ShareTwitterScore
-  imageOver: {fileID: 2800000, guid: 49f6af8df467d4c4f893b6314b5d10c0, type: 3}
+  imageOver: {fileID: 2800000, guid: 53ba9f578511ece4092471898426a12c, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
@@ -2249,7 +2246,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100074}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 6ce7cdd1c172da04f8bd872eff497b4d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 369989e4f538df14090988db85e814f3, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -2268,7 +2265,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100076}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 09bb7a93959bd0149aa4d9bd725dee34, type: 3}
+  m_Texture: {fileID: 2800000, guid: 3a3777faa96e97546b6b259d210f7207, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2

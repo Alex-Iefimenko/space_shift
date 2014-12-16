@@ -38,6 +38,12 @@ function SlideForward () {
 		} else if (Application.loadedLevelName[-2:][1] == "2") {
 			nextLevelName = "Video_" + (parseInt(Application.loadedLevelName[-2:][0])- 48 + 1).ToString() + "1";
 		}
+		// Level Progress save
+		if (PlayerPrefs.HasKey(nextLevelName) == false) {
+			PlayerPrefs.SetInt(nextLevelName, 1);
+			PlayerPrefs.SetInt("Zone_" + nextLevelName[-2:][0], 1);
+			PlayerPrefs.Save();
+		} 
 		Application.LoadLevel(nextLevelName);
 	} else {
 		currentSlide += 1;

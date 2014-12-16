@@ -82,6 +82,7 @@ function SaveProgress () {
 	if (int.Parse(Application.loadedLevelName[-1:]) == 9) {
 		var nextZoneOpen : String = "Zone_" + (parseInt(Application.loadedLevelName[-2:][0])- 48 + 1).ToString();
 		PlayerPrefs.SetInt(nextZoneOpen, 1);
+		PlayerPrefs.SetInt("Video" + nextZoneOpen[-2:][0] + "1", 1);
 	}
 	
 	PlayerPrefs.SetInt(nextLevelName, 1);

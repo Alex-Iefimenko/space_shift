@@ -9,8 +9,8 @@ function Awake () {
 	}
 	Options.ApplyOptions();
 	// Detect current game progress
-	if (PlayerPrefs.HasKey("Level_10") == false) {
-		PlayerPrefs.SetInt("Level_10", 1);
+	if (PlayerPrefs.HasKey("Video_11") == false) {
+		PlayerPrefs.SetInt("Video_11", 1);
 		PlayerPrefs.SetInt("Zone_1", 1);
 	} 
 }

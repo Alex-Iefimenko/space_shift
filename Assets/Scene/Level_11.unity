@@ -4181,7 +4181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 25
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
@@ -8615,6 +8615,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 3f599af30824e7a498a571d6c181483a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f599af30824e7a498a571d6c181483a, type: 2}
   m_RootGameObject: {fileID: 92369690}
@@ -11156,7 +11160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
       propertyPath: health
-      value: 18
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
@@ -20526,7 +20530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 18
+  health: 25
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
@@ -22487,7 +22491,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
       propertyPath: health
-      value: 18
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
@@ -27602,7 +27606,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
       propertyPath: health
-      value: 70
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
       propertyPath: shootingRate
@@ -33635,7 +33639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
       propertyPath: health
-      value: 18
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e186a7809249b14aad180ae850320f4, type: 2}
@@ -46259,7 +46263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 18
+  health: 25
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3
@@ -49606,7 +49610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 70
+  health: 100
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 1
@@ -53141,7 +53145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e44ca2d08e3abe4199b47f95b713ddf, type: 2}
       propertyPath: health
-      value: 2
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e44ca2d08e3abe4199b47f95b713ddf, type: 2}
@@ -56127,7 +56131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 18
+  health: 25
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 3

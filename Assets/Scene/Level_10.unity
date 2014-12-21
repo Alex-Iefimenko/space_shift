@@ -2714,11 +2714,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b4768c3683045e4bfdb2e78272970c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshhold: .354000002
-  intensity: .730000019
-  blurSize: 3.91000009
+  threshhold: .616999984
+  intensity: .600000024
+  blurSize: 3.4000001
   resolution: 0
-  blurIterations: 2
+  blurIterations: 3
   blurType: 0
   fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!1 &94541252
@@ -3936,7 +3936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .0579999983
+  shootingRate: .075000003
   isBurst: 0
   burstLength: 10
   burstRate: 0
@@ -4814,7 +4814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &278719826
 Transform:
   m_ObjectHideFlags: 0
@@ -5412,7 +5412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .0579999983
+  shootingRate: .075000003
   isBurst: 0
   burstLength: 10
   burstRate: 0
@@ -14104,7 +14104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &994396718
 Transform:
   m_ObjectHideFlags: 0
@@ -15690,7 +15690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .0579999983
+  shootingRate: .075000003
   isBurst: 0
   burstLength: 10
   burstRate: 0
@@ -22122,7 +22122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 65
+  health: 100
   isEnemy: 1
   scoreValue: 1000
   enemyExplosionVersion: 2
@@ -27525,7 +27525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .0579999983
+  shootingRate: .075000003
   isBurst: 0
   burstLength: 10
   burstRate: 0
@@ -27959,7 +27959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
@@ -28451,7 +28451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
-  shootingRate: .800000012
+  shootingRate: .600000024
   isBurst: 1
   burstLength: 3
   burstRate: .5
@@ -29364,7 +29364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
-  shootingRate: .0579999983
+  shootingRate: .075000003
   isBurst: 0
   burstLength: 10
   burstRate: 0

@@ -6364,7 +6364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 45
+  health: 50
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 1
@@ -13855,7 +13855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &278719826
 Transform:
   m_ObjectHideFlags: 0
@@ -19497,7 +19497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
       propertyPath: health
-      value: 45
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
@@ -41506,7 +41506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &994396718
 Transform:
   m_ObjectHideFlags: 0
@@ -48247,7 +48247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
       propertyPath: health
-      value: 45
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed1c99e947b00e54d885f64b9c98b066, type: 2}
@@ -51991,7 +51991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 45
+  health: 50
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 1
@@ -60815,6 +60815,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 59
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4c7a68f4ecc99084094afc8f6f86b175, type: 2}
+      propertyPath: health
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c7a68f4ecc99084094afc8f6f86b175, type: 2}
   m_RootGameObject: {fileID: 1846894323}
@@ -66513,7 +66517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 120
   isEnemy: 1
   scoreValue: 5000
   enemyExplosionVersion: 1

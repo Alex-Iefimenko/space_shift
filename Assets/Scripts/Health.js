@@ -186,6 +186,5 @@ function ReduceMovementSpeed (time : float, type : int) {
 		} else if (type == 7) { var enemy : EnemyScript = this.gameObject.GetComponent.<EnemyScript>(); 
 			enemy.StartFiringLimit(time);
 		}
-		
 	}
 }

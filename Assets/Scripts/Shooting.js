@@ -126,3 +126,11 @@ function GetTarget () {
 		}
 	}
 }
+
+function UpdateShotCoolDown (seconds : float) {
+	shootCoolDown = seconds;
+}
+
+function GetShotCoolDown () {
+	return shootCoolDown;
+}

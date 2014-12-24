@@ -29,7 +29,7 @@ function Update () {
 function Shield (shieldLength : float) {
 	shieldTime = shieldLength;
 	StartShield(true);
-	animator.SetInteger("State", 0);
+	if (animator) animator.SetInteger("State", 0);
 }
 
 function StartShield (isEnabled : boolean) {
@@ -46,6 +46,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {
 }
 
 function StartShieldEnd () {
-	animator.SetInteger("State", 1);
-	shieldTime = 2.9f;
+	if (animator) animator.SetInteger("State", 1);
+	if (this.gameObject.tag == "Player") shieldTime = 2.9f;
+	else shieldTime = 0f;
 }

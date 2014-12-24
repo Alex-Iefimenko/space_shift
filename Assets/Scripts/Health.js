@@ -118,7 +118,6 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 		} else {
 			rollBackVector.y = 1.0;
 		}
-		
 		rollBackTime = 1.0;
 	}
 

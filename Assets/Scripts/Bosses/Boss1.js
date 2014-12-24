@@ -13,12 +13,16 @@ private var isActive : boolean = false;
 private var state : int = 2;
 private var specialEffectsHendler : SpecialEffects;
 
+// Weapon update
+private var usualBomb : Shooting;
+
 // States sprites
 public var stateChangeExpolosion : int = 1;
 public var stateFullSpeed : int = 3;
 public var stateFirstTreshhold : float = 0.6;
 public var stateHalf : Texture2D;
 public var stateHalfSpeed : int = 7;
+public var stateHalfShieldHP = 50;
 public var stateSecondTreshhold : float = 0.25;
 public var stateEnd : Texture2D;
 public var stateEndSpeed : int = 10;
@@ -32,6 +36,7 @@ function Awake () {
 	// Shots suites defined:
 	for (var shot : Shooting in shots) {
 		if (shot.gameObject.name.IndexOf('NonLetal') > -1) nonLetalShots.Add(shot);
+		else if (shot.gameObject.name.IndexOf('UsualBomb') > -1) usualBomb = shot;
 		else letalShots.Add(shot);
 	}
 }
@@ -77,6 +82,10 @@ function BossOneFull () {
 
 function BossOneHalf () {
 	
+	for (var shot : Shooting in letalShots) {
+		if (shot != null) shot.Attack(true);
+	}
+	
 	if (health.health <= health.GetMaxHealth() * stateSecondTreshhold) SwitchState();
 }
 
@@ -104,6 +113,11 @@ function SwitchState () {
 	switch (state) {
 		case 1:
 			rendererComponent.sprite = Sprite.Create(stateHalf, Rect(0, 0, stateHalf.width, stateHalf.height), Vector2(0.5f, 0.5f));
+			health.shieldHealth = stateHalfShieldHP;
+			health.Freeze(180f);
+			letalShots.RemoveAt(0);
+			letalShots.RemoveAt(letalShots.Count - 1);
+			letalShots.Add(usualBomb);
 			break;
 		case 0:
 			rendererComponent.sprite = Sprite.Create(stateEnd, Rect(0, 0, stateEnd.width, stateEnd.height), Vector2(0.5f, 0.5f));

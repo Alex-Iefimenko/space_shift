@@ -290,10 +290,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviourType: 0
   damage: 1
-  isEnemyShot: 0
-  speed: {x: 50, y: 50}
+  isEnemyShot: 1
+  speed: {x: -50, y: 50}
   direction: {x: 1, y: 0}
   misslePrefab: {fileID: 0}
+  reduceCapabiliteisSec: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

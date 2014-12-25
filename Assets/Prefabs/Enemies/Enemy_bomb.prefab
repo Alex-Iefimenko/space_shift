@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 12
-  speed: {x: 3, y: 4}
+  speed: {x: 7, y: 7}
   frequency: 5
   amplitude: 5
   isForbidenLeaveCamera: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
   scoreValue: 100
   enemyExplosionVersion: 2
   isKamikadze: 1
-  kamikadzeDamage: 101
+  kamikadzeDamage: 40
   shieldHealth: 0
 --- !u!212 &21200000
 SpriteRenderer:

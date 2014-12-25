@@ -100,7 +100,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 						ReduceMovementSpeed (shot.reduceCapabiliteisSec, 8);
 					break;
 				}
-				Damage(shot.damage);
+				if (this.enabled) Damage(shot.damage);
 				Destroy(shot.gameObject);
 			}
 		}

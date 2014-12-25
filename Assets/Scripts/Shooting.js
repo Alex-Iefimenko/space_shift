@@ -7,6 +7,7 @@ public var shootingRate : float = 0.25;					// Setting shooting rate
 private var shootCoolDown : float;						// Helper variable for checking shooting cooldwon
 
 public var isBurst : boolean;
+public var isRails : boolean;
 public var burstLength : int = 10;
 public var burstRate : float = 0.1;
 
@@ -37,7 +38,7 @@ function Attack (isEnemy : boolean) {
 				Burst(currentLevel, false);
 				shootCoolDown = shootingRate + currentLevel * burstRate;
 			} else {
-				Burst(burstLength, true);
+				Burst(burstLength, isRails);
 				shootCoolDown = shootingRate + burstLength * burstRate;
 			}
 		} else if (isBurst == false) {

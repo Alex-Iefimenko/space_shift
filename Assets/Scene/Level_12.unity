@@ -382,6 +382,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -3260,6 +3261,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -3389,6 +3391,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -3600,7 +3603,7 @@ Transform:
   - {fileID: 143555477}
   - {fileID: 266992911}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &85775068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,6 +3900,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -3944,6 +3948,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
   shootingRate: .300000012
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -4039,7 +4044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &92369696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,7 +4095,7 @@ AudioSource:
   m_GameObject: {fileID: 92369690}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 312afbe6faa245f4ba827968a44aafcd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8f2a8600cb61289448ff715c22bf9471, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .150000006
   m_Pitch: 1
@@ -5616,6 +5621,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -5931,6 +5937,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -6167,6 +6174,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &118373796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6510,6 +6518,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
   shootingRate: .300000012
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -6991,6 +7000,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -7038,6 +7048,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -7294,8 +7305,8 @@ Transform:
   m_Children:
   - {fileID: 242942503}
   - {fileID: 344925674}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1865526174}
+  m_RootOrder: 1
 --- !u!95 &161066345
 Animator:
   serializedVersion: 3
@@ -7311,6 +7322,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &161066346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7843,6 +7855,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &187368028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7951,6 +7964,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
   shootingRate: .300000012
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -8049,6 +8063,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
   shootingRate: .075000003
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -8294,6 +8309,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &200579417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10647,6 +10663,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -10682,6 +10699,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -13307,6 +13325,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &263782693
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14102,7 +14121,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &286248491
 GameObject:
   m_ObjectHideFlags: 0
@@ -15965,6 +15984,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -16191,6 +16211,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -16621,6 +16642,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -16668,6 +16690,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -16707,6 +16730,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &348471201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16784,7 +16808,7 @@ Transform:
   m_Children:
   - {fileID: 864025106}
   - {fileID: 1588737099}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1865526174}
   m_RootOrder: 0
 --- !u!1 &348803290
 GameObject:
@@ -16858,6 +16882,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -16905,6 +16930,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
   shootingRate: .075000003
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -16953,6 +16979,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &358307045
 GUITexture:
   m_ObjectHideFlags: 0
@@ -17016,6 +17043,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -18680,6 +18708,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -18807,6 +18836,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -19720,6 +19750,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -19987,6 +20018,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &442115490
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20311,7 +20343,7 @@ Transform:
   - {fileID: 577008666}
   - {fileID: 915669042}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &457729896
 GameObject:
   m_ObjectHideFlags: 0
@@ -22774,6 +22806,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -24387,6 +24420,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &499814287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26141,6 +26175,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -26194,6 +26229,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &543879994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26302,6 +26338,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -26507,7 +26544,7 @@ Transform:
   - {fileID: 619591517}
   - {fileID: 595034093}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!114 &553299162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26540,6 +26577,7 @@ Animator:
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &553299164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26801,6 +26839,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &558400149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26909,6 +26948,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -27447,6 +27487,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &566815495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28060,6 +28101,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -28412,6 +28454,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -28703,6 +28746,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -28984,6 +29028,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &619591516
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29297,6 +29342,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -29344,6 +29390,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -29895,6 +29942,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -30953,7 +31001,7 @@ Transform:
   - {fileID: 1865526174}
   - {fileID: 1715893220}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1001 &727025680
 Prefab:
   m_ObjectHideFlags: 0
@@ -31469,6 +31517,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -31858,6 +31907,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &776364713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31969,6 +32019,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &778911826
 GUITexture:
   m_ObjectHideFlags: 0
@@ -32116,7 +32167,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1865526174}
     m_Modifications:
     - target: {fileID: 400000, guid: 5f6c1fe52e864b94b9e88f8be0af8ec4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -32326,6 +32377,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &796306917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32452,6 +32504,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &800339679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32802,6 +32855,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -33147,6 +33201,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &834289347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33225,6 +33280,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -36153,6 +36209,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -37379,6 +37436,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &896816159
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37709,6 +37767,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -37970,6 +38029,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -38046,6 +38106,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -39286,6 +39347,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -41150,6 +41212,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -41580,6 +41643,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -41683,6 +41747,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -42493,6 +42558,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -42721,6 +42787,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
   shootingRate: .075000003
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -43507,7 +43574,7 @@ Transform:
   - {fileID: 1184107659}
   - {fileID: 1427089781}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1001 &1069300382
 Prefab:
   m_ObjectHideFlags: 0
@@ -45375,6 +45442,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -45760,6 +45828,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1129310223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45856,6 +45925,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -46188,6 +46258,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -46459,6 +46530,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47047,6 +47119,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47094,6 +47167,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47279,6 +47353,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47326,6 +47401,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47373,6 +47449,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -47867,6 +47944,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 7f5c1fae21d7bce4fa9ad30dffcf9561, type: 2}
   shootingRate: 1
   isBurst: 1
+  isRails: 1
   burstLength: 30
   burstRate: .00999999978
   isRocket: 0
@@ -48178,6 +48256,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &1206936225
 GUITexture:
   m_ObjectHideFlags: 0
@@ -48500,6 +48579,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -48669,6 +48749,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -49366,6 +49447,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -49477,6 +49559,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -49936,6 +50019,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -49983,6 +50067,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -51303,6 +51388,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
   shootingRate: .300000012
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -51350,6 +51436,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -51492,6 +51579,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1346926325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52507,6 +52595,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -53285,6 +53374,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -53414,6 +53504,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
   shootingRate: .0500000007
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -53478,6 +53569,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -54068,6 +54160,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -54347,6 +54440,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -55155,7 +55249,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1865526174}
     m_Modifications:
     - target: {fileID: 400000, guid: 5f6c1fe52e864b94b9e88f8be0af8ec4, type: 2}
       propertyPath: m_LocalPosition.x
@@ -55187,7 +55281,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f6c1fe52e864b94b9e88f8be0af8ec4, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f6c1fe52e864b94b9e88f8be0af8ec4, type: 2}
@@ -55816,6 +55910,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -55851,6 +55946,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -56934,6 +57030,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -56981,6 +57078,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -57957,6 +58055,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -58033,6 +58132,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -58080,6 +58180,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -58917,6 +59018,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -60312,6 +60414,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -61363,6 +61466,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1738729029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62484,6 +62588,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: bf8ce801ea965574798557ff337d315a, type: 2}
   shootingRate: .300000012
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -62531,6 +62636,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -62579,6 +62685,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1775997137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62645,6 +62752,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -62692,6 +62800,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: e346bdc13fad5944aba11d8a5f9518f0, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -66192,6 +66301,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -67140,7 +67250,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 348471205}
+  - {fileID: 161066344}
   m_Father: {fileID: 726947848}
   m_RootOrder: 3
 --- !u!1 &1865887622
@@ -67418,6 +67530,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -67810,6 +67923,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1882882219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68632,6 +68746,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -69124,6 +69239,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
   shootingRate: .075000003
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -69254,6 +69370,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -70950,6 +71067,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -71496,6 +71614,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -71763,6 +71882,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: f7a617deadfc01b4684eed7674d11689, type: 2}
   shootingRate: .600000024
   isBurst: 1
+  isRails: 0
   burstLength: 3
   burstRate: .5
   isRocket: 1
@@ -71810,6 +71930,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 2
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -72308,6 +72429,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .25
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -72546,6 +72668,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 1ba4e9d7a399126469eb9d4ebafbc7f0, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -73199,6 +73322,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d9552802c50c8bc4fb12580db0482b9d, type: 2}
   shootingRate: .5
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -73985,6 +74109,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &2095478461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74093,6 +74218,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: 769406e5a949232409c33e7ac5e250c7, type: 2}
   shootingRate: .075000003
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: 0
   isRocket: 0
@@ -74457,7 +74583,7 @@ Transform:
   - {fileID: 1578247174}
   - {fileID: 673300046}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &2114533175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74810,6 +74936,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
@@ -75343,6 +75470,7 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
   shootingRate: 1
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0

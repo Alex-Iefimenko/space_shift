@@ -1303,9 +1303,9 @@ AudioSource:
   m_GameObject: {fileID: 92369690}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: cc252b418a3f6cc4285453f4f884bfdc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8f2a8600cb61289448ff715c22bf9471, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .150000006
+  m_Volume: .349999994
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6048,6 +6048,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &523067105
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,6 +7378,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &616696935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11823,6 +11825,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1073425534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13405,6 +13408,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1191272126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17690,6 +17694,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1617316655
 MonoBehaviour:
   m_ObjectHideFlags: 0

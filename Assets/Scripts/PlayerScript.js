@@ -23,6 +23,7 @@ private var bombButton : ControllerGUIButton;
 private var bombButtonTexture : Texture;
 
 private var specialEffectsHendler : SpecialEffects;
+private var soundSource : AudioSource;
 
 //Bomb
 public var bombPrefab : Transform;
@@ -40,6 +41,7 @@ function Awake() {
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
 	animator = GetComponent.<Animator>();
 	bombActiveThreshold = bombTreshhold;
+	soundSource = this.GetComponent.<AudioSource>();
 }
 
 function Start () {

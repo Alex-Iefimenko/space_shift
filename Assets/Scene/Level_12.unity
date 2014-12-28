@@ -360,6 +360,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 8107798}
   - 114: {fileID: 8107797}
+  - 82: {fileID: 8107799}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -399,6 +400,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 217427837}
   m_RootOrder: 0
+--- !u!82 &8107799
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 942470723}
+  m_GameObject: {fileID: 8107796}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &15422054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,6 +3287,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 71574828}
   - 114: {fileID: 71574829}
+  - 82: {fileID: 71574830}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -3266,6 +3327,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &71574830
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 62535855}
+  m_GameObject: {fileID: 71574827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &74385300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3277,6 +3397,7 @@ GameObject:
   - 131: {fileID: 74385302}
   - 114: {fileID: 74385303}
   - 114: {fileID: 74385304}
+  - 82: {fileID: 74385305}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -3348,6 +3469,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
   levelToLoad: 
+--- !u!82 &74385305
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200014, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 74385300}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &74423875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3357,6 +3537,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 74423876}
   - 114: {fileID: 74423877}
+  - 82: {fileID: 74423878}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -3396,6 +3577,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &74423878
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1541388995}
+  m_GameObject: {fileID: 74423875}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &75495056
 Prefab:
   m_ObjectHideFlags: 0
@@ -3866,6 +4106,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 86019568}
   - 114: {fileID: 86019569}
+  - 82: {fileID: 86019570}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -3905,6 +4146,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &86019570
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 560229898}
+  m_GameObject: {fileID: 86019567}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &91352950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,7 +4401,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Priority: 128
+  Priority: 90
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5599,6 +5899,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 98080767}
   - 114: {fileID: 98080766}
+  - 82: {fileID: 98080768}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -5638,6 +5939,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1056805923}
   m_RootOrder: 0
+--- !u!82 &98080768
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 463511619}
+  m_GameObject: {fileID: 98080765}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &99419072
 Prefab:
   m_ObjectHideFlags: 0
@@ -5823,6 +6183,7 @@ GameObject:
   - 131: {fileID: 107662532}
   - 114: {fileID: 107662531}
   - 114: {fileID: 107662530}
+  - 82: {fileID: 107662533}
   m_Layer: 0
   m_Name: Retry
   m_TagString: Untagged
@@ -5894,6 +6255,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &107662533
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200012, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 107662528}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &109004915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5903,6 +6323,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 109004916}
   - 114: {fileID: 109004917}
+  - 82: {fileID: 109004918}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -5942,6 +6363,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &109004918
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1208081840}
+  m_GameObject: {fileID: 109004915}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &111022471
 GameObject:
   m_ObjectHideFlags: 0
@@ -6484,6 +6964,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 141512078}
   - 114: {fileID: 141512079}
+  - 82: {fileID: 141512080}
   m_Layer: 0
   m_Name: gun2
   m_TagString: Untagged
@@ -6523,6 +7004,65 @@ MonoBehaviour:
   burstRate: 0
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &141512080
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 141512077}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 8db69e50b06c42b4f8b6c57925600df0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &143516486
 GameObject:
   m_ObjectHideFlags: 0
@@ -6966,6 +7506,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 151125333}
   - 114: {fileID: 151125334}
+  - 82: {fileID: 151125335}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -7005,6 +7546,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &151125335
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1981384143}
+  m_GameObject: {fileID: 151125332}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &152088994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,6 +7614,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 152088995}
   - 114: {fileID: 152088996}
+  - 82: {fileID: 152088997}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -7053,6 +7654,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &152088997
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 2104661886}
+  m_GameObject: {fileID: 152088994}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &155284214
 GameObject:
   m_ObjectHideFlags: 0
@@ -8448,6 +9108,7 @@ GameObject:
   - 131: {fileID: 212519087}
   - 114: {fileID: 212519086}
   - 114: {fileID: 212519085}
+  - 82: {fileID: 212519088}
   m_Layer: 0
   m_Name: Retry
   m_TagString: Untagged
@@ -8519,6 +9180,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &212519088
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200006, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 212519083}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &216540564
 Prefab:
   m_ObjectHideFlags: 0
@@ -10629,6 +11349,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 240928465}
   - 114: {fileID: 240928466}
+  - 82: {fileID: 240928467}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -10668,6 +11389,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &240928467
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 938599716}
+  m_GameObject: {fileID: 240928464}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &242030142
 GameObject:
   m_ObjectHideFlags: 0
@@ -10677,6 +11457,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 242030144}
   - 114: {fileID: 242030143}
+  - 82: {fileID: 242030145}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -10716,6 +11497,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 266992911}
   m_RootOrder: 0
+--- !u!82 &242030145
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 2045684385}
+  m_GameObject: {fileID: 242030142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &242942502
 GameObject:
   m_ObjectHideFlags: 0
@@ -14080,6 +14920,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 284588644}
   - 114: {fileID: 284588643}
+  - 114: {fileID: 284588645}
   m_Layer: 0
   m_Name: HelperScripts
   m_TagString: HelperScripts
@@ -14122,6 +14963,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &284588645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: a38bf05884e076b4ba3ff953b66d40a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 982993091}
+  m_GameObject: {fileID: 284588642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5da6752ef465d546a0fd5d637edd796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 1, y: 1}
+  direction: {x: 1, y: 0}
+  isLinkedToCamera: 0
+  isLooping: 0
+  hasParallax: 0
 --- !u!1 &286248491
 GameObject:
   m_ObjectHideFlags: 0
@@ -15950,6 +16808,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 330760354}
   - 114: {fileID: 330760355}
+  - 82: {fileID: 330760356}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -15989,6 +16848,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &330760356
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855070479}
+  m_GameObject: {fileID: 330760353}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &330923807
 Prefab:
   m_ObjectHideFlags: 0
@@ -16177,6 +17095,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 337724269}
   - 114: {fileID: 337724270}
+  - 82: {fileID: 337724271}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -16216,6 +17135,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &337724271
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1302765224}
+  m_GameObject: {fileID: 337724268}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &339084163
 GameObject:
   m_ObjectHideFlags: 0
@@ -16608,6 +17586,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 345780752}
   - 114: {fileID: 345780753}
+  - 82: {fileID: 345780754}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -16647,6 +17626,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &345780754
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 895266354}
+  m_GameObject: {fileID: 345780751}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &347243251
 GameObject:
   m_ObjectHideFlags: 0
@@ -16656,6 +17694,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 347243252}
   - 114: {fileID: 347243253}
+  - 82: {fileID: 347243254}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -16695,6 +17734,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &347243254
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1173682142}
+  m_GameObject: {fileID: 347243251}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &348471199
 GameObject:
   m_ObjectHideFlags: 0
@@ -16848,6 +17946,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 350817357}
   - 114: {fileID: 350817358}
+  - 82: {fileID: 350817359}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -16887,6 +17986,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &350817359
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 1393289767}
+  m_GameObject: {fileID: 350817356}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &354006214
 GameObject:
   m_ObjectHideFlags: 0
@@ -17009,6 +18167,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 360412039}
   - 114: {fileID: 360412040}
+  - 82: {fileID: 360412041}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -17048,6 +18207,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &360412041
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 1340262007}
+  m_GameObject: {fileID: 360412038}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &364154695
 GameObject:
   m_ObjectHideFlags: 0
@@ -18674,6 +19892,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 385503179}
   - 114: {fileID: 385503180}
+  - 82: {fileID: 385503181}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -18713,6 +19932,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &385503181
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1357118937}
+  m_GameObject: {fileID: 385503178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &390800486
 GameObject:
   m_ObjectHideFlags: 0
@@ -18802,6 +20080,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 392453914}
   - 114: {fileID: 392453915}
+  - 82: {fileID: 392453916}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -18841,6 +20120,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &392453916
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1173898137}
+  m_GameObject: {fileID: 392453913}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &394584854
 GameObject:
   m_ObjectHideFlags: 0
@@ -19716,6 +21054,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432025597}
   - 114: {fileID: 432025598}
+  - 82: {fileID: 432025599}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -19755,6 +21094,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &432025599
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1631731874}
+  m_GameObject: {fileID: 432025596}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &432261283
 GameObject:
   m_ObjectHideFlags: 0
@@ -22784,6 +24182,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475530127}
   - 114: {fileID: 475530126}
+  - 82: {fileID: 475530128}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -22823,6 +24222,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1907603578}
   m_RootOrder: 0
+--- !u!82 &475530128
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1981384143}
+  m_GameObject: {fileID: 475530125}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &476584011
 GameObject:
   m_ObjectHideFlags: 0
@@ -26141,6 +27599,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 542042895}
   - 114: {fileID: 542042896}
+  - 82: {fileID: 542042897}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -26180,6 +27639,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &542042897
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1002466728}
+  m_GameObject: {fileID: 542042894}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &543879991
 GameObject:
   m_ObjectHideFlags: 0
@@ -26304,6 +27822,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 547155126}
   - 114: {fileID: 547155127}
+  - 82: {fileID: 547155128}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -26343,6 +27862,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &547155128
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 35809324}
+  m_GameObject: {fileID: 547155125}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &553299156
 GameObject:
   m_ObjectHideFlags: 0
@@ -26359,6 +27937,7 @@ GameObject:
   - 95: {fileID: 553299163}
   - 212: {fileID: 553299160}
   - 58: {fileID: 553299165}
+  - 114: {fileID: 553299166}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -26561,7 +28140,7 @@ MonoBehaviour:
   direction: {x: 1, y: 0}
   isLinkedToCamera: 1
   isLooping: 0
-  hasParallax: 1
+  hasParallax: 0
 --- !u!95 &553299163
 Animator:
   serializedVersion: 3
@@ -26609,6 +28188,36 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: 2.8599999
   m_Center: {x: 2.23000002, y: -.150000006}
+--- !u!114 &553299166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400044, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 553299156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca858a1bb8022c4288c1b79fcc3193e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repairSound: {fileID: 8300000, guid: 2dfa476c5112b414dbb777cc78bedb07, type: 3}
+  sheildSound: {fileID: 0}
+  powerUpSound: {fileID: 0}
+  slowMoSound: {fileID: 0}
+  newWeaponSound: {fileID: 8300000, guid: 436aad659f197cf419828ad78069de85, type: 3}
+  hitSound: {fileID: 0}
+  rocketHitSound: {fileID: 0}
+  bombLaunchSound: {fileID: 8300000, guid: f1306fcedbad492428eeab01105a856e, type: 3}
+  destroySound: {fileID: 0}
+  repairSoundSource: {fileID: 0}
+  sheildSoundSource: {fileID: 0}
+  powerUpSoundSource: {fileID: 0}
+  slowMoSoundSource: {fileID: 0}
+  newWeaponSoundSource: {fileID: 0}
+  hitSoundSource: {fileID: 0}
+  rocketHitSoundSource: {fileID: 0}
+  bombLaunchSoundSource: {fileID: 0}
+  destroySoundSource: {fileID: 0}
 --- !u!1 &556549868
 GameObject:
   m_ObjectHideFlags: 0
@@ -26914,6 +28523,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 559823635}
   - 114: {fileID: 559823636}
+  - 82: {fileID: 559823637}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -26953,6 +28563,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &559823637
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1502940476}
+  m_GameObject: {fileID: 559823634}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &560229898
 Prefab:
   m_ObjectHideFlags: 0
@@ -28067,6 +29736,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 592977137}
   - 114: {fileID: 592977138}
+  - 82: {fileID: 592977139}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -28106,6 +29776,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &592977139
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 75495056}
+  m_GameObject: {fileID: 592977136}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &594611236
 GameObject:
   m_ObjectHideFlags: 0
@@ -28420,6 +30149,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 604068615}
   - 114: {fileID: 604068616}
+  - 82: {fileID: 604068617}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -28459,6 +30189,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &604068617
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 2475076}
+  m_GameObject: {fileID: 604068614}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &604765585
 GameObject:
   m_ObjectHideFlags: 0
@@ -28712,6 +30501,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 607145851}
   - 114: {fileID: 607145852}
+  - 82: {fileID: 607145853}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -28751,6 +30541,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &607145853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1302765224}
+  m_GameObject: {fileID: 607145850}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &610532037
 GameObject:
   m_ObjectHideFlags: 0
@@ -29308,6 +31157,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 648228936}
   - 114: {fileID: 648228937}
+  - 82: {fileID: 648228938}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -29347,6 +31197,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &648228938
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 412409669}
+  m_GameObject: {fileID: 648228935}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &660269241
 GameObject:
   m_ObjectHideFlags: 0
@@ -29356,6 +31265,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 660269242}
   - 114: {fileID: 660269243}
+  - 82: {fileID: 660269244}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -29395,6 +31305,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &660269244
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 373204738}
+  m_GameObject: {fileID: 660269241}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &661272178
 GameObject:
   m_ObjectHideFlags: 0
@@ -29908,6 +31877,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 673544346}
   - 114: {fileID: 673544347}
+  - 82: {fileID: 673544348}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -29947,6 +31917,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &673544348
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 95203099}
+  m_GameObject: {fileID: 673544345}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &680080190
 GameObject:
   m_ObjectHideFlags: 0
@@ -31483,6 +33512,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 761021305}
   - 114: {fileID: 761021306}
+  - 82: {fileID: 761021307}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -31522,6 +33552,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &761021307
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 987252339}
+  m_GameObject: {fileID: 761021304}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &763074123
 GameObject:
   m_ObjectHideFlags: 0
@@ -32821,6 +34910,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 811215175}
   - 114: {fileID: 811215176}
+  - 82: {fileID: 811215177}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -32860,6 +34950,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &811215177
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 179851822}
+  m_GameObject: {fileID: 811215174}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &816431237
 GameObject:
   m_ObjectHideFlags: 0
@@ -32917,6 +35066,7 @@ GameObject:
   - 131: {fileID: 818423162}
   - 114: {fileID: 818423161}
   - 114: {fileID: 818423160}
+  - 82: {fileID: 818423163}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -32988,6 +35138,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &818423163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 818423158}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &827498819
 GameObject:
   m_ObjectHideFlags: 0
@@ -33246,6 +35455,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 848937968}
   - 114: {fileID: 848937969}
+  - 82: {fileID: 848937970}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -33285,6 +35495,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &848937970
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1304400224}
+  m_GameObject: {fileID: 848937967}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &850375275
 GameObject:
   m_ObjectHideFlags: 0
@@ -36175,6 +38444,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 877513988}
   - 114: {fileID: 877513989}
+  - 82: {fileID: 877513990}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -36214,6 +38484,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &877513990
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 323840715}
+  m_GameObject: {fileID: 877513987}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &888694723
 GameObject:
   m_ObjectHideFlags: 0
@@ -37733,6 +40062,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 912071727}
   - 114: {fileID: 912071728}
+  - 82: {fileID: 912071729}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -37772,6 +40102,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &912071729
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 4c7a68f4ecc99084094afc8f6f86b175,
+    type: 2}
+  m_PrefabInternal: {fileID: 1730156202}
+  m_GameObject: {fileID: 912071726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &912248752
 Prefab:
   m_ObjectHideFlags: 0
@@ -37902,6 +40291,7 @@ GameObject:
   - 114: {fileID: 917204510}
   - 114: {fileID: 917204509}
   - 114: {fileID: 917204508}
+  - 82: {fileID: 917204512}
   m_Layer: 0
   m_Name: ShareFB
   m_TagString: Untagged
@@ -37986,6 +40376,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &917204512
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 917204506}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &918877438
 GameObject:
   m_ObjectHideFlags: 0
@@ -37995,6 +40444,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 918877439}
   - 114: {fileID: 918877440}
+  - 82: {fileID: 918877441}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -38034,6 +40484,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &918877441
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1173682142}
+  m_GameObject: {fileID: 918877438}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &919220690
 GameObject:
   m_ObjectHideFlags: 0
@@ -38072,6 +40581,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 922396546}
   - 114: {fileID: 922396547}
+  - 82: {fileID: 922396548}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -38111,6 +40621,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &922396548
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 238653096}
+  m_GameObject: {fileID: 922396545}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &923755675
 GameObject:
   m_ObjectHideFlags: 0
@@ -39313,6 +41882,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 967321184}
   - 114: {fileID: 967321185}
+  - 82: {fileID: 967321186}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -39352,6 +41922,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &967321186
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1631731874}
+  m_GameObject: {fileID: 967321183}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &968916067
 GameObject:
   m_ObjectHideFlags: 0
@@ -41178,6 +43807,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 984610081}
   - 114: {fileID: 984610082}
+  - 82: {fileID: 984610083}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -41217,6 +43847,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &984610083
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 330923807}
+  m_GameObject: {fileID: 984610080}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &985472578
 GameObject:
   m_ObjectHideFlags: 0
@@ -41609,6 +44298,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 997868785}
   - 114: {fileID: 997868786}
+  - 82: {fileID: 997868787}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -41648,6 +44338,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &997868787
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 252521623}
+  m_GameObject: {fileID: 997868784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1002466728
 Prefab:
   m_ObjectHideFlags: 0
@@ -41713,6 +44462,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1004273507}
   - 114: {fileID: 1004273508}
+  - 82: {fileID: 1004273509}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -41752,6 +44502,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1004273509
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 804345811}
+  m_GameObject: {fileID: 1004273506}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1011918532
 GameObject:
   m_ObjectHideFlags: 0
@@ -42524,6 +45333,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1035432930}
   - 114: {fileID: 1035432931}
+  - 82: {fileID: 1035432932}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -42563,6 +45373,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1035432932
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 571785999}
+  m_GameObject: {fileID: 1035432929}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1035462419
 GameObject:
   m_ObjectHideFlags: 0
@@ -42753,6 +45622,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1048621897}
   - 114: {fileID: 1048621898}
+  - 82: {fileID: 1048621899}
   m_Layer: 0
   m_Name: gun3
   m_TagString: Untagged
@@ -42792,6 +45662,65 @@ MonoBehaviour:
   burstRate: 0
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1048621899
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 1048621896}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: d61610dfe28bca140bfaa101b0929cfa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1048959450
 GameObject:
   m_ObjectHideFlags: 0
@@ -45280,6 +48209,7 @@ GameObject:
   - 131: {fileID: 1105611844}
   - 114: {fileID: 1105611846}
   - 114: {fileID: 1105611847}
+  - 82: {fileID: 1105611848}
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
@@ -45351,6 +48281,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
   levelToLoad: 
+--- !u!82 &1105611848
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200018, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 1105611843}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1106383501
 GameObject:
   m_ObjectHideFlags: 0
@@ -45408,6 +48397,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1111829810}
   - 114: {fileID: 1111829811}
+  - 82: {fileID: 1111829812}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -45447,6 +48437,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1111829812
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 2045684385}
+  m_GameObject: {fileID: 1111829809}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1116719618
 GameObject:
   m_ObjectHideFlags: 0
@@ -45903,6 +48952,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1131526278}
   - 114: {fileID: 1131526277}
+  - 82: {fileID: 1131526279}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -45942,6 +48992,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2045640570}
   m_RootOrder: 1
+--- !u!82 &1131526279
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 727025680}
+  m_GameObject: {fileID: 1131526276}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1140139729
 GameObject:
   m_ObjectHideFlags: 0
@@ -46224,6 +49333,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1141964477}
   - 114: {fileID: 1141964478}
+  - 82: {fileID: 1141964479}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -46263,6 +49373,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1141964479
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1069300382}
+  m_GameObject: {fileID: 1141964476}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1144425025
 GameObject:
   m_ObjectHideFlags: 0
@@ -46496,6 +49665,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1164481693}
   - 114: {fileID: 1164481694}
+  - 82: {fileID: 1164481695}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -46535,6 +49705,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1164481695
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1208081840}
+  m_GameObject: {fileID: 1164481692}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1164760908
 GameObject:
   m_ObjectHideFlags: 0
@@ -46897,6 +50126,7 @@ GameObject:
   - 131: {fileID: 1170631598}
   - 114: {fileID: 1170631599}
   - 114: {fileID: 1170631600}
+  - 82: {fileID: 1170631601}
   m_Layer: 0
   m_Name: Continue
   m_TagString: Untagged
@@ -46968,6 +50198,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 2144402246}
   levelToLoad: 
+--- !u!82 &1170631601
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200016, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 1170631596}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1173682142
 Prefab:
   m_ObjectHideFlags: 0
@@ -47085,6 +50374,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1177265631}
   - 114: {fileID: 1177265632}
+  - 82: {fileID: 1177265633}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47124,6 +50414,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1177265633
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1304400224}
+  m_GameObject: {fileID: 1177265630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1181677122
 GameObject:
   m_ObjectHideFlags: 0
@@ -47133,6 +50482,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1181677123}
   - 114: {fileID: 1181677124}
+  - 82: {fileID: 1181677125}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47172,6 +50522,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1181677125
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 873797025}
+  m_GameObject: {fileID: 1181677122}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1182896235
 Prefab:
   m_ObjectHideFlags: 0
@@ -47237,8 +50646,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1184107659}
   - 131: {fileID: 1184107662}
-  - 114: {fileID: 1184107661}
-  - 114: {fileID: 1184107660}
   m_Layer: 0
   m_Name: Pause_word
   m_TagString: Untagged
@@ -47258,38 +50665,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1066616375}
   m_RootOrder: 4
---- !u!114 &1184107660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400034, guid: c846803ec821bc14e99587dfdfd88dc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1056892607}
-  m_GameObject: {fileID: 1184107658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  functionOnTouchDown: ButtonClick
-  imageOver: {fileID: 2800000, guid: 37bc1f4e047387b4aa74a6dd0dd19478, type: 3}
-  isOverImage: 0
-  inactiveImage: {fileID: 0}
-  blinkImage: {fileID: 0}
-  hasTouchOnGui: 0
---- !u!114 &1184107661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400036, guid: c846803ec821bc14e99587dfdfd88dc7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1056892607}
-  m_GameObject: {fileID: 1184107658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3e78e228a7a6c4d96aaf4df0bad0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gui: {fileID: 1432691764}
-  guipause: {fileID: 1817416083}
 --- !u!131 &1184107662
 GUITexture:
   m_ObjectHideFlags: 0
@@ -47319,6 +50694,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1186715265}
   - 114: {fileID: 1186715266}
+  - 82: {fileID: 1186715267}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47358,6 +50734,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1186715267
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 727025680}
+  m_GameObject: {fileID: 1186715264}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1187998751
 GameObject:
   m_ObjectHideFlags: 0
@@ -47367,6 +50802,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1187998752}
   - 114: {fileID: 1187998753}
+  - 82: {fileID: 1187998754}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47406,6 +50842,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1187998754
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 412409669}
+  m_GameObject: {fileID: 1187998751}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1188574992
 GameObject:
   m_ObjectHideFlags: 0
@@ -47415,6 +50910,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1188574993}
   - 114: {fileID: 1188574994}
+  - 82: {fileID: 1188574995}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47454,6 +50950,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1188574995
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1755718538}
+  m_GameObject: {fileID: 1188574992}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1188951986
 GameObject:
   m_ObjectHideFlags: 0
@@ -47910,6 +51465,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1195219550}
   - 114: {fileID: 1195219551}
+  - 82: {fileID: 1195219552}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -47949,6 +51505,65 @@ MonoBehaviour:
   burstRate: .00999999978
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1195219552
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 1195219549}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 3e39ca910c33a1e44821295a6cd0fcf8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1196015275
 GameObject:
   m_ObjectHideFlags: 0
@@ -48545,6 +52160,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1224305447}
   - 114: {fileID: 1224305448}
+  - 82: {fileID: 1224305449}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -48584,6 +52200,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1224305449
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 588814549}
+  m_GameObject: {fileID: 1224305446}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1226699330
 GameObject:
   m_ObjectHideFlags: 0
@@ -48715,6 +52390,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1227148994}
   - 114: {fileID: 1227148995}
+  - 82: {fileID: 1227148996}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -48754,6 +52430,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1227148996
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 78945415}
+  m_GameObject: {fileID: 1227148993}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1228630086
 GameObject:
   m_ObjectHideFlags: 0
@@ -48766,6 +52501,7 @@ GameObject:
   - 114: {fileID: 1228630090}
   - 114: {fileID: 1228630089}
   - 114: {fileID: 1228630088}
+  - 82: {fileID: 1228630092}
   m_Layer: 0
   m_Name: ShareTwitter
   m_TagString: Untagged
@@ -48850,6 +52586,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &1228630092
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200008, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 1228630086}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1245241681
 GameObject:
   m_ObjectHideFlags: 0
@@ -49413,6 +53208,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1276541572}
   - 114: {fileID: 1276541573}
+  - 82: {fileID: 1276541574}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -49452,6 +53248,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1276541574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 1402586780}
+  m_GameObject: {fileID: 1276541571}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1277795925
 Prefab:
   m_ObjectHideFlags: 0
@@ -49525,6 +53380,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1285651286}
   - 114: {fileID: 1285651287}
+  - 82: {fileID: 1285651288}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -49564,6 +53420,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1285651288
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1541388995}
+  m_GameObject: {fileID: 1285651285}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1289810174
 Prefab:
   m_ObjectHideFlags: 0
@@ -49985,6 +53900,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1307199651}
   - 114: {fileID: 1307199652}
+  - 82: {fileID: 1307199653}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -50024,6 +53940,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1307199653
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1173898137}
+  m_GameObject: {fileID: 1307199650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1308374599
 GameObject:
   m_ObjectHideFlags: 0
@@ -50033,6 +54008,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1308374600}
   - 114: {fileID: 1308374601}
+  - 82: {fileID: 1308374602}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -50072,6 +54048,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1308374602
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 62535855}
+  m_GameObject: {fileID: 1308374599}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1314441750
 GameObject:
   m_ObjectHideFlags: 0
@@ -51354,6 +55389,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1330131307}
   - 114: {fileID: 1330131308}
+  - 82: {fileID: 1330131309}
   m_Layer: 0
   m_Name: gun3
   m_TagString: Untagged
@@ -51393,6 +55429,65 @@ MonoBehaviour:
   burstRate: 0
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1330131309
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200006, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 1330131306}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 8db69e50b06c42b4f8b6c57925600df0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1331455500
 GameObject:
   m_ObjectHideFlags: 0
@@ -51402,6 +55497,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1331455501}
   - 114: {fileID: 1331455502}
+  - 82: {fileID: 1331455503}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -51441,6 +55537,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1331455503
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 511006160}
+  m_GameObject: {fileID: 1331455500}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1332807397
 GameObject:
   m_ObjectHideFlags: 0
@@ -52561,6 +56716,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1390488336}
   - 114: {fileID: 1390488337}
+  - 82: {fileID: 1390488338}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -52600,6 +56756,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1390488338
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 479708528}
+  m_GameObject: {fileID: 1390488335}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1393289767
 Prefab:
   m_ObjectHideFlags: 0
@@ -53340,6 +57555,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1431298579}
   - 114: {fileID: 1431298580}
+  - 82: {fileID: 1431298581}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -53379,6 +57595,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1431298581
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 873797025}
+  m_GameObject: {fileID: 1431298578}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1432691764
 GameObject:
   m_ObjectHideFlags: 0
@@ -53470,6 +57745,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1438036635}
   - 114: {fileID: 1438036636}
+  - 82: {fileID: 1438036637}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -53509,6 +57785,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1438036637
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: 4c7a68f4ecc99084094afc8f6f86b175,
+    type: 2}
+  m_PrefabInternal: {fileID: 1730156202}
+  m_GameObject: {fileID: 1438036634}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1447086932
 GameObject:
   m_ObjectHideFlags: 0
@@ -53547,6 +57882,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1449678765}
   - 114: {fileID: 1449678764}
+  - 82: {fileID: 1449678766}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -53586,6 +57922,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1532704101}
   m_RootOrder: 0
+--- !u!82 &1449678766
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 99419072}
+  m_GameObject: {fileID: 1449678763}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1450245571
 GameObject:
   m_ObjectHideFlags: 0
@@ -54126,6 +58521,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1471711067}
   - 114: {fileID: 1471711068}
+  - 82: {fileID: 1471711069}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -54165,6 +58561,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1471711069
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 345058188}
+  m_GameObject: {fileID: 1471711066}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1478361733
 GameObject:
   m_ObjectHideFlags: 0
@@ -54418,6 +58873,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1480933861}
   - 114: {fileID: 1480933860}
+  - 82: {fileID: 1480933862}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -54457,6 +58913,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1944477143}
   m_RootOrder: 0
+--- !u!82 &1480933862
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 560229898}
+  m_GameObject: {fileID: 1480933859}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1489623334
 GameObject:
   m_ObjectHideFlags: 0
@@ -55876,6 +60391,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1547689950}
   - 114: {fileID: 1547689951}
+  - 82: {fileID: 1547689952}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -55915,6 +60431,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1547689952
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1893317785}
+  m_GameObject: {fileID: 1547689949}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1550533993
 GameObject:
   m_ObjectHideFlags: 0
@@ -55924,6 +60499,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1550533995}
   - 114: {fileID: 1550533994}
+  - 82: {fileID: 1550533996}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -55963,6 +60539,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 808187360}
   m_RootOrder: 0
+--- !u!82 &1550533996
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 95998974}
+  m_GameObject: {fileID: 1550533993}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1552049539
 GameObject:
   m_ObjectHideFlags: 0
@@ -56996,6 +61631,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1565564906}
   - 114: {fileID: 1565564907}
+  - 82: {fileID: 1565564908}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -57035,6 +61671,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1565564908
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 78945415}
+  m_GameObject: {fileID: 1565564905}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1569193501
 GameObject:
   m_ObjectHideFlags: 0
@@ -57044,6 +61739,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1569193502}
   - 114: {fileID: 1569193503}
+  - 82: {fileID: 1569193504}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -57083,6 +61779,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1569193504
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 238653096}
+  m_GameObject: {fileID: 1569193501}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1576058372
 GameObject:
   m_ObjectHideFlags: 0
@@ -58021,6 +62776,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1616681266}
   - 114: {fileID: 1616681267}
+  - 82: {fileID: 1616681268}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -58060,6 +62816,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1616681268
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 463511619}
+  m_GameObject: {fileID: 1616681265}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1622603652
 GameObject:
   m_ObjectHideFlags: 0
@@ -58098,6 +62913,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1624533210}
   - 114: {fileID: 1624533211}
+  - 82: {fileID: 1624533212}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -58137,6 +62953,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1624533212
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053949955}
+  m_GameObject: {fileID: 1624533209}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1631591746
 GameObject:
   m_ObjectHideFlags: 0
@@ -58146,6 +63021,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1631591747}
   - 114: {fileID: 1631591748}
+  - 82: {fileID: 1631591749}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -58185,6 +63061,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1631591749
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037006984}
+  m_GameObject: {fileID: 1631591746}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &1631731874
 Prefab:
   m_ObjectHideFlags: 0
@@ -58984,6 +63919,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1679198012}
   - 114: {fileID: 1679198013}
+  - 82: {fileID: 1679198014}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -59023,6 +63959,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1679198014
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 895266354}
+  m_GameObject: {fileID: 1679198011}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1690136251
 GameObject:
   m_ObjectHideFlags: 0
@@ -60380,6 +65375,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1693900820}
   - 114: {fileID: 1693900821}
+  - 82: {fileID: 1693900822}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -60419,6 +65415,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1693900822
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 321396551}
+  m_GameObject: {fileID: 1693900819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1715893219
 GameObject:
   m_ObjectHideFlags: 0
@@ -62602,6 +67657,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1770525255}
   - 114: {fileID: 1770525256}
+  - 82: {fileID: 1770525257}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -62641,6 +67697,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1770525257
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 252521623}
+  m_GameObject: {fileID: 1770525254}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1775997134
 GameObject:
   m_ObjectHideFlags: 0
@@ -62718,6 +67833,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1785231045}
   - 114: {fileID: 1785231046}
+  - 82: {fileID: 1785231047}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -62757,6 +67873,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1785231047
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1527565832}
+  m_GameObject: {fileID: 1785231044}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1787852736
 GameObject:
   m_ObjectHideFlags: 0
@@ -62766,6 +67941,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1787852737}
   - 114: {fileID: 1787852738}
+  - 82: {fileID: 1787852739}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -62805,6 +67981,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1787852739
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4c7a68f4ecc99084094afc8f6f86b175,
+    type: 2}
+  m_PrefabInternal: {fileID: 1730156202}
+  m_GameObject: {fileID: 1787852736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1789877217
 GameObject:
   m_ObjectHideFlags: 0
@@ -66267,6 +71502,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1840475617}
   - 114: {fileID: 1840475618}
+  - 82: {fileID: 1840475619}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -66306,6 +71542,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1840475619
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 179851822}
+  m_GameObject: {fileID: 1840475616}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1845490092
 GameObject:
   m_ObjectHideFlags: 0
@@ -67496,6 +72791,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1870147732}
   - 114: {fileID: 1870147733}
+  - 82: {fileID: 1870147734}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -67535,6 +72831,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1870147734
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 75495056}
+  m_GameObject: {fileID: 1870147731}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1873244155
 GameObject:
   m_ObjectHideFlags: 0
@@ -68000,6 +73355,7 @@ GameObject:
   - 131: {fileID: 1888350454}
   - 114: {fileID: 1888350453}
   - 114: {fileID: 1888350452}
+  - 82: {fileID: 1888350455}
   m_Layer: 0
   m_Name: ForwardLevel
   m_TagString: Untagged
@@ -68071,6 +73427,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &1888350455
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 1888350450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1888461624
 GameObject:
   m_ObjectHideFlags: 0
@@ -68712,6 +74127,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1904082917}
   - 114: {fileID: 1904082918}
+  - 82: {fileID: 1904082919}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -68751,6 +74167,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1904082919
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 323840715}
+  m_GameObject: {fileID: 1904082916}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1907603577
 GameObject:
   m_ObjectHideFlags: 0
@@ -69336,6 +74811,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1929967939}
   - 114: {fileID: 1929967940}
+  - 82: {fileID: 1929967941}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -69375,6 +74851,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1929967941
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 963623197}
+  m_GameObject: {fileID: 1929967938}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1930675825
 GameObject:
   m_ObjectHideFlags: 0
@@ -71033,6 +76568,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1975102142}
   - 114: {fileID: 1975102143}
+  - 82: {fileID: 1975102144}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -71072,6 +76608,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1975102144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 2127172000}
+  m_GameObject: {fileID: 1975102141}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1978902638
 GameObject:
   m_ObjectHideFlags: 0
@@ -71580,6 +77175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1989019901}
   - 114: {fileID: 1989019902}
+  - 82: {fileID: 1989019903}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -71619,6 +77215,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1989019903
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 4d49d0d338c674946ae9e189cb43bbe0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1379521643}
+  m_GameObject: {fileID: 1989019900}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1991978461
 GameObject:
   m_ObjectHideFlags: 0
@@ -71848,6 +77503,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1992681873}
   - 114: {fileID: 1992681874}
+  - 82: {fileID: 1992681875}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -71887,6 +77543,65 @@ MonoBehaviour:
   burstRate: .5
   isRocket: 1
   isAutoAim: 0
+--- !u!82 &1992681875
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200008, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 1992681872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6ab620219011d6645a21c1beaa03353f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1993695908
 GameObject:
   m_ObjectHideFlags: 0
@@ -71896,6 +77611,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1993695909}
   - 114: {fileID: 1993695910}
+  - 82: {fileID: 1993695911}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -71935,6 +77651,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &1993695911
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 0742a3cba172de14a9a4e9e2c3a76754,
+    type: 2}
+  m_PrefabInternal: {fileID: 1277795925}
+  m_GameObject: {fileID: 1993695908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2000527521
 GameObject:
   m_ObjectHideFlags: 0
@@ -72395,6 +78170,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2008903773}
   - 114: {fileID: 2008903774}
+  - 82: {fileID: 2008903775}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -72434,6 +78210,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &2008903775
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e186a7809249b14aad180ae850320f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 330923807}
+  m_GameObject: {fileID: 2008903772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2011311231
 GameObject:
   m_ObjectHideFlags: 0
@@ -72554,6 +78389,7 @@ GameObject:
   - 131: {fileID: 2018776840}
   - 114: {fileID: 2018776839}
   - 114: {fileID: 2018776838}
+  - 82: {fileID: 2018776841}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -72625,6 +78461,65 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!82 &2018776841
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200010, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 2018776836}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2020438407
 GameObject:
   m_ObjectHideFlags: 0
@@ -73288,6 +79183,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2049633617}
   - 114: {fileID: 2049633618}
+  - 82: {fileID: 2049633619}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -73327,6 +79223,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &2049633619
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1002466728}
+  m_GameObject: {fileID: 2049633616}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &2053949955
 Prefab:
   m_ObjectHideFlags: 0
@@ -74184,6 +80139,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2095653603}
   - 114: {fileID: 2095653604}
+  - 82: {fileID: 2095653605}
   m_Layer: 0
   m_Name: gun2
   m_TagString: Untagged
@@ -74223,6 +80179,65 @@ MonoBehaviour:
   burstRate: 0
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &2095653605
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200010, guid: 0a81d991619f93e4c89eb8465625bc58,
+    type: 2}
+  m_PrefabInternal: {fileID: 778708917}
+  m_GameObject: {fileID: 2095653602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 219b9dfd62284854d830777f0877bfac, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2099302428
 GameObject:
   m_ObjectHideFlags: 0
@@ -74902,6 +80917,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2132272674}
   - 114: {fileID: 2132272675}
+  - 82: {fileID: 2132272676}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -74941,6 +80957,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &2132272676
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: ed1c99e947b00e54d885f64b9c98b066,
+    type: 2}
+  m_PrefabInternal: {fileID: 1069300382}
+  m_GameObject: {fileID: 2132272673}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2140344637
 GameObject:
   m_ObjectHideFlags: 0
@@ -75234,6 +81309,7 @@ GameObject:
   - 131: {fileID: 2144402248}
   - 114: {fileID: 2144402249}
   - 114: {fileID: 2144402250}
+  - 82: {fileID: 2144402251}
   m_Layer: 0
   m_Name: Pause
   m_TagString: Untagged
@@ -75305,6 +81381,65 @@ MonoBehaviour:
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
+--- !u!82 &2144402251
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200020, guid: c846803ec821bc14e99587dfdfd88dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056892607}
+  m_GameObject: {fileID: 2144402246}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e4d9c865a1e1bf94da4497f1bc1c287d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2145179083
 GameObject:
   m_ObjectHideFlags: 0
@@ -75436,6 +81571,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2145409815}
   - 114: {fileID: 2145409816}
+  - 82: {fileID: 2145409817}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -75475,6 +81611,65 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!82 &2145409817
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 1e44ca2d08e3abe4199b47f95b713ddf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2037006984}
+  m_GameObject: {fileID: 2145409814}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2147010834
 GameObject:
   m_ObjectHideFlags: 0

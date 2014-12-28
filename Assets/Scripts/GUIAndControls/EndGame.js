@@ -10,13 +10,14 @@ public var ingameGui : GameObject;
 public var gameScore : Score;
 private var scoreCounters : List.<GUIText>;
 private var currentScore : int = 0;
-
+private var soundSource : AudioSource;
 private var gameEnd : boolean = false;
 
 function Start () {
 	player = GameObject.FindGameObjectWithTag("Player");
 	var allEnemies : List.<GameObject> = GameObject.FindGameObjectsWithTag("Enemy").OrderBy(function(a){return a.transform.position.x;}).ToList();
 	lastEnemy = allEnemies[allEnemies.Count() - 1];
+	soundSource = this.GetComponent.<AudioSource>();
 }
 
 function Update () {
@@ -34,6 +35,7 @@ function Update () {
 			if (currentScore + 1 <= gameScore.GetScore()) { currentScore += 1; }
 			i.text = "0" * (5 - currentScore.ToString().length) + currentScore.ToString();;
 		}
+		if (soundSource && !soundSource.isPlaying && currentScore < gameScore.GetScore()) soundSource.Play();
 	}
 }
 
@@ -55,7 +57,7 @@ function GameEnd (isWin : boolean) {
 	} else {
 		gameOverGui.SetActive(true);
 	}
-	scoreCounters = gameObject.GetComponentsInChildren.<GUIText>().ToList();	
+	scoreCounters = gameObject.GetComponentsInChildren.<GUIText>().ToList();
 }
 
 function StarActivation () {

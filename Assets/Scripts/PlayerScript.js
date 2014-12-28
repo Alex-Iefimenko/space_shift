@@ -23,7 +23,7 @@ private var bombButton : ControllerGUIButton;
 private var bombButtonTexture : Texture;
 
 private var specialEffectsHendler : SpecialEffects;
-private var soundSource : AudioSource;
+private var soundSource : AudioController;
 
 //Bomb
 public var bombPrefab : Transform;
@@ -41,7 +41,7 @@ function Awake() {
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
 	animator = GetComponent.<Animator>();
 	bombActiveThreshold = bombTreshhold;
-	soundSource = this.GetComponent.<AudioSource>();
+	soundSource = this.GetComponent.<AudioController>();
 }
 
 function Start () {
@@ -103,13 +103,13 @@ function Update () {
     var fire : boolean = Input.GetButton("Fire2");
     if (fire || fireButton.hasTouchOnGui) {
     	for (var gun : GunTypeComplect in guns) {
-    		if (gun != null && gun.enabled == true && limitFiringTimer <= 0f) { gun.Fire(false); }
+    		if (gun != null && gun.enabled == true && limitFiringTimer <= 0f) { gun.Fire(false, playerGun); }
     	}
     }
     
     var bomb : boolean = Input.GetButtonDown("Bomb");
     if (bomb || bombButton.hasTouchOnGui) {
-	   	if (haveBomb) { LaunchBomb(); }
+	   	if (haveBomb) { LaunchBomb(); soundSource.PlayEffect("bombLaunchSound"); }
     }
     
     if (slomocooldown > 0f) {
@@ -157,22 +157,27 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {			// Checking collision
 			case 1: 												// Weapon change
 				playerGun = powerUp.powerUpValue;
 				specialEffectsHendler.ApplyEffect("takingWeapon", place, this.gameObject);
+				soundSource.PlayEffect("newWeaponSound");				
 				break;
 			case 2:													// Weapon improve
 				gunLevel += powerUp.powerUpValue;
 				specialEffectsHendler.ApplyEffect("takingLevel", place, this.gameObject);
+				soundSource.PlayEffect("powerUpSound");				
 				break;
 			case 3:													// Repair
 				playerHealth.Repair(powerUp.powerUpValue);
 				specialEffectsHendler.ApplyEffect("takingRepair", place, this.gameObject);
+				soundSource.PlayEffect("repairSound");
 				break;
 			case 4:													// Shield
 			 	playerHealth.Freeze(powerUp.powerUpValue * 1.0);
 			 	specialEffectsHendler.ApplyEffect("takingFreeze", place, this.gameObject);
+				soundSource.PlayEffect("sheildSound");			 	
 				break;
 			case 5:													// Slo-mo
 			 	slomocooldown = powerUp.powerUpValue * 1.0;
 			 	specialEffectsHendler.ApplyEffect("takingSlomo", place, this.gameObject);
+				soundSource.PlayEffect("slowMoSound");			 	
 				break;
 		
 		}

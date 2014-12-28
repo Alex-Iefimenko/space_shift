@@ -9,7 +9,6 @@ public var hit : GameObject;
 public var takingWeapon : GameObject;
 public var takingLevel : GameObject;
 public var takingRepair : GameObject;
-public var repairSound : AudioClip;
 public var takingFreeze : GameObject;
 public var takingSlomo : GameObject;
 

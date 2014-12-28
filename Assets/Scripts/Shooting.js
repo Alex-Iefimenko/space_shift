@@ -19,9 +19,12 @@ private var bullets : List.<ShotParameters> = new List.<ShotParameters>();
 public var isAutoAim : boolean = false;
 private var target : GameObject;
 
+private var audioEffect : AudioSource;
+
 function Start () {
 	shootCoolDown = 0f;
 	if (isAutoAim) GetTarget();
+	audioEffect = this.GetComponent.<AudioSource>();
 }
 
 function Update () {
@@ -66,6 +69,7 @@ function SingleShot () {
     	bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
     	bullet.LevelPass(currentLevel);
     }
+    if (audioEffect && !isRails && !audioEffect.isPlaying) audioEffect.Play();
 }
 
 function Burst (n : int, isRail : boolean) {
@@ -87,6 +91,7 @@ function RailBehaviour () {
 	for (var i : ShotParameters in bullets) {
 		if (i != null) { i.transform.position.y = transform.position.y; }
 	}
+	if (audioEffect && !audioEffect.isPlaying) audioEffect.Play();
 }
 
 function AutoAim () {

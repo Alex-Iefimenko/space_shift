@@ -16,11 +16,9 @@ function Awake () {
 	} 
 }
 
-function Fire (isEnemy : boolean) {
+function Fire (isEnemy : boolean, gunType : int) {
 	for (var shot : Shooting in shots) {						
-		if (shot != null && shot.enabled == true) {
-	   		shot.Attack(isEnemy);
-	   	}
+		if (shot != null && shot.enabled == true) shot.Attack(isEnemy);
 	}
 }
 

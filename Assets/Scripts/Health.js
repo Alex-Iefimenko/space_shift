@@ -11,6 +11,7 @@ private var scoreGUI : Score;
 private var maxHealth : int;
 private var isFreezed : boolean = false;
 private var freezeTime : float; 
+private var soundSource : AudioController;
 
 public var enemyExplosionVersion : int = 1;
 
@@ -33,6 +34,7 @@ function Awake() {
 	shield = GetComponentInChildren.<Shield>();
 	circleCollider = GetComponentInChildren.<CircleCollider2D>();
 	maxHealth = health;
+	soundSource = this.GetComponent.<AudioController>();
 }
 
 function Start () {
@@ -75,6 +77,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 	var shot : ShotParameters = new otherCollider.gameObject.GetComponent.<ShotParameters>();
 	if (shot != null) {
 		if (isEnemy != shot.isEnemyShot) {
+			if (soundSource && shot.behaviourType == 1) soundSource.PlayEffect("rocketHitSound");
 			if (shiedlEnabled) {
 				shot.isEnemyShot = !shot.isEnemyShot;
 				shot.transform.rotation.eulerAngles.z = Random.Range(-160.0, 160.0);

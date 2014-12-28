@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400002}
+  - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: gun1
   m_TagString: Untagged
@@ -166,6 +167,64 @@ PolygonCollider2D:
       - {x: -.299999982, y: -1.14999998}
       - {x: -.0199999996, y: -1.14999998}
       - {x: .119999997, y: -1.13999999}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,9 +239,10 @@ MonoBehaviour:
   health: 8
   isEnemy: 1
   scoreValue: 200
-  scoreGUI: {fileID: 0}
-  specialEffectsHelper: {fileID: 0}
   enemyExplosionVersion: 2
+  isKamikadze: 0
+  kamikadzeDamage: 0
+  shieldHealth: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,9 +257,11 @@ MonoBehaviour:
   misslePrefab: {fileID: 400000, guid: d19ab134f80f4c244a57ddd59bee4e8b, type: 2}
   shootingRate: .400000006
   isBurst: 0
+  isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
+  isAutoAim: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca81e46c3a904ad4d9fe691ec7baa0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateOnHit: 0
+  isBifurcation: 0
+  newShips: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -7,6 +7,13 @@ public var blastRadius : float;
 public var blastSpeed : float = 70;
 private var cirCol : CircleCollider2D;
 private var blastDistance : float;
+private var blastSound : AudioSource;
+
+
+function Awake () {
+	blastSound = this.GetComponent.<AudioSource>();
+	if (blastSound) blastSound.Play();
+}
 
 function Start () {
 	cirCol = this.GetComponent(CircleCollider2D);

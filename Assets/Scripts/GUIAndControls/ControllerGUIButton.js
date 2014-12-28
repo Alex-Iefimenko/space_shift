@@ -22,10 +22,12 @@ private var isActive : boolean = true;
 
 private var blinkTime : float = 0f;
 private var blink :float = 0f;
+private var soundControll : AudioSource;
 
 function Awake (){
 	guiTextureCurrent = this.guiTexture;
 	imageNormal = guiTexture.texture;
+	soundControll = this.GetComponent.<AudioSource>();
 }
 
 function Update () {
@@ -71,6 +73,7 @@ function TouchControl(){
 					}
 					if(functionOnTouchDown != ""){
 						gameObject.SendMessage(functionOnTouchDown);
+						if (soundControll) soundControll.Play();
 					}
 					
 				}

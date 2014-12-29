@@ -35,7 +35,7 @@ function Update () {
 			if (currentScore + 1 <= gameScore.GetScore()) { currentScore += 1; }
 			i.text = "0" * (5 - currentScore.ToString().length) + currentScore.ToString();;
 		}
-		if (soundSource && !soundSource.isPlaying && currentScore < gameScore.GetScore()) soundSource.Play();
+		if (soundSource && !soundSource.isPlaying && currentScore < gameScore.GetScore() && Options.sound) soundSource.Play();
 	}
 }
 

@@ -69,7 +69,7 @@ function SingleShot () {
     	bullet.transform.rotation = this.transform.rotation;			// towards in 2D space is the right of the sprite
     	bullet.LevelPass(currentLevel);
     }
-    if (audioEffect && !isRails && !audioEffect.isPlaying) audioEffect.Play();
+    if (audioEffect && !isRails && !audioEffect.isPlaying && Options.sound) audioEffect.Play();
 }
 
 function Burst (n : int, isRail : boolean) {
@@ -91,7 +91,7 @@ function RailBehaviour () {
 	for (var i : ShotParameters in bullets) {
 		if (i != null) { i.transform.position.y = transform.position.y; }
 	}
-	if (audioEffect && !audioEffect.isPlaying) audioEffect.Play();
+	if (audioEffect && !audioEffect.isPlaying && Options.sound) audioEffect.Play();
 }
 
 function AutoAim () {

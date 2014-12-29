@@ -12,7 +12,7 @@ private var blastSound : AudioSource;
 
 function Awake () {
 	blastSound = this.GetComponent.<AudioSource>();
-	if (blastSound) blastSound.Play();
+	if (blastSound && Options.sound) blastSound.Play();
 }
 
 function Start () {

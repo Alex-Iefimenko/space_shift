@@ -73,7 +73,7 @@ function TouchControl(){
 					}
 					if(functionOnTouchDown != ""){
 						gameObject.SendMessage(functionOnTouchDown);
-						if (audioEffect) audioEffect.Play();
+						if (audioEffect && Options.sound) audioEffect.Play();
 					}
 					
 				}

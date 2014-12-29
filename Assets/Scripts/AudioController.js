@@ -44,5 +44,5 @@ function AddAudio(clip : AudioClip, loop : boolean, playAwake : boolean, vol : f
 
 function PlayEffect (name : String) {
 	var currentEffect = this.GetType().GetField(name + "Source").GetValue(this) as AudioSource;
-	if (currentEffect) currentEffect.Play();
+	if (currentEffect && Options.sound) currentEffect.Play();
 }

@@ -21,7 +21,7 @@ function Awake () {
 function Update () {
     if (Input.GetKeyDown("escape")) {
     	Return();
-    	if (audioEffect && !audioEffect.isPlaying) audioEffect.Play();
+    	if (audioEffect && !audioEffect.isPlaying && Options.sound) audioEffect.Play();
 	}
 }
 

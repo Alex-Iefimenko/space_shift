@@ -77,7 +77,7 @@ function OnTriggerEnter2D (otherCollider : Collider2D) {	// Checking collision o
 	var shot : ShotParameters = new otherCollider.gameObject.GetComponent.<ShotParameters>();
 	if (shot != null) {
 		if (isEnemy != shot.isEnemyShot) {
-			if (soundSource && shot.behaviourType == 1) soundSource.PlayEffect("rocketHitSound");
+			if (soundSource && shot.behaviourType == 1) soundSource.PlayEffectOnPosition("rocketHitSound");
 			if (shiedlEnabled) {
 				shot.isEnemyShot = !shot.isEnemyShot;
 				shot.transform.rotation.eulerAngles.z = Random.Range(-160.0, 160.0);

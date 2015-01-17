@@ -46,3 +46,8 @@ function PlayEffect (name : String) {
 	var currentEffect = this.GetType().GetField(name + "Source").GetValue(this) as AudioSource;
 	if (currentEffect && Options.sound) currentEffect.Play();
 }
+
+function PlayEffectOnPosition (name : String) {
+	var currentEffect = this.GetType().GetField(name + "Source").GetValue(this) as AudioSource;
+	if (currentEffect && Options.sound) currentEffect.PlayClipAtPoint(currentEffect.clip, Camera.main.transform.position);
+}

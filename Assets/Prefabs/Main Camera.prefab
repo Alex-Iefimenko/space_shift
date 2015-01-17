@@ -82,7 +82,7 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 8f2a8600cb61289448ff715c22bf9471, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b2b19c08006a6a74489adcf285bfebe0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .150000006
   m_Pitch: 1
@@ -189,11 +189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b4768c3683045e4bfdb2e78272970c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshhold: .616999984
-  intensity: .600000024
-  blurSize: 3.4000001
+  threshhold: .115999997
+  intensity: .800000012
+  blurSize: 2.63000011
   resolution: 0
-  blurIterations: 3
+  blurIterations: 2
   blurType: 0
   fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!124 &12400000

@@ -27,6 +27,8 @@ function Update () {
 		} else if (lastEnemy == null) {
 			GameEnd(true);
 		}
+	} else {
+		Camera.main.GetComponent.<AudioSource>().volume -= 0.001f;
 	}
 	if (scoreCounters != null && scoreCounters.Count > 0) {
 		for (i in scoreCounters) {

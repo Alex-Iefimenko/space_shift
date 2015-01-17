@@ -544,7 +544,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.1242561, y: .333905935, z: -5.003932}
+  m_LocalPosition: {x: -12.4770222, y: .584171116, z: -5.003932}
   m_LocalScale: {x: .511852086, y: .552699327, z: 1}
   m_Children:
   - {fileID: 400022}
@@ -1867,7 +1867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repairSound: {fileID: 8300000, guid: 2dfa476c5112b414dbb777cc78bedb07, type: 3}
-  sheildSound: {fileID: 0}
+  sheildSound: {fileID: 8300000, guid: ec7df95fd3353f34a894db246efca74d, type: 3}
   powerUpSound: {fileID: 0}
   slowMoSound: {fileID: 0}
   newWeaponSound: {fileID: 8300000, guid: 436aad659f197cf419828ad78069de85, type: 3}

@@ -68,6 +68,7 @@ function Damage (damage : int) {							// Reduction of health and destroying obj
 			var place : Vector3 = Vector3(transform.position.x + renderer.bounds.size.x/2, transform.position.y, transform.position.z);
 			specialEffectsHendler.ApplyEffect("playerExplosion", place, this.gameObject);
 		}
+		if (soundSource) soundSource.PlayEffectOnPosition("destroySound");
 	} else if (health > 0 && freezeTime <= 0){
 		specialEffectsHendler.ApplyEffect("hit", place, this.gameObject);
 	}

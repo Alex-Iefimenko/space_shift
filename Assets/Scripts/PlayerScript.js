@@ -35,10 +35,12 @@ private var bombActiveThreshold : int = 500;
 private var limitMovementTimer : float;
 private var limitFiringTimer : float;
 private var invertMovementTimer : float;
+private var limitMessages : GUITimer;
 
 function Awake() {
 	joystickCircle = GameObject.FindGameObjectWithTag("GameControllerJoystick").GetComponentInChildren.<JoystickCircle>();
 	buttons = GameObject.FindGameObjectWithTag("GameControllerButtons");
+	limitMessages = GameObject.FindGameObjectWithTag("GUI").GetComponentInChildren.<GUITimer>();
 	animator = GetComponent.<Animator>();
 	bombActiveThreshold = bombTreshhold;
 	soundSource = this.GetComponent.<AudioController>();
@@ -257,12 +259,15 @@ function StartCapabilityLimit (time : float, type : int) {
 	switch (type) {
 		case 6:
 			limitMovementTimer = time;
+			limitMessages.StartShow(2, time);
 		break;
 		case 7:
 			limitFiringTimer = time;
+			limitMessages.StartShow(0, time);
 		break;
 		case 8:
     		invertMovementTimer = time;
+    		limitMessages.StartShow(1, time);
     	break;
     }
 }

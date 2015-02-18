@@ -38,7 +38,7 @@ function Start() {
 	} else if (behaviourType == 3) {
 		var dist : float = (this.transform.position - Camera.main.transform.position).z;
 		if (!isEnemyShot) destroyDist = this.transform.position.x + (Camera.main.ViewportToWorldPoint(Vector3(1,0,dist)).x - this.transform.position.x) * 0.55;
-		else destroyDist = GameObject.FindGameObjectWithTag("Player").transform.position.x + 3f;
+		else destroyDist = GameObject.FindGameObjectWithTag("Player").transform.position.x;
 	} else if (behaviourType == 5) {
 		frequency = Random.Range(13f, 15f);						
 		amplitude = Random.Range(4.5f, 5.5f);
@@ -69,7 +69,7 @@ function Update () {
 		case 3:
 			Movement();
 			if (transform.position.x >= destroyDist && !isEnemyShot) Destroy(gameObject);
-			else if (transform.position.x <= destroyDist && isEnemyShot) Destroy(gameObject);
+			else if (Mathf.Abs(transform.position.x - destroyDist) <= 2.5f && isEnemyShot) Destroy(gameObject);
 			break;
 		default:											// Flying forward
 			Movement();

@@ -117,8 +117,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.35918236, y: .0803075433, z: -6.07838297}
-  m_LocalScale: {x: -.472720802, y: .472719967, z: 1}
+  m_LocalPosition: {x: 8.0200243, y: -1.58407807, z: -6.07838297}
+  m_LocalScale: {x: -.302295029, y: .302294761, z: 1}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
@@ -407,12 +407,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 20
   isEnemy: 1
   scoreValue: 100
   enemyExplosionVersion: 2
   isKamikadze: 1
-  kamikadzeDamage: 40
+  kamikadzeDamage: 20
   shieldHealth: 0
 --- !u!212 &21200000
 SpriteRenderer:

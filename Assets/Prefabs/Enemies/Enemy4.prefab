@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Enemy4
   m_TagString: Enemy
@@ -96,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.3744049, y: .731158078, z: -3.95000005}
+  m_LocalPosition: {x: 8.65113449, y: 1.77088559, z: -3.95000005}
   m_LocalScale: {x: -.480338991, y: .41881299, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -516,6 +517,35 @@ MonoBehaviour:
   isKamikadze: 0
   kamikadzeDamage: 0
   shieldHealth: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca858a1bb8022c4288c1b79fcc3193e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repairSound: {fileID: 0}
+  sheildSound: {fileID: 0}
+  powerUpSound: {fileID: 0}
+  slowMoSound: {fileID: 0}
+  newWeaponSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  rocketHitSound: {fileID: 0}
+  bombLaunchSound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  repairSoundSource: {fileID: 0}
+  sheildSoundSource: {fileID: 0}
+  powerUpSoundSource: {fileID: 0}
+  slowMoSoundSource: {fileID: 0}
+  newWeaponSoundSource: {fileID: 0}
+  hitSoundSource: {fileID: 0}
+  rocketHitSoundSource: {fileID: 0}
+  bombLaunchSoundSource: {fileID: 0}
+  destroySoundSource: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -542,7 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 3
-  speed: {x: 3, y: 4}
+  speed: {x: 2, y: 2}
   frequency: 4
   amplitude: .100000001
   isForbidenLeaveCamera: 0
@@ -557,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
+  misslePrefab: {fileID: 400000, guid: c3f09e2143704514a815321b062a7dd2, type: 2}
   shootingRate: 2
   isBurst: 0
   isRails: 0

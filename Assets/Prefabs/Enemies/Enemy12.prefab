@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: Enemy12
   m_TagString: Enemy
@@ -141,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.983177, y: -.694347024, z: -5}
+  m_LocalPosition: {x: 10.3342772, y: -.245439395, z: -5}
   m_LocalScale: {x: -.873879075, y: .84492141, z: 1}
   m_Children:
   - {fileID: 400012}
@@ -156,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45104361, y: -.900892258, z: 0}
+  m_LocalPosition: {x: .551863134, y: -.243693665, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -205,7 +206,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.41460741, y: .820009887, z: 0}
+  m_LocalPosition: {x: 1.76229024, y: -1.13918579, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
@@ -595,14 +596,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
-  shootingRate: 1
+  misslePrefab: {fileID: 400000, guid: 51afbcf031a5ca242ad1033e47d48847, type: 2}
+  shootingRate: .5
   isBurst: 0
   isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
-  isAutoAim: 0
+  isAutoAim: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -629,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementPattern: 7
-  speed: {x: 5, y: 5}
+  speed: {x: 2, y: 3}
   frequency: 5
   amplitude: 3
   isForbidenLeaveCamera: 0
@@ -644,14 +645,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
-  shootingRate: 1
+  misslePrefab: {fileID: 400006, guid: 69c748c496864f34ab0333e32f4ae06d, type: 2}
+  shootingRate: 3
   isBurst: 0
   isRails: 0
   burstLength: 10
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca858a1bb8022c4288c1b79fcc3193e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repairSound: {fileID: 0}
+  sheildSound: {fileID: 0}
+  powerUpSound: {fileID: 0}
+  slowMoSound: {fileID: 0}
+  newWeaponSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  rocketHitSound: {fileID: 0}
+  bombLaunchSound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  repairSoundSource: {fileID: 0}
+  sheildSoundSource: {fileID: 0}
+  powerUpSoundSource: {fileID: 0}
+  slowMoSoundSource: {fileID: 0}
+  newWeaponSoundSource: {fileID: 0}
+  hitSoundSource: {fileID: 0}
+  rocketHitSoundSource: {fileID: 0}
+  bombLaunchSoundSource: {fileID: 0}
+  destroySoundSource: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

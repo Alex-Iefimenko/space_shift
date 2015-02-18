@@ -43,8 +43,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3186636, y: -3.17840481, z: -5}
-  m_LocalScale: {x: -.350364119, y: .282553345, z: 1}
+  m_LocalPosition: {x: 3.93597198, y: 1.55985951, z: -5}
+  m_LocalScale: {x: .21777074, y: .208518252, z: 1}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.40282977, y: -.0120134121, z: .0182647705}
+  m_LocalPosition: {x: 2.89505315, y: .0287357867, z: .0182647705}
   m_LocalScale: {x: -1.91664541, y: 3.69575334, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -103,9 +103,9 @@ EllipsoidParticleEmitter:
   minSize: .0900000036
   maxSize: .230000004
   minEnergy: 0
-  maxEnergy: 2
+  maxEnergy: 2.6099999
   minEmission: 54
-  maxEmission: 50
+  maxEmission: 78.1999969
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: 0, y: 0, z: 0}
   rndVelocity: {x: 0, y: 0, z: 0}
@@ -130,7 +130,7 @@ ParticleRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c78b114ae617a4914a6f9b9e0f796a0b, type: 2}
+  - {fileID: 2100000, guid: 1dabeb9c55c22814a883619fcdfc5ee2, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -157,8 +157,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.23000002, y: 1}
-  m_Center: {x: 2.08999991, y: 0}
+  m_Size: {x: 1.48000002, y: 1.28999996}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,14 +171,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourType: 5
-  damage: 3
+  damage: 6
   isEnemyShot: 1
-  speed: {x: 20, y: 20}
+  speed: {x: 14, y: 14}
   direction: {x: -1, y: 0}
   misslePrefab: {fileID: 0}
-  limitMovementSec: 0
-  limitFiringSec: 0
-  invertMovementSec: 0
+  reduceCapabiliteisSec: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -199,8 +197,8 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3fd003c73707f4e44be770bd1ea2b578, type: 3}
-  m_Color: {r: .833524346, g: .529411793, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ffc95370637f58f44a853eefc0f0295c, type: 3}
+  m_Color: {r: .835294127, g: .650980413, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

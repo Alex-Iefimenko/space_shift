@@ -59,8 +59,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.23493576, y: -.00688689947, z: -3.40145493}
-  m_LocalScale: {x: .479999989, y: .479999989, z: .200000003}
+  m_LocalPosition: {x: 6.83293486, y: -.634406149, z: -3.40145493}
+  m_LocalScale: {x: .258240968, y: .258240849, z: .200000003}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400002}
@@ -129,7 +129,7 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: .970000029
+  minSize: .280000001
   maxSize: 0
   minEnergy: 0
   maxEnergy: 1
@@ -202,7 +202,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1

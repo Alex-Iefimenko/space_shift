@@ -44,14 +44,16 @@ MonoBehaviour:
   enemyExplosion2: {fileID: 100006, guid: d4dbfe3d18d242f4d9b015a50b6066a7, type: 2}
   enemyExplosion3: {fileID: 100006, guid: fb94beb167cac04419a9cf1c110cd3cd, type: 2}
   enemyExplosion4: {fileID: 100006, guid: 585aa2897a1dd0a44b3e0d78798db59a, type: 2}
+  enemyExplosion10: {fileID: 100006, guid: fbb6bbb54de3f2b4da16590407a1d0eb, type: 2}
   playerExplosion: {fileID: 100006, guid: 585aa2897a1dd0a44b3e0d78798db59a, type: 2}
   hit: {fileID: 100006, guid: cd630e5f1a594f24abc0b80451127156, type: 2}
   takingWeapon: {fileID: 100006, guid: 45f281eecbb92a14b94386cda43f1829, type: 2}
   takingLevel: {fileID: 100006, guid: d0fc9a15c888ed3479c33d4bab4c8e39, type: 2}
   takingRepair: {fileID: 100006, guid: 85798579603503245a3d10007565d7b1, type: 2}
-  repairSound: {fileID: 8300000, guid: 2dfa476c5112b414dbb777cc78bedb07, type: 3}
   takingFreeze: {fileID: 100006, guid: 47bda37b1106eb24fb9231a8452a9d02, type: 2}
   takingSlomo: {fileID: 100006, guid: c1ccd226d3ea6c44f933ea38d83686e5, type: 2}
+  teleportIn: {fileID: 100006, guid: 77065d88ad7852441b03c50f03acacab, type: 2}
+  teleportOut: {fileID: 100006, guid: ffe1a4c7c07495c45a7daca4945bb53a, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

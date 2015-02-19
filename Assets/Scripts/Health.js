@@ -162,12 +162,13 @@ function GetScriptHelper () {
 }
 
 function TeleportToRandomPosition () {
+	specialEffectsHendler.ApplyEffect("teleportIn", this.transform.position, null);
 	var distance = (transform.position - Camera.main.transform.position).z;
 	var leftBorder = Camera.main.ViewportToWorldPoint(
       new Vector3(0.01, 0.03, distance)
     ).x;
     var rightBorder = Camera.main.ViewportToWorldPoint(
-      new Vector3(0.90, 0.03, distance)
+      new Vector3(0.79, 0.03, distance)
     ).x;
     var bottomBorder = Camera.main.ViewportToWorldPoint(
       new Vector3(0.03, 0.055, distance)
@@ -175,7 +176,8 @@ function TeleportToRandomPosition () {
     var topBorder = Camera.main.ViewportToWorldPoint(
       new Vector3(0.03, 0.965, distance)
     ).y;
-    this.transform.position = Vector2(Random.Range(leftBorder, rightBorder), Random.Range(bottomBorder, topBorder));
+    this.transform.position = Vector3(Random.Range(leftBorder, rightBorder), Random.Range(bottomBorder, topBorder), this.transform.position.z);
+    specialEffectsHendler.ApplyEffect("teleportOut", this.transform.position, this.gameObject);
 }
 
 function ReduceMovementSpeed (time : float, type : int) {

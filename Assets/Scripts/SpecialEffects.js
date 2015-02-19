@@ -4,6 +4,7 @@ public var enemyExplosion1 : GameObject;
 public var enemyExplosion2 : GameObject;
 public var enemyExplosion3 : GameObject;
 public var enemyExplosion4 : GameObject;
+public var enemyExplosion10 : GameObject;
 public var playerExplosion : GameObject;
 public var hit : GameObject;
 public var takingWeapon : GameObject;
@@ -11,6 +12,8 @@ public var takingLevel : GameObject;
 public var takingRepair : GameObject;
 public var takingFreeze : GameObject;
 public var takingSlomo : GameObject;
+public var teleportIn : GameObject;
+public var teleportOut : GameObject;
 
 private var targetObject : GameObject;
 private var newEffect : GameObject;

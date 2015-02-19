@@ -108,8 +108,8 @@ function AutoAim () {
 		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10);
 	} else {
 		transform.rotation = Quaternion.identity;
-		GetTarget ();
 	}
+	GetTarget ();
 }
 
 function GetTarget () {

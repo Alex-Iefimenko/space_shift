@@ -16,7 +16,7 @@ static function SoundOn (bol : boolean) {
 
 static function GraphicsLevel (level : int) {
 	graphics = level;
-	QualitySettings.SetQualityLevel(level, true);
+	QualitySettings.SetQualityLevel(level, false);
 }
 
 static function SaveOptions () {

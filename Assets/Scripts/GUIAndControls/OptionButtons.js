@@ -46,18 +46,21 @@ function Start () {
 			}
 			break;
 	}
+	Options.SaveOptions();
 }
 
 function Music () {
 	yield WaitForSeconds (0.1);
 	Options.MusicOn(!Options.music);
 	ChangeGuiTexture();
+	Options.SaveOptions();
 }
 
 function Sound () {
 	yield WaitForSeconds (0.1);
 	Options.SoundOn(!Options.sound);
 	ChangeGuiTexture();
+	Options.SaveOptions();
 }
 
 function GraphicsLevel () {
@@ -66,6 +69,7 @@ function GraphicsLevel () {
 	Options.GraphicsLevel((currentGraphicsLevel + 1) % 3);
 	this.GetComponent.<ControllerGUIButton>().SetImageNormal(graphicsLevels[Options.graphics], graphicsLevelsActive[Options.graphics]);
 	this.GetComponent(GUITexture).texture = graphicsLevels[Options.graphics];
+	Options.SaveOptions();
 }
 
 function ResetProgress () {

@@ -200,7 +200,7 @@ function GunEnabling (type : int) {
 			gun.enabled = false;
 		}
 		guns[type - 1].enabled = true;
-		animator.SetInteger("Weapon", type);
+		if (animator) animator.SetInteger("Weapon", type);
 	}
 }
 

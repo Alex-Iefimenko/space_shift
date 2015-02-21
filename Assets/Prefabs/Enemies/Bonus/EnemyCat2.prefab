@@ -135,8 +135,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3922596, y: -1.21552324, z: -4.96000004}
-  m_LocalScale: {x: -.547733426, y: .518132865, z: 1}
+  m_LocalPosition: {x: 119.544762, y: 4.94787502, z: -4.96000004}
+  m_LocalScale: {x: -.547733009, y: .518132985, z: 1}
   m_Children:
   - {fileID: 400014}
   - {fileID: 400004}
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 45
+  health: 20
   isEnemy: 1
   scoreValue: 300
   enemyExplosionVersion: 10
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPattern: 8
+  movementPattern: 6
   speed: {x: 3, y: 3}
   frequency: 5
   amplitude: 5
@@ -524,10 +524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c2980c05721c64c4e98bf0cab83d6cc2, type: 2}
-  shootingRate: 2.5
-  isBurst: 1
-  isRails: 1
+  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
+  shootingRate: .5
+  isBurst: 0
+  isRails: 0
   burstLength: 35
   burstRate: .00999999978
   isRocket: 0

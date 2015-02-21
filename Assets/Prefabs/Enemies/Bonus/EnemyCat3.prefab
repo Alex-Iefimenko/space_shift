@@ -203,8 +203,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.83891249, y: -.331670791, z: -4.96000004}
-  m_LocalScale: {x: -.547733426, y: .518132865, z: 1}
+  m_LocalPosition: {x: 119.702141, y: .722266436, z: -4.96000004}
+  m_LocalScale: {x: -.547733009, y: .518132985, z: 1}
   m_Children:
   - {fileID: 400008}
   - {fileID: 400010}
@@ -674,7 +674,6 @@ PolygonCollider2D:
       - {x: 1.84224296, y: -.143925235}
       - {x: 1.81345785, y: -.0719626173}
       - {x: 1.71271026, y: .215887845}
-      - {x: 1.71271026, y: .374205589}
       - {x: 1.61196256, y: .489345789}
       - {x: 1.41046727, y: .633270979}
       - {x: 1.28093457, y: .777196229}
@@ -856,7 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 45
+  health: 35
   isEnemy: 1
   scoreValue: 400
   enemyExplosionVersion: 10
@@ -888,7 +887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPattern: 8
+  movementPattern: 7
   speed: {x: 3, y: 3}
   frequency: 5
   amplitude: 5
@@ -904,10 +903,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c2980c05721c64c4e98bf0cab83d6cc2, type: 2}
-  shootingRate: 2.5
-  isBurst: 1
-  isRails: 1
+  misslePrefab: {fileID: 400000, guid: c605f8f7d41edbe44a71a15876b7c6d4, type: 2}
+  shootingRate: .5
+  isBurst: 0
+  isRails: 0
   burstLength: 35
   burstRate: .00999999978
   isRocket: 0
@@ -952,10 +951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: c2980c05721c64c4e98bf0cab83d6cc2, type: 2}
-  shootingRate: 2.5
-  isBurst: 1
-  isRails: 1
+  misslePrefab: {fileID: 400006, guid: 69c748c496864f34ab0333e32f4ae06d, type: 2}
+  shootingRate: 2
+  isBurst: 0
+  isRails: 0
   burstLength: 35
   burstRate: .00999999978
   isRocket: 0

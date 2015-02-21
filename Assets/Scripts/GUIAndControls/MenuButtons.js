@@ -59,8 +59,10 @@ function SetTutorialVars (tutorial : GameObject, fullGUI : GameObject) {
 
 function LoadNextLevel () {
 	var nextLevel : int = int.Parse(Application.loadedLevelName[-2:]) + 1;
-	var nextLevelName : String = "Level_" + nextLevel.ToString();
-	Application.LoadLevel(nextLevelName);
+	// Stub for zone 2 missing
+	if (Application.loadedLevelName[-2:][-1] == "9") Application.LoadLevel("MainMenu");
+	else if (nextLevel.ToString()[-1] == "9") Application.LoadLevel("Video_" + nextLevel.ToString()[0] + "2");
+	else Application.LoadLevel("Level_" + nextLevel.ToString());
 }
 
 function DisplayGuiSet () {

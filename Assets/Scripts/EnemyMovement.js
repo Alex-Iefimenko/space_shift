@@ -272,7 +272,8 @@ function GetDeltaYSpeed (xStart : float, xMiddle : float, xEnd : float, yAmlitud
 		yDist = (dMax.y + Mathf.Abs(dMin.y)) * amplitude;
 		if (deltaYspeed < 0f) coef = -1f;
 	}
-	var cameraSpeed : float = GameObject.FindGameObjectWithTag("Player").GetComponent.<Scrolling>().speed.x;
+	if (GameObject.FindGameObjectWithTag("Player")) var cameraSpeed : float = GameObject.FindGameObjectWithTag("Player").GetComponent.<Scrolling>().speed.x;
+	else cameraSpeed = 0;
 	var timeAvail : float = (dMax.x - dMin.x) / (speed.x + cameraSpeed);
 	var fixedYspeed : float = yDist / timeAvail;
 	deltaYspeed = 4f * fixedYspeed / timeAvail * Time.deltaTime * coef;

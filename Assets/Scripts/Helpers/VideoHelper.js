@@ -36,7 +36,8 @@ function SlideForward () {
 		if (Application.loadedLevelName[-2:][1] == "1") {
 			nextLevelName = "Level_" + Application.loadedLevelName[-2:][0] + "0";
 		} else if (Application.loadedLevelName[-2:][1] == "2") {
-			nextLevelName = "Video_" + (parseInt(Application.loadedLevelName[-2:][0])- 48 + 1).ToString() + "1";
+			nextLevelName = "Level_" + (parseInt(Application.loadedLevelName[-2:][0])- 48).ToString() + "9";
+			print (nextLevelName);
 		}
 		// Level Progress save
 		if (PlayerPrefs.HasKey(nextLevelName) == false) {

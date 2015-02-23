@@ -44331,7 +44331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &994396718
 Transform:
   m_ObjectHideFlags: 0
@@ -45648,6 +45648,22 @@ Prefab:
     - target: {fileID: 11400024, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
       propertyPath: lastEnemy
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c846803ec821bc14e99587dfdfd88dc7, type: 2}
@@ -48214,7 +48230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1122322710
 Transform:
   m_ObjectHideFlags: 0
@@ -50462,7 +50478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 7f5c1fae21d7bce4fa9ad30dffcf9561, type: 2}
+  misslePrefab: {fileID: 400000, guid: d8727c8810812c64ca1ab218753ed17d, type: 2}
   shootingRate: 1
   isBurst: 1
   isRails: 1

@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Options
+  m_Name: Options 2
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -29,9 +29,24 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 76b3074f764c08c418eb1e45e8df4090, type: 2}
+  - {fileID: 7400000, guid: 713c8b472be741d4b8667912bd89f9e0, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 48, y: 48, z: 0}
+  m_Position: {x: 36, y: 48, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110253895
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BirdANim 1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: f50af499697ce234da4a5ab47caa736e, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 137, y: 119, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 

@@ -237,6 +237,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -246,6 +247,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &3158927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2073,6 +2075,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -2082,6 +2085,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &21606319
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3399,6 +3403,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -3408,6 +3413,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &30479530
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3576,6 +3582,114 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!1 &38136650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 38136653}
+  - 114: {fileID: 38136652}
+  - 82: {fileID: 38136651}
+  m_Layer: 0
+  m_Name: LetalGun3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &38136651
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200014, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 38136650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &38136652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400024, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 38136650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
+  shootingRate: .800000012
+  isBurst: 0
+  isRails: 0
+  burstLength: 3
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
+--- !u!4 &38136653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 38136650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.03283894, y: -.754767179, z: 0}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 2
 --- !u!1 &39276695
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,6 +5134,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -5029,6 +5144,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &47881111
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5606,6 +5722,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -5615,6 +5732,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &61068140
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5869,54 +5987,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 504958664}
   m_RootOrder: 1
---- !u!1 &65241735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101228, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 65241736}
-  - 114: {fileID: 65241737}
-  m_Layer: 0
-  m_Name: LetalGun4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &65241736
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401228, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 65241735}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .635593116, y: -1.31091201, z: -2.16838312}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 3
---- !u!114 &65241737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401290, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 65241735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
-  shootingRate: .5
-  isBurst: 0
-  isRails: 0
-  burstLength: 3
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &68696828
 GameObject:
   m_ObjectHideFlags: 0
@@ -6549,7 +6619,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!114 &92369696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8009,6 +8079,54 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!1 &105383455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 105383456}
+  - 114: {fileID: 105383457}
+  m_Layer: 0
+  m_Name: LetalGun1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &105383456
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 105383455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .635593116, y: 1.31091189, z: 0}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 0
+--- !u!114 &105383457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 105383455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
+  shootingRate: .5
+  isBurst: 0
+  isRails: 0
+  burstLength: 3
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &106899855
 GameObject:
   m_ObjectHideFlags: 0
@@ -8456,114 +8574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adUnitIDIntersatial: ca-app-pub-7858006992053690/8717755766
---- !u!1 &122409789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101226, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 122409790}
-  - 114: {fileID: 122409792}
-  - 82: {fileID: 122409791}
-  m_Layer: 0
-  m_Name: NonLetalGunTeleprot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &122409790
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401226, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122409789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14220107, y: .23705636, z: -2.16838312}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 4
---- !u!82 &122409791
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200304, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122409789}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &122409792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401288, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122409789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 59b880f5318d65b4189062050d45cffd, type: 2}
-  shootingRate: .699999988
-  isBurst: 0
-  isRails: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &123886712
 GameObject:
   m_ObjectHideFlags: 0
@@ -10079,6 +10089,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -10088,6 +10099,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &135131261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12136,6 +12148,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -12145,6 +12158,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &155133474
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12494,6 +12508,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -12503,6 +12518,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &162362429
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13864,435 +13880,6 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!1 &168828358
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101236, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 168828359}
-  - 212: {fileID: 168828368}
-  - 50: {fileID: 168828367}
-  - 60: {fileID: 168828366}
-  - 114: {fileID: 168828365}
-  - 114: {fileID: 168828364}
-  - 114: {fileID: 168828363}
-  - 58: {fileID: 168828362}
-  - 60: {fileID: 168828361}
-  - 60: {fileID: 168828360}
-  - 114: {fileID: 168828369}
-  m_Layer: 0
-  m_Name: FinalBoss
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &168828359
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401236, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.17456055, y: .774693966, z: -4.96000004}
-  m_LocalScale: {x: -1.29999995, y: 1.29999995, z: 1}
-  m_Children:
-  - {fileID: 1233203975}
-  - {fileID: 291082178}
-  - {fileID: 395980741}
-  - {fileID: 65241736}
-  - {fileID: 122409790}
-  - {fileID: 1765241352}
-  - {fileID: 1206894114}
-  - {fileID: 321992744}
-  - {fileID: 1034477639}
-  - {fileID: 1244767957}
-  - {fileID: 685312893}
-  m_Father: {fileID: 1332640597}
-  m_RootOrder: 72
---- !u!60 &168828360
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6000244, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .845000029, y: -.49000001}
-      - {x: 1.05499995, y: -.449999988}
-      - {x: 1.21500003, y: -.400000006}
-      - {x: 1.52499998, y: -.349999994}
-      - {x: 1.53499997, y: -.330000013}
-      - {x: 1.53499997, y: -.280000001}
-      - {x: 1.47500002, y: -.25}
-      - {x: 1.27499998, y: -.25}
-      - {x: 1.31500006, y: -.159999996}
-      - {x: 1.33500004, y: -.0900000036}
-      - {x: 1.33500004, y: .129999995}
-      - {x: 1.47500002, y: .239999995}
-      - {x: 1.53499997, y: .280000001}
-      - {x: 1.53499997, y: .319999993}
-      - {x: 1.46500003, y: .360000014}
-      - {x: 1.17499995, y: .389999986}
-      - {x: .935000002, y: .460000008}
-      - {x: .754999995, y: .460000008}
-      - {x: .685000002, y: .439999998}
-      - {x: .264999986, y: .439999998}
-      - {x: .144999996, y: .5}
-      - {x: -.745000005, y: .5}
-      - {x: -.735000014, y: .439999998}
-      - {x: -.975000024, y: .439999998}
-      - {x: -1.17499995, y: .360000014}
-      - {x: -1.38499999, y: .239999995}
-      - {x: -1.51499999, y: .180000007}
-      - {x: -1.53499997, y: .129999995}
-      - {x: -1.53499997, y: -.140000001}
-      - {x: -1.495, y: -.189999998}
-      - {x: -1.30499995, y: -.310000002}
-      - {x: -.975000024, y: -.469999999}
-      - {x: -.745000005, y: -.469999999}
-      - {x: -.735000014, y: -.5}
-      - {x: .075000003, y: -.5}
-      - {x: .135000005, y: -.449999988}
-      - {x: .685000002, y: -.449999988}
---- !u!60 &168828361
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6000246, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .875, y: -.779999971}
-      - {x: 1.04499996, y: -.75999999}
-      - {x: 1.08500004, y: -.74000001}
-      - {x: 1.06500006, y: -.670000017}
-      - {x: .995000005, y: -.639999986}
-      - {x: .894999981, y: -.639999986}
-      - {x: .764999986, y: -.649999976}
-      - {x: .605000019, y: -.610000014}
-      - {x: .535000026, y: -.569999993}
-      - {x: .714999974, y: -.379999995}
-      - {x: .944999993, y: -.310000002}
-      - {x: 1.125, y: -.280000001}
-      - {x: 1.18499994, y: -.25999999}
-      - {x: 1.18499994, y: -.200000003}
-      - {x: 1.03499997, y: -.189999998}
-      - {x: .975000024, y: -.200000003}
-      - {x: 1.04499996, y: -.0599999987}
-      - {x: 1.03499997, y: .100000001}
-      - {x: 1.02499998, y: .189999998}
-      - {x: 1.18499994, y: .180000007}
-      - {x: 1.18499994, y: .25999999}
-      - {x: 1.17499995, y: .270000011}
-      - {x: .964999974, y: .289999992}
-      - {x: .764999986, y: .340000004}
-      - {x: .555000007, y: .529999971}
-      - {x: .524999976, y: .610000014}
-      - {x: .714999974, y: .639999986}
-      - {x: .795000017, y: .670000017}
-      - {x: 1.005, y: .670000017}
-      - {x: 1.10500002, y: .709999979}
-      - {x: 1.07500005, y: .790000021}
-      - {x: .954999983, y: .800000012}
-      - {x: .805000007, y: .800000012}
-      - {x: .725000024, y: .810000002}
-      - {x: .474999994, y: .889999986}
-      - {x: .435000002, y: .910000026}
-      - {x: -.465000004, y: .910000026}
-      - {x: -.535000026, y: .879999995}
-      - {x: -.63499999, y: .75}
-      - {x: -.725000024, y: .790000021}
-      - {x: -.904999971, y: .790000021}
-      - {x: -.964999974, y: .670000017}
-      - {x: -.845000029, y: .550000012}
-      - {x: -.774999976, y: .5}
-      - {x: -.785000026, y: .330000013}
-      - {x: -1.005, y: .239999995}
-      - {x: -1.06500006, y: .189999998}
-      - {x: -1.15499997, y: .140000001}
-      - {x: -1.18499994, y: .100000001}
-      - {x: -1.18499994, y: -.109999999}
-      - {x: -1.16499996, y: -.150000006}
-      - {x: -1.04499996, y: -.230000004}
-      - {x: -.774999976, y: -.360000014}
-      - {x: -.764999986, y: -.519999981}
-      - {x: -.814999998, y: -.550000012}
-      - {x: -.954999983, y: -.699999988}
-      - {x: -.944999993, y: -.730000019}
-      - {x: -.904999971, y: -.810000002}
-      - {x: -.845000029, y: -.810000002}
-      - {x: -.665000021, y: -.800000012}
-      - {x: -.61500001, y: -.75}
-      - {x: -.514999986, y: -.899999976}
-      - {x: -.465000004, y: -.910000026}
-      - {x: .444999993, y: -.910000026}
-      - {x: .495000005, y: -.850000024}
-      - {x: .714999974, y: -.810000002}
---- !u!58 &168828362
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5800014, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Radius: 1.20000005
-  m_Center: {x: .159999996, y: 0}
---- !u!114 &168828363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401298, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 350
-  isEnemy: 1
-  scoreValue: 0
-  enemyExplosionVersion: 6
-  isKamikadze: 0
-  kamikadzeDamage: 0
-  shieldHealth: 0
---- !u!114 &168828364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401300, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementPattern: 14
-  speed: {x: 10, y: 10}
-  frequency: 5
-  amplitude: .5
-  isForbidenLeaveCamera: 0
---- !u!114 &168828365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401302, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eef1da3f0159cd5419b61bf572d4de36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stateChangeExpolosion: 5
-  stateFullSpeed: 3
-  stateFirstTreshhold: .600000024
-  stateHalf: {fileID: 2800000, guid: f7838f6088b32cb48bd530fe0f313908, type: 3}
-  stateHalfSpeed: 7
-  stateHalfShieldHP: 50
-  stateSecondTreshhold: .25
-  stateEnd: {fileID: 2800000, guid: 6f78aeaa9e617714eaa6e55c4f273452, type: 3}
-  stateEndSpeed: 10
---- !u!60 &168828366
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6000248, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Poly:
-    m_Paths:
-    - - {x: .0949999988, y: -1.45500004}
-      - {x: .224999994, y: -1.41499996}
-      - {x: .254999995, y: -1.35500002}
-      - {x: .654999971, y: -1.33500004}
-      - {x: .725000024, y: -1.34500003}
-      - {x: .745000005, y: -1.30499995}
-      - {x: .745000005, y: -1.26499999}
-      - {x: .704999983, y: -1.245}
-      - {x: .425000012, y: -1.245}
-      - {x: .264999986, y: -1.19500005}
-      - {x: .224999994, y: -1.15499997}
-      - {x: .465000004, y: -.935000002}
-      - {x: .485000014, y: -.824999988}
-      - {x: .61500001, y: -.824999988}
-      - {x: .735000014, y: -.785000026}
-      - {x: 1.005, y: -.785000026}
-      - {x: 1.08500004, y: -.735000014}
-      - {x: 1.09500003, y: -.685000002}
-      - {x: .995000005, y: -.625}
-      - {x: .764999986, y: -.644999981}
-      - {x: .535000026, y: -.564999998}
-      - {x: .675000012, y: -.414999992}
-      - {x: .985000014, y: -.284999996}
-      - {x: 1.18499994, y: -.284999996}
-      - {x: 1.18499994, y: -.194999993}
-      - {x: 1.02499998, y: -.155000001}
-      - {x: 1.04499996, y: -.0549999997}
-      - {x: 1.03499997, y: .104999997}
-      - {x: 1.02499998, y: .194999993}
-      - {x: 1.18499994, y: .185000002}
-      - {x: 1.18499994, y: .264999986}
-      - {x: 1.10500002, y: .284999996}
-      - {x: .764999986, y: .354999989}
-      - {x: .555000007, y: .535000026}
-      - {x: .524999976, y: .61500001}
-      - {x: .714999974, y: .644999981}
-      - {x: .795000017, y: .675000012}
-      - {x: 1.005, y: .675000012}
-      - {x: 1.10500002, y: .714999974}
-      - {x: 1.07500005, y: .795000017}
-      - {x: .954999983, y: .805000007}
-      - {x: .805000007, y: .805000007}
-      - {x: .625, y: .845000029}
-      - {x: .455000013, y: .935000002}
-      - {x: .305000007, y: 1.06500006}
-      - {x: .135000005, y: 1.18499994}
-      - {x: .224999994, y: 1.18499994}
-      - {x: .254999995, y: 1.245}
-      - {x: .605000019, y: 1.26499999}
-      - {x: .675000012, y: 1.23500001}
-      - {x: .774999976, y: 1.28499997}
-      - {x: .725000024, y: 1.36500001}
-      - {x: .395000011, y: 1.35500002}
-      - {x: .224999994, y: 1.41499996}
-      - {x: .125, y: 1.45500004}
-      - {x: -.224999994, y: 1.45500004}
-      - {x: -.264999986, y: 1.40499997}
-      - {x: -.764999986, y: 1.45500004}
-      - {x: -.925000012, y: 1.45500004}
-      - {x: -.944999993, y: 1.43499994}
-      - {x: -.944999993, y: 1.39499998}
-      - {x: -.855000019, y: 1.255}
-      - {x: -.985000014, y: 1.22500002}
-      - {x: -1.05499995, y: 1.16499996}
-      - {x: -1.13499999, y: 1.11500001}
-      - {x: -1.09500003, y: 1.03499997}
-      - {x: -.964999974, y: .944999993}
-      - {x: -.785000026, y: .904999971}
-      - {x: -.61500001, y: .904999971}
-      - {x: -.564999998, y: .834999979}
-      - {x: -.644999981, y: .745000005}
-      - {x: -.725000024, y: .814999998}
-      - {x: -.904999971, y: .795000017}
-      - {x: -.964999974, y: .675000012}
-      - {x: -.845000029, y: .555000007}
-      - {x: -.774999976, y: .504999995}
-      - {x: -.785000026, y: .335000008}
-      - {x: -1.005, y: .245000005}
-      - {x: -1.06500006, y: .194999993}
-      - {x: -1.15499997, y: .144999996}
-      - {x: -1.18499994, y: .115000002}
-      - {x: -1.18499994, y: -.125}
-      - {x: -1.04499996, y: -.224999994}
-      - {x: -.774999976, y: -.354999989}
-      - {x: -.764999986, y: -.514999986}
-      - {x: -.834999979, y: -.574999988}
-      - {x: -.944999993, y: -.704999983}
-      - {x: -.944999993, y: -.725000024}
-      - {x: -.904999971, y: -.805000007}
-      - {x: -.774999976, y: -.805000007}
-      - {x: -.665000021, y: -.795000017}
-      - {x: -.564999998, y: -.805000007}
-      - {x: -.61500001, y: -.88499999}
-      - {x: -.814999998, y: -.894999981}
-      - {x: -.975000024, y: -.935000002}
-      - {x: -1.08500004, y: -1.02499998}
-      - {x: -1.125, y: -1.10500002}
-      - {x: -.995000005, y: -1.21500003}
-      - {x: -.88499999, y: -1.23500001}
-      - {x: -.944999993, y: -1.38499999}
-      - {x: -.954999983, y: -1.45500004}
-      - {x: -.61500001, y: -1.45500004}
-      - {x: -.264999986, y: -1.40499997}
-      - {x: -.224999994, y: -1.45500004}
---- !u!50 &168828367
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000236, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!212 &168828368
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200260, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 58fc1311eb2dc9244a258add32f55bce, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &168828369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400050, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 168828358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ca858a1bb8022c4288c1b79fcc3193e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  repairSound: {fileID: 0}
-  sheildSound: {fileID: 0}
-  powerUpSound: {fileID: 0}
-  slowMoSound: {fileID: 0}
-  newWeaponSound: {fileID: 0}
-  hitSound: {fileID: 0}
-  rocketHitSound: {fileID: 0}
-  bombLaunchSound: {fileID: 0}
-  destroySound: {fileID: 8300000, guid: 3e1ae4367dad07d44a4f88d51a486978, type: 3}
-  repairSoundSource: {fileID: 0}
-  sheildSoundSource: {fileID: 0}
-  powerUpSoundSource: {fileID: 0}
-  slowMoSoundSource: {fileID: 0}
-  newWeaponSoundSource: {fileID: 0}
-  hitSoundSource: {fileID: 0}
-  rocketHitSoundSource: {fileID: 0}
-  bombLaunchSoundSource: {fileID: 0}
-  destroySoundSource: {fileID: 0}
 --- !u!1 &170494241
 GameObject:
   m_ObjectHideFlags: 0
@@ -15029,6 +14616,114 @@ MonoBehaviour:
   burstRate: 0
   isRocket: 0
   isAutoAim: 0
+--- !u!1 &194378106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 194378107}
+  - 114: {fileID: 194378109}
+  - 82: {fileID: 194378108}
+  m_Layer: 0
+  m_Name: LetalGun2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194378107
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 194378106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.03283882, y: .754767239, z: -2}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 1
+--- !u!82 &194378108
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200012, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 194378106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &194378109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 194378106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
+  shootingRate: .800000012
+  isBurst: 0
+  isRails: 0
+  burstLength: 3
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &195599876
 GameObject:
   m_ObjectHideFlags: 0
@@ -15352,6 +15047,437 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &210773419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 210773420}
+  - 212: {fileID: 210773430}
+  - 50: {fileID: 210773429}
+  - 60: {fileID: 210773428}
+  - 114: {fileID: 210773427}
+  - 114: {fileID: 210773426}
+  - 114: {fileID: 210773425}
+  - 58: {fileID: 210773424}
+  - 60: {fileID: 210773423}
+  - 60: {fileID: 210773422}
+  - 114: {fileID: 210773421}
+  m_Layer: 0
+  m_Name: FinalBoss
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210773420
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 178.985641, y: -.0857947618, z: -4.96000004}
+  m_LocalScale: {x: -1.29999995, y: 1.29999995, z: 1}
+  m_Children:
+  - {fileID: 105383456}
+  - {fileID: 194378107}
+  - {fileID: 38136653}
+  - {fileID: 1928143699}
+  - {fileID: 2120126861}
+  - {fileID: 1849761417}
+  - {fileID: 2145254874}
+  - {fileID: 1443004296}
+  - {fileID: 886289194}
+  - {fileID: 1791217648}
+  - {fileID: 1131653042}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &210773421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400028, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca858a1bb8022c4288c1b79fcc3193e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repairSound: {fileID: 0}
+  sheildSound: {fileID: 0}
+  powerUpSound: {fileID: 0}
+  slowMoSound: {fileID: 0}
+  newWeaponSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  rocketHitSound: {fileID: 0}
+  bombLaunchSound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: 3e1ae4367dad07d44a4f88d51a486978, type: 3}
+  helperSound: {fileID: 8300000, guid: b97489af4d853e54992335eff109ffb6, type: 3}
+  repairSoundSource: {fileID: 0}
+  sheildSoundSource: {fileID: 0}
+  powerUpSoundSource: {fileID: 0}
+  slowMoSoundSource: {fileID: 0}
+  newWeaponSoundSource: {fileID: 0}
+  hitSoundSource: {fileID: 0}
+  rocketHitSoundSource: {fileID: 0}
+  bombLaunchSoundSource: {fileID: 0}
+  destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
+--- !u!60 &210773422
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6000002, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .845000029, y: -.49000001}
+      - {x: 1.05499995, y: -.449999988}
+      - {x: 1.21500003, y: -.400000006}
+      - {x: 1.52499998, y: -.349999994}
+      - {x: 1.53499997, y: -.330000013}
+      - {x: 1.53499997, y: -.280000001}
+      - {x: 1.47500002, y: -.25}
+      - {x: 1.27499998, y: -.25}
+      - {x: 1.31500006, y: -.159999996}
+      - {x: 1.33500004, y: -.0900000036}
+      - {x: 1.33500004, y: .129999995}
+      - {x: 1.47500002, y: .239999995}
+      - {x: 1.53499997, y: .280000001}
+      - {x: 1.53499997, y: .319999993}
+      - {x: 1.46500003, y: .360000014}
+      - {x: 1.17499995, y: .389999986}
+      - {x: .935000002, y: .460000008}
+      - {x: .754999995, y: .460000008}
+      - {x: .685000002, y: .439999998}
+      - {x: .264999986, y: .439999998}
+      - {x: .144999996, y: .5}
+      - {x: -.745000005, y: .5}
+      - {x: -.735000014, y: .439999998}
+      - {x: -.975000024, y: .439999998}
+      - {x: -1.17499995, y: .360000014}
+      - {x: -1.38499999, y: .239999995}
+      - {x: -1.51499999, y: .180000007}
+      - {x: -1.53499997, y: .129999995}
+      - {x: -1.53499997, y: -.140000001}
+      - {x: -1.495, y: -.189999998}
+      - {x: -1.30499995, y: -.310000002}
+      - {x: -.975000024, y: -.469999999}
+      - {x: -.745000005, y: -.469999999}
+      - {x: -.735000014, y: -.5}
+      - {x: .075000003, y: -.5}
+      - {x: .135000005, y: -.449999988}
+      - {x: .685000002, y: -.449999988}
+--- !u!60 &210773423
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6000004, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .875, y: -.779999971}
+      - {x: 1.04499996, y: -.75999999}
+      - {x: 1.08500004, y: -.74000001}
+      - {x: 1.06500006, y: -.670000017}
+      - {x: .995000005, y: -.639999986}
+      - {x: .894999981, y: -.639999986}
+      - {x: .764999986, y: -.649999976}
+      - {x: .605000019, y: -.610000014}
+      - {x: .535000026, y: -.569999993}
+      - {x: .714999974, y: -.379999995}
+      - {x: .944999993, y: -.310000002}
+      - {x: 1.125, y: -.280000001}
+      - {x: 1.18499994, y: -.25999999}
+      - {x: 1.18499994, y: -.200000003}
+      - {x: 1.03499997, y: -.189999998}
+      - {x: .975000024, y: -.200000003}
+      - {x: 1.04499996, y: -.0599999987}
+      - {x: 1.03499997, y: .100000001}
+      - {x: 1.02499998, y: .189999998}
+      - {x: 1.18499994, y: .180000007}
+      - {x: 1.18499994, y: .25999999}
+      - {x: 1.17499995, y: .270000011}
+      - {x: .964999974, y: .289999992}
+      - {x: .764999986, y: .340000004}
+      - {x: .555000007, y: .529999971}
+      - {x: .524999976, y: .610000014}
+      - {x: .714999974, y: .639999986}
+      - {x: .795000017, y: .670000017}
+      - {x: 1.005, y: .670000017}
+      - {x: 1.10500002, y: .709999979}
+      - {x: 1.07500005, y: .790000021}
+      - {x: .954999983, y: .800000012}
+      - {x: .805000007, y: .800000012}
+      - {x: .725000024, y: .810000002}
+      - {x: .474999994, y: .889999986}
+      - {x: .435000002, y: .910000026}
+      - {x: -.465000004, y: .910000026}
+      - {x: -.535000026, y: .879999995}
+      - {x: -.63499999, y: .75}
+      - {x: -.725000024, y: .790000021}
+      - {x: -.904999971, y: .790000021}
+      - {x: -.964999974, y: .670000017}
+      - {x: -.845000029, y: .550000012}
+      - {x: -.774999976, y: .5}
+      - {x: -.785000026, y: .330000013}
+      - {x: -1.005, y: .239999995}
+      - {x: -1.06500006, y: .189999998}
+      - {x: -1.15499997, y: .140000001}
+      - {x: -1.18499994, y: .100000001}
+      - {x: -1.18499994, y: -.109999999}
+      - {x: -1.16499996, y: -.150000006}
+      - {x: -1.04499996, y: -.230000004}
+      - {x: -.774999976, y: -.360000014}
+      - {x: -.764999986, y: -.519999981}
+      - {x: -.814999998, y: -.550000012}
+      - {x: -.954999983, y: -.699999988}
+      - {x: -.944999993, y: -.730000019}
+      - {x: -.904999971, y: -.810000002}
+      - {x: -.845000029, y: -.810000002}
+      - {x: -.665000021, y: -.800000012}
+      - {x: -.61500001, y: -.75}
+      - {x: -.514999986, y: -.899999976}
+      - {x: -.465000004, y: -.910000026}
+      - {x: .444999993, y: -.910000026}
+      - {x: .495000005, y: -.850000024}
+      - {x: .714999974, y: -.810000002}
+--- !u!58 &210773424
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 1.20000005
+  m_Center: {x: .159999996, y: 0}
+--- !u!114 &210773425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400016, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb794c3f87a074a45aecb15074b6ae72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  isEnemy: 1
+  scoreValue: 0
+  enemyExplosionVersion: 6
+  isKamikadze: 0
+  kamikadzeDamage: 0
+  shieldHealth: 0
+--- !u!114 &210773426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a709627e66d1bf3488d4f379dd58546f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPattern: 14
+  speed: {x: 10, y: 10}
+  frequency: 5
+  amplitude: .5
+  isForbidenLeaveCamera: 0
+--- !u!114 &210773427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400020, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef1da3f0159cd5419b61bf572d4de36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateChangeExpolosion: 5
+  stateFullSpeed: 3
+  stateFirstTreshhold: .600000024
+  stateHalf: {fileID: 2800000, guid: f7838f6088b32cb48bd530fe0f313908, type: 3}
+  stateHalfSpeed: 7
+  stateHalfShieldHP: 50
+  stateSecondTreshhold: .25
+  stateEnd: {fileID: 2800000, guid: 6f78aeaa9e617714eaa6e55c4f273452, type: 3}
+  stateEndSpeed: 10
+--- !u!60 &210773428
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6000000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .0949999988, y: -1.45500004}
+      - {x: .224999994, y: -1.41499996}
+      - {x: .254999995, y: -1.35500002}
+      - {x: .654999971, y: -1.33500004}
+      - {x: .725000024, y: -1.34500003}
+      - {x: .745000005, y: -1.30499995}
+      - {x: .745000005, y: -1.26499999}
+      - {x: .704999983, y: -1.245}
+      - {x: .425000012, y: -1.245}
+      - {x: .264999986, y: -1.19500005}
+      - {x: .224999994, y: -1.15499997}
+      - {x: .465000004, y: -.935000002}
+      - {x: .485000014, y: -.824999988}
+      - {x: .61500001, y: -.824999988}
+      - {x: .735000014, y: -.785000026}
+      - {x: 1.005, y: -.785000026}
+      - {x: 1.08500004, y: -.735000014}
+      - {x: 1.09500003, y: -.685000002}
+      - {x: .995000005, y: -.625}
+      - {x: .764999986, y: -.644999981}
+      - {x: .535000026, y: -.564999998}
+      - {x: .675000012, y: -.414999992}
+      - {x: .985000014, y: -.284999996}
+      - {x: 1.18499994, y: -.284999996}
+      - {x: 1.18499994, y: -.194999993}
+      - {x: 1.02499998, y: -.155000001}
+      - {x: 1.04499996, y: -.0549999997}
+      - {x: 1.03499997, y: .104999997}
+      - {x: 1.02499998, y: .194999993}
+      - {x: 1.18499994, y: .185000002}
+      - {x: 1.18499994, y: .264999986}
+      - {x: 1.10500002, y: .284999996}
+      - {x: .764999986, y: .354999989}
+      - {x: .555000007, y: .535000026}
+      - {x: .524999976, y: .61500001}
+      - {x: .714999974, y: .644999981}
+      - {x: .795000017, y: .675000012}
+      - {x: 1.005, y: .675000012}
+      - {x: 1.10500002, y: .714999974}
+      - {x: 1.07500005, y: .795000017}
+      - {x: .954999983, y: .805000007}
+      - {x: .805000007, y: .805000007}
+      - {x: .625, y: .845000029}
+      - {x: .455000013, y: .935000002}
+      - {x: .305000007, y: 1.06500006}
+      - {x: .135000005, y: 1.18499994}
+      - {x: .224999994, y: 1.18499994}
+      - {x: .254999995, y: 1.245}
+      - {x: .605000019, y: 1.26499999}
+      - {x: .675000012, y: 1.23500001}
+      - {x: .774999976, y: 1.28499997}
+      - {x: .725000024, y: 1.36500001}
+      - {x: .395000011, y: 1.35500002}
+      - {x: .224999994, y: 1.41499996}
+      - {x: .125, y: 1.45500004}
+      - {x: -.224999994, y: 1.45500004}
+      - {x: -.264999986, y: 1.40499997}
+      - {x: -.764999986, y: 1.45500004}
+      - {x: -.925000012, y: 1.45500004}
+      - {x: -.944999993, y: 1.43499994}
+      - {x: -.944999993, y: 1.39499998}
+      - {x: -.855000019, y: 1.255}
+      - {x: -.985000014, y: 1.22500002}
+      - {x: -1.05499995, y: 1.16499996}
+      - {x: -1.13499999, y: 1.11500001}
+      - {x: -1.09500003, y: 1.03499997}
+      - {x: -.964999974, y: .944999993}
+      - {x: -.785000026, y: .904999971}
+      - {x: -.61500001, y: .904999971}
+      - {x: -.564999998, y: .834999979}
+      - {x: -.644999981, y: .745000005}
+      - {x: -.725000024, y: .814999998}
+      - {x: -.904999971, y: .795000017}
+      - {x: -.964999974, y: .675000012}
+      - {x: -.845000029, y: .555000007}
+      - {x: -.774999976, y: .504999995}
+      - {x: -.785000026, y: .335000008}
+      - {x: -1.005, y: .245000005}
+      - {x: -1.06500006, y: .194999993}
+      - {x: -1.15499997, y: .144999996}
+      - {x: -1.18499994, y: .115000002}
+      - {x: -1.18499994, y: -.125}
+      - {x: -1.04499996, y: -.224999994}
+      - {x: -.774999976, y: -.354999989}
+      - {x: -.764999986, y: -.514999986}
+      - {x: -.834999979, y: -.574999988}
+      - {x: -.944999993, y: -.704999983}
+      - {x: -.944999993, y: -.725000024}
+      - {x: -.904999971, y: -.805000007}
+      - {x: -.774999976, y: -.805000007}
+      - {x: -.665000021, y: -.795000017}
+      - {x: -.564999998, y: -.805000007}
+      - {x: -.61500001, y: -.88499999}
+      - {x: -.814999998, y: -.894999981}
+      - {x: -.975000024, y: -.935000002}
+      - {x: -1.08500004, y: -1.02499998}
+      - {x: -1.125, y: -1.10500002}
+      - {x: -.995000005, y: -1.21500003}
+      - {x: -.88499999, y: -1.23500001}
+      - {x: -.944999993, y: -1.38499999}
+      - {x: -.954999983, y: -1.45500004}
+      - {x: -.61500001, y: -1.45500004}
+      - {x: -.264999986, y: -1.40499997}
+      - {x: -.224999994, y: -1.45500004}
+--- !u!50 &210773429
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!212 &210773430
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200002, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 210773419}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 58fc1311eb2dc9244a258add32f55bce, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &211016903
 GameObject:
   m_ObjectHideFlags: 0
@@ -17355,6 +17481,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -17364,6 +17491,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &230523864
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18109,6 +18237,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -18118,6 +18247,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &252163360
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18599,6 +18729,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -18608,6 +18739,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &258478420
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18845,6 +18977,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -18854,6 +18987,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &264045688
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19399,7 +19533,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &284588645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19474,6 +19608,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -19483,6 +19618,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &287194206
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19663,114 +19799,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!1 &291082177
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101232, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 291082178}
-  - 114: {fileID: 291082180}
-  - 82: {fileID: 291082179}
-  m_Layer: 0
-  m_Name: LetalGun2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &291082178
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401232, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 291082177}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03283882, y: .754767239, z: -2}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 1
---- !u!82 &291082179
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200308, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 291082177}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &291082180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401294, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 291082177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
-  shootingRate: .800000012
-  isBurst: 0
-  isRails: 0
-  burstLength: 3
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &291555664
 GameObject:
   m_ObjectHideFlags: 0
@@ -20232,6 +20260,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -20241,6 +20270,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &305314987
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20703,70 +20733,6 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: .0199999996, y: .0199999996, z: .0199999996}
   m_MinEmitterRange: 0
---- !u!1 &321992743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101220, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 321992744}
-  - 212: {fileID: 321992746}
-  - 114: {fileID: 321992745}
-  m_Layer: 0
-  m_Name: ShieldEnemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &321992744
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401220, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321992743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.10000002, y: 0, z: 0}
-  m_LocalScale: {x: .659874618, y: .723029256, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 7
---- !u!114 &321992745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401282, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321992743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbfc35ca409dbb3458bc3b9c723e9ca0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!212 &321992746
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200258, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321992743}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 187334b4a86b20741bc7da7bc2f5390b, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8935eebded3dc1144b8d5b7213df7405, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &325006295
 GameObject:
   m_ObjectHideFlags: 0
@@ -21631,6 +21597,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -21640,6 +21607,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &360325907
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23290,114 +23258,6 @@ MonoBehaviour:
   burstRate: .200000003
   isRocket: 0
   isAutoAim: 0
---- !u!1 &395980740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101230, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 395980741}
-  - 114: {fileID: 395980743}
-  - 82: {fileID: 395980742}
-  m_Layer: 0
-  m_Name: LetalGun3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &395980741
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401230, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395980740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03283894, y: -.754767179, z: 0}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 2
---- !u!82 &395980742
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200306, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395980740}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: faddd6f55f1ad154dae4e77d2bd679e9, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &395980743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401292, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 395980740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b20e8acf8f22c58488b60c851d04f886, type: 2}
-  shootingRate: .800000012
-  isBurst: 0
-  isRails: 0
-  burstLength: 3
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &396505209
 GameObject:
   m_ObjectHideFlags: 0
@@ -23766,6 +23626,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -23775,6 +23636,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &398338643
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24165,7 +24027,7 @@ Transform:
   - {fileID: 627640532}
   - {fileID: 2131013624}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1001 &409448879
 Prefab:
   m_ObjectHideFlags: 0
@@ -24267,6 +24129,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -24276,6 +24139,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &415919540
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26086,7 +25950,7 @@ Transform:
   - {fileID: 577008666}
   - {fileID: 915669042}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &463450892
 GameObject:
   m_ObjectHideFlags: 0
@@ -28844,6 +28708,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -28853,6 +28718,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &536598948
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29728,7 +29594,7 @@ Transform:
   - {fileID: 619591517}
   - {fileID: 595034093}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!114 &553299162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29813,6 +29679,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 8300000, guid: f1306fcedbad492428eeab01105a856e, type: 3}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -29822,6 +29689,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!1 &564033881
 GameObject:
   m_ObjectHideFlags: 0
@@ -32785,6 +32653,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -32794,6 +32663,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &586544095
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33048,6 +32918,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -33057,6 +32928,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &588526239
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33390,6 +33262,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -33399,6 +33272,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &593498858
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33968,6 +33842,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -33977,6 +33852,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &629993564
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34183,6 +34059,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -34192,6 +34069,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &631437236
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38492,6 +38370,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -38501,6 +38380,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &681362550
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -38771,114 +38651,6 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: .0199999996, y: .0199999996, z: .0199999996}
   m_MinEmitterRange: 0
---- !u!1 &685312892
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101214, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 685312893}
-  - 114: {fileID: 685312895}
-  - 82: {fileID: 685312894}
-  m_Layer: 0
-  m_Name: RailGun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &685312893
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401214, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685312892}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25443828, y: -.013789231, z: 0}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 10
---- !u!82 &685312894
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200294, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685312892}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: f0bc90250b117b44fad9658951d0f279, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &685312895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401276, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685312892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 1292ca28192ad7448bcf903cf1c303b9, type: 2}
-  shootingRate: 4
-  isBurst: 1
-  isRails: 1
-  burstLength: 70
-  burstRate: .00999999978
-  isRocket: 0
-  isAutoAim: 0
 --- !u!1 &690781121
 GameObject:
   m_ObjectHideFlags: 0
@@ -38928,7 +38700,7 @@ Transform:
   m_LocalScale: {x: 1.23507941, y: 1.23507786, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
 --- !u!1 &692354552
 GameObject:
   m_ObjectHideFlags: 0
@@ -38986,6 +38758,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -38995,6 +38768,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &692354555
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39233,6 +39007,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -39242,6 +39017,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &703564735
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -39470,6 +39246,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -39479,6 +39256,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &704344444
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40045,6 +39823,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -40054,6 +39833,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &706979011
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40548,6 +40328,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -40557,6 +40338,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &716524623
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -40958,6 +40740,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -40967,6 +40750,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &736884443
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -41255,6 +41039,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -41264,6 +41049,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &741002955
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -41803,6 +41589,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -41812,6 +41599,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &758854959
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -42572,6 +42360,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -42581,6 +42370,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &764576852
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44017,6 +43807,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -44026,6 +43817,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &779854246
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -44786,6 +44578,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -44795,6 +44588,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &796723280
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -46014,6 +45808,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -46023,6 +45818,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &837358932
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -46251,6 +46047,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -46260,6 +46057,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &845429073
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -48201,6 +47999,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -48210,6 +48009,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &885566382
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -48353,6 +48153,114 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!1 &886289193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 886289194}
+  - 114: {fileID: 886289196}
+  - 82: {fileID: 886289195}
+  m_Layer: 0
+  m_Name: UsualBomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886289194
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 886289193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .635593116, y: -.013789122, z: 0}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 8
+--- !u!82 &886289195
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 886289193}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6ab620219011d6645a21c1beaa03353f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &886289196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 886289193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400004, guid: 6ec3a56178fd47446a48b79f7c864c63, type: 2}
+  shootingRate: 1.5
+  isBurst: 0
+  isRails: 0
+  burstLength: 10
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &887055294
 GameObject:
   m_ObjectHideFlags: 0
@@ -49168,6 +49076,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -49177,6 +49086,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &930558942
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -49547,6 +49457,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -49556,6 +49467,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &941201430
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -49921,6 +49833,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -49930,6 +49843,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &946812619
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50196,6 +50110,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -50205,6 +50120,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &947176602
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50469,6 +50385,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -50478,6 +50395,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &953183692
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -50739,6 +50657,50 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f25e88d0062f0e84ea8d84f8a96cdac6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &955588432
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 178.985641
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0857947618
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4.96000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_RootGameObject: {fileID: 210773419}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &958286785
 GameObject:
   m_ObjectHideFlags: 0
@@ -51732,6 +51694,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -51741,6 +51704,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &994435292
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -52197,114 +52161,6 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: .0199999996, y: .0199999996, z: .0199999996}
   m_MinEmitterRange: 0
---- !u!1 &1034477638
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101218, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1034477639}
-  - 114: {fileID: 1034477641}
-  - 82: {fileID: 1034477640}
-  m_Layer: 0
-  m_Name: UsualBomb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1034477639
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401218, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1034477638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .635593116, y: -.013789122, z: 0}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 8
---- !u!82 &1034477640
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200298, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1034477638}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6ab620219011d6645a21c1beaa03353f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &1034477641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401280, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1034477638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400004, guid: 6ec3a56178fd47446a48b79f7c864c63, type: 2}
-  shootingRate: 1.5
-  isBurst: 0
-  isRails: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &1042454555
 GameObject:
   m_ObjectHideFlags: 0
@@ -53663,6 +53519,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -53672,6 +53529,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1063198368
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -53924,7 +53782,7 @@ Transform:
   - {fileID: 1184107659}
   - {fileID: 1427089781}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!1 &1068857631
 GameObject:
   m_ObjectHideFlags: 0
@@ -53983,6 +53841,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -53992,6 +53851,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1068857634
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -57341,6 +57201,114 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &1131653041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1131653042}
+  - 114: {fileID: 1131653044}
+  - 82: {fileID: 1131653043}
+  m_Layer: 0
+  m_Name: RailGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131653042
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1131653041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25443828, y: -.013789231, z: 0}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 10
+--- !u!82 &1131653043
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1131653041}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f0bc90250b117b44fad9658951d0f279, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1131653044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1131653041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: 1292ca28192ad7448bcf903cf1c303b9, type: 2}
+  shootingRate: 4
+  isBurst: 1
+  isRails: 1
+  burstLength: 70
+  burstRate: .00999999978
+  isRocket: 0
+  isAutoAim: 0
 --- !u!1 &1136385925
 GameObject:
   m_ObjectHideFlags: 0
@@ -60111,114 +60079,6 @@ Prefab:
   m_RootGameObject: {fileID: 181087419}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1206894111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101222, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1206894114}
-  - 114: {fileID: 1206894113}
-  - 82: {fileID: 1206894112}
-  m_Layer: 0
-  m_Name: NonLetalGunShotoff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1206894112
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200300, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1206894111}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &1206894113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401284, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1206894111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: b91c982e3adda0f4689bffcb1bf57761, type: 2}
-  shootingRate: .699999988
-  isBurst: 0
-  isRails: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
---- !u!4 &1206894114
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401222, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1206894111}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11405599, y: 0, z: -2.16838312}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 6
 --- !u!1 &1206936220
 GameObject:
   m_ObjectHideFlags: 0
@@ -60401,6 +60261,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -60410,6 +60271,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1207282764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -61000,162 +60862,6 @@ Transform:
   - {fileID: 946807084}
   m_Father: {fileID: 885566380}
   m_RootOrder: 0
---- !u!1 &1233203974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101234, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1233203975}
-  - 114: {fileID: 1233203976}
-  m_Layer: 0
-  m_Name: LetalGun1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1233203975
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401234, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1233203974}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .635593116, y: 1.31091189, z: 0}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 0
---- !u!114 &1233203976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401296, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1233203974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
-  shootingRate: .5
-  isBurst: 0
-  isRails: 0
-  burstLength: 3
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
---- !u!1 &1244767956
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101216, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1244767957}
-  - 114: {fileID: 1244767959}
-  - 82: {fileID: 1244767958}
-  m_Layer: 0
-  m_Name: SelfGuidedBomb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1244767957
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401216, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244767956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25443828, y: -.013789231, z: 0}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 9
---- !u!82 &1244767958
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200296, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244767956}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6ab620219011d6645a21c1beaa03353f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &1244767959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401278, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244767956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400006, guid: 47cf4064e09848e46844827e55dfbf59, type: 2}
-  shootingRate: 2.5
-  isBurst: 0
-  isRails: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &1245241681
 GameObject:
   m_ObjectHideFlags: 0
@@ -61373,6 +61079,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -61382,6 +61089,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1251451461
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -64691,6 +64399,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -64700,6 +64409,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1297930517
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -66536,6 +66246,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -66545,6 +66256,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1321432313
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68171,6 +67883,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -68180,6 +67893,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1330497025
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -68486,9 +68200,8 @@ Transform:
   - {fileID: 47881109}
   - {fileID: 706979008}
   - {fileID: 2101751639}
-  - {fileID: 168828359}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1332807397
 GameObject:
   m_ObjectHideFlags: 0
@@ -69067,6 +68780,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -69076,6 +68790,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1369092456
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -71238,6 +70953,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -71247,6 +70963,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1410313133
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -71485,6 +71202,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -71494,6 +71212,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1411179117
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -73663,6 +73382,70 @@ Prefab:
   m_RootGameObject: {fileID: 1111945897}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1443004295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1443004296}
+  - 212: {fileID: 1443004298}
+  - 114: {fileID: 1443004297}
+  m_Layer: 0
+  m_Name: ShieldEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443004296
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1443004295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.10000002, y: 0, z: 0}
+  m_LocalScale: {x: .659874618, y: .723029256, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 7
+--- !u!114 &1443004297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1443004295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfc35ca409dbb3458bc3b9c723e9ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &1443004298
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21200000, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1443004295}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 187334b4a86b20741bc7da7bc2f5390b, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8935eebded3dc1144b8d5b7213df7405, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1446950375
 GameObject:
   m_ObjectHideFlags: 0
@@ -73840,6 +73623,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -73849,6 +73633,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1447100204
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74052,6 +73837,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -74061,6 +73847,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1468578880
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -74264,6 +74051,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -74273,6 +74061,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1468972328
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -76288,6 +76077,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -76297,6 +76087,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1525393673
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77169,6 +76960,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -77178,6 +76970,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1549967847
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -77523,6 +77316,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -77532,6 +77326,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1554700043
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78427,6 +78222,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -78436,6 +78232,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1573597553
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -78934,6 +78731,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -78943,6 +78741,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1580353534
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -79146,6 +78945,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -79155,6 +78955,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1592773374
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -88508,114 +88309,6 @@ MonoBehaviour:
   burstRate: .100000001
   isRocket: 0
   isAutoAim: 0
---- !u!1 &1765241351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101224, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1765241352}
-  - 114: {fileID: 1765241354}
-  - 82: {fileID: 1765241353}
-  m_Layer: 0
-  m_Name: NonLetalGunSlow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1765241352
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401224, guid: d1408f1fb9ba19e4bbfd250b97af8966, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765241351}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14220107, y: -.237056404, z: -2.16838312}
-  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
-  m_Children: []
-  m_Father: {fileID: 168828359}
-  m_RootOrder: 5
---- !u!82 &1765241353
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200302, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765241351}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 300
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!114 &1765241354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401286, guid: d1408f1fb9ba19e4bbfd250b97af8966,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765241351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400000, guid: 95d0fe0cbdca57949a93f52174b273f6, type: 2}
-  shootingRate: .699999988
-  isBurst: 0
-  isRails: 0
-  burstLength: 10
-  burstRate: .100000001
-  isRocket: 0
-  isAutoAim: 1
 --- !u!1 &1765244754
 GameObject:
   m_ObjectHideFlags: 0
@@ -88751,6 +88444,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -88760,6 +88454,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1778456861
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89117,6 +88812,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -89126,6 +88822,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1789386593
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89278,6 +88975,114 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!1 &1791217647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1791217648}
+  - 114: {fileID: 1791217650}
+  - 82: {fileID: 1791217649}
+  m_Layer: 0
+  m_Name: SelfGuidedBomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791217648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1791217647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.25443828, y: -.013789231, z: 0}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 9
+--- !u!82 &1791217649
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200002, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1791217647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6ab620219011d6645a21c1beaa03353f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1791217650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1791217647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400006, guid: 47cf4064e09848e46844827e55dfbf59, type: 2}
+  shootingRate: 2.5
+  isBurst: 0
+  isRails: 0
+  burstLength: 10
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1001 &1795212778
 Prefab:
   m_ObjectHideFlags: 0
@@ -91743,6 +91548,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -91752,6 +91558,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1808998921
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -93189,6 +92996,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -93198,6 +93006,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1813662337
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -93962,6 +93771,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -93971,6 +93781,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1844426472
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -94217,6 +94028,114 @@ GUIText:
     rgba: 2080374784
   m_PixelCorrect: 1
   m_RichText: 1
+--- !u!1 &1849761416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1849761417}
+  - 114: {fileID: 1849761419}
+  - 82: {fileID: 1849761418}
+  m_Layer: 0
+  m_Name: NonLetalGunSlow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849761417
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1849761416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.14220107, y: -.237056404, z: -2.16838312}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 5
+--- !u!82 &1849761418
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200006, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1849761416}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1849761419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400026, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1849761416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: 95d0fe0cbdca57949a93f52174b273f6, type: 2}
+  shootingRate: .699999988
+  isBurst: 0
+  isRails: 0
+  burstLength: 10
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &1850024584
 GameObject:
   m_ObjectHideFlags: 0
@@ -98132,6 +98051,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMultiBarrel: 0
+--- !u!1 &1928143698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1928143699}
+  - 114: {fileID: 1928143700}
+  m_Layer: 0
+  m_Name: LetalGun4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928143699
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1928143698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .635593116, y: -1.31091201, z: -2.16838312}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 3
+--- !u!114 &1928143700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 1928143698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: fa76002d1177b264da566615aca82bee, type: 2}
+  shootingRate: .5
+  isBurst: 0
+  isRails: 0
+  burstLength: 3
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &1929223015
 GameObject:
   m_ObjectHideFlags: 0
@@ -98764,6 +98731,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -98773,6 +98741,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1954358028
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -99221,6 +99190,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -99230,6 +99200,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1973413054
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -99837,6 +99808,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -99846,6 +99818,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &1989423371
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -101342,6 +101315,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -101351,6 +101325,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &2032195667
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -102094,6 +102069,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -102103,6 +102079,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &2059283398
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -102428,6 +102405,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -102437,6 +102415,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &2066205988
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -104534,6 +104513,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -104543,6 +104523,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &2111719982
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -104769,7 +104750,7 @@ Transform:
   - {fileID: 1578247174}
   - {fileID: 673300046}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!114 &2114533175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104787,6 +104768,114 @@ MonoBehaviour:
   isLinkedToCamera: 0
   isLooping: 1
   hasParallax: 0
+--- !u!1 &2120126860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2120126861}
+  - 114: {fileID: 2120126863}
+  - 82: {fileID: 2120126862}
+  m_Layer: 0
+  m_Name: NonLetalGunTeleprot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120126861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2120126860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.14220107, y: .23705636, z: -2.16838312}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 4
+--- !u!82 &2120126862
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200008, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2120126860}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &2120126863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400022, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2120126860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: 59b880f5318d65b4189062050d45cffd, type: 2}
+  shootingRate: .699999988
+  isBurst: 0
+  isRails: 0
+  burstLength: 10
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1
 --- !u!1 &2128677765
 GameObject:
   m_ObjectHideFlags: 0
@@ -106631,6 +106720,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -106640,6 +106730,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!60 &2137458915
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -108253,3 +108344,111 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &2145254873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2145254874}
+  - 114: {fileID: 2145254876}
+  - 82: {fileID: 2145254875}
+  m_Layer: 0
+  m_Name: NonLetalGunShotoff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2145254874
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 941703a66b19b8f41a006d14df7c4fdd, type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2145254873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.11405599, y: 0, z: -2.16838312}
+  m_LocalScale: {x: .840266943, y: .890895426, z: 1}
+  m_Children: []
+  m_Father: {fileID: 210773420}
+  m_RootOrder: 6
+--- !u!82 &2145254875
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200010, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2145254873}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6b4921cc814ec3745961e941be095aaa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 300
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &2145254876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 941703a66b19b8f41a006d14df7c4fdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 955588432}
+  m_GameObject: {fileID: 2145254873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  misslePrefab: {fileID: 400000, guid: b91c982e3adda0f4689bffcb1bf57761, type: 2}
+  shootingRate: .699999988
+  isBurst: 0
+  isRails: 0
+  burstLength: 10
+  burstRate: .100000001
+  isRocket: 0
+  isAutoAim: 1

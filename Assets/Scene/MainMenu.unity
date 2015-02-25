@@ -1887,7 +1887,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &143704258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5805,7 +5804,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &468372238
 GUITexture:
   m_ObjectHideFlags: 0
@@ -15271,7 +15269,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1194980608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19201,6 +19198,10 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: d18221987765d9f42a335e3a69659dea, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f2a8600cb61289448ff715c22bf9471, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d18221987765d9f42a335e3a69659dea, type: 2}
   m_RootGameObject: {fileID: 92369690}
@@ -19394,7 +19395,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1437626060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27269,7 +27269,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &2082888833
 SpriteRenderer:
   m_ObjectHideFlags: 0

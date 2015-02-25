@@ -75,9 +75,11 @@ function GraphicsLevel () {
 function ResetProgress () {
 	yield WaitForSeconds (0.1);
 	PlayerPrefs.DeleteAll();
-	PlayerPrefs.SetInt("Level_10", 1);
+	PlayerPrefs.SetInt("Video_11", 1);
 	PlayerPrefs.SetInt("Zone_1", 1);
 	Options.SaveOptions();
+	var menuButtonsScript : MenuButtons = GetComponent.<MenuButtons>();
+	menuButtonsScript.DisplayGuiSet();
 }
 
 private function ChangeGuiTexture () {

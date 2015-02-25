@@ -6242,8 +6242,8 @@ GameObject:
   - 4: {fileID: 400760}
   - 131: {fileID: 13100572}
   - 114: {fileID: 11400356}
-  - 114: {fileID: 11400358}
   - 82: {fileID: 8200126}
+  - 114: {fileID: 11400402}
   m_Layer: 0
   m_Name: No
   m_TagString: Untagged
@@ -7279,6 +7279,7 @@ GameObject:
   - 114: {fileID: 11400400}
   - 114: {fileID: 11400398}
   - 82: {fileID: 8200144}
+  - 114: {fileID: 11400358}
   m_Layer: 0
   m_Name: Yes
   m_TagString: Untagged
@@ -7328,8 +7329,8 @@ GameObject:
   - 4: {fileID: 400896}
   - 131: {fileID: 13100668}
   - 114: {fileID: 11400406}
-  - 114: {fileID: 11400408}
   - 82: {fileID: 8200148}
+  - 114: {fileID: 11400404}
   m_Layer: 0
   m_Name: Reset Progress
   m_TagString: Untagged
@@ -17600,6 +17601,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -17614,6 +17616,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500004
 Animator:
   serializedVersion: 3
@@ -17628,6 +17631,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500006
 Animator:
   serializedVersion: 3
@@ -17642,6 +17646,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500008
 Animator:
   serializedVersion: 3
@@ -17656,6 +17661,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20176,20 +20182,14 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100760}
+  m_GameObject: {fileID: 100888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddfb7096d3ad3245b7f28125e9a3353, type: 3}
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newImageNormal: {fileID: 0}
-  newImageOver: {fileID: 0}
-  graphicsHigh: {fileID: 0}
-  graphicsHighActive: {fileID: 0}
-  graphicsMed: {fileID: 0}
-  graphicsMedActive: {fileID: 0}
-  graphicsLow: {fileID: 0}
-  graphicsLowActive: {fileID: 0}
+  pauseHendler: {fileID: 100898}
+  levelToLoad: 
 --- !u!114 &11400360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20491,6 +20491,32 @@ MonoBehaviour:
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
+--- !u!114 &11400402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseHendler: {fileID: 100898}
+  levelToLoad: 
+--- !u!114 &11400404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseHendler: {fileID: 100866}
+  levelToLoad: 
 --- !u!114 &11400406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20502,31 +20528,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  functionOnTouchDown: ResetProgress
+  functionOnTouchDown: DisplayGuiSet
   imageOver: {fileID: 2800000, guid: c050508817b54b340888a4f2925fd707, type: 3}
   isOverImage: 0
   inactiveImage: {fileID: 0}
   blinkImage: {fileID: 0}
   hasTouchOnGui: 0
---- !u!114 &11400408
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddfb7096d3ad3245b7f28125e9a3353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newImageNormal: {fileID: 0}
-  newImageOver: {fileID: 0}
-  graphicsHigh: {fileID: 0}
-  graphicsHighActive: {fileID: 0}
-  graphicsMed: {fileID: 0}
-  graphicsMedActive: {fileID: 0}
-  graphicsLow: {fileID: 0}
-  graphicsLowActive: {fileID: 0}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

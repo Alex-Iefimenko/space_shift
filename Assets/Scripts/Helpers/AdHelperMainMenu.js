@@ -99,6 +99,7 @@ function SetButtonScale () {
 function LoadComplete () {
 	isLoaded = true;
 	button.enabled = true;
+	yield WaitForSeconds (2.0);
 }
 
 function SetCurrentAd () {

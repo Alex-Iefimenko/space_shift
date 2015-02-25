@@ -313,7 +313,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.9183321, y: .148467079, z: -4.96000004}
+  m_LocalPosition: {x: 17.6628094, y: .0842207819, z: -4.96000004}
   m_LocalScale: {x: -1.29999995, y: 1.29999995, z: 1}
   m_Children:
   - {fileID: 400006}
@@ -1370,6 +1370,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: 3e1ae4367dad07d44a4f88d51a486978, type: 3}
+  helperSound: {fileID: 8300000, guid: b97489af4d853e54992335eff109ffb6, type: 3}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -1379,6 +1380,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

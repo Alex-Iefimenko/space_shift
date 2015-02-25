@@ -15,6 +15,7 @@ function Update () {
 	if (tutorialGUI && Input.GetKeyDown("escape")) {
 		Proceed();
 	}
+	if (Input.GetKeyDown("t")) LoadNextLevel();
 }
 
 function LevelRestart () {
@@ -60,8 +61,8 @@ function SetTutorialVars (tutorial : GameObject, fullGUI : GameObject) {
 function LoadNextLevel () {
 	var nextLevel : int = int.Parse(Application.loadedLevelName[-2:]) + 1;
 	// Stub for zone 2 missing
-	if (Application.loadedLevelName[-2:][-1] == "9") Application.LoadLevel("MainMenu");
-	else if (nextLevel.ToString()[-1] == "9") Application.LoadLevel("Video_" + nextLevel.ToString()[0] + "2");
+	if (Application.loadedLevelName[-2:][1] == "9") Application.LoadLevel("MainMenu");
+	else if (nextLevel.ToString()[1] == "9") Application.LoadLevel("Video_" + nextLevel.ToString()[0] + "2");
 	else Application.LoadLevel("Level_" + nextLevel.ToString());
 }
 

@@ -10,6 +10,7 @@ public var hitSound : AudioClip;
 public var rocketHitSound : AudioClip;
 public var bombLaunchSound : AudioClip;
 public var destroySound : AudioClip;
+public var helperSound : AudioClip;
 
 @HideInInspector public var repairSoundSource : AudioSource;
 @HideInInspector public var sheildSoundSource : AudioSource;
@@ -20,6 +21,7 @@ public var destroySound : AudioClip;
 @HideInInspector public var rocketHitSoundSource : AudioSource;
 @HideInInspector public var bombLaunchSoundSource : AudioSource;
 @HideInInspector public var destroySoundSource : AudioSource;
+@HideInInspector public var helperSoundSource : AudioSource;
 
 function Awake() {
 	var i : int = 0;

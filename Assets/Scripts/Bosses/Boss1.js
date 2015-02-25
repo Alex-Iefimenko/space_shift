@@ -14,6 +14,7 @@ private var rendererComponent : SpriteRenderer;
 private var isActive : boolean = false;
 private var state : int = 2;
 private var specialEffectsHendler : SpecialEffects;
+private var sounds : AudioController;
 
 // Weapon update
 private var usualBomb : Shooting;
@@ -38,6 +39,7 @@ function Awake () {
 	rendererComponent = GetComponent.<SpriteRenderer>();
 	colliders = GetComponents.<PolygonCollider2D>();
 	specialEffectsHendler = GameObject.FindGameObjectWithTag("HelperScripts").GetComponentInChildren.<SpecialEffects>();
+	sounds = GetComponent.<AudioController>();
 	// Shots suites defined:
 	for (var shot : Shooting in shots) {
 		if (shot.gameObject.name.IndexOf('NonLetal') > -1) nonLetalShots.Add(shot);
@@ -135,6 +137,7 @@ function SwitchState () {
 		specialEffectsHendler.ApplyEffect("enemyExplosion"+stateChangeExpolosion.ToString(), transform.position + placeCorrect1, null);
 		specialEffectsHendler.ApplyEffect("enemyExplosion"+stateChangeExpolosion.ToString(), transform.position - placeCorrect2, null);
 		yield WaitForSeconds (0.25);
+		sounds.PlayEffectOnPosition("helperSound");
 	}
 	// Call State behaviour cange
 	SwitchStateBehaviour (state);

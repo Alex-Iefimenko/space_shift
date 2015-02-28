@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400002, guid: 57626e777e3f46145a167907475e3479, type: 2}
+  misslePrefab: {fileID: 400000, guid: 5ad8fd62f9ae3444280a40eaa6888f0b, type: 2}
   shootingRate: .800000012
   isBurst: 0
   isRails: 0
@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b48354d444472546a4271fd060212c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  misslePrefab: {fileID: 400002, guid: 57626e777e3f46145a167907475e3479, type: 2}
+  misslePrefab: {fileID: 400000, guid: 5ad8fd62f9ae3444280a40eaa6888f0b, type: 2}
   shootingRate: .899999976
   isBurst: 0
   isRails: 0
@@ -1384,6 +1384,7 @@ MonoBehaviour:
   rocketHitSound: {fileID: 0}
   bombLaunchSound: {fileID: 0}
   destroySound: {fileID: 8300000, guid: e87af4946757b0140b70af9cd3a5fe60, type: 3}
+  helperSound: {fileID: 0}
   repairSoundSource: {fileID: 0}
   sheildSoundSource: {fileID: 0}
   powerUpSoundSource: {fileID: 0}
@@ -1393,6 +1394,7 @@ MonoBehaviour:
   rocketHitSoundSource: {fileID: 0}
   bombLaunchSoundSource: {fileID: 0}
   destroySoundSource: {fileID: 0}
+  helperSoundSource: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

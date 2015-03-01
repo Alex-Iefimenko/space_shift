@@ -15,7 +15,6 @@ private var interstatialTimer : float = 45f;
 private var bannerView : BannerView;
 private var isShown : boolean = false;
 private var isLoaded : boolean = false;
-private var player : GameObject;
 
 // Main Menu parts
 public var mainMenu : GameObject;
@@ -45,7 +44,7 @@ function Awake () {
 function FixedUpdate () {
 	if (!isLoaded) bannerView.AdLoaded += LoadComplete;
 	if (timer > 0f) timer -= Time.deltaTime;
-	if (timer <= 0f && !isShown && isLoaded && player == null) Show();
+	if (timer <= 0f && !isShown && isLoaded) Show();
 	if (interstatialTimer >= 0f) interstatialTimer -= Time.deltaTime;
 	if (interstatialTimer < 0f) StartInterstatial();
 	if (interstitial != null && interstitial.IsLoaded()) interstitial.Show();
@@ -100,8 +99,6 @@ function SetButtonScale () {
 function LoadComplete () {
 	isLoaded = true;
 	button.enabled = true;
-	yield WaitForSeconds (2.0);
-	player = GameObject.FindGameObjectWithTag("Player");
 }
 
 function SetCurrentAd () {
@@ -156,4 +153,9 @@ function ShownOnDifferentMenus () {
 	if (isShown && zone3.activeSelf) Hide();
 	if (isShown && zone4.activeSelf) Hide();
 	if (isShown && credits.activeSelf) Hide();	
+}
+
+
+function OnDestroy () {
+	bannerView.Destroy();
 }

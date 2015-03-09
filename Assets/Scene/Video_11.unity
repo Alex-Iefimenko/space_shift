@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 252311139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.00999999, y: 0, z: -.547574997}
-  m_LocalScale: {x: 1.39999998, y: 1.39999998, z: 1}
+  m_LocalScale: {x: 1.29999995, y: 1.39999998, z: 1}
   m_Children: []
   m_Father: {fileID: 1321033142}
   m_RootOrder: 4
@@ -549,6 +549,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &252311142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -597,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 443340731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.00999999, y: 0, z: -.0288581848}
-  m_LocalScale: {x: 1.39999998, y: 1.39999998, z: 1}
+  m_LocalScale: {x: 1.29999995, y: 1.39999998, z: 1}
   m_Children: []
   m_Father: {fileID: 1321033142}
   m_RootOrder: 2
@@ -616,6 +617,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &443340734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -870,7 +872,7 @@ Transform:
   m_GameObject: {fileID: 1578247172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.00999999, y: 0, z: .0563964844}
-  m_LocalScale: {x: 1.39999998, y: 1.39999998, z: 1}
+  m_LocalScale: {x: 1.29999995, y: 1.39999998, z: 1}
   m_Children: []
   m_Father: {fileID: 1321033142}
   m_RootOrder: 1
@@ -889,6 +891,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1620824086
 Prefab:
   m_ObjectHideFlags: 0
@@ -928,6 +931,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: fe51ba1c12c5e134f896c139d9e85d17, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: fe51ba1c12c5e134f896c139d9e85d17, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: fe51ba1c12c5e134f896c139d9e85d17, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: fe51ba1c12c5e134f896c139d9e85d17, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.29999995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe51ba1c12c5e134f896c139d9e85d17, type: 2}
   m_RootGameObject: {fileID: 825988958}
@@ -958,7 +977,7 @@ Transform:
   m_GameObject: {fileID: 1721279423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.00999999, y: 0, z: -.479999989}
-  m_LocalScale: {x: 1.39999998, y: 1.39999998, z: 1}
+  m_LocalScale: {x: 1.29999995, y: 1.39999998, z: 1}
   m_Children: []
   m_Father: {fileID: 1321033142}
   m_RootOrder: 3
@@ -977,6 +996,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1721279426
 SpriteRenderer:
   m_ObjectHideFlags: 0

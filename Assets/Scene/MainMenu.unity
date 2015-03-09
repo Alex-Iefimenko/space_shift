@@ -1887,6 +1887,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &143704258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4245,7 +4246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseHendler: {fileID: 0}
-  levelToLoad: 
+  levelToLoad: Level_Bonus_1
 --- !u!114 &344274271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5804,6 +5805,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!131 &468372238
 GUITexture:
   m_ObjectHideFlags: 0
@@ -7960,6 +7962,26 @@ Prefab:
     - target: {fileID: 11400356, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
       propertyPath: functionOnTouchDown
       value: DisplayGuiSet
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400328, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
+      propertyPath: levelToLoad
+      value: Level_Bonus_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100096, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100840, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400324, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400322, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d94836aabfc130f44b76376fce3e0950, type: 2}
@@ -15269,6 +15291,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1194980608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15535,7 +15558,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 644228778}
   m_GameObject: {fileID: 1204971742}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1c43d1122b09874fb34f8e0c001dae6, type: 3}
   m_Name: 
@@ -15549,7 +15572,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 644228778}
   m_GameObject: {fileID: 1204971742}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69948393942554395b3b77276870b113, type: 3}
   m_Name: 
@@ -19395,6 +19418,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1437626060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27269,6 +27293,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &2082888833
 SpriteRenderer:
   m_ObjectHideFlags: 0

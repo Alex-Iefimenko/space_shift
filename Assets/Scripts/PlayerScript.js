@@ -111,7 +111,10 @@ function Update () {
     
     var bomb : boolean = Input.GetButtonDown("Bomb");
     if (bomb || bombButton.hasTouchOnGui) {
-	   	if (haveBomb) { LaunchBomb(); soundSource.PlayEffect("bombLaunchSound"); }
+	   	if (haveBomb) { 
+	   		LaunchBomb(); 
+	   		if (Options.sound) soundSource.PlayEffect("bombLaunchSound"); 
+	   	}
     }
     
     if (slomocooldown > 0f) {
